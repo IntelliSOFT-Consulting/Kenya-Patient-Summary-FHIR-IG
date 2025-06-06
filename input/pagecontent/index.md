@@ -39,19 +39,17 @@ In line with the Digital Health Act 2023, Kenya is pursuing a unified and person
 
 Designed to serve both routine care and cross-border emergency contexts, the KPS also enhances clinical safety, supports continuity of care, and facilitates smoother referrals between providers, facilities, and systems.
 
-The development and adoption of the KPS is being piloted in counties such as Kisumu, where the County Health Information Exchange (CHIE) infrastructure is being built to interconnect diverse Electronic Medical Records (EMRs) and national registries through open standards such as HL7 FHIR.
-
 ###   Project Vision & Objectives
 
-The Kenya Patient Summary aims to:
+<p>The Kenya Patient Summary aims to: </p>
 
-Provide a standardized, minimal dataset for summarizing essential patient health information.
-
-Enable interoperability across EMRs used in Kenya, including eCHIS, KenyaEMR, FunSoft, and others.
-
-Serve as a building block for referral systems, telemedicine, and cross-county or emergency medical exchanges.
-
-Ensure compliance with the Digital Health Act 2023, particularly regarding patient data ownership, access rights, and data portability.
+<ul>
+    <li>Provide a standardized, minimal dataset for summarizing essential patient health information.</li>
+    <li>Enable interoperability across EMRs used in Kenya, including eCHIS, KenyaEMR, FunSoft, and others.</li>
+    <li>Serve as a building block for referral systems, telemedicine, and cross-county or emergency medical exchanges.
+    </li>
+    <li>Ensure compliance with the Digital Health Act, particularly regarding patient data ownership, access rights, and data portability.</li>
+</ul>
 
 ###   Technical Implementation
 
@@ -63,13 +61,18 @@ Data governance requirements including consent, privacy, and role-based access
 
 Clinical workflows relevant to both facility and community-based care
 
-Key components of the KPS include:
+<p>Key components of the KPS include: </p>
+<ul>
+    <li>Patient demographics and identifiers (e.g., national ID, CHV registration number)</li>
+    <li>Allergies, medications, problems, immunizations, recent observations</li>
+    <li>Encounter summaries, diagnostic results, procedures, and referrals</li>
+    <li>Support for data exchange via FHIR RESTful APIs or document-based formats (e.g., FHIR Bundle or CDA wrapper)</li>
+</ul>
 
-Patient demographics and identifiers (e.g., national ID, CHV registration number)
 
-Allergies, medications, problems, immunizations, recent observations
 
-Encounter summaries, diagnostic results, procedures, and referrals
 
-Support for data exchange via FHIR RESTful APIs or document-based formats (e.g., FHIR Bundle or CDA wrapper)
+
+
+
 
