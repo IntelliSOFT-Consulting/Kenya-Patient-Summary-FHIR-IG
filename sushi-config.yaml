@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.kenyaCoreIG
+id: fhir.kenyaPSIG
 canonical: https://shr.tiberbuapps.com/fhir
-name: KENYACoreImplementationGuide
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+name: Kenya-Patient-Summary-FHIR-IG
+title: Kenya Patient Summary FHIR IG
+description: Kenya Patient Summary FHIR IG
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -17,7 +17,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Example Publisher
-  url: https://shr.tiberbuapps.com/fhir/example-publisher
+  url: https://.com/fhir/example-publisher
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -103,12 +103,14 @@ menu:
 # contact directly and follow the format outlined in the ImplementationGuide resource and
 # ContactDetail.
 #
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
+contact:
+  - name: KPS Team Kenya.
+    telecom:
+      - system: email # phone | fax | email | pager | url | sms | other
+        value: info@example.com
+        use: work
+        
+jurisdiction: urn:iso:std:iso:3166#KE "Kenya"    
 #
 #
 # The global property corresponds to the IG.global property, but it
