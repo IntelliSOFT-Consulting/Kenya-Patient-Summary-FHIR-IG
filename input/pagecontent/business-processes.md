@@ -369,196 +369,358 @@ The client can provide updated information if they have moved or changed their d
 #### C. Business process for diagnostics
 <b>Objective: </b> To investigate and obtain results through on-site or off-site diagnostics.
 
-<b>DIAGNOSTICS BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
-<b>General note</b>
-The clinician may order an investigation during an outpatient consultation or inpatient round. Investigations can include:
-• An RDT performed by the healthcare provider.
-• An order to perform the investigation at a laboratory or a diagnostic service at the current facility, if the service is available.
-• An order to refer the client to another facility to perform the investigation there.
-• An order to take a sample from the client and arrange to transport the sample to another facility.
-• Other specialized diagnostic investigations.
+<p><b>DIAGNOSTICS BUSINESS PROCESS NOTES AND ANNOTATIONS</b> </p>
+<p><b>General note</b></p> 
+ 
+<p>The clinician may order an investigation during an outpatient consultation or inpatient round. Investigations can include:</p>
+<ul>
+  <li>An RDT performed by the healthcare provider.</li>
+  <li>An order to perform the investigation at a laboratory or diagnostic service at the current facility, if available.</li>
+  <li>An order to refer the client to another facility for the investigation.</li>
+  <li>An order to collect a sample from the client and transport it to another facility.</li>
+  <li>Other specialized diagnostic investigations.</li>
+</ul>
 
-Steps for Diagnostic process
-Determine the diagnostics to perform
-• Includes checking supply and prioritization based on urgency for the test.
-• Check whether facility can accommodate the client and provide the needed services. If the facility is not able to perform the diagnostic or, alternatively, to collect and send the specimen, a referral may be required.
-Referral needed?
-An order to refer the client to another facility to perform the investigation may be needed if the facility cannot perform it.
-Rapid or point-of-care diagnostic by provider?
-Based on the types of diagnostics available at the facility, the providers’ skill set, facility processes and task sharing arrangements, a specimen may be taken by the provider, on-site or at an off-site lab.
-If on-site, diagnostics may be performed at the end of the visit or else during the flow of steps and the client will return to a healthcare provider after diagnostics.
-Collect specimen 
-The healthcare provider briefs the client.
-The provider collects a specimen for rapid or point-of-care diagnostic.
-Perform rapid diagnostic or point-of-care diagnostic
-Interpret results
-Collect specimen for laboratory testing
-The investigation performer, such as a health care worker, non-professional staff, or laboratory staff member, will brief the client and collect the specimen.
-Facility can analyse
- Establish whether the specimen can be analysed at this facility or should be sent to another facility.
-Analyse specimen
-If the facility is able to analyse the specimen, this would include pre- analysis, analysis and post-analysis of the specimen.
-Send specimen to off-site laboratory
-If the specimen needs to be transferred to another facility for analysis, health facility staff will collect the sample and send it to another facility for investigation.
-Update lab register
-Notify provider of results
-The results are communicated back to the ordering facility or health care worker. It is possible the client could also receive automated notification that the lab results have been returned.
-Review lab results
-The provider reviews lab results and identifies whether results require reaching out to the client.
+<b>Steps for Diagnostic Process</b>
+<ol>
+  <li>
+    <p><strong>Determine the diagnostics to perform</strong></p>
+    <ul>
+      <li>Check supplies and prioritize based on urgency.</li>
+      <li>Confirm if the facility can accommodate and perform the required diagnostic services.</li>
+      <li>If the facility cannot perform or collect the sample for diagnostics, a referral may be required.</li>
+    </ul>
+  </li>
 
+  <li>
+    <p><strong>Referral needed?</strong><br>
+    An order to refer the client to another facility may be issued if the current facility cannot perform or collect the required diagnostics.</p>
+  </li>
+
+  <li>
+    <p><strong>Rapid or point-of-care diagnostic by provider?</strong><br>
+    Based on available diagnostics, provider skill, and facility processes, the provider may take a specimen on-site or refer for off-site testing. Diagnostics may be performed during the visit or after, with the client returning to the provider for follow-up.</p>
+  </li>
+
+  <li>
+    <p><strong>Collect specimen (Rapid/Point-of-care)</strong></p>
+    <ul>
+      <li>Provider briefs the client.</li>
+      <li>Specimen is collected by the healthcare provider for rapid or point-of-care diagnostic testing.</li>
+    </ul>
+  </li>
+
+  <li>
+    <p><strong>Perform rapid diagnostic or point-of-care diagnostic</strong></p>
+  </li>
+
+  <li>
+    <p><strong>Interpret results</strong></p>
+  </li>
+
+  <li>
+    <p><strong>Collect specimen for laboratory testing</strong></p>
+    <ul>
+      <li>The provider or lab personnel briefs the client and collects the specimen for lab-based diagnostics.</li>
+    </ul>
+  </li>
+
+  <li>
+    <p><strong>Facility can analyse?</strong><br>
+    Determine if the specimen can be processed at the current facility or needs to be referred.</p>
+  </li>
+
+  <li>
+    <p><strong>Analyse specimen</strong><br>
+    If analysis is possible on-site, conduct pre-analysis, analysis, and post-analysis procedures.</p>
+  </li>
+
+  <li>
+    <p><strong>Send specimen to off-site laboratory</strong><br>
+    If off-site testing is needed, the facility collects and sends the specimen to another laboratory for analysis.</p>
+  </li>
+
+  <li>
+    <p><strong>Update lab register</strong><br>
+    Record the test and sample information in the laboratory register for tracking and documentation.</p>
+  </li>
+
+  <li>
+    <p><strong>Notify provider of results</strong><br>
+    Results are returned to the ordering facility or provider. The client may also receive automated result notifications.</p>
+  </li>
+
+  <li>
+    <p><strong>Review lab results</strong><br>
+    The provider reviews results and determines if client follow-up is needed based on findings.</p>
+  </li>
+</ol>
 
 #### D. Business process for treatment
+
 <b>Objective: </b> To initiate the appropriate treatment and perform the necessary follow- up examinations to ensure that the correct treatment is followed and that the patient adheres to it.
 
-TREATMENT BUSINESS PROCESS NOTES AND ANNOTATIONS
+<b>TREATMENT BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
-Steps for the treatment process
+<p>Steps for the treatment process</p>
+<ol>
+  <li>
+    <p><strong>Determine eligibility for treatment regimen type</strong><br>
+    The health worker determines whether the client is eligible based on laboratory results and previous clinical evaluation, for a regimen designed to treat.</p>
+  </li>
 
-Determine eligibility for treatment regimen type
-The health worker determines whether the client is eligible based on laboratory results and previous clinical evaluation, for a regimen designed to treat.
-Capacity for treating exists
-When treatment cannot be started or continued in the current facility (e.g. lack of skills, knowledge, stock of medicines), a referral is issued to transfer the patient to a new treatment facility.
-Assess for comorbidities
-There are some comorbidities and risk factors that increase the risk of poor treatment outcomes, or further transmission, which may require close clinical management. The assessment of comorbidities and risk factors (e.g. diabetes, disorders due to alcohol or drug use, HIV, smoking, undernutrition, coronavirus disease 2019, mental disorders, viral hepatitis) as part of the baseline clinical review is also important to determine additional needs for co-management, to correctly interpret adverse drug reactions. If such reactions are identified during or after the treatment ends, providing advice and counselling as necessary.
-Perform other baseline clinical evaluations
-Treatment often poses special issues in some subgroups of patients (pregnant women, people aged over 65 years, those with chronic kidney or liver disease). For patients belonging to these subgroups, a set of baseline examinations (clinical, electrocardiography, laboratory evaluations) are recommended before starting treatment.
-Evaluate drug–drug interactions
-For patients taking other medicines (older people, people with comorbidities), interaction between the drugs taken as part of the treatment regimen and other drugs taken by the patient must be evaluated.
-Determine the dosages of medicines for  treatment
-The health worker determines the dosage for the medicine part of the treatment regimen, based on age and weight band.
+  <li>
+    <p><strong>Capacity for treating exists</strong><br>
+    When treatment cannot be started or continued in the current facility (e.g. lack of skills, knowledge, stock of medicines), a referral is issued to transfer the patient to a new treatment facility.</p>
+  </li>
 
-Make an informed decision
-All treatment delivered should align with WHO-recommended standards, including obtaining informed consent where necessary (signed or witnessed consent if the patient is illiterate, or signed or witnessed consent from a child’s parent or legal guardian).
-Patients who refuse to consent to treatment should be counselled about the risks to both themselves and the community.
-Initiate the treatment and discuss adherence
-Once the appropriate treatment regimen is identified, the correct medicine dosages are determined and the consent from the patient (parent or legal guardian in case of children or adolescents) is obtained, treatment can be initiated.
-The health worker should undertake the relevant measures to support adherence and ensure favourable treatment outcomes, such as:
-– consider directly observed treatment;
-– optimize access of the patient to social protection services;
-– provide psychosocial support (psychosocial assessment should offer an opportunity to assess supportive factors for treatment adherence and should be directly linked to relevant interventions wherever possible, as per country-specific questionnaires);
-– consider the use of digital technologies.
-Is follow-up needed?
-Perform the clinical assessment
-Clinical assessment should focus on monitoring response to treatment and addressing common symptoms associated with treatment and long-term drug use, with the goal of supporting adherence.
-Assess treatment adherence
-The most common challenge in  care is when a patient discontinues taking medicines or misses treatment appointments. Measures to support patient adherence tailored to patient needs are important to retain patients on treatment and ensure good treatment outcomes. Support should be provided through an effective model of care and measures should include support in the community or at home, social support and digital health interventions for communication with the patient.
-The following actions should be taken in case of poor adherence:
-– home visit to engage with the patient;
-– assess the reasons for discontinuing treatment;
-– discuss the patient’s concerns that caused non-adherence;
-– educate the patient about the need to continue treatment;
-– counsel and support the patient to resume treatment promptly; and
-– engage community health workers, family members and caregivers to ensure treatment adherence.
-Evaluate the presence of adverse drug reactions (if any) and report
-Active pharmacovigilance should be performed, as well as proper management of adverse events and prevention of complications from drug–drug interactions. An appropriate schedule of laboratory tests and clinical examinations should be included on the patient’s treatment chart to identify adverse events. All patients, their treatment supporters and health workers should ideally be instructed to report the appearance, persistence or reappearance of adverse drug reactions.
-Adverse drug reactions should be reported to the spontaneous pharmacovigilance systems required by national regulations, as for other drug-related harms.
-Perform the follow-up examinations
-Examinations, according to the monitoring examination schedule (if available), should be performed to identify in a timely manner adverse events and to manage comorbidities appropriately.
-Manage treatment interruptions
-In clients who have had treatment interruption, the reason for the interruption should be addressed, such as medicine stock-outs, adverse events from medicines or need for additional patient or provider education.
-The health worker should take the opportunity to express support for the patient and their family and to address any issues that may require referral or treatment. Counselling should be offered in a way that makes the client feel empowered in their choice to continue the treatment.
-Reassess for comorbidities
-Adjust the treatment
-Based on the examination results, comorbidity assessment, adverse drug reaction evaluation and the patient’s medical condition, treatment composition or duration may require modifications. The health worker needs to assess treatment efficiency and adjust the treatment accordingly.
-Changing the treatment regimen should also be considered. If the decision taken is to change the treatment regimen, then the health worker will assess the capacity for initiating and continuing the new regimen. When capacity exists, all (previously described) activities needed to identify and initiate the appropriate (new) treatment regimen should be performed.
-A referral should be issued if capacity to further treat the patient does not exist. 
-Issue a referral
-Referrals may be needed for ongoing management of disability and comorbidities on completion of treatment. This may include referral to mental health or substance use services, preventive and rehabilitation services, and social protection services to improve the health and social outcomes. The preferences of the client should be considered, for example, separate services may be appropriate to maintain continuity of care for pre-existing comorbidities, to provide highly specialized medical care, or may be preferred among people who experience stigma in relation to comorbidities, such as injecting drug use.
-Patients with systemic adverse events might require referral to specialized care.
-Change of treatment regimen may lead to referrals if capacity to further treat the patient does not exist in the current health-care facility.
-In the absence of co-located services, clear referral pathways should be ensured.
- Offer other clinical and support services
-The health worker might offer other relevant clinical and support services to the client if the consent for initiating treatment is not given or treatment could not be started because of other reasons. 
+  <li>
+    <p><strong>Assess for comorbidities</strong><br>
+    Assess comorbidities and risk factors (e.g. diabetes, HIV, smoking, COVID-19) to guide treatment decisions and interpret adverse reactions.</p>
+  </li>
+
+  <li>
+    <p><strong>Perform other baseline clinical evaluations</strong><br>
+    For subgroups (e.g. pregnant women, elderly), perform clinical, ECG, and lab evaluations before starting treatment.</p>
+  </li>
+
+  <li>
+    <p><strong>Evaluate drug–drug interactions</strong><br>
+    Evaluate for interactions between treatment drugs and other medications the patient is taking.</p>
+  </li>
+
+  <li>
+    <p><strong>Determine the dosages of medicines for treatment</strong><br>
+    Determine medicine dosages based on age and weight band.</p>
+  </li>
+
+  <li>
+    <p><strong>Make an informed decision</strong><br>
+    Align treatment with WHO standards. Obtain informed consent. Counsel patients who refuse treatment.</p>
+  </li>
+
+  <li>
+    <p><strong>Initiate the treatment and discuss adherence</strong><br>
+    Once consent is obtained and dosages determined, begin treatment and support adherence through:</p>
+    <ul>
+      <li>Directly observed therapy</li>
+      <li>Social protection services</li>
+      <li>Psychosocial support</li>
+      <li>Digital health tools</li>
+    </ul>
+  </li>
+
+  <li>
+    <p><strong>Is follow-up needed?</strong><br>
+    Monitor clinical response and symptoms related to long-term drug use.</p>
+  </li>
+
+  <li>
+    <p><strong>Assess treatment adherence</strong><br>
+    If adherence is poor:</p>
+    <ul>
+      <li>Make a home visit</li>
+      <li>Discuss reasons for discontinuation</li>
+      <li>Counsel and support the patient</li>
+      <li>Engage caregivers/community health workers</li>
+    </ul>
+  </li>
+
+  <li>
+    <p><strong>Evaluate the presence of adverse drug reactions (if any) and report</strong><br>
+    Actively monitor and report any adverse reactions to the national pharmacovigilance system.</p>
+  </li>
+
+  <li>
+    <p><strong>Perform the follow-up examinations</strong><br>
+    Conduct examinations as per the monitoring schedule to identify and address issues early.</p>
+  </li>
+
+  <li>
+    <p><strong>Manage treatment interruptions</strong><br>
+    Address reasons for interruption (e.g. stock-outs, side effects), counsel the client, and resume treatment as needed.</p>
+  </li>
+
+  <li>
+    <p><strong>Reassess for comorbidities</strong><br>
+    Repeat assessments and adjust the treatment approach if new or unresolved conditions are identified.</p>
+  </li>
+
+  <li>
+    <p><strong>Adjust the treatment</strong><br>
+    Based on evaluation results, adjust composition/duration or change the regimen. Refer if necessary.</p>
+  </li>
+
+  <li>
+    <p><strong>Issue a referral</strong><br>
+    Refer for continued care of comorbidities or adverse events. Ensure patient preferences and clear referral pathways.</p>
+  </li>
+
+  <li>
+    <p><strong>Offer other clinical and support services</strong><br>
+    If treatment cannot be started, provide other clinical or social support services tailored to the patient’s needs.</p>
+  </li>
+</ol>
+
 
 
 #### E. Business process for immunisation 
 <b>Objective: </b> To ensure timely administration of vaccines in line with national guidelines and patient eligibility, especially during pregnancy.
 
 
-IMMUNISATION BUSINESS PROCESS AND ANNOTATIONS 
+<b>IMMUNISATION BUSINESS PROCESS AND ANNOTATIONS </b>
+ 
+<ol>
+  <li>
+    <p><strong>Check vaccine eligibility</strong><br>
+    The clinician assesses whether the patient is due for any vaccines based on gestational age, immunization history, and national guidelines (e.g., KEPI). This check may be triggered by clinical workflow or decision support systems.</p>
+  </li>
 
-Check Vaccine eligibility
-The clinician assesses whether the patient is due for any vaccines based on gestational age, immunization history, and national guidelines (e.g., KEPI). This may be triggered by clinical workflow or decision support.
-Review immunisation history
-The clinician or nurse reviews existing immunization records pulled from EMR and SHR to avoid duplication and verify whether this is the first, second, or booster dose.
-Counsel patient
-The patient is informed of the rationale, expected benefits, and any possible side effects of the vaccine. Risks are contextualized (e.g., neonatal tetanus).
-Makes an informed decision
-The patient listens to the clinician’s explanation and may ask clarifying questions. The patient formally agrees to proceed, documented either digitally (checkbox or e-signature) or in writing.
-Verify vaccine stock and cold chain
-The nurse checks that the vaccine is available, unexpired, and stored under proper cold chain conditions (monitored via VVM/barcode in stock system).
-Record vaccine details
-The provider enters vaccine data: date, dose, manufacturer, batch number, administration site, route, adverse events (if any), provider ID.
-Administer vaccine
-The vaccine is administered according to national protocols — route (e.g., intramuscular), site (e.g., upper arm), and dose (e.g., 0.5 mL TT).
-Set reminder for the next dose
-If it’s a multi-dose schedule (e.g., TT2), a reminder is scheduled in the EMR. This is tied to milestones and national guidelines.
+  <li>
+    <p><strong>Review immunisation history</strong><br>
+    The clinician or nurse reviews the patient’s immunization records retrieved from EMR and SHR to avoid duplication and determine whether the vaccine is the first dose, a second dose, or a booster.</p>
+  </li>
+
+  <li>
+    <p><strong>Counsel patient</strong><br>
+    The patient is briefed on the importance of the vaccine, its expected benefits, and any potential side effects. Risks are contextualized, such as the prevention of neonatal tetanus.</p>
+  </li>
+
+  <li>
+    <p><strong>Make an informed decision</strong><br>
+    The patient engages in discussion, may ask questions, and gives formal consent to proceed. Consent is documented digitally (e.g., checkbox or e-signature) or in writing.</p>
+  </li>
+
+  <li>
+    <p><strong>Verify vaccine stock and cold chain</strong><br>
+    The nurse checks that the required vaccine is available, within expiry date, and stored properly under cold chain conditions. Verification may include checking VVM (Vaccine Vial Monitor) or barcodes in the stock system.</p>
+  </li>
+
+  <li>
+    <p><strong>Record vaccine details</strong><br>
+    The provider records all relevant data, including:</p>
+    <ul>
+      <li>Date of administration</li>
+      <li>Dose given</li>
+      <li>Manufacturer</li>
+      <li>Batch/lot number</li>
+      <li>Administration site and route</li>
+      <li>Adverse events (if any)</li>
+      <li>Provider ID</li>
+    </ul>
+  </li>
+
+  <li>
+    <p><strong>Administer vaccine</strong><br>
+    The vaccine is given following national protocols — route (e.g., intramuscular), site (e.g., upper arm), and dose (e.g., 0.5 mL TT).</p>
+  </li>
+
+  <li>
+    <p><strong>Set reminder for the next dose</strong><br>
+    For multi-dose schedules (e.g., TT2), a reminder is entered into the EMR. The reminder aligns with scheduled milestones and national immunization guidelines.</p>
+  </li>
+</ol>
 
 
 #### F. Business process for emergency care
 <b>Objective: </b> To initiate the appropriate treatment and perform the necessary follow- up examinations to ensure that the correct treatment is followed and that the patient adheres to it.
 
-EMERGENCY CARE  BUSINESS PROCESS NOTES AND ANNOTATIONS
+<b>EMERGENCY CARE  BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
-General note
+<b>General note </b>
 
 
 #### G. Business process for referral
 <b>Objective: </b> To provide timely and appropriate referrals to another health-care facility that can provide services unavailable within this facility 
 
-REFERRAL BUSINESS PROCESS NOTES AND ANNOTATIONS
-General notes
-Examples of reasons for referral include:
-the health worker cannot provide the service because of a lack of training and skills;
-the facility does not have the supplies needed to provide the service;
-the facility cannot perform the service for other reasons;
-there is an emergency and the client needs immediate referral.
+<b>REFERRAL BUSINESS PROCESS NOTES AND ANNOTATIONS </b>
 
-1. Emergency referral?
-If the client needs immediate referral due to an emergency situation, bypass standard referral steps.
-In an emergency, a referral can be made at any time, including during diagnosis and treatment encounters.
+<b>General notes</b>
 
-2. Emergency referral
-2.1 Stabilize the client and give pre-referral treatment
-The client is assumed to need emergency referral if their condition requires immediate medical attention. Stabilize the client’s condition and provide any necessary treatment.
-2.2 Is the client stable enough to transport?
-Once the client is stable enough to transport, immediately organize it. If the client is still not stable, provide pre-referral treatment for stabilization.
-2.3 Organize transport
-For emergency referrals, the health-care facility usually arranges for an ambulance or other vehicle.
+<p>Examples of reasons for referral include:</p>
 
-3. Identify and discuss referral location options
-In discussion with the client and their relatives, decide where the client will be referred to. Discussions include:
-how to get to the referral facility, including location and transportation options;
-who to see and what is likely to happen;
-whether to follow up on return.
-Either the client or the client’s relatives should decide on a referral location based on their preferences.
+<ul>
+  <li>the health worker cannot provide the service because of a lack of training and skills;</li>
+  <li>the facility does not have the supplies needed to provide the service;</li>
+  <li>the facility cannot perform the service for other reasons;</li>
+  <li>there is an emergency and the client needs immediate referral.</li>
+</ul>
 
-4. Contact referral facility
-Health workers should contact the referral facility to determine whether that facility can accommodate such a referral.
+  <ol>
+  <li>
+    <p><strong>Emergency referral?</strong><br>
+    If the client needs immediate referral due to an emergency situation, bypass standard referral steps.<br>
+    In an emergency, a referral can be made at any time, including during diagnosis and treatment encounters.</p>
+  </li>
 
-5. Can the facility accommodate?
-Check whether facility can accommodate the client and provide the services needed.
-If the facility can accommodate the client, move on to step 6.
-Otherwise, find a different facility that is able to accommodate the client.
-A system can be set up to catalogue referral facilities, and what type of referral needs they can handle to accommodate a referral.
+  <li>
+    <p><strong>Emergency referral</strong></p>
+    <ol type="a">
+      <li>
+        <strong>2.1 Stabilize the client and give pre-referral treatment</strong><br>
+        The client is assumed to need emergency referral if their condition requires immediate medical attention. Stabilize the client’s condition and provide any necessary treatment.
+      </li>
+      <li>
+        <strong>2.2 Is the client stable enough to transport?</strong><br>
+        Once the client is stable enough to transport, immediately organize it. If the client is still not stable, provide pre-referral treatment for stabilization.
+      </li>
+      <li>
+        <strong>2.3 Organize transport</strong><br>
+        For emergency referrals, the health-care facility usually arranges for an ambulance or other vehicle.
+      </li>
+    </ol>
+  </li>
 
-6. Provide information to the receiving facility
-Make an appointment, if needed.
-If not an emergency referral, the client or family arranges transport.
-For emergency referrals, the health-care facility arranges transport, usually by phoning the district for an ambulance or other vehicle, and informing the receiving facility that the emergency client is on the way.
-Fill out a referral form, which can include notification of the referral destination.
-Provide the necessary clinical, sociodemographic and identity information to the referral facility. This can be done digitally if the appropriate systems are in place.
+  <li>
+    <p><strong>Identify and discuss referral location options</strong><br>
+    In discussion with the client and their relatives, decide where the client will be referred to. Discussions include:</p>
+    <ul>
+      <li>how to get to the referral facility, including location and transportation options;</li>
+      <li>who to see and what is likely to happen;</li>
+      <li>whether to follow up on return.</li>
+    </ul>
+    <p>Either the client or the client’s relatives should decide on a referral location based on their preferences.</p>
+  </li>
 
-7. Discuss any questions with the client
-Discuss any of the client’s questions or concerns.
+  <li>
+    <p><strong>Contact referral facility</strong><br>
+    Health workers should contact the referral facility to determine whether that facility can accommodate such a referral.</p>
+  </li>
 
-8. Check whether the client can be accommodated
-The receiving facility evaluates the needs and assesses if the client can receive the services needed.
+  <li>
+    <p><strong>Can the facility accommodate?</strong><br>
+    Check whether facility can accommodate the client and provide the services needed.<br>
+    If the facility can accommodate the client, move on to step 6.<br>
+    Otherwise, find a different facility that is able to accommodate the client.<br>
+    A system can be set up to catalogue referral facilities, and what type of referral needs they can handle to accommodate a referral.</p>
+  </li>
 
-9. Is it possible to accommodate the client?
-If the receiving facility cannot accommodate the client, it will inform the source facility. If accommodation for the client is possible, move on to step
+  <li>
+    <p><strong>Provide information to the receiving facility</strong><br>
+    Make an appointment, if needed.<br>
+    If not an emergency referral, the client or family arranges transport.<br>
+    For emergency referrals, the health-care facility arranges transport, usually by phoning the district for an ambulance or other vehicle, and informing the receiving facility that the emergency client is on the way.<br>
+    Fill out a referral form, which can include notification of the referral destination.<br>
+    Provide the necessary clinical, sociodemographic and identity information to the referral facility. This can be done digitally if the appropriate systems are in place.</p>
+  </li>
 
-10. Receive the client
-The receiving health-care facility receives the client, along with all the necessary clinical, sociodemographic and identification information, and provides the services. If both facilities use digital systems with interoperability standards in place, the information can be exchanged digitally in a faster and more reliable way
+  <li>
+    <p><strong>Discuss any questions with the client</strong><br>
+    Discuss any of the client’s questions or concerns.</p>
+  </li>
 
+  <li>
+    <p><strong>Check whether the client can be accommodated</strong><br>
+    The receiving facility evaluates the needs and assesses if the client can receive the services needed.</p>
+  </li>
 
+  <li>
+    <p><strong>Is it possible to accommodate the client?</strong><br>
+    If the receiving facility cannot accommodate the client, it will inform the source facility. If accommodation for the client is possible, move on to step 10.</p>
+  </li>
+
+  <li>
+    <p><strong>Receive the client</strong><br>
+    The receiving health-care facility receives the client, along with all the necessary clinical, sociodemographic and identification information, and provides the services. If both facilities use digital systems with interoperability standards in place, the information can be exchanged digitally in a faster and more reliable way.</p>
+  </li>
+</ol>
