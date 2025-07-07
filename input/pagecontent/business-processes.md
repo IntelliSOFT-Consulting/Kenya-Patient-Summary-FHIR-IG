@@ -151,9 +151,10 @@ This section illustrates the workflows of the identified processes using standar
     <tr>
       <td></td>
       <td>Pool</td>
-      <td>The pool assumes process control – in other words, it assigns the tasks. A pool consists of one or more “swim lanes” that depict all the individuals or types of users that are involved in carrying out the business process or workflow. Diagrams should be clear, neat and easy for all viewers to understand the relationships across the different swim lanes. For example, a pool would depict the business process of conducting an outreach activity, which involves multiple stakeholders represented by different lanes in that pool.<br><br>
+      <td>
+      <p> The pool assumes process control – in other words, it assigns the tasks. A pool consists of one or more “swim lanes” that depict all the individuals or types of users that are involved in carrying out the business process or workflow. Diagrams should be clear, neat and easy for all viewers to understand the relationships across the different swim lanes. For example, a pool would depict the business process of conducting an outreach activity, which involves multiple stakeholders represented by different lanes in that pool.<br><br>
       A business process diagram can contain two or more pools that connect through message flows (messages received from outside of the pool). This indicates different process owners collaborating and exchanging information.<br><br>
-      For example, in the case of a referral, the health facility “A” (the referring facility) represents the process owner that assigns internally the tasks for the actors represented as swim lanes in the pool. The health facility “B” (the receiving facility) has allocated its own pool and it’s considered a different process owner, with the same role. These 2 facilities exchange information relevant for a referral (client history, referral details, etc.), represented as message flows, but each facility has control only over the internal activities, without directly impacting the activities of the other facility.</td>
+      For example, in the case of a referral, the health facility “A” (the referring facility) represents the process owner that assigns internally the tasks for the actors represented as swim lanes in the pool. The health facility “B” (the receiving facility) has allocated its own pool and it’s considered a different process owner, with the same role. These 2 facilities exchange information relevant for a referral (client history, referral details, etc.), represented as message flows, but each facility has control only over the internal activities, without directly impacting the activities of the other facility.</p></td>
     </tr>
     <tr>
       <td></td>
@@ -242,125 +243,134 @@ This section illustrates the workflows of the identified processes using standar
 #### A. Business process for registration
 <b>Objective: </b> To identify and register or update the client’s personal details so that they can benefit from KPS-related services
 
-REGISTRATION BUSINESS PROCESS NOTES AND ANNOTATIONS
+<b>REGISTRATION BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
-General note
-Registration may be conducted as a stand-alone process by a data entry clerk or administrative persona ahead of the clinical visit or it may be conducted directly by the health worker as part of the overall encounter. These activities can be performed either in the health-care facility or in the community (e.g. client’s home, workplace, mobile van), depending on where the encounter takes place.
+<b>General note</b>
+<p>Registration may be conducted as a stand-alone process by a data entry clerk or administrative persona ahead of the clinical visit or it may be conducted directly by the health worker as part of the overall encounter. These activities can be performed either in the health-care facility or in the community (e.g. client’s home, workplace, mobile van), depending on where the encounter takes place.</p>
 
- Was the visit initiated by the client or by the provider?
-Depending on the reasons that triggered the encounter, the starting activity could be represented either by client’s arrival at the health-care facility or by the health worker’s arrival at the client’s location. 
-Guidelines and guidance:
-Ministry of Health: Primary Health Care Network Guidelines
+1.<b>Was the visit initiated by the client or by the provider?</b>
+<ul>
+<li>Depending on the reasons that triggered the encounter, the starting activity could be represented either by client’s arrival at the health-care facility or by the health worker’s arrival at the client’s location. </li>
+<li>Guidelines and guidance:</li>
+<li>Ministry of Health: Primary Health Care Network Guidelines</li>
+</ul>
 
-Client arrives at facility
-The client arrives at the health-care facility and notifies the outpatient department of their arrival to be further guided.
-The client could already be registered at the health-care facility for another service, for example, HIV, diabetes.
-When digital tools, such as video-supported treatment, are used for communicating with the client (e.g. follow-up checks) this activity could be represented by a video call, phone call or other appropriate digital interaction.
+2.<b>Client arrives at facility</b>
+<ul>
+<li>The client arrives at the health-care facility and notifies the outpatient department of their arrival to be further guided.</li>
+<li>The client could already be registered at the health-care facility for another service, for example, HIV, diabetes.</li>
+<li>When digital tools, such as video-supported treatment, are used for communicating with the client (e.g. follow-up checks) this activity could be represented by a video call, phone call or other appropriate digital interaction.</li>
+</ul>
 
-Arrive at the client’s location
-The health worker arrives at the client’s location.
+3.<b>Arrive at the client’s location</b>
+<ul><li>The health worker arrives at the client’s location.</li></ul>
 
-Gather the client’s details
-Ask the client whether they have previously been issued with a unique identifier.
-Does the client have a card, number or barcode?
-Does the client say they are a returning or referred client?
-If a referral, check for the referral slip or data from the community.
-Determine whether the client is new to the health-care facility or health post.
-For returning clients, details will be retrieved from the facility’s registry of clients or, if possible, from a central client registry.
+4.<b>Gather the client’s details</b>
+<ul>
+<li>Ask the client whether they have previously been issued with a unique identifier.</li>
+<li>Does the client have a card, number or barcode?</li>
+<li>Does the client say they are a returning or referred client?</li>
+<li>If a referral, check for the referral slip or data from the community.</li>
+<li>Determine whether the client is new to the health-care facility or health post.</li>
+<li>For returning clients, details will be retrieved from the facility’s registry of clients or, if possible, from a central client registry.</li>
+</ul>
 
-Search for the client record
-This search process can be done through several different means depending on what mechanisms are available in-country. For example, clients can be searched for by using their name, unique identifier, a quick response (QR) code or even biometrics.
+5.<b>Search for the client record</b>
+<ul><li>This search process can be done through several different means depending on what mechanisms are available in-country. For example, clients can be searched for by using their name, unique identifier, a quick response (QR) code or even biometrics.</li></ul>
 
-Has the correct client record been identified?
-If multiple records are found for the client, consider merging or deleting duplicate records, according to the HMIS guidelines.
+6.<b>Has the correct client record been identified?</b>
+<ul>
+<li>If multiple records are found for the client, consider merging or deleting duplicate records, according to the HMIS guidelines.</li>
+</ul>
 
-Create a new client record
-Issue a unique identifier if used and possible at the facility.
+7.<b>Create a new client record</b>
+<ul>
+<li>Issue a unique identifier if used and possible at the facility.</li>
+</ul>
 
-Validate the client details
-Review and update client record.
-8.1. Review the sociodemographic data with the client
-Review the client’s non-clinical information, that is, name, address, contact information, etc.
-8.2. Is an update needed?
-Has the client moved? Have they changed their contact information or has any other sociodemographic information changed?
-8.3. Update the client details
+8.<b>Validate the client details</b>
+<ul><li>Review and update client record.
+<ul><li>8.1. Review the sociodemographic data with the client<br>
+Review the client’s non-clinical information, that is, name, address, contact information, etc.</li>
+<li>8.2. Is an update needed?<br>
+Has the client moved? Have they changed their contact information or has any other sociodemographic information changed?</li>
+<li>8.3. Update the client details</li>
 The client can provide updated information if they have moved or changed their details recently.
-Merge or update client records.
-This activity could also happen during other clinical encounters, for example, outreaches and medical camps.
+</ul>
+</li>
+<li>Merge or update client records.</li>
+<li>This activity could also happen during other clinical encounters, for example, outreaches and medical camps.</li></ul>
 
-Checking in the client
-Record the client’s updated details in the client registry.
-Add the client to the relevant queue for the specific clinical visit e.g outpatient consultation, special clinic consultation.
-Send or share intake confirmation to or with the referring facility as warranted.
+9.<b>Checking in the client</b>
+<ul>
+<li>Record the client’s updated details in the client registry.</li>
+<li>Add the client to the relevant queue for the specific clinical visit e.g outpatient consultation, special clinic consultation.</li>
+<li>Send or share intake confirmation to or with the referring facility as warranted.</li>
+</ul>
 
 
 
 #### B. Business process for clinical consultation
 <b>Objective: </b> To conduct a comprehensive clinical assessment and initiate appropriate care plan
 
-CLINICAL CONSULTATION BUSINESS PROCESS NOTES AND ANNOTATIONS
-Steps for clinical consultation process
+<b>CLINICAL CONSULTATION BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
+<b>Steps for clinical consultation process</b>
 
-Determine reason for visit					
-• Search for client details in the record system and determine the reason for visit.
-		 	 	 		
-			
-				
-					
-						
-Initial screenings steps 2–4
-Steps may be performed in parallel. One or more of these steps are often performed before meeting with the provider. 	
+1.<b>Determine reason for visit</b>		
+<ul><li>Search for client details in the record system and determine the reason for visit.</li></ul>
+<p><b>Initial screenings steps 2–4</b></p>
+<p>Steps may be performed in parallel. One or more of these steps are often performed before meeting with the provider.</p>
 
-2. Take vital signs
-• Also record weight, height, etc. For children, weight will be needed to determine dosage and to check for malnutrition.
-3.  Check for signs of serious illness
-• Any person who has signs of serious illness should be referred to the appropriate higher-level facility for management. Danger signs differ by age group.
-• Decision logic: 
-Check for signs for serious illness 
-4. Seriously ill
-• Any person who has signs of serious illness should be referred to the appropriate higher-lever facility for management or receive emergency care, depending on availability and policies.
-5. Capture or update client history
-• Discuss history with client and review available records.
-• Include checking medications, symptoms, whether taking all the prescribed drugs, immunization history, use of contraception, signs that she may be pregnant, mental health screening, drug use and nutrition.
-• Check other comorbidity lists.
-6. Assess medical history and risk factors
-7. Determine social and economic factors
-• Capture information related to the client’s occupation, socioeconomic risk factors (e.g. homelessness, imprisonment) and other health-related risk factors such as:
-– disorders due to alcohol use;
-– HIV;
-– smoking;
-– undernutrition;
-– disorders due to drug use;
-– silica exposure, silicosis;
-– viral hepatitis;
-– other clinical risk factors, for example, treatment with anti-TNFα3, dialysis, organ or haematological transplantation.
+2.<b>Take vital signs</b>
+<ul><li>Also record weight, height, etc. For children, weight will be needed to determine dosage and to check for malnutrition.</li></ul>
+3.<b>Check for signs of serious illness</b>
+<ul>
+<li>Any person who has signs of serious illness should be referred to the appropriate higher-level facility for management. Danger signs differ by age group.</li> 
+<li>Decision logic: 
+<ul><li>Check for signs for serious illness </li></ul>
+</li>
+</ul>
+4.<b>Seriously ill<b>
+<ul><li>Any person who has signs of serious illness should be referred to the appropriate higher-lever facility for management or receive emergency care, depending on availability and policies.</li></ul>
+5.<b>Capture or update client history</b>
+<ul><li>Discuss history with client and review available records.</li>
+<li>Include checking medications, symptoms, whether taking all the prescribed drugs, immunization history, use of contraception, signs that she may be pregnant, mental health screening, drug use and nutrition.</li>
+<li>Check other comorbidity lists.</li></ul>
+6.<b>Assess medical history and risk factors</b>
+7.<b>Determine social and economic factors</b>
+<ul><li>Capture information related to the client’s occupation, socioeconomic risk factors (e.g. homelessness, imprisonment) and other health-related risk factors such as:</li></ul>
+<p>– disorders due to alcohol use;</p>
+<p>– HIV;</p>
+<p>– smoking;</p>
+<p>– undernutrition;</p>
+<p>– disorders due to drug use;</p>
+<p>– silica exposure, silicosis;</p>
+<p>– viral hepatitis;</p>
+<p>– other clinical risk factors, for example, treatment with anti-TNFα3, dialysis, organ or haematological transplantation.</p>
 
+<b>Is referral needed?</b>
+<ul><li>If, during the evaluation, signs are identified requiring urgent medical care (e.g. gastrointestinal, circulatory, respiratory, neurological) and these cannot be offered at the current facility, a referral to the first referral level of care as per national guidelines, shall be considered. </li></ul>
 
+8.<b>Laboratory diagnostics needed?</b>
+<ul><li>Determine  based on the patient presentation if any tests are needed </li></ul>
+9.<b>Determine treatment options</b>
+10.<b>Make informed decision on treatment</b>
+<ul><li>The client will choose the treatment option after being advised by the clinician on all treatment options and what benefit/risks they present</li></ul>
 
+<p>Provide integrated services, steps 11–14 </p>
 
-
-Is referral needed?
-• If, during the evaluation, signs are identified requiring urgent medical care (e.g. gastrointestinal, circulatory, respiratory, neurological) and these cannot be offered at the current facility, a referral to the first referral level of care as per national guidelines, shall be considered. 
-
-8. Laboratory diagnostics needed?
-• Determine  based on the patient presentation if any tests are needed 
-9. Determine treatment options
-10. Make informed decision on treatment
-The client will choose the treatment option after being advised by the clinician on all treatment options and what benefit/risks they present
-
-Provide integrated services, steps 11–14
-11. Offer voluntary partner and family services
-12. Offer sexual and reproductive health services
-13. Provide preventive treatment
-14. Offer other services
-Follow-up needed?
+11 <b>Offer voluntary partner and family services</b><br>
+12 <b>Offer sexual and reproductive health services</b><br>
+13 <b>Provide preventive treatment</b><br>
+14 <b>Offer other services</b><br>
+<b>Follow-up needed?</b>
 
 
 #### C. Business process for diagnostics
 <b>Objective: </b> To investigate and obtain results through on-site or off-site diagnostics.
 
-DIAGNOSTICS BUSINESS PROCESS NOTES AND ANNOTATIONS
-General note
+<b>DIAGNOSTICS BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
+<b>General note</b>
 The clinician may order an investigation during an outpatient consultation or inpatient round. Investigations can include:
 • An RDT performed by the healthcare provider.
 • An order to perform the investigation at a laboratory or a diagnostic service at the current facility, if the service is available.
