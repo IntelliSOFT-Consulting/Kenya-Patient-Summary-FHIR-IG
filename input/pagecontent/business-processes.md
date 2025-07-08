@@ -148,8 +148,8 @@ This section illustrates the workflows of the identified processes using standar
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td></td>
+    <tr> 
+      <td><img src="pool.png" alt="Pool" style="width:45%"/></td>
       <td>Pool</td>
       <td>
       <p> The pool assumes process control – in other words, it assigns the tasks. A pool consists of one or more “swim lanes” that depict all the individuals or types of users that are involved in carrying out the business process or workflow. Diagrams should be clear, neat and easy for all viewers to understand the relationships across the different swim lanes. For example, a pool would depict the business process of conducting an outreach activity, which involves multiple stakeholders represented by different lanes in that pool.<br><br>
@@ -157,77 +157,77 @@ This section illustrates the workflows of the identified processes using standar
       For example, in the case of a referral, the health facility “A” (the referring facility) represents the process owner that assigns internally the tasks for the actors represented as swim lanes in the pool. The health facility “B” (the receiving facility) has allocated its own pool and it’s considered a different process owner, with the same role. These 2 facilities exchange information relevant for a referral (client history, referral details, etc.), represented as message flows, but each facility has control only over the internal activities, without directly impacting the activities of the other facility.</p></td>
     </tr>
     <tr>
-      <td></td>
+       <td><img src="swim-lane.png" alt="swim-lane" style="width:45%"/></td>
       <td>Swim lane</td>
       <td>Each individual or type of user is assigned to a swim lane, a designated area for noting the activities performed or expected by that specific actor.</td>
     </tr>
     <tr>
-      <td></td>
+      <td><img src="start-event.png" alt="start-event" style="width:45%"/></td>
       <td>Start event or trigger event</td>
       <td>The workflow diagram should contain both a start and an end event, defining the beginning and completion of the task, respectively.</td>
     </tr>
     <tr>
-      <td></td>
+      <td><img src="start-event-message.png" alt="start-event-message" style="width:45%"/></td>
       <td>Start event message</td>
       <td>This is a type of a start event. It can include information exchanged between two systems, like data, alerts, or notifications.</td>
     </tr>
     <tr>
-      <td></td>
+      <td><img src="end-event.png" alt="end-event" style="width:45%"/></td>
       <td>End event</td>
       <td>There can be multiple end events depicted across swim lanes, but for clarity only one per swim lane is recommended.</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="activity.png" alt="activity" style="width:45%"/></td>
       <td>Activity, process, step or task</td>
       <td>Each activity should start with a verb, e.g., “register client”, “calculate risk”. Includes all actions in a swim lane.</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="activity-with-sub-process.png" alt="activity-with-sub-process" style="width:45%"/></td>
       <td>Activity with subprocess</td>
       <td>Used when a task is too complex and must be detailed in another diagram. Represents a subprocess of the main activity.</td>
     </tr>
     <tr>
-      <td></td>
+   <td><img src="activity-with-business.png" alt="activity-with-business" style="width:45%"/></td>
       <td>Activity with business rule</td>
       <td>Denotes a task that involves decision-support or business rules. Typically supported by a separate decision logic table.</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="sequence-flow.png" alt="sequence-flow" style="width:45%"/></td>
       <td>Sequence flow</td>
       <td>Shows the order from one task to another. Should not cross other flows and each task has one output (except gateways and end).</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="message-flow.png" alt="message-flow" style="width:45%"/></td>
       <td>Message flow</td>
       <td>Represents information passed between two pools (e.g., different facilities or systems).</td>
     </tr>
     <tr>
-      <td></td>
+    <td><img src="gateway-exclusive.png" alt="gateway" style="width:45%"/></td>
       <td>Exclusive gateway</td>
       <td>Shows a binary (e.g., yes/no) decision. Limited to two outputs. Complex logic should use “activity with business rule”.</td>
     </tr>
     <tr>
-      <td></td>
+   <td><img src="gateway-parallel.png" alt="gateway" style="width:45%"/></td>
       <td>Parallel gateway</td>
       <td>Used to perform tasks in parallel or join multiple incoming flows. It does not evaluate conditions.</td>
     </tr>
     <tr>
-      <td></td>
+    <td><img src="throw-link.png" alt="throw-link" style="width:45%"/></td>
       <td>Throw – link event</td>
       <td>Marks the end of a workflow that continues elsewhere (off-page connector). Should be followed by a catch – link.</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="catch-link.png" alt="catch-link" style="width:45%"/></td>
       <td>Catch – link event</td>
       <td>Starts a new process on a different page from the throw – link or continues a subprocess. Must be paired with a throw – link.</td>
     </tr>
     <tr>
-      <td></td>
+     <td><img src="sub-process.png" alt="sub-process" style="width:45%"/></td>
       <td>Ad hoc subprocess</td>
       <td>Represents multiple activities that may run in any order, multiple times, or be skipped.</td>
     </tr>
     <tr>
-      <td></td>
+    <td><img src="loop-activity.png" alt="loop-activity" style="width:45%"/></td>
       <td>Loop activity</td>
       <td>Represents a repeating activity until a specified condition is met. Condition is noted as an annotation.</td>
     </tr>
@@ -237,11 +237,19 @@ This section illustrates the workflows of the identified processes using standar
 
 ### Overview of key KPS processes
 
+ <div> 
+<img src="kps-process.png" alt="summary" style="width:85%"/> <br><br>
+</div>
+
+
 ### Workflows
 <p>Workflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.</p>
 
 #### A. Business process for registration
 <b>Objective: </b> To identify and register or update the client’s personal details so that they can benefit from KPS-related services
+ <div> 
+<img src="process-registration.png" alt="process-registration" style="width:85%"/> <br> <br>
+</div>
 
 <b>REGISTRATION BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
@@ -312,7 +320,9 @@ The client can provide updated information if they have moved or changed their d
 
 #### B. Business process for clinical consultation
 <b>Objective: </b> To conduct a comprehensive clinical assessment and initiate appropriate care plan
-
+ <div> 
+<img src="process-consultation.png" alt="process-consultation" style="width:85%"/> <br> <br>
+ </div>
 <b>CLINICAL CONSULTATION BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 <b>Steps for clinical consultation process</b>
 
@@ -368,7 +378,9 @@ The client can provide updated information if they have moved or changed their d
 
 #### C. Business process for diagnostics
 <b>Objective: </b> To investigate and obtain results through on-site or off-site diagnostics.
-
+ <div> 
+<img src="process-diagnostic.png" alt="process-diagnostic" style="width:85%"/> <br> <br>
+</div> 
 <p><b>DIAGNOSTICS BUSINESS PROCESS NOTES AND ANNOTATIONS</b> </p>
 <p><b>General note</b></p> 
  
@@ -459,6 +471,10 @@ The client can provide updated information if they have moved or changed their d
 #### D. Business process for treatment
 
 <b>Objective: </b> To initiate the appropriate treatment and perform the necessary follow- up examinations to ensure that the correct treatment is followed and that the patient adheres to it.
+ <div> 
+<img src="process-treatment.png" alt="process-treatment" style="width:85%"/> <br> <br>
+</div>
+
 
 <b>TREATMENT BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
@@ -566,6 +582,9 @@ The client can provide updated information if they have moved or changed their d
 
 #### E. Business process for immunisation 
 <b>Objective: </b> To ensure timely administration of vaccines in line with national guidelines and patient eligibility, especially during pregnancy.
+ <div> 
+<img src="process-immunisation.png" alt="process-immunisation" style="width:85%"/> <br> <br>
+</div>  
 
 
 <b>IMMUNISATION BUSINESS PROCESS AND ANNOTATIONS </b>
@@ -624,7 +643,9 @@ The client can provide updated information if they have moved or changed their d
 
 #### F. Business process for emergency care
 <b>Objective: </b> To initiate the appropriate treatment and perform the necessary follow- up examinations to ensure that the correct treatment is followed and that the patient adheres to it.
-
+<div> 
+<img src="process-emergency.png" alt="process-emergency" style="width:85%"/> <br> <br>
+</div> 
 <b>EMERGENCY CARE  BUSINESS PROCESS NOTES AND ANNOTATIONS</b>
 
 <b>General note </b>
@@ -632,7 +653,9 @@ The client can provide updated information if they have moved or changed their d
 
 #### G. Business process for referral
 <b>Objective: </b> To provide timely and appropriate referrals to another health-care facility that can provide services unavailable within this facility 
-
+<div> 
+<img src="process-referral.png" alt="process-referral" style="width:85%"/> <br> <br>
+</div> 
 <b>REFERRAL BUSINESS PROCESS NOTES AND ANNOTATIONS </b>
 
 <b>General notes</b>
