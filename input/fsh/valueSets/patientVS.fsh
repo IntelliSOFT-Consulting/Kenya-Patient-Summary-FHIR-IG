@@ -2,7 +2,7 @@ ValueSet: PatientTitleVS
 Title:        "Patient title"
 Description:  "Patient title"
 * ^experimental = false
-* ^name = "PT-TITLE"
+* ^name = "PT_TITLE"
 
 * KNHTS.PAT.TITLE#mr
 * KNHTS.PAT.TITLE#mrs
@@ -13,7 +13,7 @@ ValueSet: PatientContactRlshipVS
 Title:        "Patient Contact Relationship ValueSet"
 Description:  "Patient Contact Relationship ValueSet"
 * ^experimental = false
-* ^name = "PT-CONTACTRELATIONSHIP"
+* ^name = "PT_CONTACTRELATIONSHIP"
 
 * KNHTS.CONTACTRELATIONSHIP#guardian
 * KNHTS.CONTACTRELATIONSHIP#caregiver
@@ -25,7 +25,7 @@ ValueSet: PatientIdentifierTypesVS
 Title:        "Patient Identifier Types ValueSet"
 Description:  "Patient Identifier Types ValueSet"
 * ^experimental = false
-* ^name = "PT-IDENTIFIERTYPES"
+* ^name = "PT_IDENTIFIERTYPES"
 
 * KNHTS.IDENTIFIERTYPES#upi
 * KNHTS.IDENTIFIERTYPES#nationalId
@@ -37,7 +37,7 @@ ValueSet: CodeSystemsVS
 Title:        "Code Systems ValueSet"
 Description:  "Code Systems ValueSet"
 * ^experimental = false
-* ^name = "PT-CODESYSTEMS"
+* ^name = "PT_CODESYSTEMS"
 
 * KNHTS.CODESYSTEMS#knhts
 * KNHTS.CODESYSTEMS#loinc

@@ -1,8 +1,7 @@
 Alias: KPSAContactRoleVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsa-contact-person-role
 Alias: KPSASexVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsa-sex-values
 
-Logical: ClientRegistrationModel
-Id: client-registration-model
+Logical: ClientRegistrationModel 
 Title: "KPS.A Client Registration"
 Description: "Logical model for registering a client under the Kenya Patient Summary (KPS.A) standard."
 
@@ -51,6 +50,7 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 * contactPerson 0..1 BackboneElement "Contact person or legal guardian"
   * role 1..1 code "Role: legal guardian, next of kin, or other"
     * ^code = #KPS.A.DE.16
+    * ^binding.strength = #required
     * ^binding.valueSet = KPSAContactRoleVS
   * relationship 0..1 string "Relationship to the client (e.g., father, spouse, daughter)"
     * ^code = #KPS.A.DE.20

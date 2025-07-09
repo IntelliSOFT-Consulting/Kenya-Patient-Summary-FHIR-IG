@@ -26,7 +26,7 @@ Context: Patient
 * value[x] only code
 * value[x] from kenyaCountiesVS (required)
 
-Extension: villageEstate
+Extension: VillageEstate
 Id: village-estate
 Title:  "Extension for Patient's Village Estate"
 Description: "Patient's Village Estate"
@@ -42,7 +42,7 @@ Context: Patient
 // url, status, purpose, and other metadata could be defined here using caret syntax (omitted)
 * value[x] only string
 
-Extension: latitude
+Extension: Latitude
 Id: latitude
 Title:  "Extension for Patient's latitude"
 Description: "Patient's latitude"
@@ -50,7 +50,7 @@ Context: Patient
 // url, status, purpose, and other metadata could be defined here using caret syntax (omitted)
 * value[x] only string
 
-Extension: longitude
+Extension: Longitude
 Id: longitude
 Title:  "Extension for Patient's longitude"
 Description: "Patient's longitude"
@@ -74,7 +74,7 @@ Context: Patient
 // url, status, purpose, and other metadata could be defined here using caret syntax (omitted)
 * value[x] only string
 
-Extension: patientTitle
+Extension: PatientTitle
 Id: patient-title
 Title:  "Extension for Patient's title"
 Description: "Patient's title"
