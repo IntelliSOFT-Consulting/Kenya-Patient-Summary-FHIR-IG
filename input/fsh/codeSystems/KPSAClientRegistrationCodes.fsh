@@ -15,6 +15,8 @@ Description: "CodeSystem representing data elements used in KPS.A Client Registr
 * #KPS.A.DE.5 "Sex" "Sex of the client assigned at birth."
 * #KPS.A.DE.6 "Female" "The client was born with sex characteristics of female."
 * #KPS.A.DE.7 "Male" "The client was born with sex characteristics of male."
+* #male "Male"
+* #female "Female"
 * #KPS.A.DE.8 "Country" "Name of country of affiliation."
 * #KPS.A.DE.9 "County" "The name of the county where the client lives."
 * #KPS.A.DE.10 "Subcounty" "The name of the subcounty where the client lives."

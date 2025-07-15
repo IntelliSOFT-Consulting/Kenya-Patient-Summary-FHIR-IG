@@ -8,12 +8,12 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
   * ^code = #KPS.A.DE.1
 
 * name 1..1 MS
-* name.given 1..1 MS
+* name.given 1..1 
   * ^code = #KPS.A.DE.2
-* name.family 1..1 MS
+* name.family 1..1 
   * ^code = #KPS.A.DE.3
 
-* birthDate 1..1 MS
+* birthDate 1..1 
   * ^code = #KPS.A.DE.4
 
 * gender 1..1 MS
@@ -22,16 +22,18 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
   * ^binding.valueSet = KPSASexVS
 
 * address 0..1 MS
-* address.country 0..1 MS
+* address.country 0..1
   * ^code = #KPS.A.DE.8
-* address.state 0..1 MS // Assuming "county"
+* address.state 0..1  // Assuming "county"
   * ^code = #KPS.A.DE.9
-* address.district 0..1 MS // Assuming "subcounty"
+* address.district 0..1  // Assuming "subcounty"
   * ^code = #KPS.A.DE.10
-* address.city 0..1 MS // Assuming "ward"
+* address.city 0..1  // Assuming "ward"
   * ^code = #KPS.A.DE.11
-* address.line 0..1 MS // Assuming "village/estate" or "postalAddress"
+* address.line 0..1  // Assuming "village/estate" or "postalAddress"
   * ^code = #KPS.A.DE.12 
+* address.postalCode 0..1  // Assuming "postalAddress"
+  * ^code = #KPS.A.DE.13
 
 
 * contact 0..1 MS // Contact person or legal guardian
