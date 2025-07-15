@@ -32,3 +32,6 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 
+* gender 1..1 MS
+* gender from GenderVS
+
