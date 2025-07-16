@@ -23,7 +23,7 @@ Description: "This profile defines constraints on the Condition resource for use
   * ^binding.strength = #required
   * ^binding.valueSet = KPSBVerificationStatusVS
 
-* category 0..* MS
+* category 0..* 
   * ^short = "Problem list item or encounter diagnosis"
 
 * severity 0..1 MS
@@ -31,19 +31,19 @@ Description: "This profile defines constraints on the Condition resource for use
   * ^binding.strength = #preferred
   * ^binding.valueSet = KPSBSeverityVS
 
-* bodySite 0..* MS
+* bodySite 0..* 
   * ^short = "Location in/on the body affected by the condition"
 
-* onsetDateTime 0..1 MS
+* onsetDateTime 0..1 
   * ^short = "Date of onset of the condition"
 
-* onsetAge 0..1 MS
+* onsetAge 0..1 
   * ^short = "Age at onset of the condition"
 
-* abatementDateTime 0..1 MS
+* abatementDateTime 0..1 
   * ^short = "Date the condition last occurred or resolved"
 
-* note 0..* MS
+* note 0..* 
   * ^short = "Free text for medical history, resolution circumstances, or problem description"
 
 * encounter 0..1 MS

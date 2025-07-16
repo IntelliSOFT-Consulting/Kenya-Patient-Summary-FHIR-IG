@@ -31,20 +31,20 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * ^binding.strength = #required
   * ^binding.valueSet = KPSBVerificationStatusVS
 
-* onsetDateTime 0..1 MS
-* onsetAge 0..1 MS
-* lastOccurrence 0..1 MS
+* onsetDateTime 0..1 
+* onsetAge 0..1 
+* lastOccurrence 0..1 
 
 * reaction 1..* MS
-  * substance 1..1 MS
+  * substance 1..1 
     * ^short = "Allergen or substance causing reaction"
-  * description 0..1 MS
+  * description 0..1 
     * ^short = "Free-text description of the allergy reaction"
-  * manifestation 1..* MS
+  * manifestation 1..* 
     * ^short = "Clinical manifestation(s), e.g. rash, shock"
   * severity 0..1 MS
     * ^short = "Severity of reaction: mild, moderate, or severe"
     * ^binding.strength = #required
     * ^binding.valueSet = KPSBSeverityVS
-  * note 0..* MS
+  * note 0..* 
     * ^short = "Medical alert notes (clinical importance)"
