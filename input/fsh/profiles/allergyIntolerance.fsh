@@ -6,7 +6,7 @@ Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb
 
 
 
-Profile: KpsAllergyIntolerance
+Profile: KPSAllergyIntolerance
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
 Id: kps-allergyIntolerance
 Title: "AllergyIntolerance Profile - KPS"
@@ -48,3 +48,40 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
     * ^binding.valueSet = KPSBSeverityVS
   * note 0..* 
     * ^short = "Medical alert notes (clinical importance)"
+
+
+
+
+
+Instance: ExampleAllergyIntoleranceKPS
+InstanceOf: kps-allergyIntolerance
+Title: "Example AllergyIntolerance for Kenya Patient Summary"
+Description: "An example AllergyIntolerance instance for a patient allergic to penicillin."
+Usage: #example
+
+* id = "example-allergy-patient-001"
+* patient = Reference(ExamplePatientKPS)
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* type = KPSBClientCodes#allergy "Allergy"
+* criticality = #high
+* onsetDateTime = "2021-05-01"
+
+* reaction[0]
+  * substance.coding[0]
+    * system = "http://snomed.info/sct"
+    * code = #91936005
+    * display = "Allergy to penicillin"
+  * description = "Develops severe rash and difficulty breathing after penicillin"
+  * manifestation[0].coding[0]
+    * system = "http://snomed.info/sct"
+    * code = #271807003
+    * display = "Rash"
+  * manifestation[1].coding[0]
+    * system = "http://snomed.info/sct"
+    * code = #230145002
+    * display = "Difficulty breathing"
+  * severity = KPSBClientCodes#severe "Severe"
+  * note[0].text = "Carry epinephrine auto-injector at all times."
+
+
