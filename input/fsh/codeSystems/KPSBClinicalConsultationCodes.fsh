@@ -1,3 +1,8 @@
+Alias: KPSConditionStatusCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status
+Alias: KPSConditionVerificationCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-verification-status
+
+
+
 CodeSystem: KPSBClinicalConsultationCodes
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
@@ -122,3 +127,24 @@ Description: "CodeSystem representing clinical status"
 * #active "Active" "Currently at risk"
 * #inactive "Inactive" "No longer at risk"
 * #resolved "Resolved" "Clinically resolved by testing or re-exposure"
+
+
+ 
+
+CodeSystem: KPSConditionStatusCS
+Title: "KPS Clinical Condition Status CodeSystem"
+Id: kpsb-clinical-status
+* ^url = KPSConditionStatusCS
+* ^status = #active
+* #active "Active"
+* #inactive "Inactive"
+* #resolved "Resolved"
+
+CodeSystem: KPSConditionVerificationCS
+Title: "KPS Condition Verification CodeSystem"
+Id: kpsb-verification-status
+* ^url = KPSConditionVerificationCS
+* ^status = #active
+* #confirmed "Confirmed"
+* #unconfirmed "Unconfirmed"
+* #refuted "Refuted"

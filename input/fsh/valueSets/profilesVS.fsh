@@ -4,35 +4,36 @@ Alias: ClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-clinica
 Alias: VerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-verification-status
 Alias: AllergyTypeVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-allergy-type
 Alias: KPSBSeverity = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-severity
+
 Alias: KPSConditionClinical = https://shr.tiberbuapps.com/fhir/ValueSet/kps-clinical-condition
 Alias: KPSConditionVerification = https://shr.tiberbuapps.com/fhir/ValueSet/kps-condition-verification
+Alias: KPSBConditionClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-condition-clinical-status
+Alias: KPSBConditionVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-condition-verification-status
+Alias: KPSBConditionClinicalStatusCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status
+Alias: KPSBConditionVerificationStatusCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-verification-status
 
-ValueSet: KPSClinicalConditionVS
-Id: kps-clinical-condition
-Title: "Clinical Condition ValueSet"
-Description: ""
-* ^url = KPSConditionClinical
+
+
+ValueSet: KPSBConditionClinicalStatusVS
+Id: kpsb-condition-clinical-status
+Title: "KPS Clinical Status"
+Description: "Set of clinical condition statuses used in KPS"
+* ^url = KPSBConditionClinicalStatusVS
 * ^status = #active
+* include KPSBConditionClinicalStatusCS#active
+* include KPSBConditionClinicalStatusCS#inactive
+* include KPSBConditionClinicalStatusCS#resolved
 
-* include http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* include http://terminology.hl7.org/CodeSystem/condition-clinical#recurrence
-* include http://terminology.hl7.org/CodeSystem/condition-clinical#relapse
-* include http://terminology.hl7.org/CodeSystem/condition-clinical#inactive
-* include http://terminology.hl7.org/CodeSystem/condition-clinical#remission
-
-ValueSet: KPSConditionVerificationVS
-Id: kps-condition-verification
-Title: "Clinical Condition ValueSet"
-Description: ""
-* ^url = KPSConditionVerification
+ValueSet: KPSBConditionVerificationStatusVS
+Id: kpsb-condition-verification-status
+Title: "KPS Verification Status"
+Description: "Set of verification statuses used in KPS"
+* ^url = KPSBConditionVerificationStatusVS
 * ^status = #active
+* include KPSBConditionVerificationStatusCS#confirmed
+* include KPSBConditionVerificationStatusCS#unconfirmed
+* include KPSBConditionVerificationStatusCS#refuted
 
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#differential
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#refuted
-* include http://terminology.hl7.org/CodeSystem/condition-ver-status#entered-in-error
 
 ValueSet: KPSBSeverityVS
 Id: kpsb-severity
