@@ -28,6 +28,15 @@ Description:  "Value Sets for Medication Form "
 * $SCT#385055001 "Tablet"
 * $SCT#428641000 "Capsule"
 
+ValueSet: MedicationCategoryVS
+Id: medication-category-vs
+Title: "Medication Category Value Set"
+Description:  "Value Sets for Medication Category"
+* ^experimental = false
+* $SCT#360271000 "Prophylaxis"
+* $SCT#395077000 "Treatment intent (situation)"
+* $SCT#261004008 "Diagnostic"
+
 
 ValueSet: PatientContactRelationshipVS
 Id: patient-contact-relationship-vs
