@@ -35,3 +35,15 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * gender 1..1 MS
 * gender from GenderVS
 
+* address.country 0..1 MS
+* address.state 0..1 MS
+* address.state ^short = "Patient's County of Resisence"
+* address.district 0..1 MS
+* address.district ^short = "Patient's Sub-County of Resisence"
+* address.city 0..1 MS
+* address.city ^short = "Patient's Ward of Resisence"
+* address.line 0..1 MS
+* address.line ^short = "Patient's Village of Resisence"
+* address.postalCode 0..1 MS
+* address.postalCode ^short = "Patient's Postal Address of Resisence"
+
