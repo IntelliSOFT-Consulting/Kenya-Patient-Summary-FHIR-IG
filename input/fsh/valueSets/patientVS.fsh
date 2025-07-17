@@ -1,3 +1,24 @@
+Alias: $LNC = http://loinc.org
+Alias: $SCT = http://snomed.info/sct
+
+ValueSet: GenderVS
+Id: gender-vs
+Title: "Gender ValueSet"
+Description: "ValueSet for gender using SNOMED CT codes"
+* $SCT#248153007 "Male (gender)"
+* $SCT#248152002 "Female (gender)"
+
+ValueSet: MedicationVS
+Id: medication-vs
+Title: "Medication Value Set"
+Description:  "Value Sets for Medications)"
+* $SCT#372687004 "Amoxicillin (substance)"
+* $SCT#387517004 "Metformin (substance)"
+* $SCT#387458008 "Paracetamol (substance)"
+* $SCT#387544009 "Lisinopril (substance)"
+* $SCT#387406002 "Atorvastatin (substance)"
+
+
 ValueSet: PatientTitleVS
 Title:        "Patient title"
 Description:  "Patient title"
