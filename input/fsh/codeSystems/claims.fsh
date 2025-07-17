@@ -50,7 +50,7 @@ Description:  "CodeSystem for KNHTS Claim types"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_TYPS"
+* ^name = "KNHTS_CLMS_TYPS"
 
 * #CLMTPS01 "OUTPATIENT" "Claim for outpatient services."
 * #CLMTPS02 "INPATIENT" "Claim for in-patient services."
@@ -63,7 +63,7 @@ Description:  "CodeSystem for KNHTS Claim Sub-types"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_SBTYPS"
+* ^name = "KNHTS_CLMS_SBTYPS"
 
 * #CLMSBTPS01 "PHC_OUTPATIENT" "Outpatient Health Services (Primary Healthcare Fund)"
 * #CLMSBTPS02 "PHC_EAR" "Ear Health Services (Primary Healthcare Fund)"
@@ -101,7 +101,7 @@ Description:  "CodeSystem for KNHTS Claim Zones"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_ZONES"
+* ^name = "KNHTS_CLMS_ZONES"
 
 * #CLMSZONE01 "Zone 1" "Mandera, Samburu, Nairobi"
 * #CLMSZONE02 "Zone 2" "Kiambu, Nakuru, Muranga"
@@ -119,7 +119,7 @@ Description:  "CodeSystem for KNHTS Claim Accomodation Types"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_ACCOMODATIONTYPES"
+* ^name = "KNHTS_CLMS_ACCOMODATIONTYPES"
 
 * #CLMSACCTYPES01 "FEMALE_MEDICAL" "Female Medical"
 * #CLMSACCTYPES02 "MALE_MEDICAL" "Male Medical"
@@ -142,7 +142,7 @@ Description:  "CodeSystem for KNHTS Claim Disposition"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_DISPOSITION"
+* ^name = "KNHTS_CLMS_DISPOSITION"
 
 * #CLMSDISP01 "Improved" "Improved"
 * #CLMSDISP02 "Recovered" "Recovered"
