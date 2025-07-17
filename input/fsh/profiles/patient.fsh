@@ -35,6 +35,20 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * gender 1..1 MS
 * gender from GenderVS
 
+* telecom 1..* MS
+* telecom ^slicing.discriminator.type = #pattern
+* telecom ^slicing.discriminator.path = "system"
+* telecom ^slicing.rules = #open
+* telecom contains phone 1..1 and email 0..1
+
+* telecom[phone].system = #phone (exactly)
+* telecom[phone].value 1..1 MS
+* telecom[phone].use MS
+
+* telecom[email].system = #email (exactly)
+* telecom[email].value 1..1 MS
+* telecom[email].use MS
+
 * address.country 0..1 MS
 * address.state 0..1 MS
 * address.state ^short = "Patient's County of Resisence"
