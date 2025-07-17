@@ -20,6 +20,14 @@ Description:  "Value Sets for Medications"
 * $SCT#387544009 "Lisinopril (substance)"
 * $SCT#387406002 "Atorvastatin (substance)"
 
+ValueSet: MedicationFormVS
+Id: medication-form-vs
+Title: "Medication Form Value Set"
+Description:  "Value Sets for Medication Form "
+* ^experimental = false
+* $SCT#385055001 "Tablet"
+* $SCT#428641000 "Capsule"
+
 
 ValueSet: PatientContactRelationshipVS
 Id: patient-contact-relationship-vs
@@ -178,7 +186,7 @@ ValueSet: MedicationStatusVS
 Id: medication-status-status-vs
 Title: "Medication Status ValueSet"
 Description: "ValueSet for Medication Status using SNOMED CT codes"
-* ^experimental = false
+* ^experimental = false 
 * $SCT#55561003 "Active"
 * $SCT#73425007 "Inactive"
 * $SCT#723510000 "Entered in Error"
