@@ -1,5 +1,20 @@
-Profile: KpsMedication
+Profile: KPSMedication
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips
 Id: kps-medication
 Title: "Medication Profile - KPS"
 Description: "This profile defines constraints on the Medication resource for use within the Kenya Patient Summary. It captures information about medicinal products prescribed, dispensed, or administered to a patient, supporting medication reconciliation, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
+
+
+
+
+Instance: MedicationSubstanceExample
+InstanceOf: KPSMedication
+Title: "Penicillin Substance"
+Description: "Example substance representing penicillin"
+Usage: #example
+
+* id = "substance-penicillin"
+* code.coding[0]
+  * system = "http://snomed.info/sct"
+  * code = #764146007
+  * display = "Penicillin"

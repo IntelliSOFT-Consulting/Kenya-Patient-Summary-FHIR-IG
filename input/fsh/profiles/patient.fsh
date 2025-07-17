@@ -1,4 +1,4 @@
-Profile: KpsPatient
+Profile: KPSPatient
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Id: kps-patient
 Title: "Patient Profile - KPS"

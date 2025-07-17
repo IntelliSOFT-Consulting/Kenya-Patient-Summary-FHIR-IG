@@ -1,3 +1,8 @@
+Alias: KPSConditionStatusCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status
+Alias: KPSConditionVerificationCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-verification-status
+
+
+
 CodeSystem: KPSBClinicalConsultationCodes
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
@@ -16,17 +21,17 @@ Description: "CodeSystem representing clinical consultation data elements under 
 * #unknownPropensity "Unknown" "Cannot determine if allergy or intolerance"
 * #KPS.B.DE.4 "Allergy Manifestation" "Description of clinical signs like angioedema or anaphylaxis"
 * #KPS.B.DE.5 "Severity" "Severity of the reaction"
-* #severeReaction "Severe" "Causes severe physiological effects"
-* #moderateReaction "Moderate" "Causes moderate physiological effects"
-* #mildReaction "Mild" "Causes mild physiological effects"
+* #severe "Severe" "Causes severe physiological effects"
+* #moderate "Moderate" "Causes moderate physiological effects"
+* #mild "Mild" "Causes mild physiological effects"
 * #KPS.B.DE.6 "Criticality" "Potential for life-threatening adverse reactions"
 * #KPS.B.DE.7 "Onset Date" "Date when allergy was observed"
 * #onsetAge "Onset Age" "Age of patient when allergy began"
 * #KPS.B.DE.8 "End Date" "Date when allergy was resolved"
 * #KPS.B.DE.9 "Allergy Status" "Current allergy status"
-* #activeAllergy "Active" "Currently at risk"
-* #inactiveAllergy "Inactive" "No longer at risk"
-* #resolvedAllergy "Resolved" "Clinically resolved by testing or re-exposure"
+* #active "Active" "Currently at risk"
+* #inactive "Inactive" "No longer at risk"
+* #resolved "Resolved" "Clinically resolved by testing or re-exposure"
 * #KPS.B.DE.10 "Allergy Certainty" "Certainty of allergy assertion"
 * #confirmedAllergy "Confirmed" "High certainty, e.g., test confirmed"
 * #unconfirmedAllergy "Unconfirmed" "Low certainty"
@@ -58,9 +63,9 @@ Description: "CodeSystem representing clinical consultation data elements under 
 * #clinicalStatusActive "Active" "Currently experiencing symptoms"
 * #clinicalStatusRecurrence "Recurrence" "Reappearance of a previously resolved condition"
 * #clinicalStatusRelapse "Relapse" "Return of condition after improvement"
-* #verificationStatusConfirmed "Confirmed" "Sufficient evidence"
-* #verificationStatusUnconfirmed "Unconfirmed" "Insufficient evidence"
-* #verificationStatusDifferential "Differential" "Possible diagnoses"
+* #confirmed "Confirmed" "Sufficient evidence"
+* #unconfirmed "Unconfirmed" "Insufficient evidence"
+* #differential "Differential" "Possible diagnoses"
 * #conditionCategoryEncounter "Encounter Diagnosis" "Diagnosed during an encounter"
 * #conditionCategoryProblem "Problem List Item" "Ongoing/chronic condition"
 * #conditionSeveritySevere "Severe" "Significantly limits function"
@@ -105,3 +110,41 @@ Description: "CodeSystem representing clinical consultation data elements under 
 // Travel History
 * #KPS.B.DE.35 "Travel Destination" "Place visited"
 * #KPS.B.DE.36 "Travel Period" "Date of entry and departure"
+
+
+
+
+CodeSystem: KPSClinicalStatusCodes
+Id: kpsb-clinical-status-codes
+Title: "KPS.B Clinical Consultation Data Elements"
+Description: "CodeSystem representing clinical status"
+* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status-codes"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+
+
+* #active "Active" "Currently at risk"
+* #inactive "Inactive" "No longer at risk"
+* #resolved "Resolved" "Clinically resolved by testing or re-exposure"
+
+
+ 
+
+CodeSystem: KPSConditionStatusCS
+Title: "KPS Clinical Condition Status CodeSystem"
+Id: kpsb-clinical-status
+* ^url = KPSConditionStatusCS
+* ^status = #active
+* #active "Active"
+* #inactive "Inactive"
+* #resolved "Resolved"
+
+CodeSystem: KPSConditionVerificationCS
+Title: "KPS Condition Verification CodeSystem"
+Id: kpsb-verification-status
+* ^url = KPSConditionVerificationCS
+* ^status = #active
+* #confirmed "Confirmed"
+* #unconfirmed "Unconfirmed"
+* #refuted "Refuted"

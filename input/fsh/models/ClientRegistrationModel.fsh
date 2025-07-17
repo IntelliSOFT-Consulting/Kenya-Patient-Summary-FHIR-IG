@@ -20,9 +20,7 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 * dateOfBirth 1..1 date "Client's date of birth, if known"
   * ^code = #KPS.A.DE.4
 * sex 1..1 code "Sex of the client assigned at birth"
-  * ^code = #KPS.A.DE.5
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSASexVS
+  * ^code = #KPS.A.DE.5 
 
 // Address
 * address 0..1 BackboneElement "Client's residential address"
