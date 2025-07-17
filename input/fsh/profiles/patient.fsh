@@ -2,54 +2,36 @@ Profile: KpsPatient
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Id: kps-patient
 Title: "Patient Profile - KPS"
-Description: "This profile defines the constraints and extensions on the IPS Patient resource for use in the Kenya Patient Summary, supporting national HIE and continuity of care." 
+Description: "This profile defines the constraints and extensions on the IPS Patient resource for use in the Kenya Patient Summary, supporting national HIE and continuity of care."
+* obeys PatientIdentification-1
+* identifier 1..* MS
 
-* identifier 1..1 MS
-  * ^code = #KPS.A.DE.1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false 
 
-* name 1..1 MS
-* name.given 1..1 
-  * ^code = #KPS.A.DE.2
-* name.family 1..1 
-  * ^code = #KPS.A.DE.3
+// STEP 2: Declare the slice
+* identifier contains 
+    NationalIDNo 0..1 MS and 
+    UPI 0..1 MS and  
+    PassportNo 0..1 MS and 
+    BirthCertificateNo 0..1 MS 
 
-* birthDate 1..1 
-  * ^code = #KPS.A.DE.4
+
+// STEP 3: Add constraints to the slice
+* identifier[NationalIDNo].value 1..1
+* identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
+
+* identifier[UPI].value 1..1
+* identifier[UPI].system = "http://moh.kenya/identifier/UPI"
+
+* identifier[PassportNo].value 1..1
+* identifier[PassportNo].system = "http://moh.kenya/identifier/passport-No"
+
+* identifier[BirthCertificateNo].value 1..1
+* identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 
 * gender 1..1 MS
-  * ^code = #KPS.A.DE.5
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSASexVS
+* gender from GenderVS
 
-* address 0..1 MS
-* address.country 0..1
-  * ^code = #KPS.A.DE.8
-* address.state 0..1  // Assuming "county"
-  * ^code = #KPS.A.DE.9
-* address.district 0..1  // Assuming "subcounty"
-  * ^code = #KPS.A.DE.10
-* address.city 0..1  // Assuming "ward"
-  * ^code = #KPS.A.DE.11
-* address.line 0..1  // Assuming "village/estate" or "postalAddress"
-  * ^code = #KPS.A.DE.12 
-* address.postalCode 0..1  // Assuming "postalAddress"
-  * ^code = #KPS.A.DE.13
-
-
-* contact 0..1 MS // Contact person or legal guardian
-* contact.relationship 1..1 MS
-  * ^code = #KPS.A.DE.16
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSAContactRoleVS
-* contact.name 0..1
-* contact.name.given 1..1
-  * ^code = #KPS.A.DE.21
-* contact.name.family 1..1
-  * ^code = #KPS.A.DE.22 
-* extension contains insurance-information named insurance 0..1 MS
-
-// Constraining The Profile
-
-// Remove unused elements
-* link 0..0
-* deceased[x] 0..0
