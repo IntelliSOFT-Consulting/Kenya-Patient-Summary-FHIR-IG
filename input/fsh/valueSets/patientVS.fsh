@@ -1,5 +1,6 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
+Alias: $UCUM = http://unitsofmeasure.org
 
 ValueSet: GenderVS
 Id: gender-vs
@@ -212,9 +213,96 @@ Description: "ValueSet for Vaccine Status using SNOMED CT codes"
 * $SCT#385660001 "Not Done"
 * $SCT#723510000 "Entered in Error"
 
+ValueSet: KPSSubstanceCodeVS
+Id: substance-code-vs
+Title: "Substance Code ValueSet"
+Description: "ValueSet for Substance Code using SNOMED CT codes"
+* ^experimental = false
+* $SCT#105590001 "Substance"
+* $SCT#373873005 "Pharmaceutical / biologic product"
+
+ValueSet: UCUMUnitsVS
+Id: ucum-units-vs
+Title: "UCUM Units for Medication Strength"
+Description: "A preferred set of UCUM units for representing medication strengths and dosages."
+* ^experimental = false
+
+* $UCUM#mg "milligram"
+* $UCUM#g "gram"
+* $UCUM#mcg "microgram"
+* $UCUM#mL "millilitre"
+* $UCUM#L "litre"
+* $UCUM#mmol "millimole"
+* $UCUM#mol "mole"
+* $UCUM#U "unit"
+* $UCUM#IU "international unit"
+
+ValueSet: ProcedureCodeVS
+Id: procedure-code-vs
+Title: "Procedure Code ValueSet"
+Description: "A preferred set of Procedure Code"
+* ^experimental = false
+
+* $SCT#80146002 "Appendectomy"
+* $SCT#116859006 "Blood transfusion"
+* $SCT#386637004 "Obstetric procedure" 
+* $SCT#333453004 "Wound dressing" 
 
 
 
+ValueSet: ConditionCodeVS
+Id: condition-code-vs
+Title: "Condition Code ValueSet"
+Description: "A preferred set of Condition Code"
+* ^experimental = false
+
+* $SCT#44054006 "Diabetes mellitus type 2"
+* $SCT#38341003 "Hypertension" 
+
+ValueSet: ProcedureTypeVS
+Id: procedure-type-vs
+Title: "Procedure Types ValueSet"
+Description: "A preferred set of Procedure Types"
+* ^experimental = false
+
+* $SCT#177141003 "Elective cesarean section"
+* $SCT#373110003 "Emergency procedure"
+* $SCT#103391001 "Urgent procedure"
+
+
+ValueSet: SpecimenTypeVS
+Id: specimen-type-vs
+Title: "Specimen Types ValueSet"
+Description: "A preferred set of Specimen Types"
+* ^experimental = false
+
+* $SCT#119297000 "Blood specimen"
+* $SCT#122575003 "Urine specimen"
+
+
+ValueSet: SpecimenPriorityVS
+Id: specimen-priority-vs
+Title: "Specimen Priority ValueSet"
+Description: "A preferred set of Specimen Priority"
+* ^experimental = false
+
+* $SCT#25876001 "Emergency"
+* $SCT#373113001 "Routine"
+* $SCT#103390000 "Elective"
+
+
+
+ValueSet: SpecimenCollectionContextVS
+Id: specimen-ollection-vs
+Title: "Specimen Collection ValueSet"
+Description: "A preferred set of Specimen Collection"
+* ^experimental = false
+
+* $SCT#261004008 "Diagnostic procedure"
+* $SCT#129265001 "Evaluation procedure"
+* $SCT#360156006 "Screening procedure"
+* $SCT#308364004 "Research procedure" 
+* $SCT#262202000 "Therapeutic procedure" 
 
 ValueSet: PatientTitleVS
 Title:        "Patient Title"
