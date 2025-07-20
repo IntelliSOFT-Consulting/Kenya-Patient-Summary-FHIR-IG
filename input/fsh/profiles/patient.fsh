@@ -49,6 +49,12 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * telecom[email].value 1..1 MS
 * telecom[email].use MS
 
+* contact.relationship 1..1 MS
+* contact.name.given 0..1 MS
+* contact.name.family 0..1 MS
+* contact.telecom 1..1 MS
+
+
 * address.country 0..1 MS
 * address.state 0..1 MS
 * address.state ^short = "Patient's County of Resisence"
