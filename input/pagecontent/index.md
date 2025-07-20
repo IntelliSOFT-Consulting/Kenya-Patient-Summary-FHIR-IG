@@ -27,6 +27,63 @@ This Implementation Guide defines the structure, constraints, and terminologies 
 
 By adopting the KPS, Kenya takes a key step toward achieving patient-centered, digitally enabled, and data-driven healthcare—ensuring that every Kenyan’s core health data is accessible anywhere, anytime it's needed.
 
+### Relationship With Other Kenyan IGs
+
+> Other international and national standards were reviewed and considered during the development process to assess the degree of alignment and to facilitate adoption of this standard. These implementation guides include: 
+> ### Related Implementation Guides
+- [Kenya eClaims FHIR IG](http://45.79.116.94:8080/index.html)  
+- [Kenya Patient Summary (KPS) FHIR IG](#)
+
+<table class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>Kenya Patient Summary (KPS) IG</th>
+            <th>Kenya eClaims IG</th>
+            <th>Relationship</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Purpose</td>
+            <td>To standardize the clinical summary of a patient for continuity of care (e.g., in referrals or emergencies).</td>
+            <td>To support claims processing, billing, and reimbursement between healthcare providers and payers.</td>
+            <td>eClaims may reference patient summary data (e.g., diagnoses, encounters) for claim justification.</td>
+        </tr>
+        <tr>
+            <td>Primary Domain</td>
+            <td>Clinical care, continuity, referrals.</td>
+            <td>Administrative, financial (insurance claims).</td>
+            <td>eClaims relies on clinical data defined in KPS for supporting claims.</td>
+        </tr>
+        <tr>
+            <td>FHIR Resource Focus</td>
+            <td>Patient, Condition, MedicationStatement, Encounter, Observation, Immunization, etc.</td>
+            <td>Claim, ClaimResponse, Coverage, ExplanationOfBenefit, with references to Condition, MedicationDispense, etc.</td>
+            <td>Shared resource profiles like Condition and Encounter are reused or constrained similarly.</td>
+        </tr>
+        <tr>
+            <td>Overlap in Resources</td>
+            <td>Yes – e.g., Condition, Encounter, Patient</td>
+            <td>Yes – with financial/administrative context</td>
+            <td>KPS profiles can serve as the clinical source for eClaims documentation.</td>
+        </tr>
+        <tr>
+            <td>System Integration</td>
+            <td>Used in Health Information Exchanges (HIEs), referral platforms.</td>
+            <td>Used in insurance platforms, NHIF, private payers.</td>
+            <td>eClaims IG may pull data from systems conforming to KPS IG.</td>
+        </tr>
+        <tr>
+            <td>Compliance Alignment</td>
+            <td>Supports compliance with Kenya Digital Health Act and global IPS standard.</td>
+            <td>Supports compliance with NHIF and other insurance claim requirements.</td>
+            <td>Both IGs support national digital health strategy and interoperability goals.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 ### Introduction
 
 The Kenya Patient Summary (KPS) represents a foundational component of Kenya’s digital health transformation agenda, enabling secure, portable, and standardized summaries of essential patient health information. Modeled on the International Patient Summary (IPS), the KPS has been adapted to align with Kenya’s healthcare delivery context, regulatory frameworks, and digital health infrastructure—including integration with the Kenya Digital Health Superhighway.
