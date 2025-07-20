@@ -10,16 +10,13 @@ Description: "Logical model for representing diagnostic requests, specimens, ima
 * diagnosticName 1..1 string "Exact name or code of the diagnostic request/report (e.g. Lipid Profile)"
 * justification 0..1 string "Reason for diagnostic request, including relevant clinical notes"
 * status 1..1 code "Status of the diagnostic request"
-  * ^binding.strength = #required
-  * ^binding.description = "Status of the diagnostic request"
-  * ^binding.valueSet = KPSDiagnosticsStatusVS
+* status from DiagnosticStatusVS 
 
 // Specimen
 * specimen 0..1 BackboneElement "Specimen details"
   * type 1..1 string "Type of material collected for analysis"
   * availabilityStatus 0..1 code "Specimen availability status"
-    * ^binding.strength = #required
-    * ^binding.valueSet = KPSSpecimenAvailabilityVS
+  * availabilityStatus  from SpecimenAvailabilityStatusVS 
 
 // Radiology
 * imaging 0..1 BackboneElement "Radiology imaging information"

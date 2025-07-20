@@ -1,8 +1,3 @@
-Alias: KPSDClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsd-treatment-codes
-Alias: KPSMedicationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsd-medication-status
-Alias: KPSMedicationFormVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsd-medication-forms
-Alias: KPSActiveSubstancesVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsd-active-ingredients
-
 Logical: ClientTreatmentModel 
 Title: "KPS.D Treatment"
 Description: "Logical model for documenting patient treatments under the Kenya Patient Summary (KPS.D) standard."
@@ -17,17 +12,14 @@ Description: "Logical model for documenting patient treatments under the Kenya P
   * ^code = #KPS.D.DE.3
 
 * medicationStatus 0..1 code "Current usage status of the medication."
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSMedicationStatusVS
+* medicationStatus from MedicationStatusVS 
 
 * medicationForm 0..1 code "Form of medication (tablet, capsule, liquid, etc.)."
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSMedicationFormVS
+* medicationForm from MedicationFormVS 
 
 * activeIngredient 1..1 code "Active substance in the medication (e.g. paracetamol)."
-  * ^code = #KPS.D.DE.4
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSActiveSubstancesVS
+* activeIngredient from MedicationVS
+  * ^code = #KPS.D.DE.4 
 
 * strength 1..1 Quantity "Content of active ingredient per dosage unit (e.g. 500 mg/tablet)."
   * ^code = #KPS.D.DE.5
