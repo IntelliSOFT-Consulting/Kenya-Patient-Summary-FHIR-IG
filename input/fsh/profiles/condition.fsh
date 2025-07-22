@@ -31,15 +31,11 @@ Description: "This profile defines constraints on the Condition resource for use
   * ^short = "Body site affected by the condition"
   * ^definition = "The anatomical location where the condition is or was present"
 
-* onsetDateTime 0..1 
-  * ^short = "Date of onset of the condition"
-  * ^definition = "The date and time when the condition first occurred"
+* onset[x] 0..1 MS
+* onset[x] only dateTime or Age
 
-* onsetAge 0..1 
-  * ^short = "Age at onset of the condition"
-  * ^definition = "The age of the patient when the condition first occurred"
-
-* abatementDateTime 0..1 
+* abatement[x] 0..1 MS
+* abatement[x] only dateTime
   * ^short = "Date the condition last occurred or resolved"
   * ^definition = "The date and time when the condition last occurred or was resolved"
 

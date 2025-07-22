@@ -24,12 +24,8 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)"
   * ^definition = "The verification status to support the clinical status of the allergy"
 
-* onsetDateTime 0..1 
-  * ^short = "Date of onset of the allergy"
-  * ^definition = "The date and time when the allergy first occurred or was identified."
-* onsetAge 0..1 
-  * ^short = "Age at onset of the allergy"
-  * ^definition = "The age of the patient when the allergy first occurred or was identified."
+* onset[x] 0..1 MS
+* onset[x] only dateTime or Age
 
 * lastOccurrence 0..1 
   * ^short = "Date of last occurrence of the allergy"
