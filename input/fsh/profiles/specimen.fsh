@@ -1,4 +1,4 @@
-Profile: KPSSpecimen
+Profile: KpsSpecimen
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips
 Id: kps-specimen
 Title: "Specimen Profile - KPS"
