@@ -6,7 +6,7 @@ Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb
 
 
 
-Profile: KPSAllergyIntolerance
+Profile: KpsAllergyIntolerance
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
 Id: kps-allergyIntolerance
 Title: "AllergyIntolerance Profile - KPS"

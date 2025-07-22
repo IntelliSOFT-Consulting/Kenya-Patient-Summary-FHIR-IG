@@ -1,4 +1,4 @@
-Profile: KPSProcedure
+Profile: KpsProcedure
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
 Id: kps-procedure
 Title: "Procedure Profile - KPS"
