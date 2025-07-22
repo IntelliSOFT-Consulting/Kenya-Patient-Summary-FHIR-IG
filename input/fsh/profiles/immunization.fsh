@@ -4,20 +4,21 @@ Id: kps-immunization
 Title: "Immunization Profile - KPS"
 Description : "This profile defines constraints on the Immunization resource for use within the Kenya Patient Summary. It captures details of vaccines administered to a patient, supporting immunization history tracking, clinical decision-making, and data exchange within the national Health Information Exchange (HIE)."
 
-* protocolApplied.targetDisease 0..* MS
+* protocolApplied.targetDisease 1..1 MS
 * protocolApplied.targetDisease ^short = "Target Disease of Immunization"
 
 * status 1..1 MS
 * status from VaccineStatusVS
 * status ^short = "Status of Vaccine"
 
-* protocolApplied.series 0..1 MS
+* protocolApplied.series 1..1 MS
 * protocolApplied.series ^short = "Name of Vaccine Series"
 
 * vaccineCode 1..1 MS
 * vaccineCode ^short = "Vaccine Code"
+* vaccineCode ^definition = "Vaccine that was administered or was to be administered."
 
-* protocolApplied.doseNumberPositiveInt 1..1 MS
+* protocolApplied.doseNumberPositiveInt 0..1 MS
 * protocolApplied.doseNumberPositiveInt ^short = "Dose Number"
 
 * lotNumber 0..1 MS
