@@ -6,21 +6,31 @@ Description : "This profile defines constraints on the Immunization resource for
 
 * status 1..1 MS
 * status from VaccineStatusVS
-* status ^short = "Status of Vaccine"
+  * ^short = "Status of Vaccine"
+  * ^definition = "Current status of the immunization against the disease"
 
 * vaccineCode 1..1 MS
-* vaccineCode ^short = "Vaccine Code"
-* vaccineCode ^definition = "Vaccine that was administered or was to be administered."
+  * ^short = "Vaccine Code"
+  * ^definition = "Vaccine that was administered or was to be administered."
 
 * lotNumber 0..1 MS
-* lotNumber ^short = "Lot Number of Vaccine"
+  * ^short = "Lot Number of Vaccine"
+  * ^definition = "A distinctive combination of numbers and/or letters which specifically identifies a batch "
 
 * occurrence[x] 1..1 MS
 * occurrence[x] only dateTime
+  * ^short = "Date of Immunization"
+  * ^definition = "The date when the immunization was administered to the patient"
+
+* patient 1..1 MS
+* patient only Reference(KpsPatient)
+  * ^short = "The Age of the Patient"
+  * ^definition = "Age at which the vaccination was administered"
 
 * protocolApplied 0..*
   * targetDisease 1..1 MS
     * ^short = "Target Disease of Immunization"
+    * ^definition = "Disease or agent that the vaccination provides protection against"
   * series 1..1 MS
     * ^short = "Name of Vaccine Series"
   * doseNumber[x] 1..1 MS
@@ -28,7 +38,9 @@ Description : "This profile defines constraints on the Immunization resource for
     * ^short = "Dose Number in Series"
 
 * location 0..1 MS
-* location ^short = "Location of Immunization"
+  * ^short = "Location of Immunization"
+  * ^definition = "Name/code of administering centre or a health authority responsible for the vaccination event"
 
 * performer.actor 1..1 MS
-* performer.actor ^short = "Performer of Immunization"
+  * ^short = "Performer of Immunization"
+  * ^definition = "Name or health professional code responsible for administering the vaccine or prophylaxis"
