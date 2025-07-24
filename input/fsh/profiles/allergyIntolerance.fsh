@@ -1,11 +1,3 @@
-Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
-Alias: KPSBAllergyTypeVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-allergy-type
-Alias: KPSBSeverityVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-severity
-Alias: KPSBClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-clinical-status
-Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-verification-status
-
-
-
 Profile: KpsAllergyIntolerance
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
 Id: kps-allergyIntolerance
@@ -14,20 +6,30 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
 
 
 * type 1..1 MS
-  * ^short = "Allergy, Intolerance, or Unknown" 
+* type from AllergyTypeVS
+  * ^short = "Allergy, Intolerance, or Unknown"
+  * ^definition = "Type of reaction: allergy, intolerance, or unknown."
 
 * criticality 0..1 MS
   * ^short = "Likelihood of life-threatening reaction on exposure"
+  * ^definition = "Estimate of the potential clinical harm, or seriousness, of the reaction to the identified substance."
 
-* clinicalStatus 1..1 MS
-  * ^short = "Status of the allergy: active, resolved, etc." 
+* clinicalStatus 0..1 MS
+* clinicalStatus from AllergyStatusVS
+  * ^short = "Status of the allergy: active, resolved, etc."
+  * ^definition = "The clinical status of the allergy"
 
 * verificationStatus 1..1 MS
-  * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)" 
+* verificationStatus from AllergyCertaintyVS
+  * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)"
+  * ^definition = "The verification status to support the clinical status of the allergy"
 
-* onsetDateTime 0..1 
-* onsetAge 0..1 
+* onset[x] 0..1 MS
+* onset[x] only dateTime or Age
+
 * lastOccurrence 0..1 
+  * ^short = "Date of last occurrence of the allergy"
+  * ^definition = "The date and time when the allergy last occurred or was resolved."
 
 * reaction 1..* MS
   * substance 1..1 
@@ -38,9 +40,10 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
     * ^short = "Clinical manifestation(s), e.g. rash, shock"
   * severity 0..1 MS
   * severity from AllergySeverityVS
-    * ^short = "Severity of reaction: mild, moderate, or severe" 
-  * note 0..* 
-    * ^short = "Medical alert notes (clinical importance)"
+    * ^short = "Severity of reaction"
+
+* note 0..* 
+  * ^short = "Medical alert notes (clinical importance)"
 
 
 
