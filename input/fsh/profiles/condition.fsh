@@ -1,10 +1,3 @@
-Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
-Alias: KPSBClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-clinical-status
-Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-verification-status
-Alias: KPSBSeverityVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-severity
-Alias: KPSClinicalConditionVS = https://shr.tiberbuapps.com/fhir/ValueSet/kps-clinical-condition
-Alias: KPSConditionVerificationVS = https://shr.tiberbuapps.com/fhir/ValueSet/kps-condition-verification
-
 
 Profile: KpsCondition
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
@@ -17,17 +10,14 @@ Description: "This profile defines constraints on the Condition resource for use
   * ^short = "Diagnosis or problem affecting the patient (SNOMED/ICD preferred)"
 * clinicalStatus from http://hl7.org/fhir/ValueSet/condition-clinical (required) 
 * verificationStatus 1..1 MS
-  * ^binding.strength = #required
-  * ^binding.valueSet = http://hl7.org/fhir/ValueSet/condition-ver-status
+* verificationStatus from VerificationStatusVS
 
 * category 0..* 
   * ^short = "Problem list item or encounter diagnosis"
 
 * severity 0..1 MS
-  * ^short = "Subjective assessment of the seriousness of the condition"
-  * ^binding.strength = #preferred
-  * ^binding.valueSet = KPSBSeverityVS
-
+* severity from ConditionSeverityVS
+  * ^short = "Subjective assessment of the seriousness of the condition" 
 * bodySite 0..* 
   * ^short = "Location in/on the body affected by the condition"
 
@@ -55,7 +45,7 @@ Description: "Example instance of a patient with hypertension for the Kenya Pati
 Usage: #example
 
 * id = "example-hypertension-condition"
-* subject = Reference(ExamplePatientKPS)
+* subject = Reference(Patient/example-patientKPS)
 * encounter = Reference(ExampleEncounterKPS)
 * code.coding[0]
   * system = "http://snomed.info/sct"

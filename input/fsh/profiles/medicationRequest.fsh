@@ -1,4 +1,4 @@
-Profile: KPSMedicationRequest
+Profile: KpsMedicationRequest
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips
 Id: kps-medication-request
 Title: "MediacationRequest Profile - KPS"

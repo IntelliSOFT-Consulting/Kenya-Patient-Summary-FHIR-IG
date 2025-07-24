@@ -46,7 +46,7 @@ Usage: #example
 * type[0].coding[0].system = "http://snomed.info/sct"
 * type[0].coding[0].code = #185349003
 * type[0].coding[0].display = "Encounter for check up (procedure)"
-* subject = Reference(ExamplePatientKPS)
+* subject = Reference(Patient/example-patientKPS)
 * period.start = "2024-12-01T10:00:00+03:00"
 * period.end = "2024-12-01T11:00:00+03:00"
 * reasonCode[0].coding[0].system = "http://snomed.info/sct"

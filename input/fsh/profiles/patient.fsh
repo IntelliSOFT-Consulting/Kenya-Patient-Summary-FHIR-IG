@@ -1,4 +1,4 @@
-Profile: KPSPatient
+Profile: KpsPatient
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Id: kps-patient
 Title: "Patient Profile - KPS"
@@ -48,6 +48,12 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * telecom[email].system = #email (exactly)
 * telecom[email].value 1..1 MS
 * telecom[email].use MS
+
+* contact.relationship 1..1 MS
+* contact.name.given 0..1 MS
+* contact.name.family 0..1 MS
+* contact.telecom 1..1 MS
+
 
 * address.country 0..1 MS
 * address.state 0..1 MS
