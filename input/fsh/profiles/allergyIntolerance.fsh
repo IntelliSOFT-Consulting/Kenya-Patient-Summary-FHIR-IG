@@ -1,11 +1,3 @@
-Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
-Alias: KPSBAllergyTypeVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-allergy-type
-Alias: KPSBSeverityVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-severity
-Alias: KPSBClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-clinical-status
-Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-verification-status
-
-
-
 Profile: KPSAllergyIntolerance
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
 Id: kps-allergyIntolerance
@@ -14,22 +6,16 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
 
 
 * type 1..1 MS
-  * ^short = "Allergy, Intolerance, or Unknown"
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSBAllergyTypeVS
+  * ^short = "Allergy, Intolerance, or Unknown" 
 
 * criticality 0..1 MS
   * ^short = "Likelihood of life-threatening reaction on exposure"
 
 * clinicalStatus 1..1 MS
-  * ^short = "Status of the allergy: active, resolved, etc."
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSBClinicalStatusVS
+  * ^short = "Status of the allergy: active, resolved, etc." 
 
 * verificationStatus 1..1 MS
-  * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)"
-  * ^binding.strength = #required
-  * ^binding.valueSet = KPSBVerificationStatusVS
+  * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)" 
 
 * onsetDateTime 0..1 
 * onsetAge 0..1 
@@ -43,9 +29,8 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * manifestation 1..* 
     * ^short = "Clinical manifestation(s), e.g. rash, shock"
   * severity 0..1 MS
-    * ^short = "Severity of reaction: mild, moderate, or severe"
-    * ^binding.strength = #required
-    * ^binding.valueSet = KPSBSeverityVS
+  * severity from AllergySeverityVS
+    * ^short = "Severity of reaction: mild, moderate, or severe" 
   * note 0..* 
     * ^short = "Medical alert notes (clinical importance)"
 
@@ -60,7 +45,7 @@ Description: "An example AllergyIntolerance instance for a patient allergic to p
 Usage: #example
 
 * id = "example-allergy-patient-001"
-* patient = Reference(ExamplePatientKPS)
+* patient = Reference(Patient/example-patientKPS)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * type = KPSBClientCodes#allergy "Allergy"
@@ -83,5 +68,4 @@ Usage: #example
     * display = "Difficulty breathing"
   * severity = KPSBClientCodes#severe "Severe"
   * note[0].text = "Carry epinephrine auto-injector at all times."
-
-
+ 
