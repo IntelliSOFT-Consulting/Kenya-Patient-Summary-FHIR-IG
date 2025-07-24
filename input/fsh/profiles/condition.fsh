@@ -1,11 +1,3 @@
-Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
-Alias: KPSBClinicalStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-clinical-status
-Alias: KPSBVerificationStatusVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-verification-status
-Alias: KPSBSeverityVS = https://shr.tiberbuapps.com/fhir/ValueSet/kpsb-severity
-Alias: KPSClinicalConditionVS = https://shr.tiberbuapps.com/fhir/ValueSet/kps-clinical-condition
-Alias: KPSConditionVerificationVS = https://shr.tiberbuapps.com/fhir/ValueSet/kps-condition-verification
-
-
 Profile: KpsCondition
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
 Id: kps-condition
@@ -14,34 +6,42 @@ Description: "This profile defines constraints on the Condition resource for use
 
 
 * code 1..1 MS
-  * ^short = "Diagnosis or problem affecting the patient (SNOMED/ICD preferred)"
-* clinicalStatus from http://hl7.org/fhir/ValueSet/condition-clinical (required) 
-* verificationStatus 1..1 MS
-  * ^binding.strength = #required
-  * ^binding.valueSet = http://hl7.org/fhir/ValueSet/condition-ver-status
+  * ^short = "Diagnosis or problem affecting the patient"
 
-* category 0..* 
-  * ^short = "Problem list item or encounter diagnosis"
+* clinicalStatus 1..1 MS
+* clinicalStatus from ClinicalStatusVS
+  * ^short = "Clinical status"
+  * ^definition = "The clinical state of the condition"
+
+* verificationStatus 1..1 MS
+* verificationStatus from VerificationStatusVS
+  * ^short = "Verification status"
+  * ^definition = "The verification status to support the clinical status of the condition"
+
+* category 1..1 MS
+  * ^short = "Category of the condition"
+  * ^definition = "The category assigned to the condition"
 
 * severity 0..1 MS
-  * ^short = "Subjective assessment of the seriousness of the condition"
-  * ^binding.strength = #preferred
-  * ^binding.valueSet = KPSBSeverityVS
+* severity from ConditionSeverityVS
+  * ^short = "Severity of the condition"
+  * ^definition = "The severity of the condition as assessed by the clinician"
 
-* bodySite 0..* 
-  * ^short = "Location in/on the body affected by the condition"
+* bodySite 0..* MS
+  * ^short = "Body site affected by the condition"
+  * ^definition = "The anatomical location where the condition is or was present"
 
-* onsetDateTime 0..1 
-  * ^short = "Date of onset of the condition"
+* onset[x] 0..1 MS
+* onset[x] only dateTime or Age
 
-* onsetAge 0..1 
-  * ^short = "Age at onset of the condition"
-
-* abatementDateTime 0..1 
+* abatement[x] 0..1 MS
+* abatement[x] only dateTime
   * ^short = "Date the condition last occurred or resolved"
+  * ^definition = "The date and time when the condition last occurred or was resolved"
 
 * note 0..* 
-  * ^short = "Free text for medical history, resolution circumstances, or problem description"
+  * ^short = "Additional information about the condition"
+  * ^definition = "Additional information about the Condition. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis."
 
 * encounter 0..1 MS
   * ^short = "Associated encounter when diagnosis was made"
@@ -74,5 +74,9 @@ Usage: #example
   * code = #moderate
   * display = "Moderate"
 * onsetDateTime = "2019-06-10"
+* category.coding[0]
+  * system = "http://hl7.org/fhir/condition-category"
+  * code = #problem-list-item
+  * display = "Problem List Item"
 * note[0].text = "Condition identified during routine screening at county facility."
 
