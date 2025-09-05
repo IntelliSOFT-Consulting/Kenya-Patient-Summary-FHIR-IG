@@ -7,14 +7,12 @@ Description: "Logical model for documenting clinical consultation data under the
   * allergen 1..1 string "Substance or agent triggering the reaction"
     * ^code = #KPS.B.DE.1
   * propensityType 1..1 code "Allergy, intolerance, or unknown"
+  * propensityType from AllergyTypeVS
     * ^code = #KPS.B.DE.25
   * description 0..1 string "Text description of the allergy or intolerance"
     * ^code = #KPS.B.DE.29
-
-  * manifestation 0..1 string "Clinical manifestation of the reaction"
-    * ^code = #KPS.B.DE.4
-
-  * severity 0..1 code "Severity of the reaction"
+  * severity 0..1 code "Severity of the clinical manifestation of the allergic reaction."
+  * severity from AllergySeverityVS
     * ^code = #KPS.B.DE.66
   * criticality 0..1 code "Risk of future life-threatening adverse reactions"
     * ^code = #KPS.B.DE.70
@@ -25,6 +23,7 @@ Description: "Logical model for documenting clinical consultation data under the
   * endDate 0..1 date "Date of resolution of the allergy"
     * ^code = #KPS.B.DE.73
   * allergyStatus 1..1 code "Current status of the allergy"
+  * allergyStatus from AllergyStatusVS
     * ^code = #KPS.B.DE.74
   * allergyCertainty 0..1 code "Certainty about the reaction's presence"
     * ^code = #KPS.B.DE.78
