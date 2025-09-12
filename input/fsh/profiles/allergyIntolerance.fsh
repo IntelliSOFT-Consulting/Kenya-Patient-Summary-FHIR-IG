@@ -56,7 +56,7 @@ Description: "An example AllergyIntolerance instance for a patient allergic to p
 Usage: #example
 
 * id = "example-allergy-patient-001"
-* patient = Reference(Patient/example-patientKPS)
+* patient = Reference(ExamplePatientKPS)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * type = KPSBClientCodes#allergy "Allergy"
@@ -79,4 +79,5 @@ Usage: #example
     * display = "Difficulty breathing"
   * severity = KPSBClientCodes#severe "Severe"
   * note[0].text = "Carry epinephrine auto-injector at all times."
- 
+
+

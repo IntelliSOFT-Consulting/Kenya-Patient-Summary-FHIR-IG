@@ -55,7 +55,7 @@ Description: "Example instance of a patient with hypertension for the Kenya Pati
 Usage: #example
 
 * id = "example-hypertension-condition"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * encounter = Reference(ExampleEncounterKPS)
 * code.coding[0]
   * system = "http://snomed.info/sct"

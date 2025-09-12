@@ -1,4 +1,4 @@
-Profile: KPSMedicationStatement
+Profile: KpsMedicationStatement
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips
 Id: kps-medicationStatement
 Title: "MedicationStatement Profile - KPS"
