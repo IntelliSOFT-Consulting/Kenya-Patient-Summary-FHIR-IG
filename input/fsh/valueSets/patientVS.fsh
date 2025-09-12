@@ -48,35 +48,6 @@ Description: "ValueSet for Contact Relationship using SNOMED CT codes"
 * $SCT#184142008 "Next of kin"
 * $SCT#405170004 "Other"
 
-ValueSet: AllergyAllergensVS
-Id: allergy-allergens-vs
-Title: "Allergy Allergens ValueSet"
-Description: "ValueSet for Allergy Agents using SNOMED CT codes"
-* ^experimental = false
-* $SCT#294627000 "Adhesive tape"
-* $SCT#300916003 "Bee venom"
-* $SCT#22621005 "Beef"
-* $SCT#40739000 "Caffeine"
-* $SCT#44027008 "Chocolate"
-* $SCT#410942007 "Drug allergy"
-* $SCT#256259004 "House dust"
-* $SCT#762952008 "Food allergy"
-* $SCT#300916003 "Latex"
-* $SCT#419199007 "Mold"
-* $SCT#260413007 "None"
-* $SCT#74964007 "Other non-coded allergen"
-* $SCT#256349002 "Peanut"
-* $SCT#256378000 "Pollen"
-* $SCT#418689008 "Dairy product"
-* $SCT#91935009 "Eggs"
-* $SCT#102258003 "Milk"
-* $SCT#227415002 "Fish"
-* $SCT#418689008 "Ragweed"
-* $SCT#227493005 "Shellfish"
-* $SCT#25918009 "Soybean"
-* $SCT#227562007 "Strawberry"
-* $SCT#256349002 "Wheat"
-
 ValueSet: AllergyTypeVS
 Id: allergy-type-vs
 Title: "Allergy Type ValueSet"
