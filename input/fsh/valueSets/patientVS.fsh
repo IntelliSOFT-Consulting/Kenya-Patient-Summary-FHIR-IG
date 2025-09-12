@@ -236,7 +236,6 @@ Description: "A preferred set of UCUM units for representing medication strength
 * $UCUM#mol "mole"
 * $UCUM#U "unit"
 * $UCUM#IU "international unit"
-* $UCUM#capsule "capsule"
 
 ValueSet: ProcedureCodeVS
 Id: procedure-code-vs

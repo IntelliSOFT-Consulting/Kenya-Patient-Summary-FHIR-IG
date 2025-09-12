@@ -1,4 +1,4 @@
-Alias: KPSBClientCodes = https://example.org/fhir/CodeSystem/kpsb-clinical-consultation-codes
+Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
 
 Profile: KpsObservation
 Parent: Observation
@@ -49,7 +49,7 @@ Usage: #example
   * code = #social-history
   * display = "Social History"
 * code.text = "Tobacco use"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * effectiveDateTime = "2023-05-10"
 * valueString = "Occasional cigarette smoker"
 
@@ -66,7 +66,7 @@ Usage: #example
   * code = #social-history
   * display = "Social History"
 * code.text = "Alcohol consumption period"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * effectivePeriod.start = "1974-01-01"
 * effectivePeriod.end = "2004-12-31"
 * valueString = "Heavy alcohol consumption during this period"
@@ -83,7 +83,7 @@ Usage: #example
   * code = #social-history
   * display = "Social History"
 * code.text = "Pregnancy Status"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * effectiveDateTime = "2024-11-01"
 * valueCodeableConcept.coding[0]
   * system = KPSBClientCodes
@@ -102,7 +102,7 @@ Usage: #example
   * code = #social-history
   * display = "Social History"
 * code.text = "Expected date of delivery"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * effectiveDateTime = "2024-11-01"
 * valueDateTime = "2025-07-10"
 
@@ -115,7 +115,7 @@ Usage: #example
 
 * status = #final
 * code.text = "Previous pregnancies"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valueCodeableConcept.coding[0]
   * system = KPSBClientCodes
   * code = #KPS.B.DE.29
@@ -129,7 +129,7 @@ Usage: #example
 
 * status = #final
 * code.text = "Pregnancy Outcome"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valueCodeableConcept.coding[0]
   * system = KPSBClientCodes
   * code = #preterm
@@ -143,7 +143,7 @@ Usage: #example
 
 * status = #final
 * code.text = "Outcome date"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valueDateTime = "2022-06-15"
 
 
@@ -155,7 +155,7 @@ Usage: #example
 
 * status = #final
 * code.text = "Number of fetuses"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valueQuantity.value = 2
 * valueQuantity.unit = "children"
 
@@ -168,7 +168,7 @@ Usage: #example
 
 * status = #final
 * code.text = "Recent travel destination"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valueString = "South Sudan"
 
 
@@ -180,6 +180,6 @@ Usage: #example
 
 * status = #final
 * code.text = "Travel period"
-* subject = Reference(Patient/example-patientKPS)
+* subject = Reference(ExamplePatientKPS)
 * valuePeriod.start = "2024-02-01"
 * valuePeriod.end = "2024-03-15"
