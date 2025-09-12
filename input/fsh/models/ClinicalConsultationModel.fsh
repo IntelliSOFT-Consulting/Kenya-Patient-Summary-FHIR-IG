@@ -4,93 +4,107 @@ Description: "Logical model for documenting clinical consultation data under the
 
 // Allergies and Intolerances
 * allergy 0..* BackboneElement "Documented allergies or intolerances"
-  * agent 1..1 string "Substance or agent triggering the reaction"
+  * allergen 1..1 string "Substance or agent triggering the reaction"
+  * allergen from AllergyAllergensVS
     * ^code = #KPS.B.DE.1
-  * description 0..1 string "Text description of the allergy or intolerance"
-    * ^code = #KPS.B.DE.2
   * propensityType 1..1 code "Allergy, intolerance, or unknown"
-    * ^code = #KPS.B.DE.3
-  * manifestation 0..1 string "Clinical manifestation of the reaction"
-    * ^code = #KPS.B.DE.4
-  * severity 0..1 code "Severity of the reaction"
-    * ^code = #KPS.B.DE.5
+  * propensityType from AllergyTypeVS
+    * ^code = #KPS.B.DE.25
+  * description 0..1 string "Text description of the allergy or intolerance"
+    * ^code = #KPS.B.DE.29
+  * severity 0..1 code "Severity of the clinical manifestation of the allergic reaction."
+  * severity from AllergySeverityVS
+    * ^code = #KPS.B.DE.66
   * criticality 0..1 code "Risk of future life-threatening adverse reactions"
-    * ^code = #KPS.B.DE.6
+    * ^code = #KPS.B.DE.70
   * onsetDate 0..1 date "Date the allergy was observed"
-    * ^code = #KPS.B.DE.7
+    * ^code = #KPS.B.DE.71
+  * onsetAge 0..1 Age "Age at onset of the allergy"
+    * ^code = #KPS.B.DE.72
   * endDate 0..1 date "Date of resolution of the allergy"
-    * ^code = #KPS.B.DE.8
-  * status 1..1 code "Current status of the allergy"
-    * ^code = #KPS.B.DE.9
-  * certainty 0..1 code "Certainty about the reaction's presence"
-    * ^code = #KPS.B.DE.10
+    * ^code = #KPS.B.DE.73
+  * allergyStatus 1..1 code "Current status of the allergy"
+  * allergyStatus from AllergyStatusVS
+    * ^code = #KPS.B.DE.74
+  * allergyCertainty 0..1 code "Certainty about the reaction's presence"
+    * ^code = #KPS.B.DE.78
 
 // Medical Alert
 * medicalAlert 0..* BackboneElement "Medical alert information"
   * description 1..1 string "Description of the alert"
-    * ^code = #KPS.B.DE.11
+    * ^code = #KPS.B.DE.83
   * alertCode 0..1 code "Priority level"
+    * ^code = #KPS.B.DE.84
   * status 0..1 code "Alert status (active/inactive/etc)"
+    * ^code = #KPS.B.DE.88
 
 // Resolved Problems
 * resolvedProblem 0..* BackboneElement "Past resolved/closed/inactive problems"
   * description 1..1 string "Problem or diagnosis"
-    * ^code = #KPS.B.DE.12
+    * ^code = #KPS.B.DE.93
   * onsetDate 0..1 date "Date of problem onset"
-    * ^code = #KPS.B.DE.13
+    * ^code = #KPS.B.DE.94
   * endDate 0..1 date "Resolution date"
-    * ^code = #KPS.B.DE.14
+    * ^code = #KPS.B.DE.96
   * resolutionCircumstances 0..1 string "How the problem was resolved"
-    * ^code = #KPS.B.DE.15
+    * ^code = #KPS.B.DE.97
 
 // Medical History
 * medicalHistory 0..1 string "Narrative or synthesized summary of the client’s medical background"
-  * ^code = #KPS.B.DE.16
+  * ^code = #KPS.B.DE.98
 
 // Current Problems
 * currentProblem 0..* BackboneElement "Current diagnoses and health conditions"
   * condition 1..1 string "Problem or diagnosis"
-    * ^code = #KPS.B.DE.17
+    * ^code = #KPS.B.DE.99
   * clinicalStatus 0..1 code "Clinical state (active, recurrence, relapse)"
+    * ^code = #KPS.B.DE.102
   * verificationStatus 0..1 code "Certainty of diagnosis (confirmed, differential)"
+    * ^code = #KPS.B.DE.106
   * conditionCategory 0..1 code "Problem list or encounter diagnosis"
+    * ^code = #KPS.B.DE.110
+  * conditionEncounter 0..1 string "Encounter when the condition was first recorded"
+    * ^code = #KPS.B.DE.111
   * severity 0..1 code "Clinical severity"
+    * ^code = #KPS.B.DE.113
   * bodySite 0..1 string "Anatomical location"
+    * ^code = #KPS.B.DE.117
   * onsetDate 0..1 date "Date of onset"
-    * ^code = #KPS.B.DE.18
+    * ^code = #KPS.B.DE.118
   * onsetAge 0..1 string "Age at onset"
+    * ^code = #KPS.B.DE.119
   * assertionStatus 0..1 code "Assertion about diagnosis certainty"
-    * ^code = #KPS.B.DE.19
+    * ^code = #KPS.B.DE.120
 
 // Social History
 * socialHistory 0..* BackboneElement "Lifestyle factors or social determinants"
   * observation 1..1 string "Social history observation"
-    * ^code = #KPS.B.DE.20
+    * ^code = #KPS.B.DE.121
   * referencePeriod 0..1 string "Time period of observation"
-    * ^code = #KPS.B.DE.21
+    * ^code = #KPS.B.DE.122
 
 // Pregnancy History
 * pregnancyStatus 0..1 BackboneElement "Current pregnancy status"
   * status 1..1 code "Pregnancy status"
-    * ^code = #KPS.B.DE.22
+    * ^code = #KPS.B.DE.123
   * observationDate 0..1 date "Date of pregnancy observation"
-    * ^code = #KPS.B.DE.26
+    * ^code = #KPS.B.DE.127
   * expectedDeliveryDate 0..1 date "Estimated due date"
-    * ^code = #KPS.B.DE.27
+    * ^code = #KPS.B.DE.128
 
 * previousPregnancy 0..* BackboneElement "Previous pregnancy details"
   * status 1..1 code "Has the client been pregnant before?"
-    * ^code = #KPS.B.DE.28
+    * ^code = #KPS.B.DE.129
   * outcome 0..1 code "Pregnancy outcome"
-    * ^code = #KPS.B.DE.33
+    * ^code = #KPS.B.DE.133
   * outcomeDate 0..1 date "Date of pregnancy outcome"
-    * ^code = #KPS.B.DE.32
+    * ^code = #KPS.B.DE.144
   * numberOfChildren 0..1 integer "Number of children/fetuses in the pregnancy"
-    * ^code = #KPS.B.DE.34
+    * ^code = #KPS.B.DE.145
 
 // Travel History
 * travelHistory 0..* BackboneElement "Client travel history"
   * destination 1..1 string "Destination of travel"
-    * ^code = #KPS.B.DE.35
+    * ^code = #KPS.B.DE.146
   * period 0..1 string "Period of travel (entry and departure dates)"
-    * ^code = #KPS.B.DE.36
+    * ^code = #KPS.B.DE.147
