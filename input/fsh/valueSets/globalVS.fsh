@@ -1,10 +1,7 @@
 Alias: LOINC = http://loinc.org
 Alias: UCUM = http://unitsofmeasure.org
 
-// -------------------------------
-// ORGANIZATION
-// -------------------------------
-
+ 
 ValueSet: KPSOrganizationIdentifierTypeVS
 Id: kps-organization-identifier-type-vs
 Title: "Organization Identifier Type"
@@ -19,9 +16,7 @@ Description: "Custom ValueSet for organization types."
 * ^url = "http://example.com/fhir/ValueSet/organization-type"
 * include codes from system http://terminology.hl7.org/CodeSystem/organization-type
 
-// -------------------------------
-// CONDITION
-// -------------------------------
+ 
 
 ValueSet: KPSConditionSeverityVS
 Id: kps-condition-severity-vs
@@ -43,10 +38,7 @@ Title: "Body Site"
 Description: "Sites on the body associated with clinical conditions."
 * ^url = "https://example.com/fhir/ValueSet/body-site-vs"
 * include codes from system http://snomed.info/sct
-
-// -------------------------------
-// DIAGNOSTIC REPORT
-// -------------------------------
+ 
 
 ValueSet: KPSDiagnosticServiceSectionsVS
 Id: kps-diagnostic-service-sections
@@ -62,20 +54,7 @@ Description: "Clinical findings in diagnostic report conclusions."
 * ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
 * include codes from system http://snomed.info/sct
 
-// -------------------------------
-// ENCOUNTER
-// -------------------------------
-
-ValueSet: KPSServiceTypeVS
-Id: kps-service-type-vs
-Title: "Service Type"
-Description: "Custom value set for health service types (local terminology)."
-* ^url = "https://example.com/fhir/ValueSet/service-type-vs"
-* include codes from system http://example.org/fhir/CodeSystem/service-type
-
-// -------------------------------
-// MEDICATION
-// -------------------------------
+  
 
 ValueSet: KPSMedicationVS
 Id: kps-medication-vs
@@ -98,9 +77,7 @@ Description: "UCUM units for medication quantities."
 * ^url = "https://example.org/fhir/ValueSet/ucum-units-vs"
 * include codes from system http://unitsofmeasure.org
 
-// -------------------------------
-// MEDICATION REQUEST
-// -------------------------------
+ 
 
 ValueSet: KPSMedicationRequestCategoryVS
 Id: kps-medicationrequest-category
@@ -129,10 +106,7 @@ Title: "Unit of Measure"
 Description: "Units for doses and dispensing."
 * ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
 * include codes from system http://unitsofmeasure.org
-
-// -------------------------------
-// ALLERGY INTOLERANCE
-// -------------------------------
+ 
 
 ValueSet: KPSAllergyStatusVS
 Id: kps-allergy-status-vs
@@ -276,3 +250,276 @@ Description: "LOINC codes for common laboratory investigations used in the Kenya
 * LOINC#35219 "Colposcopy Study"
 * LOINC#53247 "Antibody titration test"
 * LOINC#29514 "ELISA for African Trypanosomiasis"
+
+
+ValueSet: KPSImagingXRay
+Id: kps-imaging-xray
+Title: "KPS X-Ray Imaging Procedures"
+Description: "Custom list of X-Ray imaging procedures mapped to local or LOINC-aligned codes for use under the Kenya Pathology Standard (KPS)."
+ 
+
+* LOINC#32047 "X-Ray Wrist Bilateral"
+* LOINC#30578 "X-Ray Wrist Joint"
+* LOINC#32048 "X-Ray Wrist Left"
+* LOINC#32049 "X-Ray Wrist Right"
+* LOINC#30578 "X-Ray Wrist With Contrast"
+* LOINC#30578 "X-Ray Wrist(Ap View)"
+* LOINC#43958 "X-Ray Wrist(Lat View)"
+* LOINC#16060 "X-Ray Wrists Bilateral(Ap/Lat View)"
+* LOINC#103399 "X-Ray Wrists Bilateral(Lat View)"
+* LOINC#43951 "X Ray Wrist Joint"
+* LOINC#43714 "XR Foot - Right Lateral"
+* LOINC#72932 "X-Ray Trunk Vein"
+* LOINC#30850 "X-Ray Ulna"
+* LOINC#49619 "X-Ray Unspecified"
+* LOINC#30656 "X-Ray Upper Extremity Infant"
+* LOINC#103330 "X-Ray Upper Gastrointestinal Tract"
+* LOINC#103330 "X-Ray Upper Gastrointestinal Tract With Kub"
+* LOINC#103330 "X-Ray Upper Gastrointestinal Tract With Small Intestines"
+* LOINC#103330 "X-Ray Upper Gastrointestinal Tract Without Kub"
+* LOINC#30964 "X-Ray Urethra/Bladder"
+* LOINC#30964 "X-Ray Urethra/Bladder(Retrograde Cystourethrography)"
+* LOINC#49701 "X-Ray Urethra/Bladder(Voiding Cystourethrography)"
+* LOINC#45230 "X-Ray Vasogram"
+* LOINC#45135 "X-Ray Venogram Bilateral"
+* LOINC#98832 "X-Ray Venogram Unilateral"
+* LOINC#98832- "X-Ray Venogram Unilateral Left"
+* LOINC#90650 "X-Ray Whole Spine With Contrast"
+* LOINC#15887 "X-Ray Whole Spine(Ap/Lat View)"
+* LOINC#15887- "X-Ray Whole Spine(Rad)"
+* LOINC#43952 "X-Ray Wrist 2 Views(Rad)"
+* LOINC#43953 "X-Ray Wrist 3 Views"
+* LOINC#36497 "X-Ray Wrist(Ap/Lat View)"
+* LOINC#43954 "X-Ray Wrist(Ap/Lat/Obliques)"
+* LOINC#44133 "X-Ray Wrist(Ap/Lat/Scaphoid View)"
+* LOINC#43951- "X Ray Wrist"
+* LOINC#36497- "X Ray Wrist Ap / Lat"
+* LOINC#36455 "X-Ray Thoracic Spine Oblique View"
+* LOINC#43931 "X-Ray Thoracic Spine 2 Views(Rad)"
+* LOINC#43932 "X-Ray Thoracic Spine 3 Views(Rad)"
+* LOINC#36448 "X-Ray Thoracic Spine(Ap View)"
+* LOINC#44145 "X-Ray Thoracic Spine(Ap/Lat View)"
+* LOINC#43934 "X-Ray Thoracic Spine(Ap/Lat/Oblique View)"
+* LOINC#30929 "X-Ray Thoracodorsal Spine"
+* LOINC#48812 "X-Ray Thoracolumbar Spine"
+* LOINC#36413 "X-Ray Thoracolumbar Spine Standing (Scoliosis)"
+* LOINC#44145 "X-Ray Thoracolumbar Spine(Ap/Lat View)"
+* LOINC#54805 "X-Ray Throat And Fluoroscopy"
+* LOINC#30955 "X-Ray Tibia/Fibula"
+* LOINC#32040 "X-Ray Tibia/Fibula Bilateral"
+* LOINC#43922 "X-Ray Tibia/Fibula(Ap/Lat View)"
+* LOINC#30956 "X-Ray Toes"
+* LOINC#43927 "X-Ray Toes 2 Views"
+* LOINC#45156 "X-Ray Toes(Ap/Oblique View)"
+* LOINC#30580 "X-Ray Transcatheter Therapy Embolization"
+* LOINC#30580 "X-Ray Transcatheter Therapy Infusion"
+* LOINC#43327 "X-Ray Trunk"
+* LOINC#36544 "X-Ray Trunk Lymph Vessel"
+* LOINC#36449 "X Ray Thoracic Spine Ap & Lateral"
+* LOINC#43919 "X Ray Tibia / Fibula"
+* LOINC#30955 "X Ray Tibia / Fibula (Oh )"
+* LOINC#30945 "X Ray Tmj (Temporo Mandibular Joint)"
+* LOINC#43907 "X-Ray Sternum (PA/Lat/Oblique View)"
+* LOINC#43082 "X-Ray Submental Vertical"
+* LOINC#36513 "X-Ray Tear Duct"
+* LOINC#100442 "X-Ray Teeth"
+* LOINC#100442 "X-Ray Teeth Full Mouth"
+* LOINC#100442 "X-Ray Teeth Less Than Full Mouth"
+* LOINC#30945 "X-Ray Temporomandibular Joint"
+* LOINC#30945 "X-Ray Temporomandibular Joint 4 Views"
+* LOINC#43374 "X-Ray Temporomandibular Joint Bilateral(Lat View)"
+* LOINC#36596 "X-Ray Temporomandibular Joint Left"
+* LOINC#43557 "X-Ray Temporomandibular Joint Open And Closed Mouth Bilateral"
+* LOINC#55045 "X-Ray Temporomandibular Joint Open And Closed Mouth Unilateral"
+* LOINC#36598 "X-Ray Temporomandibular Joint Right"
+* LOINC#30945 "X-Ray Temporomandibular Joint(Ap View)"
+* LOINC#30945 "X-Ray Temporomandibular Joint(Lat View)"
+* LOINC#30674 "X-Ray Thigh"
+* LOINC#31995 "X-Ray Thigh Bilateral"
+* LOINC#42563 "X-Ray Thigh(Ap View)"
+* LOINC#42626 "X-Ray Thigh(Lat View)"
+* LOINC#49937 "X-Ray Thoracic Inlet 2 Views"
+* LOINC#49937 "X-Ray Thoracic Inlet 3 Views"
+* LOINC#49937 "X-Ray Thoracic Inlet(Ap/Lat View)"
+* LOINC#30929 "X-Ray Thoracic Spine"
+* LOINC#42584 "X Ray Thoracic Inlet"
+* LOINC#30929 "X Ray Thoracic Spine"
+* LOINC#34176 "X-Ray Skull (Omv)"
+* LOINC#43266 "X-Ray Skull Vein"
+* LOINC#73143 "X-Ray Skull(Ap View)"
+* LOINC#30877 "X-Ray Skull(Ap/Lat View)"
+* LOINC#30877- "X-Ray Skull(Ap/Lat View) Left"
+* LOINC#34176_ "X-Ray Skull(Ap/Lat/Townes View)"
+* LOINC#30878 "X-Ray Skull(Lat View)"
+* LOINC#45586 "X-Ray Skull(Pa/Lat View)"
+* LOINC#34176- "X-Ray Skull(Smv/Townes/Conned View)"
+* LOINC#34176-_ "X-Ray Skull/ Pns/ Mandible"
+* LOINC#43327 "X-Ray Small Bowel"
+* LOINC#43327 "X-Ray Small Intestine"
+* LOINC#43432 "X-Ray Soft Tissue Neck"
+* LOINC#30800 "X-Ray Soft Tissue Neck(Lat View)"
+* LOINC#90650 "X-Ray Spinal Angiogram"
+* LOINC#30882 "X-Ray Spine Artery"
+* LOINC#30886 "X-Ray Spine Scoliosis Study(Supine/Erect View)"
+* LOINC#30936 "X-Ray Spleen/Liver Vein(Splenoportography)"
+* LOINC#31007 "X-Ray Stereotactic / Image Guided Biopsy"
+* LOINC#102337 "X-Ray Sternoclavicular Joint Bilateral PA"
+* LOINC#43903 "X-Ray Sternoclavicular Joint AP"
+* LOINC#30939 "X-Ray Sternum"
+* LOINC#43906 "X-Ray Sternum 2 Views"
+* LOINC#43904 "X Ray Sterno Clavicular Joints 3 views"
+* LOINC#30939 "X Ray Sternum"
+* LOINC#32035 "X-Ray Shoulder Joint Right"
+* LOINC#32033 "X-Ray Shoulder Joints Bilateral"
+* LOINC#42618 "X-Ray Shoulder Joints Bilateral(Ap View)"
+* LOINC#42704 "X-Ray Shoulder Joints Bilateral(Ap/Lat View)"
+* LOINC#30859 "X-Ray Shoulder/Scapula"
+* LOINC#43583 "X-Ray Sinogram(Rad)"
+* LOINC#43583 "X-Ray Sinogram/Fistulogram"
+* LOINC#30873 "X-Ray Sinuses"
+* LOINC#43882 "X-Ray Sinuses 3 Views"
+* LOINC#43886 "X-Ray Sinuses Lat View"
+* LOINC#43892 "X-Ray Sinuses(Om View)"
+* LOINC#44305 "X-Ray Skeletal Survey"
+* LOINC#44305 "X-Ray Skeletal Survey Under 5 Years"
+* LOINC#34176__ "X-Ray Skull"
+* LOINC#43895 "X-Ray Skull 2 Views"
+* LOINC#30875 "X-Ray Skull 3 Views"
+* LOINC#30875- "X-Ray Skull 3 Views(Rad)"
+* LOINC#43896 "X-Ray Skull 4 Views"
+* LOINC#34176-- "X-Ray Skull(Ap/Lat/Townes/Conned View)"
+* LOINC#34176__- "X-Ray Skull."
+* LOINC#30874 "X Ray Skull"
+* LOINC#30877_ "X Ray Skull (2 Views ) Ap / Lat"
+* LOINC#43895_ "X Ray Skull 2 Views (Oh)"
+* LOINC#30875_ "X Ray Skull 3 Views"
+* LOINC#30877-_ "X Ray Skull Ap & Lateral"
+* LOINC#44137 "X-Ray Scaphoid Right"
+* LOINC#30859- "X-Ray Scapula"
+* LOINC#32031 "X-Ray Scapula Left"
+
+
+ValueSet: KPSServiceTypeVS
+Id: kps-service-type-vs
+Title: "KPS Local Service Type"
+Description: "A list of locally defined healthcare service types for Kenyan health facilities."
+* include codes from system KPSServiceTypeCS
+
+
+ValueSet: KPSServiceAccessPointVS
+Id: kps-service-access-point
+Title: "KPS Service Access Point"
+Description: "A list of service access points for classifying patient entry points in facilities"
+* include codes from system KPSServiceAccessPointCS
+
+
+ValueSet: KPSFundChoicesVS
+Id: kps-fund-choices
+Title: "KPS Fund Choices"
+Description: "Locally defined list of patient fund options for health service payments"
+* include codes from system KPSFundChoicesCS
+
+
+ValueSet: KPSSchemesVS
+Id: kps-schemes
+Title: "KPS Schemes"
+Description: "A list of schemes available to patients"
+* include codes from system KPSSchemesCS
+
+ValueSet: KPSPaymentMechanism
+Id: kps-payment-mechanism
+Title: "KPS Payment Mechanism"
+Description: "A list of allowed healthcare payment models"
+* include codes from system PaymentMechanism
+
+ValueSet: KPSUsageFrequency
+Id: kps-usage-frequency
+Title: "KPS Usage Frequency"
+Description: "A list of allowable frequency options for health service usage"
+* include codes from system UsageFrequency
+
+ValueSet: KPSAnnualQuantityType
+Id: kps-annual-quantity-type
+Title: "KPS Annual Quantity Type"
+Description: "Types of units used to express annual health service quantities"
+* include codes from system AnnualQuantityType
+
+
+ValueSet: KPSAuthType
+Id: kps-auth-type
+Title: "KPS Authorization Type"
+Description: "List of accepted authentication or authorization types"
+* include codes from system AuthType
+
+ValueSet: KPSAuthorizationFailureReason
+Id: kps-authorization-failure-reason
+Title: "KPS Authorization Failure Reason"
+Description: "Allowed values for reasons why an authorization request may fail"
+* include codes from system AuthorizationFailureReason
+
+ValueSet: KPSAuthorizationStatus
+Id: kps-authorization-status
+Title: "KPS Authorization Status"
+Description: "Status options for an authorization process"
+* include codes from system AuthorizationStatus
+
+
+ValueSet: KPSClaimsDepartments
+Id: kps-claims-departments
+Title: "KPS Claims Departments"
+Description: "Departments used for classifying healthcare claims"
+* include codes from system ClaimsDepartments
+
+ValueSet: KPSCopayType
+Id: kps-copay-type
+Title: "KPS Copay Types"
+Description: "Allowed copay types for patient contribution"
+* include codes from system CopayType
+
+
+ValueSet: KPSRemittanceChoice
+Id: kps-remittance-choice
+Title: "KPS Remittance Choice"
+Description: "Options for how remittances are made"
+* include codes from system RemittanceChoice
+
+ValueSet: KPSRemittanceStatus
+Id: kps-remittance-status
+Title: "KPS Remittance Status"
+Description: "Stages of remittance status tracking"
+* include codes from system RemittanceStatus
+
+
+ValueSet: KPSAdjustmentType
+Id: kps-adjustment-type
+Title: "KPS Adjustment Type"
+Description: "Types of financial adjustments applied to claims or bills"
+* include codes from system AdjustmentType
+
+
+
+ValueSet: KPSDiagnosisKind
+Id: kps-diagnosis-kind
+Title: "KPS Diagnosis Kind"
+Description: "Diagnosis classification level based on ICD structure"
+* include codes from system DiagnosisKind
+
+ValueSet: KPSFlagType
+Id: kps-flag-type
+Title: "KPS Flag Type"
+Description: "Types of flags applied to claims or processes"
+* include codes from system FlagType
+
+
+ValueSet: KPSNonEDIClaimStatus
+Id: kps-non-edi-claim-status
+Title: "KPS Non-EDI Claim Status"
+Description: "Workflow status values for non-electronic claims"
+* include codes from system NonEDIClaimStatus
+
+
+ValueSet: KPSBulkRemittanceStatus
+Id: kps-bulk-remittance-status
+Title: "KPS Bulk Remittance Status"
+Description: "Status of bulk remittance batches"
+* include codes from system BulkRemittanceStatus
