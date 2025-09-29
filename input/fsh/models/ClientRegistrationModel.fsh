@@ -22,13 +22,13 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 // Address
 * address 0..1 BackboneElement "Client's residential address"
   * country 0..1 string "Name of country of affiliation"
-    * ^code = #KPS.A.DE.8
+    * ^code = #KPS.A.DE.6
   * county 0..1 string "County where the client resides"
-    * ^code = #KPS.A.DE.9
+    * ^code = #KPS.A.DE.7
   * subcounty 0..1 string "Subcounty of residence"
-    * ^code = #KPS.A.DE.10
+    * ^code = #KPS.A.DE.8
   * ward 0..1 string "Ward where the client lives"
-    * ^code = #KPS.A.DE.11
+    * ^code = #KPS.A.DE.9
   * village 0..1 string "Village or estate of residence"
     * ^code = #KPS.A.DE.12
   * postalAddress 0..1 string "Mailing address including P.O. Box, street or building details"
