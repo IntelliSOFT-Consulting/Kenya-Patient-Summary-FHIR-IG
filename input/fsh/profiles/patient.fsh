@@ -1,3 +1,5 @@
+Alias: $SCT = http://snomed.info/sct
+
 Profile: KpsPatient
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Id: kps-patient
@@ -67,3 +69,60 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * address.postalCode 0..1 MS
 * address.postalCode ^short = "Patient's Postal Address of Resisence"
 
+
+
+
+Instance: ExamplePatientKPS
+InstanceOf: kps-patient
+Title: "Example Patient"
+Description: "An example of a Patient resource from Mandera County conforming to the KPS Patient profile."
+Usage: #example
+
+* meta.profile = "http://example.org/fhir/StructureDefinition/kps-patient"
+
+// --- Identifiers ---
+* identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
+* identifier[NationalIDNo].value = "28765432"
+
+* identifier[UPI].system = "http://moh.kenya/identifier/UPI"
+* identifier[UPI].value = "UPI-MND-001"
+
+* identifier[PassportNo].system = "http://moh.kenya/identifier/passport-No"
+* identifier[PassportNo].value = "KEP1234567"
+
+* identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
+* identifier[BirthCertificateNo].value = "BC-MND-2020-0001"
+
+// --- Name, Gender, Birth Date ---
+* name.family = "Mohamed"
+* name.given = "Hawa"
+* gender = #female
+* birthDate = "1992-03-25"
+
+// --- Telecom (sliced) ---
+* telecom[phone].system = #phone
+* telecom[phone].value = "+254701234567"
+* telecom[phone].use = #mobile
+
+* telecom[email].system = #email
+* telecom[email].value = "hawa.mohamed@example.com"
+* telecom[email].use = #home
+
+// --- Address ---
+* address.country = "KE"
+* address.state = "Mandera"
+* address.district = "Mandera West"
+* address.city = "Takaba"
+* address.line = "Banisa Village"
+* address.postalCode = "70300"
+
+// --- Contact (Next of Kin) ---
+* contact.relationship.coding[0].system = $SCT
+* contact.relationship.coding[0].code = #184142008
+* contact.relationship.coding[0].display = "Next of kin"
+
+* contact.name.family = "Abdullahi"
+* contact.name.given = "Hussein"
+* contact.telecom[0].system = #phone
+* contact.telecom[0].value = "+254711223344"
+* contact.telecom[0].use = #mobile
