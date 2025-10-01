@@ -17,18 +17,19 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 * dateOfBirth 1..1 date "Client's date of birth, if known"
   * ^code = #KPS.A.DE.4
 * sex 1..1 code "Sex of the client assigned at birth"
+* sex from GenderVS
   * ^code = #KPS.A.DE.5 
 
 // Address
 * address 0..1 BackboneElement "Client's residential address"
   * country 0..1 string "Name of country of affiliation"
-    * ^code = #KPS.A.DE.6
-  * county 0..1 string "County where the client resides"
-    * ^code = #KPS.A.DE.7
-  * subcounty 0..1 string "Subcounty of residence"
     * ^code = #KPS.A.DE.8
-  * ward 0..1 string "Ward where the client lives"
+  * county 0..1 string "County where the client resides"
     * ^code = #KPS.A.DE.9
+  * subcounty 0..1 string "Subcounty of residence"
+    * ^code = #KPS.A.DE.10
+  * ward 0..1 string "Ward where the client lives"
+    * ^code = #KPS.A.DE.11
   * village 0..1 string "Village or estate of residence"
     * ^code = #KPS.A.DE.12
   * postalAddress 0..1 string "Mailing address including P.O. Box, street or building details"
@@ -61,4 +62,4 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 // Insurance
 * insurance 0..1 BackboneElement "Insurance information"
   * insuranceNumber 0..1 string "Health insurance ID assigned to the client"
-    * ^code = #KPS.A.DE.25
+    * ^code = #KPS.A.DE.26
