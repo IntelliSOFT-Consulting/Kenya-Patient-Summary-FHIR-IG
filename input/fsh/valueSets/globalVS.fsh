@@ -1,12 +1,19 @@
 Alias: LOINC = http://loinc.org
 Alias: UCUM = http://unitsofmeasure.org
 
- 
+ValueSet: GenderVS
+Id: kps-patient-gender-vs
+Title: "KPS - Administrative Gender"
+Description: "Custom ValueSet for Administrative Gender"
+* ^url = "http://example.com/fhir/ValueSet/kps-patient-gender-vs"
+* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+
+
 ValueSet: KPSOrganizationIdentifierTypeVS
 Id: kps-organization-identifier-type-vs
 Title: "Organization Identifier Type"
 Description: "Custom ValueSet for organization identifier types."
-* ^url = "http://example.com/fhir/ValueSet/organization-identifier-type"
+* ^url = "http://example.com/fhir/ValueSet/kps-organization-identifier-type"
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 
 ValueSet: KPSOrganizationTypeVS

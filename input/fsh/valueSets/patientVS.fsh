@@ -2,13 +2,7 @@ Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
 Alias: $UCUM = http://unitsofmeasure.org
 
-ValueSet: GenderVS
-Id: gender-vs
-Title: "Gender ValueSet"
-Description: "ValueSet for gender using SNOMED CT codes"
-* ^experimental = false
-* $SCT#248153007 "Male (gender)"
-* $SCT#248152002 "Female (gender)"
+ 
 
 ValueSet: MedicationVS
 Id: medication-vs
@@ -343,3 +337,6 @@ Description:  "Patient title"
 * KNHTS.PAT.TITLE#mrs
 * KNHTS.PAT.TITLE#miss
 * KNHTS.PAT.TITLE#ms
+
+
+ 
