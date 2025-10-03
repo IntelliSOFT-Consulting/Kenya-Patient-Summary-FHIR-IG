@@ -5,10 +5,13 @@ FROM ruby:latest AS build
 RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
-    openjdk-17-jdk openjdk-17-jre \
+    default-jdk \
+    default-jre \
     curl \
     openssl \
-    jq
+    jq \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 
 # Install Sushi tool
 RUN npm install -g fsh-sushi http-server
@@ -26,7 +29,7 @@ COPY . .
 # Make sure all files have appropriate permissions
 RUN chmod 777 -R .
 
-RUN mkdir - p /home/src/input-cache/
+RUN mkdir -p /home/src/input-cache/
 
 # Make sure the scripts are executable
 RUN chmod +x /home/src/_gencontinuous.sh /home/src/_genonce.sh /home/src/_updatePublisher.sh
