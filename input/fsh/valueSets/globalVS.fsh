@@ -530,3 +530,16 @@ Id: kps-bulk-remittance-status
 Title: "KPS Bulk Remittance Status"
 Description: "Status of bulk remittance batches"
 * include codes from system BulkRemittanceStatus
+
+
+ValueSet: KPSPaymentNoticeStatus
+Id: kps-payment-notice-status
+Title: "KPS PaymentNoticeStatus"
+Description: "Value Sets for PaymentNotice Status"
+* include codes from system http://hl7.org/fhir/fm-status
+
+ValueSet: KPSPaymentNoticePaymentStatus
+Id: kps-payment-notice-payment-status
+Title: "KPS PaymentNoticePaymentStatus"
+Description: "Value Sets for PaymentNotice Patment Status"
+* include codes from system http://terminology.hl7.org/CodeSystem/paymentstatus
