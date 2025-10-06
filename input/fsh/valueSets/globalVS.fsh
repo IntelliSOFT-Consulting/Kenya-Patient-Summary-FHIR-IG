@@ -561,3 +561,19 @@ Id: kpsepisode-of-care-diagnosis-role
 Title: "KPS EpisodeOfCareDiagnosisRole"
 Description: "Value Sets for EpisodeOfCare Diagnosis Role"
 * include codes from system http://terminology.hl7.org/CodeSystem/diagnosis-role
+
+
+ValueSet: KPSSubstanceStatus
+Id: kps-substance-status
+Title: "KPSSubstanceStatus"
+Description: "Value Sets for Substance Status"
+* include codes from system http://hl7.org/fhir/substance-status
+
+ValueSet: KPSSubstanceCode
+Id: kps-substance-code
+Title: "KPSSubstance Code"
+Description: "ValueSet for SNOMED CT Substance concepts (descendants of 105590001 |Substance|)."
+* include codes from system http://snomed.info/sct where concept is-a #105590001
+
+
+
