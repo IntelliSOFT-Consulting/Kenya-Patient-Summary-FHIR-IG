@@ -42,6 +42,13 @@ Description: "ValueSet for Contact Relationship using SNOMED CT codes"
 * $SCT#184142008 "Next of kin"
 * $SCT#405170004 "Other"
 
+ValueSet: KPSPatientLinkType
+Id: kps-patient-link-type
+Title: "KPS Patient Link Type"
+Description: " Value Sets for Patient Link Type"
+* ^experimental = false
+* include codes from system  http://hl7.org/fhir/link-type
+
 ValueSet: AllergyAllergensVS
 Id: allergy-allergens-vs
 Title: "Allergy Allergens ValueSet"
