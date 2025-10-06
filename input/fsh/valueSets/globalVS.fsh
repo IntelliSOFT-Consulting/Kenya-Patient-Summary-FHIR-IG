@@ -543,3 +543,21 @@ Id: kps-payment-notice-payment-status
 Title: "KPS PaymentNoticePaymentStatus"
 Description: "Value Sets for PaymentNotice Patment Status"
 * include codes from system http://terminology.hl7.org/CodeSystem/paymentstatus
+
+ValueSet: KPSEpisodeOfCareStatus
+Id: ksp-episode-of-care-status
+Title: "KPS EpisodeOfCareStatus"
+Description: "Value Sets for EpisodeOfCare Status"
+* include codes from system http://hl7.org/fhir/episode-of-care-status
+
+ValueSet: KPSEpisodeOfCareType
+Id: kps-episode-of-care-type
+Title: "KPS EpisodeOfCareType"
+Description: "Value Sets for EpisodeOfCare Type"
+* include codes from system http://terminology.hl7.org/CodeSystem/episodeofcare-type
+
+ValueSet: KPSEpisodeOfCareDiagnosisRole
+Id: kpsepisode-of-care-diagnosis-role
+Title: "KPS EpisodeOfCareDiagnosisRole"
+Description: "Value Sets for EpisodeOfCare Diagnosis Role"
+* include codes from system http://terminology.hl7.org/CodeSystem/diagnosis-role
