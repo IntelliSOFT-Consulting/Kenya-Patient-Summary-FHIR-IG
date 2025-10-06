@@ -576,4 +576,64 @@ Description: "ValueSet for SNOMED CT Substance concepts (descendants of 10559000
 * include codes from system http://snomed.info/sct where concept is-a #105590001
 
 
+ValueSet: KPSPatientIdentifierUse
+Id: kps-patient-identifier-use
+Title: "KPSPatientIdentifierUse"
+Description: "ValueSet binding for Patient.identifier.use in Patient."
+* include codes from system  http://hl7.org/fhir/identifier-use
+
+
+ValueSet: KPSPatientIdentifierType
+Id: kps-patient-identifier-type
+Title: "KPSPatientIdentifierType"
+Description: "ValueSet binding for Patient.identifier.type in Patient."
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
+
+ValueSet: KPSPatientNameUse
+Id: kps-patient-name-use
+Title: "KPSPatientNameUse"
+Description: "ValueSet binding for Patient.name.use in Patient."
+* include codes from system http://hl7.org/fhir/name-use
+
+ValueSet: KPSPatientTelecomSystem
+Id: kps-patient-telecom-system
+Title: "KPSPatientTelecomSystem"
+Description: "ValueSet binding for Patient.telecom.system in Patient."
+* include codes from system http://hl7.org/fhir/contact-point-system
+
+ValueSet: KPSPatientTelecomUse
+Id: kps-patient-telecom-use
+Title: "KPSPatientTelecomUse"
+Description: "ValueSet binding for Patient.telecom.use in Patient."
+* include codes from system http://hl7.org/fhir/contact-point-use
+
+ValueSet: KPSPatientGender
+Id: kps-patient-gender
+Title: "KPSPatientGender"
+Description: "ValueSet binding for Patient.gender in Patient."
+* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+
+ValueSet: KPSPatientAddressUse
+Id: kps-patient-address-use
+Title: "KPSPatientAddressUse"
+Description: "ValueSet binding for Patient.address.use in Patient."
+* include codes from system http://hl7.org/fhir/address-use
+
+ValueSet: KPSPatientMaritalStatus
+Id: kps-patient-marital-status
+Title: "KPSPatientMaritalStatus"
+Description: "ValueSet binding for Patient.maritalStatus in Patient."
+* include codes from system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+
+ValueSet: KPSPatientContactRelationship
+Id: kps-patient-contact-relationship
+Title: "KPSPatientContactRelationship"
+Description: "ValueSet binding for Patient.contact.relationship in Patient."
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0131 where concept is-not-a #O
+
+ValueSet: KPSPatientLinkType
+Id: kps-patient-link-type
+Title: "KPSPatientLinkType"
+Description: "ValueSet binding for Patient.link.type in Patient."
+* include codes from system http://hl7.org/fhir/link-type
 
