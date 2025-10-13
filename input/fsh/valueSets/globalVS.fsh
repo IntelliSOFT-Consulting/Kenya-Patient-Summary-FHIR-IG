@@ -5,7 +5,9 @@ ValueSet: GenderVS
 Id: kps-patient-gender-vs
 Title: "KPS - Administrative Gender"
 Description: "Custom ValueSet for Administrative Gender"
+ 
 * ^url = "http://example.com/fhir/ValueSet/kps-patient-gender-vs"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
 
 
@@ -13,14 +15,18 @@ ValueSet: KPSOrganizationIdentifierTypeVS
 Id: kps-organization-identifier-type-vs
 Title: "Organization Identifier Type"
 Description: "Custom ValueSet for organization identifier types."
+ 
 * ^url = "http://example.com/fhir/ValueSet/kps-organization-identifier-type"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 
 ValueSet: KPSOrganizationTypeVS
 Id: kps-organization-type-vs
 Title: "Organization Type"
 Description: "Custom ValueSet for organization types."
+ 
 * ^url = "http://example.com/fhir/ValueSet/organization-type"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/organization-type
 
  
@@ -29,21 +35,27 @@ ValueSet: KPSConditionSeverityVS
 Id: kps-condition-severity-vs
 Title: "Condition Severity"
 Description: "ValueSet for condition severity used in the KPS profile."
+ 
 * ^url = "https://example.com/fhir/ValueSet/condition-severity-vs"
+* ^experimental = false
 * include codes from system http://snomed.info/sct
 
 ValueSet: KPSConditionCodeVS
 Id: kps-condition-code-vs
 Title: "Condition Code"
 Description: "Clinical condition codes."
+ 
 * ^url = "https://example.com/fhir/ValueSet/condition-code-vs"
+* ^experimental = false
 * include codes from system http://snomed.info/sct
 
 ValueSet: KPSBodySiteVS
 Id: kps-body-site-vs
 Title: "Body Site"
 Description: "Sites on the body associated with clinical conditions."
+ 
 * ^url = "https://example.com/fhir/ValueSet/body-site-vs"
+* ^experimental = false
 * include codes from system http://snomed.info/sct
  
 
@@ -51,14 +63,18 @@ ValueSet: KPSDiagnosticServiceSectionsVS
 Id: kps-diagnostic-service-sections
 Title: "Diagnostic Service Categories"
 Description: "Categories of diagnostic services."
+ 
 * ^url = "http://terminology.hl7.org/ValueSet/diagnostic-service-sections"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0074
 
 ValueSet: KPSClinicalFindingsVS
 Id: kps-clinical-findings
 Title: "Clinical Findings"
 Description: "Clinical findings in diagnostic report conclusions."
+ 
 * ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
+* ^experimental = false
 * include codes from system http://snomed.info/sct
 
   
@@ -67,21 +83,27 @@ ValueSet: KPSMedicationVS
 Id: kps-medication-vs
 Title: "Medication ValueSet"
 Description: "List of permitted medications in national formulary."
+ 
 * ^url = "https://example.org/fhir/ValueSet/medication-vs"
+* ^experimental = false
 * include codes from system http://www.whocc.no/atc
 
 ValueSet: KPSMedicationFormVS
 Id: kps-medication-form-vs
 Title: "Medication Form"
 Description: "Types of medication forms."
+ 
 * ^url = "https://example.org/fhir/ValueSet/medication-form-vs"
+* ^experimental = false
 * include codes from system http://example.org/fhir/CodeSystem/medication-form
 
 ValueSet: KPSUCUMUnitsVS
 Id: kps-ucum-units-vs
 Title: "UCUM Units"
 Description: "UCUM units for medication quantities."
+ 
 * ^url = "https://example.org/fhir/ValueSet/ucum-units-vs"
+* ^experimental = false
 * include codes from system http://unitsofmeasure.org
 
  
@@ -90,21 +112,27 @@ ValueSet: KPSMedicationRequestCategoryVS
 Id: kps-medicationrequest-category
 Title: "Medication Request Category"
 Description: "Local medication request categories."
+ 
 * ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-category"
+* ^experimental = false
 * include codes from system http://example.org/fhir/CodeSystem/medicationrequest-category
 
 ValueSet: KPSGenericProductsVS
 Id: kps-generic-products
 Title: "Generic Products"
 Description: "List of generic drugs."
+ 
 * ^url = "https://example.com/fhir/ValueSet/generic-products"
+* ^experimental = false
 * include codes from system http://www.whocc.no/atc
 
 ValueSet: KPSRouteOfAdministrationVS
 Id: kps-route-of-administration
 Title: "Route of Administration"
 Description: "Routes for drug administration."
+ 
 * ^url = "https://example.com/fhir/ValueSet/route-of-administration"
+* ^experimental = false
 * include codes from system http://snomed.info/sct
 
 ValueSet: KPSUnitOfMeasureVS
@@ -112,31 +140,40 @@ Id: kps-unit-of-measure
 Title: "Unit of Measure"
 Description: "Units for doses and dispensing."
 * ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
+* ^experimental = false
 * include codes from system http://unitsofmeasure.org
  
 
 ValueSet: KPSAllergyStatusVS
 Id: kps-allergy-status-vs
-Title: "Allergy Clinical Status"
+Title: "Allergy Clinical Status" 
+Description: "Value Sets for Allergy Clinical Status"
 * ^url = "https://example.org/fhir/ValueSet/allergy-status-vs"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 
 ValueSet: KPSAllergyCertaintyVS
 Id: kps-allergy-certainty-vs
 Title: "Allergy Certainty"
+Description: "Value Sets for Allergy Certainty"
 * ^url = "https://example.org/fhir/ValueSet/allergy-certainty-vs"
+* ^experimental = false
 * include codes from system http://example.org/fhir/CodeSystem/allergy-certainty
 
 ValueSet: KPSAllergyTypeVS
 Id: kps-allergy-type-vs
 Title: "Allergy Type"
+Description: "Value Sets for Allergy Type"
 * ^url = "https://example.org/fhir/ValueSet/allergy-type-vs"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/allergy-intolerance-type
 
 ValueSet: KPSAllergySeverityVS
 Id: kps-allergy-severity-vs
-Title: "Allergy Severity"
+Title: "Allergy Severity" 
+Description: "Value Sets for Allergy Severity"
 * ^url = "https://example.org/fhir/ValueSet/allergy-severity-vs"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/reaction-event-severity
 
 
@@ -144,6 +181,7 @@ ValueSet: KPSVitalSignsCodes
 Id: kps-vital-signs-codes
 Title: "KPS Vital Signs Codes"
 Description: "Standard codes for recording vital signs in the Kenya Patient Summary."
+* ^experimental = false
 * LOINC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
 * LOINC#9279-1 "Respiratory rate"
 * LOINC#8867-4 "Heart rate"
@@ -163,6 +201,7 @@ ValueSet: KPSVitalSignsUnits
 Id: kps-vital-signs-units
 Title: "KPS Vital Signs Units"
 Description: "UCUM units used for vital signs in the Kenya Patient Summary."
+* ^experimental = false
 * UCUM#% "percent"
 * UCUM#cm "centimeter"
 * UCUM#[in_i] "inch (international)"
@@ -177,239 +216,12 @@ Description: "UCUM units used for vital signs in the Kenya Patient Summary."
 * UCUM#m2 "square meter"
 
 
-ValueSet: KPSInvestigationLab
-Id: kps-investigation-lab
-Title: "KPS Investigation Lab"
-Description: "LOINC codes for common laboratory investigations used in the Kenya Patient Summary."
-* LOINC#28519 "T. Pallidum IgM serum"
-* LOINC#78275 "T spot TB test"
-* LOINC#57257 "T.Pallidum Haemagglutination Test (TPHA)-CSF"
-* LOINC#104562 "Tetanus toxoid IgG antibody"
-* LOINC#14270 "Toxoplasmosis PCR"
-* LOINC#38539 "Urine microscopy for trichomonas"
-* LOINC#54843 "Serum Amyloid A"
-* LOINC#60052 "JAK2 V617f mutation"
-* LOINC#58779 "BCR/ABL fusion gene"
-* LOINC#62487 "Urine ethanol concentration"
-* LOINC#43982 "Urine morphine test"
-* LOINC#103139 "Chromogranin A"
-* LOINC#34777 "Blood metanephrines test"
-* LOINC#89436 "Ki-67 nuclear Ag test"
-* LOINC#47034 "Serum valproate test"
-* LOINC#41621 "Blood tobramycin test"
-* LOINC#30098 "Testosterone index"
-* LOINC#54376 "Heinz bodies"
-* LOINC#35925 "Soluble transferrin receptor"
-* LOINC#27561 "Inherited thrombophilia screen"
-* LOINC#26803 "Chloride saturation in sweat"
-* LOINC#60374 "Cystic fibrosis extended screen"
-* LOINC#24519 "Retinol binding protein"
-* LOINC#48641 "Herpes 1 IgG antibody test in CSF"
-* LOINC#23851 "Fluorescent treponemal IgM antibody test in serum"
-* LOINC#103313 "Fluorescent treponemal Ab [FTA] test in CSF"
-* LOINC#30283 "EBV IgG+IgM"
-* LOINC#58147 "E. histolytica Ab test"
-* LOINC#82518 "Taenia solium larva IgG Ab detection in serum"
-* LOINC#65180 "Ziehl-Neelsen stain for bacterial Identification in cerebral spinal fluid"
-* LOINC#26506 "Streptococcus agalactiae Ag detection in cerebral spinal fluid"
-* LOINC#26507 "Streptococcus pneumoniae Ag detection in cerebral spinal fluid"
-* LOINC#30318 "Protein electrophoresis in cerebral spinal fluid"
-* LOINC#35182 "Cell differential count cerebral spinal fluid"
-* LOINC#29995 "Neisseria meningitidis serogroup B Ag detection in Cerebral spinal fluid"
-* LOINC#29987 "Haemophilus influenzae B Ag detection in Cerebral spinal fluid"
-* LOINC#37778 "Bordetella pertussis Ab detection in Serum"
-* LOINC#24071 "Bacteria identification in blood by anaerobe culture"
-* LOINC#24065 "Bacteria identification in blood by aerobe culture"
-* LOINC#67093 "Bacteria identification in ear by aerobe culture"
-* LOINC#46711 "Estrogen receptor Ag detection in tissue by immune stain"
-* LOINC#89425 "HER2 gene detection by IHC stain"
-* LOINC#78889 "Breast HER2 gene test by FISH"
-* LOINC#69033 "Parietal cell Ab detection in gastric fluid"
-* LOINC#35212 "Enterovirus test by PCR"
-* LOINC#27188 "Cryptosporidium sp Ag detection in stool"
-* LOINC#30340 "Platelet aggregation adrenaline induced"
-* LOINC#60112 "Platelet aggregation ADP induced"
-* LOINC#52953 "Osmotic fragility test"
-* LOINC#43817 "Methamphetamine detection in urine"
-* LOINC#73407 "Lactose tolerance test"
-* LOINC#23620 "Albumin quantification in CSF"
-* LOINC#50711 "Complement C1q quantification in serum"
-* LOINC#21278 "Cold agglutinin titer in Serum or Plasma"
-* LOINC#47469 "Calculated anion gap"
-* LOINC#38417 "Amino acids quantification in CSF"
-* LOINC#41055 "Amino acids test"
-* LOINC#32666 "Urine Organic Acids"
-* LOINC#30098 "Androgen free Index"
-* LOINC#35670 "Fibrinogen degradation products quantification"
-* LOINC#93753 "Ristocetin Cofactor Inhibitor"
-* LOINC#29938 "Dengue IgM Antibody"
-* LOINC#64207 "Chikungunya virus IgM A"
-* LOINC#56332 "Aspergillus sp DNA"
-* LOINC#55867 "Pneumocystis jirovecii DNA test"
-* LOINC#13112 "Direct antiglobulin test"
-* LOINC#37071 "Neuronal antibody quantification"
-* LOINC#102472 "Hemoglobin F Quantification"
-* LOINC#99210 "Thrombophilia screening"
-* LOINC#27558 "Epidermal growth factor receptor (EGFR) gene mutation analysis"
-* LOINC#20786 "Reticulocytes count"
-* LOINC#98498 "Factor V Leiden genotyping"
-* LOINC#20122 "Bone marrow aspirate observation"
-* LOINC#35219 "Colposcopy Study"
-* LOINC#53247 "Antibody titration test"
-* LOINC#29514 "ELISA for African Trypanosomiasis"
-
-
-ValueSet: KPSImagingXRay
-Id: kps-imaging-xray
-Title: "KPS X-Ray Imaging Procedures"
-Description: "Custom list of X-Ray imaging procedures mapped to local or LOINC-aligned codes for use under the Kenya Pathology Standard (KPS)."
- 
-
-* LOINC#32047 "X-Ray Wrist Bilateral"
-* LOINC#30578 "X-Ray Wrist Joint"
-* LOINC#32048 "X-Ray Wrist Left"
-* LOINC#32049 "X-Ray Wrist Right"
-* LOINC#30578 "X-Ray Wrist With Contrast"
-* LOINC#30578 "X-Ray Wrist(Ap View)"
-* LOINC#43958 "X-Ray Wrist(Lat View)"
-* LOINC#16060 "X-Ray Wrists Bilateral(Ap/Lat View)"
-* LOINC#103399 "X-Ray Wrists Bilateral(Lat View)"
-* LOINC#43951 "X Ray Wrist Joint"
-* LOINC#43714 "XR Foot - Right Lateral"
-* LOINC#72932 "X-Ray Trunk Vein"
-* LOINC#30850 "X-Ray Ulna"
-* LOINC#49619 "X-Ray Unspecified"
-* LOINC#30656 "X-Ray Upper Extremity Infant"
-* LOINC#103330 "X-Ray Upper Gastrointestinal Tract"
-* LOINC#103330 "X-Ray Upper Gastrointestinal Tract With Kub"
-* LOINC#103330 "X-Ray Upper Gastrointestinal Tract With Small Intestines"
-* LOINC#103330 "X-Ray Upper Gastrointestinal Tract Without Kub"
-* LOINC#30964 "X-Ray Urethra/Bladder"
-* LOINC#30964 "X-Ray Urethra/Bladder(Retrograde Cystourethrography)"
-* LOINC#49701 "X-Ray Urethra/Bladder(Voiding Cystourethrography)"
-* LOINC#45230 "X-Ray Vasogram"
-* LOINC#45135 "X-Ray Venogram Bilateral"
-* LOINC#98832 "X-Ray Venogram Unilateral"
-* LOINC#98832- "X-Ray Venogram Unilateral Left"
-* LOINC#90650 "X-Ray Whole Spine With Contrast"
-* LOINC#15887 "X-Ray Whole Spine(Ap/Lat View)"
-* LOINC#15887- "X-Ray Whole Spine(Rad)"
-* LOINC#43952 "X-Ray Wrist 2 Views(Rad)"
-* LOINC#43953 "X-Ray Wrist 3 Views"
-* LOINC#36497 "X-Ray Wrist(Ap/Lat View)"
-* LOINC#43954 "X-Ray Wrist(Ap/Lat/Obliques)"
-* LOINC#44133 "X-Ray Wrist(Ap/Lat/Scaphoid View)"
-* LOINC#43951- "X Ray Wrist"
-* LOINC#36497- "X Ray Wrist Ap / Lat"
-* LOINC#36455 "X-Ray Thoracic Spine Oblique View"
-* LOINC#43931 "X-Ray Thoracic Spine 2 Views(Rad)"
-* LOINC#43932 "X-Ray Thoracic Spine 3 Views(Rad)"
-* LOINC#36448 "X-Ray Thoracic Spine(Ap View)"
-* LOINC#44145 "X-Ray Thoracic Spine(Ap/Lat View)"
-* LOINC#43934 "X-Ray Thoracic Spine(Ap/Lat/Oblique View)"
-* LOINC#30929 "X-Ray Thoracodorsal Spine"
-* LOINC#48812 "X-Ray Thoracolumbar Spine"
-* LOINC#36413 "X-Ray Thoracolumbar Spine Standing (Scoliosis)"
-* LOINC#44145 "X-Ray Thoracolumbar Spine(Ap/Lat View)"
-* LOINC#54805 "X-Ray Throat And Fluoroscopy"
-* LOINC#30955 "X-Ray Tibia/Fibula"
-* LOINC#32040 "X-Ray Tibia/Fibula Bilateral"
-* LOINC#43922 "X-Ray Tibia/Fibula(Ap/Lat View)"
-* LOINC#30956 "X-Ray Toes"
-* LOINC#43927 "X-Ray Toes 2 Views"
-* LOINC#45156 "X-Ray Toes(Ap/Oblique View)"
-* LOINC#30580 "X-Ray Transcatheter Therapy Embolization"
-* LOINC#30580 "X-Ray Transcatheter Therapy Infusion"
-* LOINC#43327 "X-Ray Trunk"
-* LOINC#36544 "X-Ray Trunk Lymph Vessel"
-* LOINC#36449 "X Ray Thoracic Spine Ap & Lateral"
-* LOINC#43919 "X Ray Tibia / Fibula"
-* LOINC#30955 "X Ray Tibia / Fibula (Oh )"
-* LOINC#30945 "X Ray Tmj (Temporo Mandibular Joint)"
-* LOINC#43907 "X-Ray Sternum (PA/Lat/Oblique View)"
-* LOINC#43082 "X-Ray Submental Vertical"
-* LOINC#36513 "X-Ray Tear Duct"
-* LOINC#100442 "X-Ray Teeth"
-* LOINC#100442 "X-Ray Teeth Full Mouth"
-* LOINC#100442 "X-Ray Teeth Less Than Full Mouth"
-* LOINC#30945 "X-Ray Temporomandibular Joint"
-* LOINC#30945 "X-Ray Temporomandibular Joint 4 Views"
-* LOINC#43374 "X-Ray Temporomandibular Joint Bilateral(Lat View)"
-* LOINC#36596 "X-Ray Temporomandibular Joint Left"
-* LOINC#43557 "X-Ray Temporomandibular Joint Open And Closed Mouth Bilateral"
-* LOINC#55045 "X-Ray Temporomandibular Joint Open And Closed Mouth Unilateral"
-* LOINC#36598 "X-Ray Temporomandibular Joint Right"
-* LOINC#30945 "X-Ray Temporomandibular Joint(Ap View)"
-* LOINC#30945 "X-Ray Temporomandibular Joint(Lat View)"
-* LOINC#30674 "X-Ray Thigh"
-* LOINC#31995 "X-Ray Thigh Bilateral"
-* LOINC#42563 "X-Ray Thigh(Ap View)"
-* LOINC#42626 "X-Ray Thigh(Lat View)"
-* LOINC#49937 "X-Ray Thoracic Inlet 2 Views"
-* LOINC#49937 "X-Ray Thoracic Inlet 3 Views"
-* LOINC#49937 "X-Ray Thoracic Inlet(Ap/Lat View)"
-* LOINC#30929 "X-Ray Thoracic Spine"
-* LOINC#42584 "X Ray Thoracic Inlet"
-* LOINC#30929 "X Ray Thoracic Spine"
-* LOINC#34176 "X-Ray Skull (Omv)"
-* LOINC#43266 "X-Ray Skull Vein"
-* LOINC#73143 "X-Ray Skull(Ap View)"
-* LOINC#30877 "X-Ray Skull(Ap/Lat View)"
-* LOINC#30877- "X-Ray Skull(Ap/Lat View) Left"
-* LOINC#34176_ "X-Ray Skull(Ap/Lat/Townes View)"
-* LOINC#30878 "X-Ray Skull(Lat View)"
-* LOINC#45586 "X-Ray Skull(Pa/Lat View)"
-* LOINC#34176- "X-Ray Skull(Smv/Townes/Conned View)"
-* LOINC#34176-_ "X-Ray Skull/ Pns/ Mandible"
-* LOINC#43327 "X-Ray Small Bowel"
-* LOINC#43327 "X-Ray Small Intestine"
-* LOINC#43432 "X-Ray Soft Tissue Neck"
-* LOINC#30800 "X-Ray Soft Tissue Neck(Lat View)"
-* LOINC#90650 "X-Ray Spinal Angiogram"
-* LOINC#30882 "X-Ray Spine Artery"
-* LOINC#30886 "X-Ray Spine Scoliosis Study(Supine/Erect View)"
-* LOINC#30936 "X-Ray Spleen/Liver Vein(Splenoportography)"
-* LOINC#31007 "X-Ray Stereotactic / Image Guided Biopsy"
-* LOINC#102337 "X-Ray Sternoclavicular Joint Bilateral PA"
-* LOINC#43903 "X-Ray Sternoclavicular Joint AP"
-* LOINC#30939 "X-Ray Sternum"
-* LOINC#43906 "X-Ray Sternum 2 Views"
-* LOINC#43904 "X Ray Sterno Clavicular Joints 3 views"
-* LOINC#30939 "X Ray Sternum"
-* LOINC#32035 "X-Ray Shoulder Joint Right"
-* LOINC#32033 "X-Ray Shoulder Joints Bilateral"
-* LOINC#42618 "X-Ray Shoulder Joints Bilateral(Ap View)"
-* LOINC#42704 "X-Ray Shoulder Joints Bilateral(Ap/Lat View)"
-* LOINC#30859 "X-Ray Shoulder/Scapula"
-* LOINC#43583 "X-Ray Sinogram(Rad)"
-* LOINC#43583 "X-Ray Sinogram/Fistulogram"
-* LOINC#30873 "X-Ray Sinuses"
-* LOINC#43882 "X-Ray Sinuses 3 Views"
-* LOINC#43886 "X-Ray Sinuses Lat View"
-* LOINC#43892 "X-Ray Sinuses(Om View)"
-* LOINC#44305 "X-Ray Skeletal Survey"
-* LOINC#44305 "X-Ray Skeletal Survey Under 5 Years"
-* LOINC#34176__ "X-Ray Skull"
-* LOINC#43895 "X-Ray Skull 2 Views"
-* LOINC#30875 "X-Ray Skull 3 Views"
-* LOINC#30875- "X-Ray Skull 3 Views(Rad)"
-* LOINC#43896 "X-Ray Skull 4 Views"
-* LOINC#34176-- "X-Ray Skull(Ap/Lat/Townes/Conned View)"
-* LOINC#34176__- "X-Ray Skull."
-* LOINC#30874 "X Ray Skull"
-* LOINC#30877_ "X Ray Skull (2 Views ) Ap / Lat"
-* LOINC#43895_ "X Ray Skull 2 Views (Oh)"
-* LOINC#30875_ "X Ray Skull 3 Views"
-* LOINC#30877-_ "X Ray Skull Ap & Lateral"
-* LOINC#44137 "X-Ray Scaphoid Right"
-* LOINC#30859- "X-Ray Scapula"
-* LOINC#32031 "X-Ray Scapula Left"
-
 
 ValueSet: KPSServiceTypeVS
 Id: kps-service-type-vs
 Title: "KPS Local Service Type"
 Description: "A list of locally defined healthcare service types for Kenyan health facilities."
+* ^experimental = false
 * include codes from system KPSServiceTypeCS
 
 
@@ -417,6 +229,7 @@ ValueSet: KPSServiceAccessPointVS
 Id: kps-service-access-point
 Title: "KPS Service Access Point"
 Description: "A list of service access points for classifying patient entry points in facilities"
+* ^experimental = false
 * include codes from system KPSServiceAccessPointCS
 
 
@@ -424,6 +237,7 @@ ValueSet: KPSFundChoicesVS
 Id: kps-fund-choices
 Title: "KPS Fund Choices"
 Description: "Locally defined list of patient fund options for health service payments"
+* ^experimental = false
 * include codes from system KPSFundChoicesCS
 
 
@@ -431,24 +245,28 @@ ValueSet: KPSSchemesVS
 Id: kps-schemes
 Title: "KPS Schemes"
 Description: "A list of schemes available to patients"
+* ^experimental = false
 * include codes from system KPSSchemesCS
 
 ValueSet: KPSPaymentMechanism
 Id: kps-payment-mechanism
 Title: "KPS Payment Mechanism"
 Description: "A list of allowed healthcare payment models"
+* ^experimental = false
 * include codes from system PaymentMechanism
 
 ValueSet: KPSUsageFrequency
 Id: kps-usage-frequency
 Title: "KPS Usage Frequency"
 Description: "A list of allowable frequency options for health service usage"
+* ^experimental = false
 * include codes from system UsageFrequency
 
 ValueSet: KPSAnnualQuantityType
 Id: kps-annual-quantity-type
 Title: "KPS Annual Quantity Type"
 Description: "Types of units used to express annual health service quantities"
+* ^experimental = false
 * include codes from system AnnualQuantityType
 
 
@@ -456,18 +274,21 @@ ValueSet: KPSAuthType
 Id: kps-auth-type
 Title: "KPS Authorization Type"
 Description: "List of accepted authentication or authorization types"
+* ^experimental = false
 * include codes from system AuthType
 
 ValueSet: KPSAuthorizationFailureReason
 Id: kps-authorization-failure-reason
 Title: "KPS Authorization Failure Reason"
 Description: "Allowed values for reasons why an authorization request may fail"
+* ^experimental = false
 * include codes from system AuthorizationFailureReason
 
 ValueSet: KPSAuthorizationStatus
 Id: kps-authorization-status
 Title: "KPS Authorization Status"
 Description: "Status options for an authorization process"
+* ^experimental = false
 * include codes from system AuthorizationStatus
 
 
@@ -475,12 +296,14 @@ ValueSet: KPSClaimsDepartments
 Id: kps-claims-departments
 Title: "KPS Claims Departments"
 Description: "Departments used for classifying healthcare claims"
+* ^experimental = false
 * include codes from system ClaimsDepartments
 
 ValueSet: KPSCopayType
 Id: kps-copay-type
 Title: "KPS Copay Types"
 Description: "Allowed copay types for patient contribution"
+* ^experimental = false
 * include codes from system CopayType
 
 
@@ -488,12 +311,14 @@ ValueSet: KPSRemittanceChoice
 Id: kps-remittance-choice
 Title: "KPS Remittance Choice"
 Description: "Options for how remittances are made"
+* ^experimental = false
 * include codes from system RemittanceChoice
 
 ValueSet: KPSRemittanceStatus
 Id: kps-remittance-status
 Title: "KPS Remittance Status"
 Description: "Stages of remittance status tracking"
+* ^experimental = false
 * include codes from system RemittanceStatus
 
 
@@ -501,6 +326,7 @@ ValueSet: KPSAdjustmentType
 Id: kps-adjustment-type
 Title: "KPS Adjustment Type"
 Description: "Types of financial adjustments applied to claims or bills"
+* ^experimental = false
 * include codes from system AdjustmentType
 
 
@@ -509,12 +335,14 @@ ValueSet: KPSDiagnosisKind
 Id: kps-diagnosis-kind
 Title: "KPS Diagnosis Kind"
 Description: "Diagnosis classification level based on ICD structure"
+* ^experimental = false
 * include codes from system DiagnosisKind
 
 ValueSet: KPSFlagType
 Id: kps-flag-type
 Title: "KPS Flag Type"
 Description: "Types of flags applied to claims or processes"
+* ^experimental = false
 * include codes from system FlagType
 
 
@@ -522,6 +350,7 @@ ValueSet: KPSNonEDIClaimStatus
 Id: kps-non-edi-claim-status
 Title: "KPS Non-EDI Claim Status"
 Description: "Workflow status values for non-electronic claims"
+* ^experimental = false
 * include codes from system NonEDIClaimStatus
 
 
@@ -529,6 +358,7 @@ ValueSet: KPSBulkRemittanceStatus
 Id: kps-bulk-remittance-status
 Title: "KPS Bulk Remittance Status"
 Description: "Status of bulk remittance batches"
+* ^experimental = false
 * include codes from system BulkRemittanceStatus
 
 
@@ -536,30 +366,35 @@ ValueSet: KPSPaymentNoticeStatus
 Id: kps-payment-notice-status
 Title: "KPS PaymentNoticeStatus"
 Description: "Value Sets for PaymentNotice Status"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/fm-status
 
 ValueSet: KPSPaymentNoticePaymentStatus
 Id: kps-payment-notice-payment-status
 Title: "KPS PaymentNoticePaymentStatus"
 Description: "Value Sets for PaymentNotice Patment Status"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/paymentstatus
 
 ValueSet: KPSEpisodeOfCareStatus
 Id: ksp-episode-of-care-status
 Title: "KPS EpisodeOfCareStatus"
 Description: "Value Sets for EpisodeOfCare Status"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/episode-of-care-status
 
 ValueSet: KPSEpisodeOfCareType
 Id: kps-episode-of-care-type
 Title: "KPS EpisodeOfCareType"
 Description: "Value Sets for EpisodeOfCare Type"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/episodeofcare-type
 
 ValueSet: KPSEpisodeOfCareDiagnosisRole
 Id: kpsepisode-of-care-diagnosis-role
 Title: "KPS EpisodeOfCareDiagnosisRole"
 Description: "Value Sets for EpisodeOfCare Diagnosis Role"
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/diagnosis-role
 
 
@@ -567,12 +402,14 @@ ValueSet: KPSSubstanceStatus
 Id: kps-substance-status
 Title: "KPSSubstanceStatus"
 Description: "Value Sets for Substance Status"
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/substance-status
 
 ValueSet: KPSSubstanceCode
 Id: kps-substance-code
 Title: "KPSSubstance Code"
 Description: "ValueSet for SNOMED CT Substance concepts (descendants of 105590001 |Substance|)."
+* ^experimental = false
 * include codes from system http://snomed.info/sct where concept is-a #105590001
 
 
@@ -580,6 +417,7 @@ ValueSet: KPSPatientIdentifierUse
 Id: kps-patient-identifier-use
 Title: "KPSPatientIdentifierUse"
 Description: "ValueSet binding for Patient.identifier.use in Patient."
+* ^experimental = false
 * include codes from system  http://hl7.org/fhir/identifier-use
 
 
@@ -587,53 +425,1390 @@ ValueSet: KPSPatientIdentifierType
 Id: kps-patient-identifier-type
 Title: "KPSPatientIdentifierType"
 Description: "ValueSet binding for Patient.identifier.type in Patient."
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 
 ValueSet: KPSPatientNameUse
 Id: kps-patient-name-use
 Title: "KPSPatientNameUse"
 Description: "ValueSet binding for Patient.name.use in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/name-use
 
 ValueSet: KPSPatientTelecomSystem
 Id: kps-patient-telecom-system
 Title: "KPSPatientTelecomSystem"
 Description: "ValueSet binding for Patient.telecom.system in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/contact-point-system
 
 ValueSet: KPSPatientTelecomUse
 Id: kps-patient-telecom-use
 Title: "KPSPatientTelecomUse"
 Description: "ValueSet binding for Patient.telecom.use in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/contact-point-use
 
 ValueSet: KPSPatientGender
 Id: kps-patient-gender
 Title: "KPSPatientGender"
 Description: "ValueSet binding for Patient.gender in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
 
 ValueSet: KPSPatientAddressUse
 Id: kps-patient-address-use
 Title: "KPSPatientAddressUse"
 Description: "ValueSet binding for Patient.address.use in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/address-use
 
 ValueSet: KPSPatientMaritalStatus
 Id: kps-patient-marital-status
 Title: "KPSPatientMaritalStatus"
 Description: "ValueSet binding for Patient.maritalStatus in Patient."
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 
 ValueSet: KPSPatientContactRelationship
 Id: kps-patient-contact-relationship
 Title: "KPSPatientContactRelationship"
 Description: "ValueSet binding for Patient.contact.relationship in Patient."
+* ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0131 where concept is-not-a #O
 
 ValueSet: KPSPatientLinkType
 Id: kps-patient-link-type
 Title: "KPSPatientLinkType"
 Description: "ValueSet binding for Patient.link.type in Patient."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/link-type
 
+
+
+ValueSet: KPSPractitionerIdentifierUse
+Id: kps-practitioner-identifier-use
+Title: "Practitioner Identifier Use ValueSet"
+Description: "ValueSet binding for Practitioner.identifier.use in Practitioner."
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/identifier-use
+
+ValueSet: KPSPractitionerIdentifierType
+Id: kps-practitioner-identifier-type
+Title: "Practitioner Identifier Type ValueSet"
+Description: "ValueSet binding for Practitioner.identifier.type in Practitioner."
+* ^experimental = false
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
+
+ValueSet: KPSPractitionerNameUse
+Id: kps-practitioner-name-use
+Title: "Practitioner Name Use ValueSet"
+Description: "ValueSet binding for Practitioner.name.use in Practitioner."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+
+ValueSet: practitioner-telecom-system
+Id: practitioner-telecom-system
+Title: "System ValueSet"
+Description: "ValueSet binding for Practitioner.telecom.system in Practitioner."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+
+ValueSet: practitioner-address-use
+Id: practitioner-address-use
+Title: "Use ValueSet"
+Description: "ValueSet binding for Practitioner.address.use in Practitioner."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+
+ValueSet: practitioner-gender
+Id: practitioner-gender
+Title: "Gender ValueSet"
+Description: "ValueSet binding for Practitioner.gender in Practitioner."
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+
+ValueSet: practitioner-qualification-code
+Id: practitioner-qualification-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for Practitioner.qualification.code in Practitioner."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v2-2.7-0360"
+
+ValueSet: practitionerrole-code
+Id: practitionerrole-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for PractitionerRole.code in PractitionerRole."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/practitioner-role"
+
+ValueSet: practitionerrole-specialty
+Id: practitionerrole-specialty
+Title: "Specialty ValueSet"
+Description: "ValueSet binding for PractitionerRole.specialty in PractitionerRole."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/c80-practice-codes"
+
+ValueSet: organization-identifier-use
+Id: organization-identifier-use
+Title: "Use ValueSet"
+Description: "ValueSet binding for Organization.identifier.use in Organization."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+
+ValueSet: organization-identifier-type
+Id: organization-identifier-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for Organization.identifier.type in Organization."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/identifier-type"
+
+ValueSet: organization-type
+Id: organization-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for Organization.type in Organization."
+* ^experimental = false
+* ^url = "https://hl7.org/fhir/R4/codesystem-organization-type.html"
+
+ValueSet: organization-address-use
+Id: organization-address-use
+Title: "Use ValueSet"
+Description: "ValueSet binding for Organization.address.use in Organization."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+
+ValueSet: encounter-status
+Id: encounter-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Encounter.status in Encounter."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/encounter-status|4.0.1"
+
+ValueSet: encounter-class
+Id: encounter-class
+Title: "Class ValueSet"
+Description: "ValueSet binding for Encounter.class in Encounter."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+
+ValueSet: encounter-servicetype
+Id: encounter-servicetype
+Title: "ServiceType ValueSet"
+Description: "ValueSet binding for Encounter.serviceType in Encounter."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/service-type-vs"
+
+ValueSet: encounter-priority
+Id: encounter-priority
+Title: "Priority ValueSet"
+Description: "ValueSet binding for Encounter.priority in Encounter."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+
+ValueSet: condition-clinicalstatus
+Id: condition-clinicalstatus
+Title: "ClinicalStatus ValueSet"
+Description: "ValueSet binding for Condition.clinicalStatus in Condition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-clinical"
+
+ValueSet: condition-verificationstatus
+Id: condition-verificationstatus
+Title: "VerificationStatus ValueSet"
+Description: "ValueSet binding for Condition.verificationStatus in Condition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-ver-status"
+
+ValueSet: condition-category
+Id: condition-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for Condition.category in Condition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-category"
+
+ValueSet: condition-severity
+Id: condition-severity
+Title: "Severity ValueSet"
+Description: "ValueSet binding for Condition.severity in Condition."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/condition-severity-vs"
+
+ValueSet: condition-code
+Id: condition-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for Condition.code in Condition."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/condition-code-vs"
+
+ValueSet: condition-bodysite
+Id: condition-bodysite
+Title: "BodySite ValueSet"
+Description: "ValueSet binding for Condition.bodySite in Condition."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/body-site-vs"
+
+ValueSet: observation-status
+Id: observation-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Observation.status in Observation."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/observation-status|4.0.1"
+
+ValueSet: observation-category
+Id: observation-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for Observation.category in Observation."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/observation-category"
+
+ValueSet: observation-code
+Id: observation-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for Observation.code in Observation."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/observation-codes"
+
+ValueSet: allergyintolerance-clinicalstatus
+Id: allergyintolerance-clinicalstatus
+Title: "ClinicalStatus ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.clinicalStatus in AllergyIntolerance."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"
+
+ValueSet: allergyintolerance-verificationstatus
+Id: allergyintolerance-verificationstatus
+Title: "VerificationStatus ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.verificationStatus in AllergyIntolerance."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/allergy-certainty-vs"
+
+ValueSet: allergyintolerance-type
+Id: allergyintolerance-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.type in AllergyIntolerance."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/allergy-type-vs"
+
+ValueSet: allergyintolerance-criticality
+Id: allergyintolerance-criticality
+Title: "Criticality ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.criticality in AllergyIntolerance."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1"
+
+ValueSet: allergyintolerance-code
+Id: allergyintolerance-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.code in AllergyIntolerance."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips"
+
+ValueSet: allergyintolerance-reaction-substance
+Id: allergyintolerance-reaction-substance
+Title: "Substance ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.reaction.substance in AllergyIntolerance."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/substance-code"
+
+ValueSet: allergyintolerance-reaction-manifestation
+Id: allergyintolerance-reaction-manifestation
+Title: "Manifestation ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.reaction.manifestation in AllergyIntolerance."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-snomed-ct-ips-free-set"
+
+ValueSet: allergyintolerance-reaction-severity
+Id: allergyintolerance-reaction-severity
+Title: "Severity ValueSet"
+Description: "ValueSet binding for AllergyIntolerance.reaction.severity in AllergyIntolerance."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/allergy-severity-vs"
+
+
+ValueSet: medication-code
+Id: medication-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for Medication.code in Medication."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/medication-vs"
+
+ValueSet: medication-status
+Id: medication-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Medication.status in Medication."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-status|4.0.1"
+
+ValueSet: medication-form
+Id: medication-form
+Title: "Form ValueSet"
+Description: "ValueSet binding for Medication.form in Medication."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/medication-form-vs"
+
+ValueSet: medication-ingredient-numerator-comparator
+Id: medication-ingredient-numerator-comparator
+Title: "Numerator Comparator ValueSet"
+Description: "ValueSet binding for Medication.ingredient.strength.numerator.comparator in Medication."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1"
+
+ValueSet: medication-ingredient-numerator-unit
+Id: medication-ingredient-numerator-unit
+Title: "Numerator Unit ValueSet"
+Description: "ValueSet binding for Medication.ingredient.strength.numerator.unit in Medication."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/ucum-units-vs"
+
+ValueSet: medication-ingredient-denominator-comparator
+Id: medication-ingredient-denominator-comparator
+Title: "Denominator Comparator ValueSet"
+Description: "ValueSet binding for Medication.ingredient.strength.denominator.comparator in Medication."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1"
+
+ValueSet: medication-ingredient-denominator-unit
+Id: medication-ingredient-denominator-unit
+Title: "Denominator Unit ValueSet"
+Description: "ValueSet binding for Medication.ingredient.strength.denominator.unit in Medication."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/ucum-units-vs"
+
+
+ValueSet: medicationrequest-status
+Id: medicationrequest-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for MedicationRequest.status in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1"
+
+ValueSet: medicationrequest-intent
+Id: medicationrequest-intent
+Title: "Intent ValueSet"
+Description: "ValueSet binding for MedicationRequest.intent in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1"
+
+ValueSet: medicationrequest-category
+Id: medicationrequest-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for MedicationRequest.category in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-category"
+
+ValueSet: medicationrequest-priority
+Id: medicationrequest-priority
+Title: "Priority ValueSet"
+Description: "ValueSet binding for MedicationRequest.priority in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-priority|4.0.1"
+
+ValueSet: medicationrequest-medication
+Id: medicationrequest-medication
+Title: "Medication ValueSet"
+Description: "ValueSet binding for MedicationRequest.medication[x] in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/generic-products"
+
+ValueSet: medicationrequest-medicationcodeableconcept
+Id: medicationrequest-medicationcodeableconcept
+Title: "MedicationCodeableConcept ValueSet"
+Description: "ValueSet binding for MedicationRequest.medication[x]:medicationCodeableConcept in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-codes"
+
+ValueSet: medicationrequest-medicationcodeableconcept-coding-code
+Id: medicationrequest-medicationcodeableconcept-coding-code
+Title: "Coding Code ValueSet"
+Description: "ValueSet binding for MedicationRequest.medication[x]:medicationCodeableConcept.coding.code in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/generic-products"
+
+ValueSet: medicationrequest-reasoncode
+Id: medicationrequest-reasoncode
+Title: "ReasonCode ValueSet"
+Description: "ValueSet binding for MedicationRequest.reasonCode in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-code"
+
+ValueSet: medicationrequest-asneeded
+Id: medicationrequest-asneeded
+Title: "AsNeeded ValueSet"
+Description: "ValueSet binding for MedicationRequest.dosageInstruction.asNeeded[x] in MedicationRequest."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+
+ValueSet: medicationrequest-route
+Id: medicationrequest-route
+Title: "Route ValueSet"
+Description: "ValueSet binding for MedicationRequest.dosageInstruction.route in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/route-of-administration"
+
+ValueSet: medicationrequest-dosequantity-unit
+Id: medicationrequest-dosequantity-unit
+Title: "Dose Quantity Unit ValueSet"
+Description: "ValueSet binding for MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.unit in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
+
+ValueSet: medicationrequest-doserange-low-unit
+Id: medicationrequest-doserange-low-unit
+Title: "DoseRange Low Unit ValueSet"
+Description: "ValueSet binding for MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.unit in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
+
+ValueSet: medicationrequest-doserange-high-unit
+Id: medicationrequest-doserange-high-unit
+Title: "DoseRange High Unit ValueSet"
+Description: "ValueSet binding for MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.unit in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
+
+ValueSet: medicationrequest-dispense-quantity-unit
+Id: medicationrequest-dispense-quantity-unit
+Title: "Dispense Quantity Unit ValueSet"
+Description: "ValueSet binding for MedicationRequest.dispenseRequest.quantity.unit in MedicationRequest."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/unit-of-measure"
+
+ValueSet: medicationrequest-substitution-allowed
+Id: medicationrequest-substitution-allowed
+Title: "Substitution Allowed ValueSet"
+Description: "ValueSet binding for MedicationRequest.substitution.allowed[x] in MedicationRequest."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"
+
+ValueSet: medicationrequest-substitution-reason
+Id: medicationrequest-substitution-reason
+Title: "Substitution Reason ValueSet"
+Description: "ValueSet binding for MedicationRequest.substitution.reason in MedicationRequest."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason"
+
+
+ValueSet: medicationdispense-status
+Id: medicationdispense-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for MedicationDispense.status in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1"
+
+ValueSet: medicationdispense-medication
+Id: medicationdispense-medication
+Title: "Medication ValueSet"
+Description: "ValueSet binding for MedicationDispense.medication[x] in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-codes"
+
+ValueSet: medicationdispense-medicationcodeableconcept
+Id: medicationdispense-medicationcodeableconcept
+Title: "MedicationCodeableConcept ValueSet"
+Description: "ValueSet binding for MedicationDispense.medication[x]:medicationCodeableConcept in MedicationDispense."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/generic-products-1"
+
+ValueSet: medicationdispense-medicationcodeableconcept-code
+Id: medicationdispense-medicationcodeableconcept-code
+Title: "Medication CodeableConcept Code ValueSet"
+Description: "ValueSet binding for MedicationDispense.medication[x]:medicationCodeableConcept.coding.code in MedicationDispense."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/generic-products-1"
+
+ValueSet: medicationdispense-type
+Id: medicationdispense-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for MedicationDispense.type in MedicationDispense."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType"
+
+ValueSet: medicationdispense-additionalinstruction
+Id: medicationdispense-additionalinstruction
+Title: "AdditionalInstruction ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.additionalInstruction in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/additional-instruction-codes"
+
+ValueSet: medicationdispense-asneeded
+Id: medicationdispense-asneeded
+Title: "AsNeeded ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.asNeeded[x] in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+
+ValueSet: medicationdispense-site
+Id: medicationdispense-site
+Title: "Site ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.site in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/approach-site-codes"
+
+ValueSet: medicationdispense-route
+Id: medicationdispense-route
+Title: "Route ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.route in MedicationDispense."
+* ^experimental = false
+* ^url = "https://example.com/fhir/ValueSet/route-of-administration"
+
+ValueSet: medicationdispense-method
+Id: medicationdispense-method
+Title: "Method ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.method in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/administration-method-codes"
+
+ValueSet: medicationdispense-dose-rate-type
+Id: medicationdispense-dose-rate-type
+Title: "DoseRate Type ValueSet"
+Description: "ValueSet binding for MedicationDispense.dosageInstruction.doseAndRate.type in MedicationDispense."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/dose-rate-type"
+
+
+ValueSet: medicationstatement-status
+Id: medicationstatement-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for MedicationStatement.status in MedicationStatement."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1"
+
+ValueSet: medicationstatement-statusreason
+Id: medicationstatement-statusreason
+Title: "StatusReason ValueSet"
+Description: "ValueSet binding for MedicationStatement.statusReason in MedicationStatement."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/reason-medication-status-codes"
+
+ValueSet: medicationstatement-medication
+Id: medicationstatement-medication
+Title: "Medication ValueSet"
+Description: "ValueSet binding for MedicationStatement.medication[x] in MedicationStatement."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-codes"
+
+ValueSet: medicationstatement-medicationcodeableconcept
+Id: medicationstatement-medicationcodeableconcept
+Title: "MedicationCodeableConcept ValueSet"
+Description: "ValueSet binding for MedicationStatement.medication[x]:medicationCodeableConcept in MedicationStatement."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/medication-codes"
+
+ValueSet: medicationstatement-reasoncode
+Id: medicationstatement-reasoncode
+Title: "ReasonCode ValueSet"
+Description: "ValueSet binding for MedicationStatement.reasonCode in MedicationStatement."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-code|4.0.1"
+
+
+
+ValueSet: immunization-status
+Id: immunization-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Immunization.status in Immunization."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/vaccine-status-vs"
+
+ValueSet: immunization-vaccinecode
+Id: immunization-vaccinecode
+Title: "VaccineCode ValueSet"
+Description: "ValueSet binding for Immunization.vaccineCode in Immunization."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"
+
+ValueSet: immunization-targetdisease
+Id: immunization-targetdisease
+Title: "TargetDisease ValueSet"
+Description: "ValueSet binding for Immunization.protocolApplied.targetDisease in Immunization."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips"
+
+
+ValueSet: diagnosticreport-status
+Id: diagnosticreport-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for DiagnosticReport.status in DiagnosticReport."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1"
+
+ValueSet: diagnosticreport-category
+Id: diagnosticreport-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for DiagnosticReport.category in DiagnosticReport."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html"
+
+ValueSet: diagnosticreport-code
+Id: diagnosticreport-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for DiagnosticReport.code in DiagnosticReport."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/report-codes"
+
+ValueSet: diagnosticreport-conclusioncode
+Id: diagnosticreport-conclusioncode
+Title: "ConclusionCode ValueSet"
+Description: "ValueSet binding for DiagnosticReport.conclusionCode in DiagnosticReport."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
+
+
+ValueSet: procedure-status
+Id: procedure-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Procedure.status in Procedure."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/event-status|4.0.1"
+
+ValueSet: procedure-code
+Id: procedure-code
+Title: "Procedure Code ValueSet"
+Description: "ValueSet binding for Procedure.code in Procedure."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/procedure-code-vs"
+
+ValueSet: procedure-reasoncode
+Id: procedure-reasoncode
+Title: "ReasonCode ValueSet"
+Description: "ValueSet binding for Procedure.reasonCode in Procedure."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/condition-code-vs"
+
+ValueSet: procedure-bodysite
+Id: procedure-bodysite
+Title: "BodySite ValueSet"
+Description: "ValueSet binding for Procedure.bodySite in Procedure."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/body-site"
+
+ValueSet: procedure-outcome
+Id: procedure-outcome
+Title: "Outcome ValueSet"
+Description: "ValueSet binding for Procedure.outcome in Procedure."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/procedure-outcome"
+
+ValueSet: familymemberhistory-status
+Id: familymemberhistory-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.status in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/history-status"
+
+ValueSet: familymemberhistory-dataabsentreason
+Id: familymemberhistory-dataabsentreason
+Title: "DataAbsentReason ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.dataAbsentReason in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/history-absent-reason"
+
+ValueSet: familymemberhistory-relationship
+Id: familymemberhistory-relationship
+Title: "Relationship ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.relationship in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-FamilyMember"
+
+ValueSet: KPSFamilyMemberHistorySex
+Id: kps-family-member-history-sex
+Title: "Sex ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.sex in FamilyMemberHistory."
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+
+ValueSet: familymemberhistory-reasoncode
+Id: familymemberhistory-reasoncode
+Title: "ReasonCode ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.reasonCode in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
+
+ValueSet: familymemberhistory-condition-code
+Id: familymemberhistory-condition-code
+Title: "Condition Code ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.condition.code in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-code"
+
+ValueSet: familymemberhistory-condition-outcome
+Id: familymemberhistory-condition-outcome
+Title: "Condition Outcome ValueSet"
+Description: "ValueSet binding for FamilyMemberHistory.condition.outcome in FamilyMemberHistory."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-outcome"
+
+ValueSet: clinicalimpression-status
+Id: clinicalimpression-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for ClinicalImpression.status in ClinicalImpression."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/clinicalimpression-status"
+
+ValueSet: clinicalimpression-statusreason
+Id: clinicalimpression-statusreason
+Title: "StatusReason ValueSet"
+Description: "ValueSet binding for ClinicalImpression.statusReason in ClinicalImpression."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/event-status"   
+
+ValueSet: clinicalimpression-code
+Id: clinicalimpression-code
+Title: "Code ValueSet"
+Description: "ValueSet binding for ClinicalImpression.code in ClinicalImpression."
+* ^experimental = false
+* ^url = ""   
+
+ValueSet: clinicalimpression-investigation-code
+Id: clinicalimpression-investigation-code
+Title: "Investigation Code ValueSet"
+Description: "ValueSet binding for ClinicalImpression.investigation.code in ClinicalImpression."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/investigation-sets"
+
+ValueSet: clinicalimpression-finding-itemcodeableconcept
+Id: clinicalimpression-finding-itemcodeableconcept
+Title: "Finding ItemCodeableConcept ValueSet"
+Description: "ValueSet binding for ClinicalImpression.finding.itemCodeableConcept in ClinicalImpression."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/condition-code"
+
+ValueSet: clinicalimpression-prognosiscodeableconcept
+Id: clinicalimpression-prognosiscodeableconcept
+Title: "Prognosis CodeableConcept ValueSet"
+Description: "ValueSet binding for ClinicalImpression.prognosisCodeableConcept in ClinicalImpression."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/clinicalimpression-prognosis"
+
+
+ValueSet: documentreference-status
+Id: documentreference-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for DocumentReference.status in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/document-reference-status"
+
+ValueSet: documentreference-docstatus
+Id: documentreference-docstatus
+Title: "DocStatus ValueSet"
+Description: "ValueSet binding for DocumentReference.docStatus in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/composition-status"
+
+ValueSet: documentreference-type
+Id: documentreference-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for DocumentReference.type in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/c80-doc-typecodes"
+
+ValueSet: documentreference-category
+Id: documentreference-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for DocumentReference.category in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/document-classcodes"
+
+ValueSet: documentreference-relatesto-code
+Id: documentreference-relatesto-code
+Title: "RelatesTo Code ValueSet"
+Description: "ValueSet binding for DocumentReference.relatesTo.code in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/document-relationship-type"
+
+ValueSet: documentreference-securitylabel
+Id: documentreference-securitylabel
+Title: "SecurityLabel ValueSet"
+Description: "ValueSet binding for DocumentReference.securityLabel in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/security-labels"
+
+ValueSet: documentreference-content-format
+Id: documentreference-content-format
+Title: "Content Format ValueSet"
+Description: "ValueSet binding for DocumentReference.content.format in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/formatcodes"
+
+ValueSet: documentreference-context-event
+Id: documentreference-context-event
+Title: "Context Event ValueSet"
+Description: "ValueSet binding for DocumentReference.context.event in DocumentReference."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActCode"
+
+ValueSet: documentreference-context-facilitytype
+Id: documentreference-context-facilitytype
+Title: "Facility Type ValueSet"
+Description: "ValueSet binding for DocumentReference.context.facilityType in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/c80-facilitycodes"
+
+ValueSet: documentreference-context-practicesetting
+Id: documentreference-context-practicesetting
+Title: "Practice Setting ValueSet"
+Description: "ValueSet binding for DocumentReference.context.practiceSetting in DocumentReference."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/c80-practice-codes"
+
+
+ValueSet: composition-status
+Id: composition-status
+Title: "Status ValueSet"
+Description: "ValueSet binding for Composition.status in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/composition-status"
+
+ValueSet: composition-type
+Id: composition-type
+Title: "Type ValueSet"
+Description: "ValueSet binding for Composition.type in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/doc-typecodes"
+
+ValueSet: composition-category
+Id: composition-category
+Title: "Category ValueSet"
+Description: "ValueSet binding for Composition.category in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/document-classcodes"
+
+ValueSet: composition-confidentiality
+Id: composition-confidentiality
+Title: "Confidentiality ValueSet"
+Description: "ValueSet binding for Composition.confidentiality in Composition."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification"
+
+ValueSet: composition-attestermode
+Id: composition-attestermode
+Title: "Attester Mode ValueSet"
+Description: "ValueSet binding for Composition.attester.mode in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/composition-attestation-mode"
+
+ValueSet: composition-relatesto-code
+Id: composition-relatesto-code
+Title: "RelatesTo Code ValueSet"
+Description: "ValueSet binding for Composition.relatesTo.code in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/document-relationship-type"
+
+ValueSet: composition-event-code
+Id: composition-event-code
+Title: "Event Code ValueSet"
+Description: "ValueSet binding for Composition.event.code in Composition."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ActCode"
+
+ValueSet: composition-section-code
+Id: composition-section-code
+Title: "Section Code ValueSet"
+Description: "ValueSet binding for Composition.section.code in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/doc-section-codes"
+
+ValueSet: composition-section-mode
+Id: composition-section-mode
+Title: "Section Mode ValueSet"
+Description: "ValueSet binding for Composition.section.mode in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/list-mode"
+
+ValueSet: composition-section-orderedby
+Id: composition-section-orderedby
+Title: "Section OrderedBy ValueSet"
+Description: "ValueSet binding for Composition.section.orderedBy in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/list-order"
+
+ValueSet: composition-section-emptyreason
+Id: composition-section-emptyreason
+Title: "Section EmptyReason ValueSet"
+Description: "ValueSet binding for Composition.section.emptyReason in Composition."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/list-empty-reason"
+
+
+ValueSet: consent-status
+Id: consent-status
+Title: "Consent Status ValueSet"
+Description: "ValueSet binding for Consent.status in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-state-codes"
+
+ValueSet: consent-scope
+Id: consent-scope
+Title: "Consent Scope ValueSet"
+Description: "ValueSet binding for Consent.scope in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-scope"
+
+ValueSet: consent-category
+Id: consent-category
+Title: "Consent Category ValueSet"
+Description: "ValueSet binding for Consent.category in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-category"
+
+ValueSet: consent-policyrule
+Id: consent-policyrule
+Title: "Consent PolicyRule ValueSet"
+Description: "ValueSet binding for Consent.policyRule in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-policy"
+
+ValueSet: consent-provision-type
+Id: consent-provision-type
+Title: "Consent Provision Type ValueSet"
+Description: "ValueSet binding for Consent.provision.type in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-provision-type"
+
+ValueSet: consent-provision-actor-role
+Id: consent-provision-actor-role
+Title: "Consent Provision Actor Role ValueSet"
+Description: "ValueSet binding for Consent.provision.actor.role in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/security-role-type"
+
+ValueSet: consent-provision-action
+Id: consent-provision-action
+Title: "Consent Provision Action ValueSet"
+Description: "ValueSet binding for Consent.provision.action in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-action"
+
+ValueSet: consent-provision-securitylabel
+Id: consent-provision-securitylabel
+Title: "Consent Provision SecurityLabel ValueSet"
+Description: "ValueSet binding for Consent.provision.securityLabel in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/security-labels"
+
+ValueSet: consent-provision-purpose
+Id: consent-provision-purpose
+Title: "Consent Provision Purpose ValueSet"
+Description: "ValueSet binding for Consent.provision.purpose in Consent."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse"
+
+ValueSet: consent-provision-class
+Id: consent-provision-class
+Title: "Consent Provision Class ValueSet"
+Description: "ValueSet binding for Consent.provision.class in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-content-class"
+
+ValueSet: consent-provision-code
+Id: consent-provision-code
+Title: "Consent Provision Code ValueSet"
+Description: "ValueSet binding for Consent.provision.code in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-content-code"
+
+ValueSet: consent-provision-data-meaning
+Id: consent-provision-data-meaning
+Title: "Consent Provision Data Meaning ValueSet"
+Description: "ValueSet binding for Consent.provision.data.meaning in Consent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/consent-data-meaning"
+
+
+ValueSet: specimen-status
+Id: specimen-status
+Title: "Specimen Status ValueSet"
+Description: "ValueSet binding for Specimen.status in Specimen."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/specimen-status|4.0.1"
+
+ValueSet: specimen-type
+Id: specimen-type
+Title: "Specimen Type ValueSet"
+Description: "ValueSet binding for Specimen.type in Specimen."
+* ^experimental = false
+* ^url = "https://example.org/fhir/ValueSet/specimen-type-vs"
+
+ValueSet: specimen-collection-method
+Id: specimen-collection-method
+Title: "Specimen Collection Method ValueSet"
+Description: "ValueSet binding for Specimen.collection.method in Specimen."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/specimen-collection-method"
+
+ValueSet: specimen-collection-bodysite
+Id: specimen-collection-bodysite
+Title: "Specimen Collection BodySite ValueSet"
+Description: "ValueSet binding for Specimen.collection.bodySite in Specimen."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/body-site"
+
+ValueSet: specimen-collection-fastingstatus
+Id: specimen-collection-fastingstatus
+Title: "Specimen Collection Fasting Status ValueSet"
+Description: "ValueSet binding for Specimen.collection.fastingStatus[x] in Specimen."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v2-0916"
+
+ValueSet: specimen-processing-procedure
+Id: specimen-processing-procedure
+Title: "Specimen Processing Procedure ValueSet"
+Description: "ValueSet binding for Specimen.processing.procedure in Specimen."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/specimen-processing-procedure"
+
+ValueSet: specimen-container-type
+Id: specimen-container-type
+Title: "Specimen Container Type ValueSet"
+Description: "ValueSet binding for Specimen.container.type in Specimen."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/specimen-container-type"
+
+ValueSet: specimen-container-additive
+Id: specimen-container-additive
+Title: "Specimen Container Additive ValueSet"
+Description: "ValueSet binding for Specimen.container.additive[x] in Specimen."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v2-0371"
+
+ValueSet: specimen-condition
+Id: specimen-condition
+Title: "Specimen Condition ValueSet"
+Description: "ValueSet binding for Specimen.condition in Specimen."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v2-0493"
+
+
+ValueSet: claim-status
+Id: claim-status
+Title: "Claim Status ValueSet"
+Description: "ValueSet binding for Claim.status in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/fm-status"
+
+ValueSet: claim-type
+Id: claim-type
+Title: "Claim Type ValueSet"
+Description: "ValueSet binding for Claim.type in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/claim-type"
+
+ValueSet: claim-use
+Id: claim-use
+Title: "Claim Use ValueSet"
+Description: "ValueSet binding for Claim.use in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/claim-use"
+
+ValueSet: claim-priority
+Id: claim-priority
+Title: "Claim Priority ValueSet"
+Description: "ValueSet binding for Claim.priority in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/process-priority"
+
+ValueSet: claim-diagnosis-diagnosis
+Id: claim-diagnosis-diagnosis
+Title: "Claim Diagnosis ValueSet"
+Description: "ValueSet binding for Claim.diagnosis.diagnosis[x] in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/icd-10"
+
+ValueSet: claim-item-category
+Id: claim-item-category
+Title: "Claim Item Category ValueSet"
+Description: "ValueSet binding for Claim.item.category in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/ex-benefitcategory"
+
+ValueSet: claim-item-productorservice
+Id: claim-item-productorservice
+Title: "Claim Item ProductOrService ValueSet"
+Description: "ValueSet binding for Claim.item.productOrService in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/service-uscls"
+
+ValueSet: claim-item-unitprice-currency
+Id: claim-item-unitprice-currency
+Title: "Claim Item UnitPrice Currency ValueSet"
+Description: "ValueSet binding for Claim.item.unitPrice.currency in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/currencies"
+
+ValueSet: claim-item-net-currency
+Id: claim-item-net-currency
+Title: "Claim Item Net Currency ValueSet"
+Description: "ValueSet binding for Claim.item.net.currency in Claim."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/currencies"
+
+
+ValueSet: claimresponse-status
+Id: claimresponse-status
+Title: "ClaimResponse Status ValueSet"
+Description: "ValueSet binding for ClaimResponse.status in ClaimResponse."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/fm-status"
+
+ValueSet: claimresponse-type
+Id: claimresponse-type
+Title: "ClaimResponse Type ValueSet"
+Description: "ValueSet binding for ClaimResponse.type in ClaimResponse."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/claim-type|4.0.1"
+
+ValueSet: claimresponse-use
+Id: claimresponse-use
+Title: "ClaimResponse Use ValueSet"
+Description: "ValueSet binding for ClaimResponse.use in ClaimResponse."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/claim-use|4.0.1"
+
+ValueSet: claimresponse-outcome
+Id: claimresponse-outcome
+Title: "ClaimResponse Outcome ValueSet"
+Description: "ValueSet binding for ClaimResponse.outcome in ClaimResponse."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/remittance-outcome"
+
+ValueSet: claimresponse-item-adjudication-category
+Id: claimresponse-item-adjudication-category
+Title: "ClaimResponse Item Adjudication Category ValueSet"
+Description: "ValueSet binding for ClaimResponse.item.adjudication.category in ClaimResponse."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/adjudication|4.0.1"
+
+
+ValueSet: coverage-status
+Id: coverage-status
+Title: "Coverage Status ValueSet"
+Description: "ValueSet binding for Coverage.status in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/fm-status"
+
+ValueSet: coverage-type
+Id: coverage-type
+Title: "Coverage Type ValueSet"
+Description: "ValueSet binding for Coverage.type in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/coverage-type"
+
+ValueSet: coverage-relationship
+Id: coverage-relationship
+Title: "Coverage Relationship ValueSet"
+Description: "ValueSet binding for Coverage.relationship in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/subscriber-relationship"
+
+ValueSet: coverage-class-type
+Id: coverage-class-type
+Title: "Coverage Class Type ValueSet"
+Description: "ValueSet binding for Coverage.class.type in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/coverage-class"
+
+ValueSet: coverage-costtobeneficiary-type
+Id: coverage-costtobeneficiary-type
+Title: "Coverage CostToBeneficiary Type ValueSet"
+Description: "ValueSet binding for Coverage.costToBeneficiary.type in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/coverage-copay-type"
+
+ValueSet: coverage-costtobeneficiary-exception-type
+Id: coverage-costtobeneficiary-exception-type
+Title: "Coverage CostToBeneficiary Exception Type ValueSet"
+Description: "ValueSet binding for Coverage.costToBeneficiary.exception.type in Coverage."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/coverage-financial-exception"
+
+
+ValueSet: coverageeligibilityrequest-status
+Id: coverageeligibilityrequest-status
+Title: "CoverageEligibilityRequest Status ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/fm-status"
+
+ValueSet: coverageeligibilityrequest-priority
+Id: coverageeligibilityrequest-priority
+Title: "CoverageEligibilityRequest Priority ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.priority."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/process-priority"
+
+ValueSet: coverageeligibilityrequest-purpose
+Id: coverageeligibilityrequest-purpose
+Title: "CoverageEligibilityRequest Purpose ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.purpose."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/eligibilityrequest-purpose"
+
+ValueSet: coverageeligibilityrequest-item-category
+Id: coverageeligibilityrequest-item-category
+Title: "CoverageEligibilityRequest Item Category ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.item.category."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/ex-benefitcategory"
+
+ValueSet: coverageeligibilityrequest-item-productorservice
+Id: coverageeligibilityrequest-item-productorservice
+Title: "CoverageEligibilityRequest Item ProductOrService ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.item.productOrService."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/service-uscls"
+
+ValueSet: coverageeligibilityrequest-item-modifier
+Id: coverageeligibilityrequest-item-modifier
+Title: "CoverageEligibilityRequest Item Modifier ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.item.modifier."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/claim-modifiers"
+
+ValueSet: coverageeligibilityrequest-item-diagnosis-diagnosis
+Id: coverageeligibilityrequest-item-diagnosis-diagnosis
+Title: "CoverageEligibilityRequest Item Diagnosis ValueSet"
+Description: "ValueSet binding for CoverageEligibilityRequest.item.diagnosis.diagnosis[x]."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/icd-10"
+
+ValueSet: coverageeligibilityresponse-status
+Id: coverageeligibilityresponse-status
+Title: "CoverageEligibilityResponse Status ValueSet"
+Description: "ValueSet binding for CoverageEligibilityResponse.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/fm-status"
+
+ValueSet: coverageeligibilityresponse-purpose
+Id: coverageeligibilityresponse-purpose
+Title: "CoverageEligibilityResponse Purpose ValueSet"
+Description: "ValueSet binding for CoverageEligibilityResponse.purpose."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/eligibilityresponse-purpose"
+
+ValueSet: coverageeligibilityresponse-outcome
+Id: coverageeligibilityresponse-outcome
+Title: "CoverageEligibilityResponse Outcome ValueSet"
+Description: "ValueSet binding for CoverageEligibilityResponse.outcome."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/remittance-outcome"
+
+
+ValueSet: servicerequest-status
+Id: servicerequest-status
+Title: "ServiceRequest Status ValueSet"
+Description: "ValueSet binding for ServiceRequest.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-status|5.0.0"
+
+ValueSet: servicerequest-intent
+Id: servicerequest-intent
+Title: "ServiceRequest Intent ValueSet"
+Description: "ValueSet binding for ServiceRequest.intent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-intent|5.0.0"
+
+ValueSet: servicerequest-category
+Id: servicerequest-category
+Title: "ServiceRequest Category ValueSet"
+Description: "ValueSet binding for ServiceRequest.category."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/servicerequest-category"
+
+ValueSet: servicerequest-priority
+Id: servicerequest-priority
+Title: "ServiceRequest Priority ValueSet"
+Description: "ValueSet binding for ServiceRequest.priority."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-priority|5.0.0"
+
+ValueSet: servicerequest-code
+Id: servicerequest-code
+Title: "ServiceRequest Code ValueSet"
+Description: "ValueSet binding for ServiceRequest.code."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/procedure-code"
+
+ValueSet: servicerequest-location
+Id: servicerequest-location
+Title: "ServiceRequest Location ValueSet"
+Description: "ValueSet binding for ServiceRequest.location."
+* ^experimental = false
+* ^url = "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"
+
+ValueSet: servicerequest-reason
+Id: servicerequest-reason
+Title: "ServiceRequest Reason ValueSet"
+Description: "ValueSet binding for ServiceRequest.reason."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/procedure-reason"
+
+
+ValueSet: task-status
+Id: task-status
+Title: "Task Status ValueSet"
+Description: "ValueSet binding for Task.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/task-status"
+
+ValueSet: task-intent
+Id: task-intent
+Title: "Task Intent ValueSet"
+Description: "ValueSet binding for Task.intent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/task-intent"
+
+ValueSet: task-priority
+Id: task-priority
+Title: "Task Priority ValueSet"
+Description: "ValueSet binding for Task.priority."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-priority"
+
+ValueSet: task-code
+Id: task-code
+Title: "Task Code ValueSet"
+Description: "ValueSet binding for Task.code."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/task-code"
+
+ValueSet: task-performer-type
+Id: task-performer-type
+Title: "Task Performer Type ValueSet"
+Description: "ValueSet binding for Task.performerType."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/performer-role"
+
+ValueSet: careplan-status
+Id: careplan-status
+Title: "CarePlan Status ValueSet"
+Description: "ValueSet binding for CarePlan.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/request-status"
+
+ValueSet: careplan-intent
+Id: careplan-intent
+Title: "CarePlan Intent ValueSet"
+Description: "ValueSet binding for CarePlan.intent."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/care-plan-intent"
+
+ValueSet: careplan-category
+Id: careplan-category
+Title: "CarePlan Category ValueSet"
+Description: "ValueSet binding for CarePlan.category."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/care-plan-category"
+
+ValueSet: careplan-activity-detail-kind
+Id: careplan-activity-detail-kind
+Title: "CarePlan Activity Detail Kind ValueSet"
+Description: "ValueSet binding for CarePlan.activity.detail.kind."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/care-plan-activity-kind"
+
+ValueSet: careplan-activity-detail-status
+Id: careplan-activity-detail-status
+Title: "CarePlan Activity Detail Status ValueSet"
+Description: "ValueSet binding for CarePlan.activity.detail.status."
+* ^experimental = false
+* ^url = "http://hl7.org/fhir/ValueSet/care-plan-activity-status"
