@@ -505,49 +505,44 @@ Id: kps-practitioner-name-use
 Title: "Practitioner Name Use ValueSet"
 Description: "ValueSet binding for Practitioner.name.use in Practitioner."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+* include codes from system http://hl7.org/fhir/name-use
 
 ValueSet: practitioner-telecom-system
 Id: practitioner-telecom-system
 Title: "System ValueSet"
 Description: "ValueSet binding for Practitioner.telecom.system in Practitioner."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+* include codes from system http://hl7.org/fhir/contact-point-system
 
 ValueSet: practitioner-address-use
 Id: practitioner-address-use
 Title: "Use ValueSet"
 Description: "ValueSet binding for Practitioner.address.use in Practitioner."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+* include codes from system http://hl7.org/fhir/address-use
 
 ValueSet: practitioner-gender
 Id: practitioner-gender
 Title: "Gender ValueSet"
 Description: "ValueSet binding for Practitioner.gender in Practitioner."
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+* include codes from system http://hl7.org/fhir/administrative-gender
 
-ValueSet: practitioner-qualification-code
-Id: practitioner-qualification-code
-Title: "Code ValueSet"
-Description: "ValueSet binding for Practitioner.qualification.code in Practitioner."
-* ^experimental = false
-* ^url = "http://terminology.hl7.org/ValueSet/v2-2.7-0360"
+ 
 
 ValueSet: practitionerrole-code
 Id: practitionerrole-code
 Title: "Code ValueSet"
 Description: "ValueSet binding for PractitionerRole.code in PractitionerRole."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/practitioner-role"
+* include codes from system http://terminology.hl7.org/CodeSystem/practitioner-role
 
 ValueSet: practitionerrole-specialty
 Id: practitionerrole-specialty
 Title: "Specialty ValueSet"
 Description: "ValueSet binding for PractitionerRole.specialty in PractitionerRole."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/c80-practice-codes"
+* include codes from system  http://snomed.info/sct
 
 ValueSet: organization-identifier-use
 Id: organization-identifier-use
