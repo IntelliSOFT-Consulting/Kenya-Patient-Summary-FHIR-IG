@@ -549,77 +549,71 @@ Id: organization-identifier-use
 Title: "Use ValueSet"
 Description: "ValueSet binding for Organization.identifier.use in Organization."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+* include codes from system http://hl7.org/fhir/identifier-use
 
 ValueSet: organization-identifier-type
 Id: organization-identifier-type
 Title: "Type ValueSet"
 Description: "ValueSet binding for Organization.identifier.type in Organization."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/identifier-type"
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 
 ValueSet: organization-type
 Id: organization-type
 Title: "Type ValueSet"
 Description: "ValueSet binding for Organization.type in Organization."
 * ^experimental = false
-* ^url = "https://hl7.org/fhir/R4/codesystem-organization-type.html"
+* include codes from system  http://terminology.hl7.org/CodeSystem/organization-type 
 
 ValueSet: organization-address-use
 Id: organization-address-use
 Title: "Use ValueSet"
 Description: "ValueSet binding for Organization.address.use in Organization."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+* include codes from system http://hl7.org/fhir/address-use
 
 ValueSet: encounter-status
 Id: encounter-status
 Title: "Status ValueSet"
 Description: "ValueSet binding for Encounter.status in Encounter."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/encounter-status|4.0.1"
+* include codes from system http://hl7.org/fhir/encounter-status
 
 ValueSet: encounter-class
 Id: encounter-class
 Title: "Class ValueSet"
 Description: "ValueSet binding for Encounter.class in Encounter."
 * ^experimental = false
-* ^url = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* include codes from system http://terminology.hl7.org/CodeSystem/v3-ActCode where concept is-a #_ActEncounterCode
 
-ValueSet: encounter-servicetype
-Id: encounter-servicetype
-Title: "ServiceType ValueSet"
-Description: "ValueSet binding for Encounter.serviceType in Encounter."
-* ^experimental = false
-* ^url = "https://example.com/fhir/ValueSet/service-type-vs"
-
+ 
 ValueSet: encounter-priority
 Id: encounter-priority
 Title: "Priority ValueSet"
 Description: "ValueSet binding for Encounter.priority in Encounter."
 * ^experimental = false
-* ^url = "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+* include codes from system http://terminology.hl7.org/CodeSystem/v3-ActPriority
 
 ValueSet: condition-clinicalstatus
 Id: condition-clinicalstatus
 Title: "ClinicalStatus ValueSet"
 Description: "ValueSet binding for Condition.clinicalStatus in Condition."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/condition-clinical"
+* include codes from system http://terminology.hl7.org/CodeSystem/condition-clinical
 
 ValueSet: condition-verificationstatus
 Id: condition-verificationstatus
 Title: "VerificationStatus ValueSet"
 Description: "ValueSet binding for Condition.verificationStatus in Condition."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/condition-ver-status"
+* include codes from system http://terminology.hl7.org/CodeSystem/condition-ver-status
 
 ValueSet: condition-category
 Id: condition-category
 Title: "Category ValueSet"
 Description: "ValueSet binding for Condition.category in Condition."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/condition-category"
+* include codes from system http://terminology.hl7.org/CodeSystem/condition-category
 
 ValueSet: condition-severity
 Id: condition-severity
