@@ -41,6 +41,7 @@ Description: "ValueSet for Contact Relationship using SNOMED CT codes"
 * $SCT#248153007 "Legal guardian"
 * $SCT#184142008 "Next of kin"
 * $SCT#405170004 "Other"
+ 
 
 ValueSet: AllergyAllergensVS
 Id: allergy-allergens-vs

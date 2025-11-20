@@ -35,7 +35,7 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 
 * gender 1..1 MS
-* gender from GenderVS
+* gender from KPSPatientGender
 
 * telecom 1..* MS
 * telecom ^slicing.discriminator.type = #pattern
@@ -75,7 +75,7 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 Instance: ExamplePatientKPS
 InstanceOf: kps-patient
 Title: "Example Patient"
-Description: "An example of a Patient resource from Mandera County conforming to the KPS Patient profile."
+Description: "An example of a Patient resource conforming to the KPS Patient profile."
 Usage: #example
 
 * meta.profile = "http://example.org/fhir/StructureDefinition/kps-patient"
