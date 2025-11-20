@@ -30,9 +30,12 @@ By adopting the KPS, Kenya takes a key step toward achieving patient-centered, d
 ### Relationship With Other Kenyan IGs
 
 > Other international and national standards were reviewed and considered during the development process to assess the degree of alignment and to facilitate adoption of this standard. These implementation guides include: 
-> ### Related Implementation Guides
-- [Kenya eClaims FHIR IG](http://45.79.116.94:8080/index.html)  
-- [Kenya Patient Summary (KPS) FHIR IG](#)
+> #### Related Implementation Guides
+- [Kenya Core FHIR IG](https://igkenyacore.intellisoftkenya.com)
+- [Kenya eClaims FHIR IG](https://igeclaims.intellisoftkenya.com)  
+- [Kenya Patient Summary (KPS) FHIR IG](https://igpatientsummary.intellisoftkenya.com)
+- [Kenya ePrescription FHIR IG](https://igeprescriptions.intellisoftkenya.com)
+- [Kenya Lab Orders FHIR IG](https://iglaborders.intellisoftkenya.com)
 
 <table class="table table-hover table-bordered table-striped">
     <thead>
