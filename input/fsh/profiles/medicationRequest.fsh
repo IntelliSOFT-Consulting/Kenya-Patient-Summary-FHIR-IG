@@ -10,7 +10,7 @@ Description: "This profile defines constraints on the MedicationRequest resource
   * ^definition = "The reason why the medication is or was prescribed or used. Links to current or past conditions."
 
 * category 0..* 
-* category from MedicationCategoryVS
+* category from medicationrequest-category (required)
   * ^short = "Intended use"
   * ^definition = "Indication of intended use as: prevention, treatment, diagnostic, anaesthesia, care of equipment."
   
@@ -19,7 +19,7 @@ Description: "This profile defines constraints on the MedicationRequest resource
   * ^definition = "Medication that was administered or was to be administered."
 
 * status 1..1
-* status from MedicationStatusVS
+* status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
   * ^short = "Medication Status"
   * ^definition = "To indicate if the medication is in active use or not."  
 

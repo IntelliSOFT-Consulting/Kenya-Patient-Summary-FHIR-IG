@@ -7,16 +7,16 @@ Description: "This profile defines constraints on the Medication resource for us
 
 * status 1..1 MS
 * code 1..1 MS
-* code from MedicationVS (required) // Bound to a local or standard terminology
+* code from KPSMedicationVS (required) // WHO ATC national formulary
 * form 0..1 MS
-* form from MedicationFormVS
+* form from medication-form (required)
 * manufacturer 0..1 MS
 
 * ingredient 0..* MS
 * ingredient.item[x] only Reference(KPSSubstance)
 * ingredient.strength MS
-* ingredient.strength.numerator.unit from UCUMUnitsVS (preferred)
-* ingredient.strength.denominator.unit from UCUMUnitsVS (preferred)
+* ingredient.strength.numerator.unit from UCUMUnitsVS (required)
+* ingredient.strength.denominator.unit from UCUMUnitsVS (required)
 
 
 * batch 0..1 MS
@@ -42,7 +42,7 @@ Title: "Substance - KPS"
 Description: "This profile defines the constraints on the Substance resource for use in the Kenya Patient Summary (KPS), representing active pharmaceutical substances."
 
 * code 1..1 MS
-* code from KPSSubstanceCodeVS (preferred)  
+* code from KPSGenericProductsVS (required) // WHO ATC active substances
 * status MS
 * instance MS
 * instance.quantity MS

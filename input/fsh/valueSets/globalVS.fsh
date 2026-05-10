@@ -31,34 +31,6 @@ Description: "Custom ValueSet for organization types."
 
  
 
-ValueSet: KPSConditionSeverityVS
-Id: kps-condition-severity-vs
-Title: "Condition Severity"
-Description: "ValueSet for condition severity used in the KPS profile."
- 
-* ^url = "https://example.com/fhir/ValueSet/condition-severity-vs"
-* ^experimental = false
-* include codes from system http://snomed.info/sct
-
-ValueSet: KPSConditionCodeVS
-Id: kps-condition-code-vs
-Title: "Condition Code"
-Description: "Clinical condition codes."
- 
-* ^url = "https://example.com/fhir/ValueSet/condition-code-vs"
-* ^experimental = false
-* include codes from system http://snomed.info/sct
-
-ValueSet: KPSBodySiteVS
-Id: kps-body-site-vs
-Title: "Body Site"
-Description: "Sites on the body associated with clinical conditions."
- 
-* ^url = "https://example.com/fhir/ValueSet/body-site-vs"
-* ^experimental = false
-* include codes from system http://snomed.info/sct
- 
-
 ValueSet: KPSDiagnosticServiceSectionsVS
 Id: kps-diagnostic-service-sections
 Title: "Diagnostic Service Categories"
@@ -67,17 +39,6 @@ Description: "Categories of diagnostic services."
 * ^url = "http://terminology.hl7.org/ValueSet/diagnostic-service-sections"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0074
-
-ValueSet: KPSClinicalFindingsVS
-Id: kps-clinical-findings
-Title: "Clinical Findings"
-Description: "Clinical findings in diagnostic report conclusions."
- 
-* ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
-* ^experimental = false
-* include codes from system http://snomed.info/sct
-
-  
 
 ValueSet: KPSMedicationVS
 Id: kps-medication-vs
@@ -125,15 +86,6 @@ Description: "List of generic drugs."
 * ^url = "https://example.com/fhir/ValueSet/generic-products"
 * ^experimental = false
 * include codes from system http://www.whocc.no/atc
-
-ValueSet: KPSRouteOfAdministrationVS
-Id: kps-route-of-administration
-Title: "Route of Administration"
-Description: "Routes for drug administration."
- 
-* ^url = "https://example.com/fhir/ValueSet/route-of-administration"
-* ^experimental = false
-* include codes from system http://snomed.info/sct
 
 ValueSet: KPSUnitOfMeasureVS
 Id: kps-unit-of-measure
@@ -405,14 +357,6 @@ Description: "Value Sets for Substance Status"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/substance-status
 
-ValueSet: KPSSubstanceCode
-Id: kps-substance-code
-Title: "KPSSubstance Code"
-Description: "ValueSet for SNOMED CT Substance concepts (descendants of 105590001 |Substance|)."
-* ^experimental = false
-* include codes from system http://snomed.info/sct where concept is-a #105590001
-
-
 ValueSet: KPSPatientIdentifierUse
 Id: kps-patient-identifier-use
 Title: "KPSPatientIdentifierUse"
@@ -537,13 +481,6 @@ Description: "ValueSet binding for PractitionerRole.code in PractitionerRole."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/practitioner-role
 
-ValueSet: practitionerrole-specialty
-Id: practitionerrole-specialty
-Title: "Specialty ValueSet"
-Description: "ValueSet binding for PractitionerRole.specialty in PractitionerRole."
-* ^experimental = false
-* include codes from system  http://snomed.info/sct
-
 ValueSet: organization-identifier-use
 Id: organization-identifier-use
 Title: "Use ValueSet"
@@ -617,17 +554,23 @@ Description: "ValueSet binding for Condition.category in Condition."
 
 ValueSet: condition-severity
 Id: condition-severity
-Title: "Severity ValueSet"
-Description: "ValueSet binding for Condition.severity in Condition."
+Title: "KPS Condition Severity"
+Description: "Severity levels for clinical conditions in the Kenya Patient Summary, using LOINC answer codes."
 * ^experimental = false
-* ^url = "https://example.com/fhir/ValueSet/condition-severity-vs"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/condition-severity"
+* $LNC#LA6752-5 "Mild"
+* $LNC#LA6751-7 "Moderate"
+* $LNC#LA6750-9 "Severe"
+* $LNC#LA13703-6 "Life threatening"
 
 ValueSet: condition-code
 Id: condition-code
-Title: "Code ValueSet"
-Description: "ValueSet binding for Condition.code in Condition."
+Title: "KPS Condition Codes"
+Description: "Clinical diagnoses and conditions coded using ICD-10 and ICD-11, the standard classification systems used in Kenya's health system."
 * ^experimental = false
-* ^url = "https://example.com/fhir/ValueSet/condition-code-vs"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/condition-code"
+* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system http://id.who.int/icd/release/11/mms
 
 ValueSet: condition-bodysite
 Id: condition-bodysite
@@ -687,10 +630,12 @@ Description: "ValueSet binding for AllergyIntolerance.criticality in AllergyInto
 
 ValueSet: allergyintolerance-code
 Id: allergyintolerance-code
-Title: "Code ValueSet"
-Description: "ValueSet binding for AllergyIntolerance.code in AllergyIntolerance."
+Title: "KPS Allergy Intolerance Substance Codes"
+Description: "Substances that may cause allergic reactions or intolerances. Uses WHO ATC drug codes (for drug allergies) and ICD-10 for clinically significant allergen classifications."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/allergyintolerance-code"
+* include codes from system http://www.whocc.no/atc
+* include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: allergyintolerance-reaction-substance
 Id: allergyintolerance-reaction-substance
@@ -701,10 +646,17 @@ Description: "ValueSet binding for AllergyIntolerance.reaction.substance in Alle
 
 ValueSet: allergyintolerance-reaction-manifestation
 Id: allergyintolerance-reaction-manifestation
-Title: "Manifestation ValueSet"
-Description: "ValueSet binding for AllergyIntolerance.reaction.manifestation in AllergyIntolerance."
+Title: "KPS Allergy Reaction Manifestation Codes"
+Description: "Clinical manifestations of allergic reactions coded using ICD-10 and LOINC. Covers urticaria, anaphylaxis, angioedema, bronchospasm, and other reaction findings."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-snomed-ct-ips-free-set"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/allergyintolerance-reaction-manifestation"
+* $LNC#LA15702-6 "Anaphylaxis"
+* $LNC#LA15701-8 "Urticaria (hives)"
+* $LNC#LA15700-0 "Angioedema"
+* $LNC#LA6752-5 "Mild"
+* $LNC#LA6751-7 "Moderate"
+* $LNC#LA6750-9 "Severe"
+* include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: allergyintolerance-reaction-severity
 Id: allergyintolerance-reaction-severity
@@ -1001,17 +953,19 @@ Description: "ValueSet binding for Immunization.status in Immunization."
 
 ValueSet: immunization-vaccinecode
 Id: immunization-vaccinecode
-Title: "VaccineCode ValueSet"
-Description: "ValueSet binding for Immunization.vaccineCode in Immunization."
+Title: "KPS Vaccine Codes"
+Description: "Vaccine codes for the Kenya Patient Summary using WHO ATC J07 vaccine classification. Covers bacterial, viral, and combination vaccines used in Kenya's national immunization programme."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/immunization-vaccinecode"
+* include codes from system http://www.whocc.no/atc where concept is-a #J07
 
 ValueSet: immunization-targetdisease
 Id: immunization-targetdisease
-Title: "TargetDisease ValueSet"
-Description: "ValueSet binding for Immunization.protocolApplied.targetDisease in Immunization."
+Title: "KPS Vaccine Target Diseases"
+Description: "Target diseases against which vaccines are administered in the Kenya national immunization programme, coded using ICD-10."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/immunization-targetdisease"
+* include codes from system http://hl7.org/fhir/sid/icd-10
 
 
 ValueSet: diagnosticreport-status
@@ -1052,10 +1006,12 @@ Description: "ValueSet binding for Procedure.status in Procedure."
 
 ValueSet: procedure-code
 Id: procedure-code
-Title: "Procedure Code ValueSet"
-Description: "ValueSet binding for Procedure.code in Procedure."
+Title: "KPS Procedure Codes"
+Description: "Clinical procedure codes for the Kenya Patient Summary using LOINC and ICD-10. Covers surgical, diagnostic, and therapeutic procedures."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/procedure-code-vs"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/procedure-code"
+* include codes from system http://loinc.org
+* include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: procedure-reasoncode
 Id: procedure-reasoncode
@@ -1413,10 +1369,12 @@ Description: "ValueSet binding for Specimen.status in Specimen."
 
 ValueSet: specimen-type
 Id: specimen-type
-Title: "Specimen Type ValueSet"
-Description: "ValueSet binding for Specimen.type in Specimen."
+Title: "KPS Specimen Types"
+Description: "Types of biological specimens collected for diagnostic analysis in the Kenya Patient Summary, coded using HL7 v2 Table 0487 and LOINC."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/specimen-type-vs"
+* ^url = "https://fhir.dha.go.ke/ig/kenyaPS/ValueSet/specimen-type"
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0487
+* include codes from system http://loinc.org
 
 ValueSet: specimen-collection-method
 Id: specimen-collection-method
@@ -1801,3 +1759,42 @@ Title: "CarePlan Activity Detail Status ValueSet"
 Description: "ValueSet binding for CarePlan.activity.detail.status."
 * ^experimental = false
 * ^url = "http://hl7.org/fhir/ValueSet/care-plan-activity-status"
+
+
+// ============================================================
+// KPS.C – Radiology Codes ValueSet (KPS.C.DE.18)
+// Subset of LOINC radiology imaging codes for use in KPS
+// ImagingStudy.description (imaging study type selection)
+// ============================================================
+
+ValueSet: KPSRadiologyCodesVS
+Id: kps-radiology-codes-vs
+Title: "Radiology Codes ValueSet"
+Description: "LOINC-coded radiology imaging study types for use in the Kenya Patient Summary (KPS.C.DE.18 – Imaging Study Type)."
+* ^status = #active
+* ^experimental = false
+* $LNC#24627-2 "CT of abdomen"
+* $LNC#24628-0 "CT of abdomen W contrast IV"
+* $LNC#24629-8 "CT of abdomen WO contrast"
+* $LNC#24630-6 "CT of abdomen WO and W contrast IV"
+* $LNC#24725-4 "CT of brain"
+* $LNC#24726-2 "CT of brain W contrast IV"
+* $LNC#24727-0 "CT of brain WO contrast"
+* $LNC#24728-8 "CT of brain WO and W contrast IV"
+* $LNC#24736-1 "CT of chest"
+* $LNC#24737-9 "CT of chest W contrast IV"
+* $LNC#24738-7 "CT of chest WO contrast"
+* $LNC#36643-5 "Chest X-ray 2 views"
+* $LNC#24606-6 "MR brain W contrast IV"
+* $LNC#24607-4 "MR brain WO contrast"
+* $LNC#24671-0 "Abdomen X-ray AP"
+* $LNC#39607-7 "US of chest"
+* $LNC#30704-1 "Ultrasound of abdomen"
+* $LNC#25061-5 "Ultrasound of pelvis"
+* $LNC#42148-7 "Ultrasound of obstetric"
+* $LNC#39879-2 "Bone scan"
+* $LNC#39905-5 "Bone scan limited"
+* $LNC#24730-4 "PET of brain"
+* $LNC#44137-8 "PET of heart"
+* $LNC#36046-1 "Hepatobiliary scan"
+* $LNC#24953-2 "CT guidance for drainage"

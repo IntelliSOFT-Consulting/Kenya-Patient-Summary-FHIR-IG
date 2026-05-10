@@ -17,7 +17,7 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 * dateOfBirth 1..1 date "Client's date of birth, if known"
   * ^code = #KPS.A.DE.4
 * sex 1..1 code "Sex of the client assigned at birth"
-* sex from GenderVS
+* sex from GenderVS (required)
   * ^code = #KPS.A.DE.5 
 
 // Address
@@ -45,7 +45,7 @@ Description: "Logical model for registering a client under the Kenya Patient Sum
 // Contact Person / Legal Guardian
 * contactPerson 0..1 BackboneElement "Contact person or legal guardian"
   * role 1..1 code "Role: legal guardian, next of kin, or other"
-  * role from PatientContactRelationshipVS
+  * role from KPSPatientContactRelationship (required)
     * ^code = #KPS.A.DE.16 
   * relationship 0..1 string "Relationship to the client (e.g., father, spouse, daughter)" 
     * ^code = #KPS.A.DE.20
