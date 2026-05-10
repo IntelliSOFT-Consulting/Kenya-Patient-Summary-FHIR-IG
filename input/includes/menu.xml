@@ -1,27 +1,48 @@
-
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
- <li>
-      <a href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
-  </li> 
-   <li class="dropdown">
-    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">
+      Business Requirements<b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
+      <li><a href="business-requirements.html">Overview</a></li>
       <li><a href="concepts.html">Concepts</a></li>
       <li><a href="generic-personas.html">Generic Personas</a></li>
       <li><a href="user-scenarios.html">User Scenarios</a></li>
       <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
- 
       <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
-       <li><a href="functional-requirements.html">Functional Requirements</a></li>
-       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
- 
+      <li><a href="functional-requirements.html">Functional Requirements</a></li>
+      <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
     </ul>
   </li>
-   <li class="dropdown">
-    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
+  <li>
+    <a href="actors-and-transactions.html">Actors &amp; Transactions</a>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">
+      FHIR Artifacts<b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
-      <li><a href="artifacts.html">Artifacts</a></li>
-      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+      <li><a href="artifacts.html">All Artifacts</a></li>
+      <li><a href="artifacts.html#structures-resource-profiles">Profiles</a></li>
+      <li><a href="artifacts.html#structures-extension-definitions">Extensions</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Value Sets</a></li>
+      <li><a href="artifacts.html#terminology-code-systems">Code Systems</a></li>
+      <li><a href="artifacts.html#example-example-instances">Examples</a></li>
     </ul>
   </li>
-</ul>  
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>

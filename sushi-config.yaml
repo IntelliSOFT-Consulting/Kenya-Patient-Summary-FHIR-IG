@@ -4,21 +4,24 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.kenyaPSIG
-canonical: https://example.org/fhir
+canonical: https://fhir.dha.go.ke/ig/kenyaPS
 name: Kenya-Patient-Summary-FHIR-IG
-title: Kenya Patient Summary FHIR IG
-description: Kenya Patient Summary FHIR IG
+title: Kenya Patient Summary FHIR Implementation Guide
+description: >
+  This Implementation Guide defines the structure, constraints, and terminologies for a Kenya
+  Patient Summary (KPS) based on HL7 FHIR R4. It enables secure, portable, and standardized
+  summaries of essential patient health information across Kenya's digital health ecosystem,
+  aligned with the Digital Health Act 2023 and the International Patient Summary (IPS) standard.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
-  name: IntelliSOFT Consulting
-  url: https://.com/fhir/example-publisher
-  # email: test@example.org
+  name: Digital Health Agency of Kenya
+  url: https://www.dha.go.ke
+  email: interoperability@dha.go.ke
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -49,24 +52,34 @@ dependencies:
 pages:
   index.md:
     title: Home
-  # dependancies.md:
-  #   title: Dependancies
+  background.md:
+    title: Background
+  actors-and-transactions.md:
+    title: Actors and Transactions
   business-requirements.md:
     title: Business Requirements
-  concepts.md:
-    title: Concepts
-  generic-personas.md:
-    title: Generic Personas
-  user-scenarios.md:
-    title: User Scenarios
-  business-processes.md:
-    title: Business Processes
-  decision-support-logic.md:
-    title: Decision Support Logic
-  functional-requirements.md:
-    title: Functional Requirements
-  non-functional-requirements.md:
-    title: Non-Functional Requirements
+    concepts.md:
+      title: Concepts
+    generic-personas.md:
+      title: Generic Personas
+    user-scenarios.md:
+      title: User Scenarios
+    business-processes.md:
+      title: Business Processes and Workflows
+    decision-support-logic.md:
+      title: Decision Support Logic
+    functional-requirements.md:
+      title: Functional Requirements
+    non-functional-requirements.md:
+      title: Non-Functional Requirements
+  security.md:
+    title: Security
+  conformance.md:
+    title: Conformance
+  downloads.md:
+    title: Downloads
+  changelog.md:
+    title: Changelog
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -92,8 +105,21 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Business Requirements: business-requirements.html
+  Background: background.html
+  Business Requirements:
+    Overview: business-requirements.html
+    Concepts: concepts.html
+    Generic Personas: generic-personas.html
+    User Scenarios: user-scenarios.html
+    Business Processes: business-processes.html
+    Decision Support Logic: decision-support-logic.html
+    Functional Requirements: functional-requirements.html
+    Non-Functional Requirements: non-functional-requirements.html
+  Actors & Transactions: actors-and-transactions.html
+  Security: security.html
+  Conformance: conformance.html
   FHIR Artifacts: artifacts.html
+  Downloads: downloads.html
   
 
 
@@ -107,13 +133,20 @@ menu:
 # ContactDetail.
 #
 contact:
-  - name: KPS Team Kenya.
+  - name: Digital Health Agency of Kenya – Interoperability Team
     telecom:
-      - system: email # phone | fax | email | pager | url | sms | other
-        value: info@example.com
+      - system: email
+        value: interoperability@dha.go.ke
         use: work
-        
-jurisdiction: urn:iso:std:iso:3166#KE "Kenya"    
+      - system: url
+        value: https://www.dha.go.ke
+        use: work
+
+jurisdiction: urn:iso:std:iso:3166#KE "Kenya"
+
+copyright: >
+  Copyright © 2024+ Digital Health Agency of Kenya. This content is licensed under
+  Creative Commons Zero v1.0 Universal (CC0 1.0). No rights reserved.
 #
 #
 # The global property corresponds to the IG.global property, but it
