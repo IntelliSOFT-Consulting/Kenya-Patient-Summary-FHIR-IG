@@ -5,13 +5,14 @@ Title: "Immunization Profile - KPS"
 Description : "This profile defines constraints on the Immunization resource for use within the Kenya Patient Summary. It captures details of vaccines administered to a patient, supporting immunization history tracking, clinical decision-making, and data exchange within the national Health Information Exchange (HIE)."
 
 * status 1..1 MS
-* status from VaccineStatusVS
+* status from immunization-status (required)
   * ^short = "Status of Vaccine"
   * ^definition = "Current status of the immunization against the disease"
 
 * vaccineCode 1..1 MS
+* vaccineCode from immunization-vaccinecode (required)
   * ^short = "Vaccine Code"
-  * ^definition = "Vaccine that was administered or was to be administered."
+  * ^definition = "The vaccine product administered, coded using WHO ATC J07 vaccine classification."
 
 * lotNumber 0..1 MS
   * ^short = "Lot Number of Vaccine"
@@ -29,8 +30,9 @@ Description : "This profile defines constraints on the Immunization resource for
 
 * protocolApplied 0..*
   * targetDisease 1..1 MS
+  * targetDisease from immunization-targetdisease (required)
     * ^short = "Target Disease of Immunization"
-    * ^definition = "Disease or agent that the vaccination provides protection against"
+    * ^definition = "Disease or agent that the vaccination provides protection against, coded using ICD-10."
   * series 1..1 MS
     * ^short = "Name of Vaccine Series"
   * doseNumber[x] 1..1 MS

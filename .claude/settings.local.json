@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:build.fhir.org)"
+      "WebFetch(domain:build.fhir.org)",
+      "Bash(python3 -c \"import openpyxl; wb = openpyxl.load_workbook\\('/Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/csv/KPS_Data_Dictionary_Combined.xlsx'\\); print\\('Sheets:', wb.sheetnames\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3)",
+      "Bash(sushi .)",
+      "Bash(grep -v \"serviceRequest\\\\|No element found\\\\|^--$\")",
+      "Bash(awk '{print $2}')",
+      "Bash(grep -v \"^--$\")",
+      "Bash(grep -rn 'snomed\\\\.info\\\\|$SCT' /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/valueSets/)",
+      "Bash(grep -rn \"from [A-Za-z$]\" /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/profiles/ /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/models/)",
+      "Bash(bash _build.sh notx)",
+      "Bash(xargs -I{} basename {})"
     ]
   }
 }

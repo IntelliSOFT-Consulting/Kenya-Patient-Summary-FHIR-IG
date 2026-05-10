@@ -12,7 +12,7 @@ Description: "Logical model for representing diagnostic requests, specimens, ima
 * justification 0..1 string "Reason for diagnostic request, including relevant clinical notes"
   * ^code = #KPS.C.DE.4
 * status 1..1 code "Status of the diagnostic request"
-* status from DiagnosticStatusVS
+* status from diagnosticreport-status (required)
   * ^code = #KPS.C.DE.5
 
 // Specimen
@@ -20,7 +20,7 @@ Description: "Logical model for representing diagnostic requests, specimens, ima
   * type 1..1 string "Type of material collected for analysis"
     * ^code = #KPS.C.DE.13
   * availabilityStatus 0..1 code "Specimen availability status"
-  * availabilityStatus  from SpecimenAvailabilityStatusVS
+  * availabilityStatus from http://hl7.org/fhir/ValueSet/specimen-status (required)
     * ^code = #KPS.C.DE.14
 
 // Radiology

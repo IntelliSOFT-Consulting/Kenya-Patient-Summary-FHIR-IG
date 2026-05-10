@@ -5,8 +5,13 @@ Title: "AllergyIntolerance Profile - KPS"
 Description: "This profile defines constraints on the AllergyIntolerance resource for use within the Kenya Patient Summary. It captures information about a patient's known allergies and intolerances to substances such as medications, foods, or environmental agents, supporting safer clinical decision-making, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
 
+* code 0..1 MS
+* code from allergyintolerance-code (required)
+  * ^short = "Causative agent (allergen)"
+  * ^definition = "The substance (drug, food, or environmental agent) that causes the allergy or intolerance. Uses WHO ATC for drug allergens and ICD-10 for other classified allergens."
+
 * type 1..1 MS
-* type from AllergyTypeVS
+* type from KPSAllergyTypeVS (required)
   * ^short = "Allergy, Intolerance, or Unknown"
   * ^definition = "Type of reaction: allergy, intolerance, or unknown."
 
@@ -15,12 +20,12 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * ^definition = "Estimate of the potential clinical harm, or seriousness, of the reaction to the identified substance."
 
 * clinicalStatus 0..1 MS
-* clinicalStatus from AllergyStatusVS
+* clinicalStatus from KPSAllergyStatusVS (required)
   * ^short = "Status of the allergy: active, resolved, etc."
   * ^definition = "The clinical status of the allergy"
 
 * verificationStatus 1..1 MS
-* verificationStatus from AllergyCertaintyVS
+* verificationStatus from allergyintolerance-verificationstatus (required)
   * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)"
   * ^definition = "The verification status to support the clinical status of the allergy"
 
@@ -32,14 +37,18 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * ^definition = "The date and time when the allergy last occurred or was resolved."
 
 * reaction 1..* MS
-  * substance 1..1 
-    * ^short = "Allergen or substance causing reaction"
-  * description 0..1 
+  * substance 0..1 MS
+  * substance from allergyintolerance-code (required)
+    * ^short = "Substance causing the reaction"
+    * ^definition = "Specific allergen substance that triggered this reaction event, coded using WHO ATC or ICD-10."
+  * description 0..1
     * ^short = "Free-text description of the allergy reaction"
-  * manifestation 1..* 
-    * ^short = "Clinical manifestation(s), e.g. rash, shock"
+  * manifestation 1..* MS
+  * manifestation from allergyintolerance-reaction-manifestation (required)
+    * ^short = "Clinical manifestation(s), e.g. rash, anaphylaxis"
+    * ^definition = "Reaction manifestation coded using ICD-10 or LOINC clinical finding codes."
   * severity 0..1 MS
-  * severity from AllergySeverityVS
+  * severity from KPSAllergySeverityVS (required)
     * ^short = "Severity of reaction"
 
 * note 0..* 

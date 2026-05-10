@@ -7,12 +7,12 @@ Description: "This profile defines constraints on the Procedure resource for use
 
 * status 1..1 MS
 * code 1..1 MS
-* code from ProcedureCodeVS (required) // National value set including ICD-10-PCS or SNOMED CT
+* code from procedure-code (required)
 * subject 1..1 MS
 * performed[x] 1..1 MS
 * performed[x] only dateTime or Period
 * reasonCode MS
-* reasonCode from ConditionCodeVS (preferred) // Conditions/diagnoses leading to the procedure
+* reasonCode from condition-code (required)
 * bodySite MS
 * outcome MS
 * performer 0..* MS
@@ -28,4 +28,4 @@ Id: procedure-type-category
 Title: "Procedure Type Category"
 Description: "Classifies the type of procedure (e.g., elective, emergency, referral-based) used in KPS."
 * value[x] only CodeableConcept
-* valueCodeableConcept from ProcedureTypeVS (preferred)
+* valueCodeableConcept from procedure-code (required)

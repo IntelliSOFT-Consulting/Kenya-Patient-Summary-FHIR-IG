@@ -96,30 +96,9 @@ pages:
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
+# │ Navigation menu is defined in input/includes/menu.xml.                                         │
+# │ The menu property below is intentionally omitted — the custom menu.xml takes precedence.       │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Background: background.html
-  Business Requirements:
-    Overview: business-requirements.html
-    Concepts: concepts.html
-    Generic Personas: generic-personas.html
-    User Scenarios: user-scenarios.html
-    Business Processes: business-processes.html
-    Decision Support Logic: decision-support-logic.html
-    Functional Requirements: functional-requirements.html
-    Non-Functional Requirements: non-functional-requirements.html
-  Actors & Transactions: actors-and-transactions.html
-  Security: security.html
-  Conformance: conformance.html
-  FHIR Artifacts: artifacts.html
-  Downloads: downloads.html
   
 
 

@@ -12,13 +12,13 @@ Description: "Logical model for documenting patient treatments under the Kenya P
   * ^code = #KPS.D.DE.3
 
 * medicationStatus 0..1 code "Current usage status of the medication."
-* medicationStatus from MedicationStatusVS 
+* medicationStatus from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 
 * medicationForm 0..1 code "Form of medication (tablet, capsule, liquid, etc.)."
-* medicationForm from MedicationFormVS 
+* medicationForm from medication-form (required)
 
 * activeIngredient 1..1 code "Active substance in the medication (e.g. paracetamol)."
-* activeIngredient from MedicationVS
+* activeIngredient from KPSMedicationVS (required)
   * ^code = #KPS.D.DE.4 
 
 * strength 1..1 Quantity "Content of active ingredient per dosage unit (e.g. 500 mg/tablet)."

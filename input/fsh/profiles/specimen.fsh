@@ -8,7 +8,7 @@ Description: "This profile defines constraints on the Specimen resource for use 
 
 * status 1..1 MS
 * type 1..1 MS
-* type from SpecimenTypeVS (required) // e.g., blood, urine, tissue — from SNOMED or custom
+* type from specimen-type (required)
 * subject 1..1 MS
 * collection MS
 * collection.collected[x] 0..1 MS
@@ -30,11 +30,11 @@ Id: specimen-priority
 Title: "Specimen Priority"
 Description: "Urgency or priority with which the specimen was collected (e.g., STAT, routine)."
 * value[x] only CodeableConcept
-* valueCodeableConcept from SpecimenPriorityVS (preferred)
+* valueCodeableConcept from KPSUnitOfMeasureVS (required)
 
 Extension: CollectionContext
 Id: collection-context
 Title: "Collection Context"
 Description: "Specifies the context of collection (e.g., surveillance, diagnostic, research)."
 * value[x] only CodeableConcept
-* valueCodeableConcept from SpecimenCollectionContextVS (preferred)
+* valueCodeableConcept from KPSServiceTypeVS (required)
