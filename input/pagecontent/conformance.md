@@ -108,13 +108,13 @@ The following profiles are defined in this Implementation Guide. Each profile co
       <td>Clinical encounter record including visit type, attending provider, facility, diagnoses, and care plan.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-kps-condition.html">KPS Condition</a></td>
+      <td><a href="StructureDefinition-ke-kps-condition.html">KPS Condition</a></td>
       <td>Condition</td>
       <td>KPS.B – Consultation</td>
       <td>Active and resolved clinical conditions, coded with ICD-11 or SNOMED CT.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-kps-allergyIntolerance.html">KPS Allergy Intolerance</a></td>
+      <td><a href="StructureDefinition-ke-kps-allergy-intolerance.html">KPS Allergy Intolerance</a></td>
       <td>AllergyIntolerance</td>
       <td>KPS.B – Consultation</td>
       <td>Recorded allergies and intolerances, including substance, severity, and clinical status.</td>

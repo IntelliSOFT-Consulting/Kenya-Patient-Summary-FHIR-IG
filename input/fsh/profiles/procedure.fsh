@@ -1,18 +1,18 @@
 Profile: KpsProcedure
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
-Id: kps-procedure
+Id: ke-kps-procedure
 Title: "Procedure Profile - KPS"
 Description: "This profile defines constraints on the Procedure resource for use within the Kenya Patient Summary. It identifies healthcare facilities or organizations involved in the provision or management of patient care, supporting national HIE and continuity of care."
 
 
 * status 1..1 MS
 * code 1..1 MS
-* code from procedure-code (required)
+* code from ProcedureCodeVS (required)
 * subject 1..1 MS
 * performed[x] 1..1 MS
 * performed[x] only dateTime or Period
 * reasonCode MS
-* reasonCode from condition-code (required)
+* reasonCode from ConditionCodeVS (required)
 * bodySite MS
 * outcome MS
 * performer 0..* MS
@@ -28,4 +28,4 @@ Id: procedure-type-category
 Title: "Procedure Type Category"
 Description: "Classifies the type of procedure (e.g., elective, emergency, referral-based) used in KPS."
 * value[x] only CodeableConcept
-* valueCodeableConcept from procedure-code (required)
+* valueCodeableConcept from ProcedureCodeVS (required)

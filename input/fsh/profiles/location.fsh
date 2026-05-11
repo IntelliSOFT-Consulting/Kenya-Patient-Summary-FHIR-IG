@@ -1,6 +1,6 @@
 Profile: KpsLocation
 Parent: Location
-Id: kps-location
+Id: ke-kps-location
 Title: "Location Profile - KPS"
 Description: "Defines constraints on the Location resource for use within the Kenya Patient Summary (KPS).
 Captures physical sites where patient care is delivered."
@@ -21,7 +21,7 @@ Captures physical sites where patient care is delivered."
 
 
 Instance: NairobiClinic
-InstanceOf: kps-location
+InstanceOf: ke-kps-location
 Title: "Nairobi Clinic"
 Description: "Example of a clinic in Nairobi used as a location in encounters"
 Usage: #example

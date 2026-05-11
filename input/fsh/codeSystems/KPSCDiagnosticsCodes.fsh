@@ -1,4 +1,4 @@
-CodeSystem: KPSCDiagnosticsCodes
+CodeSystem: KPSCDiagnosticsCodesCS
 Id: kpsc-diagnostics-codes
 Title: "KPS.C Diagnostics Data Elements"
 Description: "CodeSystem representing diagnostic data elements under the Kenya Patient Summary (KPS.C)."

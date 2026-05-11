@@ -1,12 +1,12 @@
 Profile: KpsAllergyIntolerance
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
-Id: kps-allergyIntolerance
+Id: ke-kps-allergy-intolerance
 Title: "AllergyIntolerance Profile - KPS"
 Description: "This profile defines constraints on the AllergyIntolerance resource for use within the Kenya Patient Summary. It captures information about a patient's known allergies and intolerances to substances such as medications, foods, or environmental agents, supporting safer clinical decision-making, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
 
 * code 0..1 MS
-* code from allergyintolerance-code (required)
+* code from AllergyIntoleranceCodeVS (required)
   * ^short = "Causative agent (allergen)"
   * ^definition = "The substance (drug, food, or environmental agent) that causes the allergy or intolerance. Uses WHO ATC for drug allergens and ICD-10 for other classified allergens."
 
@@ -25,7 +25,7 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
   * ^definition = "The clinical status of the allergy"
 
 * verificationStatus 1..1 MS
-* verificationStatus from allergyintolerance-verificationstatus (required)
+* verificationStatus from AllergyIntoleranceVerificationStatusVS (required)
   * ^short = "Certainty about the allergy (confirmed, unconfirmed, etc.)"
   * ^definition = "The verification status to support the clinical status of the allergy"
 
@@ -38,13 +38,13 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
 
 * reaction 1..* MS
   * substance 0..1 MS
-  * substance from allergyintolerance-code (required)
+  * substance from AllergyIntoleranceCodeVS (required)
     * ^short = "Substance causing the reaction"
     * ^definition = "Specific allergen substance that triggered this reaction event, coded using WHO ATC or ICD-10."
   * description 0..1
     * ^short = "Free-text description of the allergy reaction"
   * manifestation 1..* MS
-  * manifestation from allergyintolerance-reaction-manifestation (required)
+  * manifestation from AllergyIntoleranceReactionManifestationVS (required)
     * ^short = "Clinical manifestation(s), e.g. rash, anaphylaxis"
     * ^definition = "Reaction manifestation coded using ICD-10 or LOINC clinical finding codes."
   * severity 0..1 MS
@@ -59,7 +59,7 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
 
 
 Instance: ExampleAllergyIntoleranceKPS
-InstanceOf: kps-allergyIntolerance
+InstanceOf: ke-kps-allergy-intolerance
 Title: "Example AllergyIntolerance for Kenya Patient Summary"
 Description: "An example AllergyIntolerance instance for a patient allergic to penicillin."
 Usage: #example

@@ -15,7 +15,7 @@ Description: "Logical model for documenting patient treatments under the Kenya P
 * medicationStatus from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 
 * medicationForm 0..1 code "Form of medication (tablet, capsule, liquid, etc.)."
-* medicationForm from medication-form (required)
+* medicationForm from MedicationFormVS (required)
 
 * activeIngredient 1..1 code "Active substance in the medication (e.g. paracetamol)."
 * activeIngredient from KPSMedicationVS (required)

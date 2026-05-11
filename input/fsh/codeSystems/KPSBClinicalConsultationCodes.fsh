@@ -3,7 +3,7 @@ Alias: KPSConditionVerificationCS = https://shr.tiberbuapps.com/fhir/CodeSystem/
 
 
 
-CodeSystem: KPSBClinicalConsultationCodes
+CodeSystem: KPSBClinicalConsultationCodesCS
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical consultation data elements under the Kenya Patient Summary (KPS.B)."
@@ -114,7 +114,7 @@ Description: "CodeSystem representing clinical consultation data elements under 
 
 
 
-CodeSystem: KPSClinicalStatusCodes
+CodeSystem: KPSClinicalStatusCodesCS
 Id: kpsb-clinical-status-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical status"

@@ -5,7 +5,7 @@ Description: "Logical model for documenting clinical consultation data under the
 // Allergies and Intolerances
 * allergy 0..* BackboneElement "Documented allergies or intolerances"
   * allergen 1..1 string "Substance or agent triggering the reaction"
-  * allergen from allergyintolerance-reaction-substance (required)
+  * allergen from AllergyIntoleranceReactionSubstanceVS (required)
     * ^code = #KPS.B.DE.1
   * propensityType 1..1 code "Allergy, intolerance, or unknown"
   * propensityType from KPSAllergyTypeVS (required)

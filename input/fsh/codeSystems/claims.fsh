@@ -1,4 +1,5 @@
-CodeSystem:   KNHTS.CLMSTS
+CodeSystem:   KnhtsClmStsCS
+Id: knhts-clm-sts-cs
 Title:        "KNHTS.CLMS CodeSystem for claim status"
 Description:  "CodeSystem for KNHTS Claim status"
 
@@ -21,7 +22,8 @@ Description:  "CodeSystem for KNHTS Claim status"
 
 //Claims Response
 
-CodeSystem:   KNHTS.CLMSRSPSTS
+CodeSystem:   KnhtsClmsRspStsCS
+Id: knhts-clms-rsp-sts-cs
 Title:        "KNHTS.CLMSRSP CodeSystem for claim response status"
 Description:  "CodeSystem for KNHTS Claim status"
 
@@ -44,7 +46,8 @@ Description:  "CodeSystem for KNHTS Claim status"
 
 //Claims Response
 
-CodeSystem:   KNHTS.CLMSTYPS
+CodeSystem:   KnhtsClmsTypsCS
+Id: knhts-clms-typs-cs
 Title:        "KNHTS.CLMSTPS CodeSystem for claim types"
 Description:  "CodeSystem for KNHTS Claim types"
 
@@ -57,7 +60,8 @@ Description:  "CodeSystem for KNHTS Claim types"
 * #CLMTPS03 "DAY_CASE" "Claim for day case services e.g. day surgery."
 
 
-CodeSystem:   KNHTS.CLMSSBTYPS
+CodeSystem:   KnhtsClmsSbTypsCS
+Id: knhts-clms-sb-typs-cs
 Title:        "KNHTS.CLMSTPS CodeSystem for claim Sub-types"
 Description:  "CodeSystem for KNHTS Claim Sub-types"
 
@@ -95,7 +99,8 @@ Description:  "CodeSystem for KNHTS Claim Sub-types"
 * #CLMSBTPS30 "ECCIF_AMBULANCE" "Ambulance Services (Emergency Fund)"
 
 
-CodeSystem:   KNHTS.CLMSZONE
+CodeSystem:   KnhtsClmsZoneCS
+Id: knhts-clms-zone-cs
 Title:        "KNHTS.CLMSZONE CodeSystem for claim Zones"
 Description:  "CodeSystem for KNHTS Claim Zones"
 
@@ -113,7 +118,8 @@ Description:  "CodeSystem for KNHTS Claim Zones"
 * #CLMSZONE08 "Zone 8" "Migori, Homabay, Lamu, Kilifi, Mombasa, Tana River"
 
 
-CodeSystem:   KNHTS.CLMSACCOMODATIONTYPE
+CodeSystem:   KnhtsClmsAccomodationTypeCS
+Id: knhts-clms-accomodation-type-cs
 Title:        "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type"
 Description:  "CodeSystem for KNHTS Claim Accomodation Types"
 
@@ -136,7 +142,8 @@ Description:  "CodeSystem for KNHTS Claim Accomodation Types"
 * #CLMSACCTYPES13 "ISOLATION" "Isolation"
 
 
-CodeSystem:   KNHTS.CLMSDISP
+CodeSystem:   KnhtsClmsDispCS
+Id: knhts-clms-disp-cs
 Title:        "KNHTS.CLMSDISP CodeSystem for claim disposition"
 Description:  "CodeSystem for KNHTS Claim Disposition"
 

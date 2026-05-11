@@ -12,7 +12,7 @@ Description: "Locally defined health service types used for scheduling, classifi
 * #mental "Mental Health Services"
 
 CodeSystem: KPSServiceAccessPointCS
-Id: kps-service-access-point
+Id: kps-service-access-point-cs
 Title: "Service Access Point"
 Description: "Locally defined codes for health service access points"
 * #IP "IP"
@@ -21,7 +21,7 @@ Description: "Locally defined codes for health service access points"
 * #MR "MR"
 
 CodeSystem: KPSFundChoicesCS
-Id: fund-choices
+Id: kps-fund-choices-cs
 Title: "Fund Choices"
 Description: "Locally defined codes representing patient funding mechanisms"
 * #SHIF_Only "SHIF Only"
@@ -33,7 +33,7 @@ Description: "Locally defined codes representing patient funding mechanisms"
 
 
 CodeSystem: KPSSchemesCS
-Id: kps-schemes
+Id: kps-schemes-cs
 Title: "Schemes"
 Description: "Locally defined codes for scheme classifications"
 * #PMF "Public Servant Medical Fund"
@@ -41,8 +41,8 @@ Description: "Locally defined codes for scheme classifications"
 * #ALL "All Schemes"
 
 
-CodeSystem: PaymentMechanism
-Id: payment-mechanism
+CodeSystem: PaymentMechanismCS
+Id: payment-mechanism-cs
 Title: "Payment Mechanism"
 Description: "Locally defined payment mechanisms for healthcare services"
 * #FEE_FOR_SERVICE "Fee for Service"
@@ -51,8 +51,8 @@ Description: "Locally defined payment mechanisms for healthcare services"
 * #PER_DIEM "Per Diem"
 * #CASE_BASED "Case Based"
 
-CodeSystem: UsageFrequency
-Id: usage-frequency
+CodeSystem: UsageFrequencyCS
+Id: usage-frequency-cs
 Title: "Usage Frequency"
 Description: "Locally defined frequencies for service or product usage"
 * #WEEKLY "Weekly"
@@ -61,8 +61,8 @@ Description: "Locally defined frequencies for service or product usage"
 * #ANNUALLY "Annually"
 
 
-CodeSystem: AnnualQuantityType
-Id: annual-quantity-type
+CodeSystem: AnnualQuantityTypeCS
+Id: annual-quantity-type-cs
 Title: "Annual Quantity Type"
 Description: "Units of measurement for annual service quantities"
 * #DAYS "Days"
@@ -70,8 +70,8 @@ Description: "Units of measurement for annual service quantities"
 * #KES "KES"
 
 
-CodeSystem: AuthType
-Id: auth-type
+CodeSystem: AuthTypeCS
+Id: auth-type-cs
 Title: "Authorization Type"
 Description: "Types of authentication or authorization used for healthcare access"
 * #FINGERPRINT "Fingerprint"
@@ -81,8 +81,8 @@ Description: "Types of authentication or authorization used for healthcare acces
 * #SHA "Social Health Authority"
 
 
-CodeSystem: AuthorizationFailureReason
-Id: authorization-failure-reason
+CodeSystem: AuthorizationFailureReasonCS
+Id: authorization-failure-reason-cs
 Title: "Authorization Failure Reason"
 Description: "Locally defined reasons for failed authorization attempts"
 * #EMERGENCY "Emergency"
@@ -97,8 +97,8 @@ Description: "Locally defined reasons for failed authorization attempts"
 * #NO_CLAIM_OR_PREAUTH_ATTACHED "No claim or pre-auth attached"
 
 
-CodeSystem: AuthorizationStatus
-Id: authorization-status
+CodeSystem: AuthorizationStatusCS
+Id: authorization-status-cs
 Title: "Authorization Status"
 Description: "Locally defined status values for authorization workflows"
 * #AUTHORIZED "Authorized"
@@ -112,8 +112,8 @@ Description: "Locally defined status values for authorization workflows"
 * #SUBMITTED_CLAIM "Submitted claim"
 
 
-CodeSystem: ClaimsDepartments
-Id: claims-departments
+CodeSystem: ClaimsDepartmentsCS
+Id: claims-departments-cs
 Title: "Claims Departments"
 Description: "Locally defined healthcare service departments for claims"
 * #OUTPATIENT "Outpatient"
@@ -138,16 +138,16 @@ Description: "Locally defined healthcare service departments for claims"
 * #CAPITATION "Capitation"
 
 
-CodeSystem: CopayType
-Id: copay-type
+CodeSystem: CopayTypeCS
+Id: copay-type-cs
 Title: "Copay Types"
 Description: "Locally defined types of copay sources"
 * #NHIF "Nhif"
 * #SELF_PAY "Self pay"
 * #NHIF_PACKAGES "Nhif packages"
 * #OTHER "Other"
-CodeSystem: RemittanceChoice
-Id: remittance-choice
+CodeSystem: RemittanceChoiceCS
+Id: remittance-choice-cs
 Title: "Remittance Choice"
 Description: "Locally defined remittance payment channels"
 * #CHEQUE "Cheque"
@@ -155,24 +155,24 @@ Description: "Locally defined remittance payment channels"
 * #EFT "Electronic fund transfers"
 
 
-CodeSystem: RemittanceStatus
-Id: remittance-status
+CodeSystem: RemittanceStatusCS
+Id: remittance-status-cs
 Title: "Remittance Status"
 Description: "Locally defined remittance processing statuses"
 * #INTERIM "Interim"
 * #FINAL "Final"
 
 
-CodeSystem: AdjustmentType
-Id: adjustment-type
+CodeSystem: AdjustmentTypeCS
+Id: adjustment-type-cs
 Title: "Adjustment Type"
 Description: "Locally defined financial adjustment types"
 * #SHORTFALL "Shortfall"
 * #DISCOUNT "Discount"
 
 
-CodeSystem: DiagnosisKind
-Id: diagnosis-kind
+CodeSystem: DiagnosisKindCS
+Id: diagnosis-kind-cs
 Title: "Diagnosis Kind"
 Description: "Levels or types of ICD diagnosis classifications"
 * #CHAPTER "Chapter"
@@ -180,8 +180,8 @@ Description: "Levels or types of ICD diagnosis classifications"
 * #CATEGORY "Category"
 
 
-CodeSystem: FlagType
-Id: flag-type
+CodeSystem: FlagTypeCS
+Id: flag-type-cs
 Title: "Flag Types"
 Description: "Local flag types for marking entities with special statuses"
 * #SHA "Sha"
@@ -191,8 +191,8 @@ Description: "Local flag types for marking entities with special statuses"
 * #STP "Stp"
 
 
-CodeSystem: NonEDIClaimStatus
-Id: non-edi-claim-status
+CodeSystem: NonEdiClaimStatusCS
+Id: non-edi-claim-status-cs
 Title: "Non-EDI Claim Status"
 Description: "Status codes for non-EDI claim workflows"
 * #PAID "Paid"
@@ -200,8 +200,8 @@ Description: "Status codes for non-EDI claim workflows"
 * #SUBMITTED_PAYER "Submitted payer"
 
 
-CodeSystem: BulkRemittanceStatus
-Id: bulk-remittance-status
+CodeSystem: BulkRemittanceStatusCS
+Id: bulk-remittance-status-cs
 Title: "Bulk Remittance Status"
 Description: "Statuses used to track bulk remittance processing"
 * #PENDING "Pending"

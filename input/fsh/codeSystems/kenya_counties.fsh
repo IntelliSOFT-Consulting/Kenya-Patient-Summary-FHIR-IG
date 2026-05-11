@@ -1,4 +1,5 @@
-CodeSystem:   KHTS.A
+CodeSystem:   KhtsCountiesCS
+Id: khts-counties-cs
 Title:        "KHTS.A CodeSystem for Counties in Kenya"
 Description:  "CodeSystem for KHTS.A Counties in Kenya"
 

@@ -1,5 +1,5 @@
-ValueSet: KPSInvestigationValueSet
-Id: kps-investigations
+ValueSet: KPSInvestigationVS
+Id: kps-investigations-vs
 Title: "KPS Investigations"
 Description: "ValueSet of investigation tests based on LOINC used in KPS."
 

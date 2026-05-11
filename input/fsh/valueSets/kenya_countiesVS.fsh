@@ -1,11 +1,12 @@
 
-ValueSet: kenyaCountiesVS
+ValueSet: KenyaCountiesVS
+Id: kenya-counties-vs
 Title:        "Counties in Kenya"
 Description:  "Counties in Kenya"
 * ^experimental = false
 * ^name = "KHTS1VS"
 
-* KHTS.A#C-001 
-* KHTS.A#C-002 
-* KHTS.A#C-003 
-* KHTS.A#C-004 
+* KhtsCountiesCS#C-001 
+* KhtsCountiesCS#C-002 
+* KhtsCountiesCS#C-003 
+* KhtsCountiesCS#C-004 

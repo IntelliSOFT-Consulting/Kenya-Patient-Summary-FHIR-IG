@@ -1,6 +1,6 @@
 Profile: KpsEncounter
 Parent: Encounter
-Id: kps-encounter
+Id: ke-kps-encounter
 Title: "Encounter Profile - KPS"
 Description: """
 Defines constraints on the Encounter resource for use within the Kenya Patient Summary (KPS).
@@ -34,7 +34,7 @@ Captures details about interactions between a patient and healthcare provider.
 
 
 Instance: ExampleEncounterKPS
-InstanceOf: kps-encounter
+InstanceOf: ke-kps-encounter
 Title: "Example Encounter - KPS"
 Description: "A sample encounter record for a KPS patient"
 Usage: #example

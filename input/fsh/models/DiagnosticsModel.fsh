@@ -12,7 +12,7 @@ Description: "Logical model for representing diagnostic requests, specimens, ima
 * justification 0..1 string "Reason for diagnostic request, including relevant clinical notes"
   * ^code = #KPS.C.DE.4
 * status 1..1 code "Status of the diagnostic request"
-* status from diagnosticreport-status (required)
+* status from DiagnosticReportStatusVS (required)
   * ^code = #KPS.C.DE.5
 
 // Specimen

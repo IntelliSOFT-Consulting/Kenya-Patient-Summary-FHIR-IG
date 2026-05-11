@@ -1,4 +1,4 @@
-CodeSystem: KPSEImmunizationCodes
+CodeSystem: KPSEImmunizationCodesCS
 Id: kpse-immunization-codes
 Title: "KPS.E Immunization Data Elements"
 Description: "CodeSystem representing immunization-related data elements under the Kenya Patient Summary (KPS.E)."

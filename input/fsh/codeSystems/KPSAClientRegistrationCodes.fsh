@@ -1,4 +1,4 @@
-CodeSystem: KPSAClientRegistrationCodes
+CodeSystem: KPSAClientRegistrationCodesCS
 Id: kpsa-client-registration-codes
 Title: "KPS.A Client Registration Data Elements"
 Description: "CodeSystem representing data elements used in KPS.A Client Registration."
