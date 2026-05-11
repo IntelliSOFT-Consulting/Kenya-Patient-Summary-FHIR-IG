@@ -2,7 +2,7 @@ Alias: $SCT = http://snomed.info/sct
 
 Profile: KpsPatient
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
-Id: kps-patient
+Id: ke-kps-patient
 Title: "Patient Profile - KPS"
 Description: "This profile defines the constraints and extensions on the IPS Patient resource for use in the Kenya Patient Summary, supporting national HIE and continuity of care."
 * obeys PatientIdentification-1
@@ -35,7 +35,7 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 
 * gender 1..1 MS
-* gender from KPSPatientGender (required)
+* gender from KPSPatientGenderVS (required)
 
 * telecom 1..* MS
 * telecom ^slicing.discriminator.type = #pattern
@@ -73,12 +73,12 @@ Description: "This profile defines the constraints and extensions on the IPS Pat
 
 
 Instance: ExamplePatientKPS
-InstanceOf: kps-patient
+InstanceOf: ke-kps-patient
 Title: "Example Patient"
 Description: "An example of a Patient resource conforming to the KPS Patient profile."
 Usage: #example
 
-* meta.profile = "http://example.org/fhir/StructureDefinition/kps-patient"
+* meta.profile = "http://example.org/fhir/StructureDefinition/ke-kps-patient"
 
 // --- Identifiers ---
 * identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"

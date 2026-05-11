@@ -1,22 +1,22 @@
 Profile: KpsCondition
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
-Id: kps-condition
+Id: ke-kps-condition
 Title: "Condition Profile - KPS"
 Description: "This profile defines constraints on the Condition resource for use within the Kenya Patient Summary. It captures information about a patient's current or past medical conditions, diagnoses, or problems, supporting clinical assessment, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
 
 * code 1..1 MS
-* code from condition-code (required)
+* code from ConditionCodeVS (required)
   * ^short = "Diagnosis or problem affecting the patient"
   * ^definition = "The disease, disorder, or problem coded using ICD-10 or ICD-11, the standard classification systems adopted by Kenya's health system."
 
 * clinicalStatus 1..1 MS
-* clinicalStatus from condition-clinicalstatus (required)
+* clinicalStatus from ConditionClinicalStatusVS (required)
   * ^short = "Clinical status"
   * ^definition = "The clinical state of the condition"
 
 * verificationStatus 1..1 MS
-* verificationStatus from condition-verificationstatus (required)
+* verificationStatus from ConditionVerificationStatusVS (required)
   * ^short = "Verification status"
   * ^definition = "The verification status to support the clinical status of the condition"
 
@@ -25,7 +25,7 @@ Description: "This profile defines constraints on the Condition resource for use
   * ^definition = "The category assigned to the condition"
 
 * severity 0..1 MS
-* severity from condition-severity (required)
+* severity from ConditionSeverityVS (required)
   * ^short = "Severity of the condition"
   * ^definition = "The severity of the condition as assessed by the clinician"
 
@@ -51,7 +51,7 @@ Description: "This profile defines constraints on the Condition resource for use
 
 
 Instance: ExampleKpsCondition
-InstanceOf: kps-condition
+InstanceOf: ke-kps-condition
 Title: "Example Condition - Hypertension (KPS)"
 Description: "Example instance of a patient with hypertension for the Kenya Patient Summary"
 Usage: #example

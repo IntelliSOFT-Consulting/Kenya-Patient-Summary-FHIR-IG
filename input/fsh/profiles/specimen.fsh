@@ -1,6 +1,6 @@
 Profile: KpsSpecimen
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips
-Id: kps-specimen
+Id: ke-kps-specimen
 Title: "Specimen Profile - KPS"
 Description: "This profile defines constraints on the Specimen resource for use within the Kenya Patient Summary. It captures information about biological samples collected from a patient, supporting diagnostic procedures, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
@@ -8,7 +8,7 @@ Description: "This profile defines constraints on the Specimen resource for use 
 
 * status 1..1 MS
 * type 1..1 MS
-* type from specimen-type (required)
+* type from SpecimenTypeVS (required)
 * subject 1..1 MS
 * collection MS
 * collection.collected[x] 0..1 MS

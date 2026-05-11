@@ -12,7 +12,18 @@
       "Bash(grep -rn 'snomed\\\\.info\\\\|$SCT' /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/valueSets/)",
       "Bash(grep -rn \"from [A-Za-z$]\" /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/profiles/ /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/models/)",
       "Bash(bash _build.sh notx)",
-      "Bash(xargs -I{} basename {})"
+      "Bash(xargs -I{} basename {})",
+      "Bash(python3 rename_fsh.py)",
+      "Bash(grep -v \"VS$\")",
+      "Bash(grep -v \"CS$\")",
+      "Bash(grep \"VS$\")",
+      "Bash(grep \"CS$\")",
+      "Bash(awk '/^CodeSystem:/{cs=$2} /^Id:.*-vs$/{print FILENAME \":\" NR \": \" cs \" -> \" $2}' /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/codeSystems/*.fsh)",
+      "Bash(awk '/^ValueSet:/{vs=$2} /^Id:.*-cs$/{print FILENAME \":\" NR \": \" vs \" -> \" $2}' /Users/daviemukungi/SoftwareDev/FHIR/Kenya-Patient-Summary-FHIR-IG/input/fsh/valueSets/*.fsh)",
+      "Bash(# Get all ValueSet names defined in the project *)",
+      "Read(//tmp/**)",
+      "Bash(python3 -)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

@@ -1,6 +1,6 @@
 Profile: KpsMedicationRequest
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips
-Id: kps-medication-request
+Id: ke-kps-medication-request
 Title: "MediacationRequest Profile - KPS"
 Description: "This profile defines constraints on the MedicationRequest resource for use within the Kenya Patient Summary. It captures information about medications prescribed to a patient by a healthcare provider, supporting prescription management, continuity of care, and interoperability within the national Health Information Exchange (HIE)."
 
@@ -10,7 +10,7 @@ Description: "This profile defines constraints on the MedicationRequest resource
   * ^definition = "The reason why the medication is or was prescribed or used. Links to current or past conditions."
 
 * category 0..* 
-* category from medicationrequest-category (required)
+* category from MedicationRequestCategoryVS (required)
   * ^short = "Intended use"
   * ^definition = "Indication of intended use as: prevention, treatment, diagnostic, anaesthesia, care of equipment."
   

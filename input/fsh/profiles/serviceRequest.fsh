@@ -35,7 +35,7 @@ Description: "The client's preferred mode(s) of communication for referral follo
 
 Profile: KpsServiceRequest
 Parent: ServiceRequest
-Id: kps-service-request
+Id: ke-kps-service-request
 Title: "Service Request Profile - KPS (Referral)"
 Description: "This profile defines constraints on the ServiceRequest resource for use within the Kenya Patient Summary to represent clinical referrals (KPS.G). It captures the source facility, destination facility, referral reason, clinical summary, and communication preferences required for safe patient transfer."
 

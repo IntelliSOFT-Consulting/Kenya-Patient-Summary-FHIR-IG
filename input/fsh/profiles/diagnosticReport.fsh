@@ -6,7 +6,7 @@
 
 Profile: KpsDiagnosticReport
 Parent: DiagnosticReport
-Id: kps-diagnostic-report
+Id: ke-kps-diagnostic-report
 Title: "Diagnostic Report Profile - KPS"
 Description: "This profile defines constraints on the DiagnosticReport resource for use within the Kenya Patient Summary. It captures the results of diagnostic investigations (laboratory, radiology, and other diagnostic services), supporting continuity of care and data exchange within the national Health Information Exchange (HIE)."
 
@@ -24,7 +24,7 @@ Description: "This profile defines constraints on the DiagnosticReport resource 
 // Maps to: DiagnosticReport.code
 // ---------------------------------------------------------------
 * code 1..1 MS
-* code from KPSInvestigationValueSet (required)
+* code from KPSInvestigationVS (required)
   * ^short = "Diagnostic test or report name (KPS.C.DE.2)"
   * ^definition = "The exact name or code of the diagnostic request or report (e.g., Lipid Profile, Complete Blood Count)."
 
@@ -103,7 +103,7 @@ Description: "This profile defines constraints on the DiagnosticReport resource 
 // Maps to: DiagnosticReport.conclusionCode
 // ---------------------------------------------------------------
 * conclusionCode 0..* MS
-* conclusionCode from condition-code (required)
+* conclusionCode from ConditionCodeVS (required)
   * ^short = "Coded clinical impression from diagnostic findings (KPS.C.DE.26)"
   * ^definition = "One or more coded conclusions or clinical impressions drawn from the diagnostic results."
 

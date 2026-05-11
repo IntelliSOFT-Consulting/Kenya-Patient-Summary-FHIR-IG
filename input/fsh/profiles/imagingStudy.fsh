@@ -6,7 +6,7 @@
 
 Profile: KpsImagingStudy
 Parent: ImagingStudy
-Id: kps-imaging-study
+Id: ke-kps-imaging-study
 Title: "Imaging Study Profile - KPS"
 Description: "This profile defines constraints on the ImagingStudy resource for use within the Kenya Patient Summary. It captures details of radiology and other diagnostic imaging studies performed on a patient (KPS.C – Diagnostics, imaging sub-section), supporting continuity of care and data exchange within the national Health Information Exchange (HIE)."
 

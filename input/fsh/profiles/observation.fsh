@@ -2,7 +2,7 @@ Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinic
 
 Profile: KpsObservation
 Parent: Observation
-Id: kps-observation
+Id: ke-kps-observation
 Title: "Observation Profile - KPS"
 Description: """
 This profile defines constraints on the Observation resource for use in the Kenya Patient Summary (KPS). 

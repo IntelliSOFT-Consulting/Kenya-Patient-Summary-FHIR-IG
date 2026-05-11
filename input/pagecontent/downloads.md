@@ -14,7 +14,7 @@ The Kenya Patient Summary FHIR IG is published as a standard FHIR NPM package fo
 | **Version** | `0.1.0` |
 | **FHIR Version** | `4.0.1` (R4) |
 | **Status** | Draft (CI Build) |
-| **Canonical Base** | `https://fhir.dha.go.ke/ig/kenyaPS` |
+| **Canonical Base** | `https://fhir.dha.go.ke/kps` |
 
 **Contents of the package:**
 - All KPS FHIR Profile StructureDefinitions
@@ -43,7 +43,7 @@ java -jar validator_cli.jar [your-resource-file.json] \
 java -jar validator_cli.jar Patient-example.json \
   -version 4.0.1 \
   -ig fhir.kenyaPSIG#0.1.0 \
-  -profile https://fhir.dha.go.ke/ig/kenyaPS/StructureDefinition/ClientRegistrationModel
+  -profile https://fhir.dha.go.ke/kps/StructureDefinition/ClientRegistrationModel
 ```
 
 Download the latest validator: [https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar)

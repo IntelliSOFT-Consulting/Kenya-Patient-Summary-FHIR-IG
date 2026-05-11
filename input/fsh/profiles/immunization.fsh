@@ -1,16 +1,16 @@
 Profile: KpsImmunization
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips
-Id: kps-immunization
+Id: ke-kps-immunization
 Title: "Immunization Profile - KPS"
 Description : "This profile defines constraints on the Immunization resource for use within the Kenya Patient Summary. It captures details of vaccines administered to a patient, supporting immunization history tracking, clinical decision-making, and data exchange within the national Health Information Exchange (HIE)."
 
 * status 1..1 MS
-* status from immunization-status (required)
+* status from ImmunizationStatusVS (required)
   * ^short = "Status of Vaccine"
   * ^definition = "Current status of the immunization against the disease"
 
 * vaccineCode 1..1 MS
-* vaccineCode from immunization-vaccinecode (required)
+* vaccineCode from ImmunizationVaccineCodeVS (required)
   * ^short = "Vaccine Code"
   * ^definition = "The vaccine product administered, coded using WHO ATC J07 vaccine classification."
 
@@ -30,7 +30,7 @@ Description : "This profile defines constraints on the Immunization resource for
 
 * protocolApplied 0..*
   * targetDisease 1..1 MS
-  * targetDisease from immunization-targetdisease (required)
+  * targetDisease from ImmunizationTargetDiseaseVS (required)
     * ^short = "Target Disease of Immunization"
     * ^definition = "Disease or agent that the vaccination provides protection against, coded using ICD-10."
   * series 1..1 MS

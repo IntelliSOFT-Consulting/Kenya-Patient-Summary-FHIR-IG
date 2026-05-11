@@ -24,4 +24,4 @@ Title: "Patient Title"
 Description: "Patient salutation/title codes from the Kenya national terminology."
 * ^experimental = false
 * ^name = "PT_TITLE"
-* KNHTS.PAT.TITLE#mr
+* KnhtsPatTitleCS#mr

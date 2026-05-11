@@ -1,4 +1,5 @@
-CodeSystem:   KNHTS.PAT.TITLE
+CodeSystem:   KnhtsPatTitleCS
+Id: knhts-pat-title-cs
 Title:        "CodeSystem for patient's title"
 Description:  "CodeSystem for patient's title"
 
@@ -10,7 +11,8 @@ Description:  "CodeSystem for patient's title"
 * #miss "Miss" "Miss"
 * #ms "Ms" "Ms"
 
-CodeSystem:   KNHTS.CONTACTRELATIONSHIP
+CodeSystem:   KnhtsContactRelationshipCS
+Id: knhts-contact-relationship-cs
 Title:        "CodeSystem for Contact Relationship"
 Description:  "CodeSystem for Contact Relationship"
 
@@ -24,7 +26,8 @@ Description:  "CodeSystem for Contact Relationship"
 * #child "child" "child"
 
 
-CodeSystem:    KNHTS.IDENTIFIERTYPES
+CodeSystem:    KnhtsIdentifierTypesCS
+Id: knhts-identifier-types-cs
 Title:        "CodeSystem for patient's identifier Types"
 Description:  "CodeSystem for patient's identifier Types"
 
@@ -36,7 +39,8 @@ Description:  "CodeSystem for patient's identifier Types"
 * #passport "Passport No." "Passport No."
 * #birthCertficate "Birth Certificate No." "Birth Certificate No."
 
-CodeSystem:    KNHTS.CODESYSTEMS
+CodeSystem:    KnhtsCodeSystemsCS
+Id: knhts-code-systems-cs
 Title:        "CodeSystem for Code systems"
 Description:  "CodeSystem for Code systems"
 

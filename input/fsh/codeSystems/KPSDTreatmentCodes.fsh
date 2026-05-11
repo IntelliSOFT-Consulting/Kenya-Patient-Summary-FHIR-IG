@@ -1,4 +1,4 @@
-CodeSystem: KPSDTreatmentCodes
+CodeSystem: KPSDTreatmentCodesCS
 Id: kpsd-treatment-codes
 Title: "KPS.D Treatment Data Elements"
 Description: "CodeSystem representing treatment and medication-related data elements under the Kenya Patient Summary (KPS.D)."
