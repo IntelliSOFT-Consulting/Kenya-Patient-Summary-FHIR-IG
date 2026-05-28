@@ -2,7 +2,7 @@ CodeSystem: KPSAClientRegistrationCodesCS
 Id: kpsa-client-registration-codes
 Title: "KPS.A Client Registration Data Elements"
 Description: "CodeSystem representing data elements used in KPS.A Client Registration."
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsa-client-registration-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsa-client-registration-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

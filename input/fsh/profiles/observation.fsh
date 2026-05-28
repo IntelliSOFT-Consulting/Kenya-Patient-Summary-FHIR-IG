@@ -1,4 +1,4 @@
-Alias: KPSBClientCodes = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes
+Alias: KPSBClientCodes = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes
 
 Profile: KpsObservation
 Parent: Observation

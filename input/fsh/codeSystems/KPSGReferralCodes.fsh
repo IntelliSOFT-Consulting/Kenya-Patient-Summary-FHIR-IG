@@ -2,7 +2,7 @@ CodeSystem: KPSGReferralCodesCS
 Id: kpsg-referral-codes
 Title: "KPS.G Referral Data Elements"
 Description: "CodeSystem representing referral-related data elements under the Kenya Patient Summary (KPS.G)."
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsg-referral-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

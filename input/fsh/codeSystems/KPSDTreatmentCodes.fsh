@@ -2,7 +2,7 @@ CodeSystem: KPSDTreatmentCodesCS
 Id: kpsd-treatment-codes
 Title: "KPS.D Treatment Data Elements"
 Description: "CodeSystem representing treatment and medication-related data elements under the Kenya Patient Summary (KPS.D)."
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsd-treatment-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

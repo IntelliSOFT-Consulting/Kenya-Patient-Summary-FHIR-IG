@@ -6,9 +6,9 @@ Id: kps-gender-vs
 Title: "KPS - Administrative Gender"
 Description: "Custom ValueSet for Administrative Gender"
 
-* ^url = "http://example.com/fhir/ValueSet/kps-gender-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-gender-vs"
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+* include codes from system http://hl7.org/fhir/administrative-gender
 
 
 ValueSet: KPSOrganizationIdentifierTypeVS
@@ -45,9 +45,10 @@ Id: kps-medication-vs
 Title: "Medication ValueSet"
 Description: "List of permitted medications in national formulary."
  
-* ^url = "https://example.org/fhir/ValueSet/medication-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-vs"
 * ^experimental = false
 * include codes from system http://www.whocc.no/atc
+* $ATC#J07CA02
 
 ValueSet: KPSMedicationFormVS
 Id: kps-medication-form-vs
@@ -63,7 +64,7 @@ Id: kps-ucum-units-vs
 Title: "UCUM Units"
 Description: "UCUM units for medication quantities."
  
-* ^url = "https://example.org/fhir/ValueSet/ucum-units-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-ucum-units-vs"
 * ^experimental = false
 * include codes from system http://unitsofmeasure.org
 
@@ -74,18 +75,19 @@ Id: kps-medication-request-category-vs
 Title: "Medication Request Category"
 Description: "Local medication request categories."
  
-* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-category"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-medication-request-category-vs"
 * ^experimental = false
-* include codes from system http://example.org/fhir/CodeSystem/medicationrequest-category
+* include codes from system http://terminology.hl7.org/CodeSystem/medicationrequest-category
 
 ValueSet: KPSGenericProductsVS
 Id: kps-generic-products-vs
 Title: "Generic Products"
 Description: "List of generic drugs."
  
-* ^url = "https://example.com/fhir/ValueSet/generic-products"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/generic-products"
 * ^experimental = false
 * include codes from system http://www.whocc.no/atc
+* $ATC#J07CA02
 
 ValueSet: KPSUnitOfMeasureVS
 Id: kps-unit-of-measure-vs
@@ -100,7 +102,7 @@ ValueSet: KPSAllergyStatusVS
 Id: kps-allergy-status-vs
 Title: "Allergy Clinical Status" 
 Description: "Value Sets for Allergy Clinical Status"
-* ^url = "https://example.org/fhir/ValueSet/allergy-status-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-status-vs"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 
@@ -108,15 +110,15 @@ ValueSet: KPSAllergyCertaintyVS
 Id: kps-allergy-certainty-vs
 Title: "Allergy Certainty"
 Description: "Value Sets for Allergy Certainty"
-* ^url = "https://example.org/fhir/ValueSet/allergy-certainty-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-certainty-vs"
 * ^experimental = false
-* include codes from system http://example.org/fhir/CodeSystem/allergy-certainty
+* include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 ValueSet: KPSAllergyTypeVS
 Id: kps-allergy-type-vs
 Title: "Allergy Type"
 Description: "Value Sets for Allergy Type"
-* ^url = "https://example.org/fhir/ValueSet/allergy-type-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-type-vs"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/allergy-intolerance-type
 
@@ -124,7 +126,7 @@ ValueSet: KPSAllergySeverityVS
 Id: kps-allergy-severity-vs
 Title: "Allergy Severity" 
 Description: "Value Sets for Allergy Severity"
-* ^url = "https://example.org/fhir/ValueSet/allergy-severity-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-severity-vs"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/reaction-event-severity
 
@@ -398,7 +400,7 @@ Id: kps-patient-gender-vs
 Title: "KPSPatientGender"
 Description: "ValueSet binding for Patient.gender in Patient."
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
+* include codes from system http://hl7.org/fhir/administrative-gender
 
 ValueSet: KPSPatientAddressUseVS
 Id: kps-patient-address-use-vs
@@ -557,7 +559,7 @@ Id: condition-severity-vs
 Title: "KPS Condition Severity"
 Description: "Severity levels for clinical conditions in the Kenya Patient Summary, using LOINC answer codes."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/condition-severity"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/condition-severity"
 * $LNC#LA6752-5 "Mild"
 * $LNC#LA6751-7 "Moderate"
 * $LNC#LA6750-9 "Severe"
@@ -568,9 +570,8 @@ Id: condition-code-vs
 Title: "KPS Condition Codes"
 Description: "Clinical diagnoses and conditions coded using ICD-10 and ICD-11, the standard classification systems used in Kenya's health system."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/condition-code"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/condition-code"
 * include codes from system http://hl7.org/fhir/sid/icd-10
-* include codes from system http://id.who.int/icd/release/11/mms
 
 ValueSet: ConditionBodySiteVS
 Id: condition-body-site-vs
@@ -584,14 +585,16 @@ Id: observation-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Observation.status in Observation."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/observation-status|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/observation-status-vs"
+* include codes from system http://hl7.org/fhir/observation-status
 
 ValueSet: ObservationCategoryVS
 Id: observation-category-vs
 Title: "Category ValueSet"
 Description: "ValueSet binding for Observation.category in Observation."
 * ^experimental = false
-* ^url = "http://terminology.hl7.org/ValueSet/observation-category"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/observation-category-vs"
+* include codes from system http://terminology.hl7.org/CodeSystem/observation-category
 
 ValueSet: ObservationCodeVS
 Id: observation-code-vs
@@ -612,14 +615,16 @@ Id: allergy-intolerance-verification-status-vs
 Title: "VerificationStatus ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.verificationStatus in AllergyIntolerance."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/allergy-certainty-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-verification-status-vs"
+* include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 ValueSet: AllergyIntoleranceTypeVS
 Id: allergy-intolerance-type-vs
 Title: "Type ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.type in AllergyIntolerance."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/allergy-type-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-type-vs"
+* include codes from system http://hl7.org/fhir/allergy-intolerance-type
 
 ValueSet: AllergyIntoleranceCriticalityVS
 Id: allergy-intolerance-criticality-vs
@@ -633,7 +638,7 @@ Id: allergy-intolerance-code-vs
 Title: "KPS Allergy Intolerance Substance Codes"
 Description: "Substances that may cause allergic reactions or intolerances. Uses WHO ATC drug codes (for drug allergies) and ICD-10 for clinically significant allergen classifications."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/allergyintolerance-code"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergyintolerance-code"
 * include codes from system http://www.whocc.no/atc
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
@@ -649,7 +654,7 @@ Id: allergy-intolerance-reaction-manifestation-vs
 Title: "KPS Allergy Reaction Manifestation Codes"
 Description: "Clinical manifestations of allergic reactions coded using ICD-10 and LOINC. Covers urticaria, anaphylaxis, angioedema, bronchospasm, and other reaction findings."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/allergyintolerance-reaction-manifestation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergyintolerance-reaction-manifestation"
 * $LNC#LA15702-6 "Anaphylaxis"
 * $LNC#LA15701-8 "Urticaria (hives)"
 * $LNC#LA15700-0 "Angioedema"
@@ -663,7 +668,8 @@ Id: allergy-intolerance-reaction-severity-vs
 Title: "Severity ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.reaction.severity in AllergyIntolerance."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/allergy-severity-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-reaction-severity-vs"
+* include codes from system http://hl7.org/fhir/reaction-event-severity
 
 
 ValueSet: MedicationCodeVS
@@ -678,7 +684,8 @@ Id: medication-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Medication.status in Medication."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/medication-status|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-status-vs"
+* include codes from system http://hl7.org/fhir/CodeSystem/medication-status
 
 ValueSet: MedicationFormVS
 Id: medication-form-vs
@@ -721,21 +728,24 @@ Id: medication-request-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for MedicationRequest.status in MedicationRequest."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-status-vs"
+* include codes from system http://hl7.org/fhir/CodeSystem/medicationrequest-status
 
 ValueSet: MedicationRequestIntentVS
 Id: medication-request-intent-vs
 Title: "Intent ValueSet"
 Description: "ValueSet binding for MedicationRequest.intent in MedicationRequest."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-intent-vs"
+* include codes from system http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 
 ValueSet: MedicationRequestCategoryVS
 Id: medication-request-category-vs
 Title: "Category ValueSet"
 Description: "ValueSet binding for MedicationRequest.category in MedicationRequest."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/medicationrequest-category"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-category-vs"
+* include codes from system http://terminology.hl7.org/CodeSystem/medicationrequest-category
 
 ValueSet: MedicationRequestPriorityVS
 Id: medication-request-priority-vs
@@ -912,7 +922,8 @@ Id: medication-statement-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for MedicationStatement.status in MedicationStatement."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-statement-status-vs"
+* include codes from system http://hl7.org/fhir/CodeSystem/medication-statement-status
 
 ValueSet: MedicationStatementStatusReasonVS
 Id: medication-statement-status-reason-vs
@@ -949,14 +960,15 @@ Id: immunization-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Immunization.status in Immunization."
 * ^experimental = false
-* ^url = "https://example.org/fhir/ValueSet/vaccine-status-vs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/immunization-status-vs"
+* include codes from system http://hl7.org/fhir/event-status
 
 ValueSet: ImmunizationVaccineCodeVS
 Id: immunization-vaccine-code-vs
 Title: "KPS Vaccine Codes"
 Description: "Vaccine codes for the Kenya Patient Summary using WHO ATC J07 vaccine classification. Covers bacterial, viral, and combination vaccines used in Kenya's national immunization programme."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/immunization-vaccinecode"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/immunization-vaccinecode"
 * include codes from system http://www.whocc.no/atc where concept is-a #J07
 
 ValueSet: ImmunizationTargetDiseaseVS
@@ -964,7 +976,7 @@ Id: immunization-target-disease-vs
 Title: "KPS Vaccine Target Diseases"
 Description: "Target diseases against which vaccines are administered in the Kenya national immunization programme, coded using ICD-10."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/immunization-targetdisease"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/immunization-targetdisease"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 
@@ -1002,14 +1014,15 @@ Id: procedure-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Procedure.status in Procedure."
 * ^experimental = false
-* ^url = "http://hl7.org/fhir/ValueSet/event-status|4.0.1"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/procedure-status-vs"
+* include codes from system http://hl7.org/fhir/event-status
 
 ValueSet: ProcedureCodeVS
 Id: procedure-code-vs
 Title: "KPS Procedure Codes"
 Description: "Clinical procedure codes for the Kenya Patient Summary using LOINC and ICD-10. Covers surgical, diagnostic, and therapeutic procedures."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/procedure-code"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/procedure-code"
 * include codes from system http://loinc.org
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
@@ -1372,7 +1385,7 @@ Id: specimen-type-vs
 Title: "KPS Specimen Types"
 Description: "Types of biological specimens collected for diagnostic analysis in the Kenya Patient Summary, coded using HL7 v2 Table 0487 and LOINC."
 * ^experimental = false
-* ^url = "https://fhir.dha.go.ke/kps/ValueSet/specimen-type"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/specimen-type"
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0487
 * include codes from system http://loinc.org
 

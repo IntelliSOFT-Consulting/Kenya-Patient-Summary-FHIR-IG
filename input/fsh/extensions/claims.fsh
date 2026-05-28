@@ -5,4 +5,4 @@ Description: "A code representing kenya counties"
 Context: Claim
 // url, status, purpose, and other metadata could be defined here using caret syntax (omitted)
 * value[x] only code
-* value[x] from https://shr.tiberbuapps.com/fhir/ValueSet/kenyaCountiesVS (required)
+* value[x] from https://nshr-uat.sha.go.ke/fhir/ValueSet/kenya-counties-vs (required)

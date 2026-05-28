@@ -2,7 +2,7 @@ CodeSystem: KPSEImmunizationCodesCS
 Id: kpse-immunization-codes
 Title: "KPS.E Immunization Data Elements"
 Description: "CodeSystem representing immunization-related data elements under the Kenya Patient Summary (KPS.E)."
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpse-immunization-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

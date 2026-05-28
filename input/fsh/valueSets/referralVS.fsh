@@ -4,7 +4,7 @@
 // defined in the KPS.G Referral section of the data dictionary.
 // ============================================================
 
-Alias: $KPSGReferral = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsg-referral-codes
+Alias: $KPSGReferral = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes
 
 
 ValueSet: ReferralDirectionVS

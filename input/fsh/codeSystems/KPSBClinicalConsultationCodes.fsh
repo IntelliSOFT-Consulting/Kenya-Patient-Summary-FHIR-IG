@@ -1,5 +1,5 @@
-Alias: KPSConditionStatusCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status
-Alias: KPSConditionVerificationCS = https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-verification-status
+Alias: KPSConditionStatusCS = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status
+Alias: KPSConditionVerificationCS = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-verification-status
 
 
 
@@ -7,7 +7,7 @@ CodeSystem: KPSBClinicalConsultationCodesCS
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical consultation data elements under the Kenya Patient Summary (KPS.B)."
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-consultation-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -118,7 +118,7 @@ CodeSystem: KPSClinicalStatusCodesCS
 Id: kpsb-clinical-status-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical status"
-* ^url = "https://shr.tiberbuapps.com/fhir/CodeSystem/kpsb-clinical-status-codes"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
