@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.kenyaPSIG
-canonical: https://fhir.dha.go.ke/kps
+canonical: https://nshr-uat.sha.go.ke/fhir
 name: Kenya-Patient-Summary-FHIR-IG
 title: Kenya Patient Summary FHIR Implementation Guide
 description: >
