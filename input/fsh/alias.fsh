@@ -47,6 +47,8 @@ Alias: KPSBClientCodes = http://localhost:8085/fhir/CodeSystem/kpsb-clinical-con
 Alias: $KPSGReferral = http://localhost:8085/fhir/CodeSystem/kpsg-referral-codes
 Alias: $kenya-counties-vs = http://localhost:8085/fhir/ValueSet/kenya-counties-vs
 Alias: $allergy-intolerance-reaction-manifestation-vs = http://localhost:8085/fhir/ValueSet/allergy-intolerance-reaction-manifestation-vs
-Alias: $condition-codes-cs = http://localhost:8085/fhir/CodeSystem/condition-codes-cs
-Alias: $condition-severity-cs  = http://localhost:8085/fhir/CodeSystem/condition-severity-cs
-
+Alias: $condition-codes-cs = http://localhost:8085/fhir/CodeSystem/condition-codes-cs 
+Alias: $condition-severity-cs  = http://localhost:8085/fhir/CodeSystem/condition-severity-cs 
+Alias: $ksp-investigation-cs  = http://localhost:8085/fhir/CodeSystem/ksp-investigation-cs
+Alias: $LOINC = http://loinc.org
+Alias: UCUM = http://unitsofmeasure.org

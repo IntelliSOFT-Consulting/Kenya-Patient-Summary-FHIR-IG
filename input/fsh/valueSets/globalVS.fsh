@@ -1,5 +1,4 @@
-Alias: LOINC = http://loinc.org
-Alias: UCUM = http://unitsofmeasure.org
+
 
 ValueSet: KpsGenderVS
 Id: kps-gender-vs
@@ -42,8 +41,7 @@ ValueSet: KPSDiagnosticServiceSectionsVS
 Id: kps-diagnostic-service-sections-vs
 Title: "Diagnostic Service Categories"
 Description: "Categories of diagnostic services."
- 
-* ^url = "http://terminology.hl7.org/ValueSet/diagnostic-service-sections"
+
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0074
 
@@ -143,19 +141,19 @@ Id: kps-vital-signs-codes-vs
 Title: "KPS Vital Signs Codes"
 Description: "Standard codes for recording vital signs in the Kenya Patient Summary."
 * ^experimental = false
-* LOINC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
-* LOINC#9279-1 "Respiratory rate"
-* LOINC#8867-4 "Heart rate"
-* LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* LOINC#8310-5 "Body temperature"
-* LOINC#8302-2 "Body height"
-* LOINC#9843-4 "Head Occipital-frontal circumference"
-* LOINC#29463-7 "Body weight"
-* LOINC#39156-5 "Body mass index (BMI) [Ratio]"
-* LOINC#85354-9 "Blood pressure panel with all children optional"
-* LOINC#8480-6 "Systolic blood pressure"
-* LOINC#8462-4 "Diastolic blood pressure"
-* LOINC#8478-0 "Mean blood pressure"
+* $LOINC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+* $LOINC#9279-1 "Respiratory rate"
+* $LOINC#8867-4 "Heart rate"
+* $LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* $LOINC#8310-5 "Body temperature"
+* $LOINC#8302-2 "Body height"
+* $LOINC#9843-4 "Head Occipital-frontal circumference"
+* $LOINC#29463-7 "Body weight"
+* $LOINC#39156-5 "Body mass index (BMI) [Ratio]"
+* $LOINC#85354-9 "Blood pressure panel with all children optional"
+* $LOINC#8480-6 "Systolic blood pressure"
+* $LOINC#8462-4 "Diastolic blood pressure"
+* $LOINC#8478-0 "Mean blood pressure"
 
 
 ValueSet: KPSVitalSignsUnitsVS
@@ -564,7 +562,7 @@ Description: "ValueSet binding for Condition.category in Condition."
 ValueSet: ConditionSeverityVS
 Id: condition-severity-vs
 Title: "KPS Condition Severity"
-Description: "Severity levels for clinical conditions in the Kenya Patient Summary, using LOINC answer codes."
+Description: "Severity levels for clinical conditions in the Kenya Patient Summary, using $LOINC answer codes."
 * ^experimental = false 
 * include codes from system $condition-severity-cs 
 
@@ -654,15 +652,15 @@ Description: "ValueSet binding for AllergyIntolerance.reaction.substance in Alle
 ValueSet: AllergyIntoleranceReactionManifestationVS
 Id: allergy-intolerance-reaction-manifestation-vs
 Title: "KPS Allergy Reaction Manifestation Codes"
-Description: "Clinical manifestations of allergic reactions coded using ICD-10 and LOINC. Covers urticaria, anaphylaxis, angioedema, bronchospasm, and other reaction findings."
+Description: "Clinical manifestations of allergic reactions coded using ICD-10 and $LOINC. Covers urticaria, anaphylaxis, angioedema, bronchospasm, and other reaction findings."
 * ^experimental = false
 // * ^url = "http://localhost:8085/fhir/ValueSet/allergyintolerance-reaction-manifestation"
-* $LNC#LA15702-6 "Anaphylaxis"
-* $LNC#LA15701-8 "Urticaria (hives)"
-* $LNC#LA15700-0 "Angioedema"
-* $LNC#LA6752-5 "Mild"
-* $LNC#LA6751-7 "Moderate"
-* $LNC#LA6750-9 "Severe"
+* $LOINC#LA15702-6 "Anaphylaxis"
+* $LOINC#LA15701-8 "Urticaria (hives)"
+* $LOINC#LA15700-0 "Angioedema"
+* $LOINC#LA6752-5 "Mild"
+* $LOINC#LA6751-7 "Moderate"
+* $LOINC#LA6750-9 "Severe"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system http://snomed.info/sct
 
@@ -1023,10 +1021,10 @@ Description: "ValueSet binding for Procedure.status in Procedure."
 ValueSet: ProcedureCodeVS
 Id: procedure-code-vs
 Title: "KPS Procedure Codes"
-Description: "Clinical procedure codes for the Kenya Patient Summary using LOINC and ICD-10. Covers surgical, diagnostic, and therapeutic procedures."
+Description: "Clinical procedure codes for the Kenya Patient Summary using $LOINC and ICD-10. Covers surgical, diagnostic, and therapeutic procedures."
 * ^experimental = false
 // * ^url = "http://localhost:8085/fhir/ValueSet/procedure-code"
-* include codes from system http://loinc.org
+* include codes from system http://$LOINC.org
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: ProcedureReasonCodeVS
@@ -1386,11 +1384,11 @@ Description: "ValueSet binding for Specimen.status in Specimen."
 ValueSet: SpecimenTypeVS
 Id: specimen-type-vs
 Title: "KPS Specimen Types"
-Description: "Types of biological specimens collected for diagnostic analysis in the Kenya Patient Summary, coded using HL7 v2 Table 0487 and LOINC."
+Description: "Types of biological specimens collected for diagnostic analysis in the Kenya Patient Summary, coded using HL7 v2 Table 0487 and $LOINC."
 * ^experimental = false
 // * ^url = "http://localhost:8085/fhir/ValueSet/specimen-type"
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0487
-* include codes from system http://loinc.org
+* include codes from system http://$LOINC.org
 
 ValueSet: SpecimenCollectionMethodVS
 Id: specimen-collection-method-vs
@@ -1779,7 +1777,7 @@ Description: "ValueSet binding for CarePlan.activity.detail.status."
 
 // ============================================================
 // KPS.C – Radiology Codes ValueSet (KPS.C.DE.18)
-// Subset of LOINC radiology imaging codes for use in KPS
+// Subset of $LOINC radiology imaging codes for use in KPS
 // ImagingStudy.description (imaging study type selection)
 // ============================================================
 
@@ -1789,28 +1787,28 @@ Title: "Radiology Codes ValueSet"
 Description: "LOINC-coded radiology imaging study types for use in the Kenya Patient Summary (KPS.C.DE.18 – Imaging Study Type)."
 * ^status = #active
 * ^experimental = false
-* $LNC#24627-2 "CT of abdomen"
-* $LNC#24628-0 "CT of abdomen W contrast IV"
-* $LNC#24629-8 "CT of abdomen WO contrast"
-* $LNC#24630-6 "CT of abdomen WO and W contrast IV"
-* $LNC#24725-4 "CT of brain"
-* $LNC#24726-2 "CT of brain W contrast IV"
-* $LNC#24727-0 "CT of brain WO contrast"
-* $LNC#24728-8 "CT of brain WO and W contrast IV"
-* $LNC#24736-1 "CT of chest"
-* $LNC#24737-9 "CT of chest W contrast IV"
-* $LNC#24738-7 "CT of chest WO contrast"
-* $LNC#36643-5 "Chest X-ray 2 views"
-* $LNC#24606-6 "MR brain W contrast IV"
-* $LNC#24607-4 "MR brain WO contrast"
-* $LNC#24671-0 "Abdomen X-ray AP"
-* $LNC#39607-7 "US of chest"
-* $LNC#30704-1 "Ultrasound of abdomen"
-* $LNC#25061-5 "Ultrasound of pelvis"
-* $LNC#42148-7 "Ultrasound of obstetric"
-* $LNC#39879-2 "Bone scan"
-* $LNC#39905-5 "Bone scan limited"
-* $LNC#24730-4 "PET of brain"
-* $LNC#44137-8 "PET of heart"
-* $LNC#36046-1 "Hepatobiliary scan"
-* $LNC#24953-2 "CT guidance for drainage"
+* $LOINC#24627-2 "CT of abdomen"
+* $LOINC#24628-0 "CT of abdomen W contrast IV"
+* $LOINC#24629-8 "CT of abdomen WO contrast"
+* $LOINC#24630-6 "CT of abdomen WO and W contrast IV"
+* $LOINC#24725-4 "CT of brain"
+* $LOINC#24726-2 "CT of brain W contrast IV"
+* $LOINC#24727-0 "CT of brain WO contrast"
+* $LOINC#24728-8 "CT of brain WO and W contrast IV"
+* $LOINC#24736-1 "CT of chest"
+* $LOINC#24737-9 "CT of chest W contrast IV"
+* $LOINC#24738-7 "CT of chest WO contrast"
+* $LOINC#36643-5 "Chest X-ray 2 views"
+* $LOINC#24606-6 "MR brain W contrast IV"
+* $LOINC#24607-4 "MR brain WO contrast"
+* $LOINC#24671-0 "Abdomen X-ray AP"
+* $LOINC#39607-7 "US of chest"
+* $LOINC#30704-1 "Ultrasound of abdomen"
+* $LOINC#25061-5 "Ultrasound of pelvis"
+* $LOINC#42148-7 "Ultrasound of obstetric"
+* $LOINC#39879-2 "Bone scan"
+* $LOINC#39905-5 "Bone scan limited"
+* $LOINC#24730-4 "PET of brain"
+* $LOINC#44137-8 "PET of heart"
+* $LOINC#36046-1 "Hepatobiliary scan"
+* $LOINC#24953-2 "CT guidance for drainage"

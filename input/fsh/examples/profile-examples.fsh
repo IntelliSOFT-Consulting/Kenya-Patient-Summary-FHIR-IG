@@ -155,16 +155,7 @@ Usage: #example
 * subject = Reference(PatientKPS)
 * effectiveDateTime = "2026-05-20T08:15:00+03:00"
 * valueString = "13.2 g/dL"
-
-Instance: ConditionKPS
-InstanceOf: ke-kps-condition
-Usage: #example 
-* clinicalStatus = $CONDITIONSTATUS#active "Active"
-* verificationStatus = $CONDITIONVERIFY#confirmed "Confirmed"
-* category[0] = $CONDITIONCAT#problem-list-item "Problem List Item"
-* code = $ICD10#I10 "Essential (primary) hypertension"
-* subject = Reference(PatientKPS)
-* onsetDateTime = "2025-02-15"
+ 
 
 Instance: AllergyIntoleranceKPS
 InstanceOf: ke-kps-allergy-intolerance
@@ -189,7 +180,7 @@ InstanceOf: ke-kps-diagnostic-report
 Usage: #example
 * status = #final
 * category[0] = $DXSVC#LAB "Laboratory"
-* code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* code = $ksp-investigation-cs#718-7 "Hemoglobin Measurement"
 * subject = Reference(PatientKPS)
 * effectiveDateTime = "2026-05-20T08:20:00+03:00"
 * issued = "2026-05-20T09:00:00+03:00"
@@ -240,7 +231,7 @@ Instance: ProcedureKPS
 InstanceOf: ke-kps-procedure
 Usage: #example
 * status = #completed
-* code = $LNC#718-7
+* code = $LOINC#718-7
 * subject = Reference(PatientKPS)
 * performedDateTime = "2026-05-18T10:00:00+03:00"
 * reasonCode[0] = $ICD10#Z34.9 "Supervision of normal pregnancy, unspecified"
@@ -277,7 +268,7 @@ InstanceOf: AllergyIntolerance
 Usage: #example
 * meta.profile[0] = $KpsAllergyProfile
 * patient = Reference(PatientKPS)
-* reaction[0].manifestation[0] = $LNC#LA15701-8 "Urticaria (hives)"
+* reaction[0].manifestation[0] = $LOINC#LA15701-8 "Urticaria (hives)"
 
 Instance: ConditionKPSInvalid
 InstanceOf: Condition
@@ -290,9 +281,9 @@ Instance: DiagnosticReportKPSInvalid
 InstanceOf: DiagnosticReport
 Usage: #example
 * meta.profile[0] = $KpsDiagnosticReportProfile
-* status = #final
-* code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* status = #final 
 * effectiveDateTime = "2026-05-20T08:20:00+03:00"
+* code = $ksp-investigation-cs#718-7 "Hemoglobin Measurement"
 
 Instance: EncounterKPSInvalid
 InstanceOf: Encounter
@@ -314,7 +305,7 @@ InstanceOf: Immunization
 Usage: #example
 * meta.profile[0] = $KpsImmunizationProfile
 * status = #completed
-* vaccineCode = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* vaccineCode = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
 * occurrenceDateTime = "2025-10-01"
 * patient = Reference(PatientKPS)
 
@@ -339,7 +330,7 @@ Usage: #example
 * intent = #order
 * subject = Reference(PatientKPS)
 * medicationReference = Reference(MedicationKPS)
-* category[0] = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* category[0] = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
 
 Instance: MedicationStatementKPSInvalid
 InstanceOf: MedicationStatement
@@ -383,7 +374,7 @@ InstanceOf: Procedure
 Usage: #example
 * meta.profile[0] = $KpsProcedureProfile
 * status = #completed
-* code = $LNC#718-7
+* code = $LOINC#718-7
 * subject = Reference(PatientKPS)
 
 Instance: ServiceRequestKPSInvalid
@@ -406,5 +397,5 @@ Instance: SubstanceKPSInvalid
 InstanceOf: Substance
 Usage: #example
 * meta.profile[0] = $KpsSubstanceProfile
-* code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* code = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
 * status = #active
