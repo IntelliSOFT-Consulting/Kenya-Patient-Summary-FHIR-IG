@@ -50,35 +50,3 @@ Description: "This profile defines constraints on the Condition resource for use
 
 
 
-Instance: ExampleKpsCondition
-InstanceOf: ke-kps-condition
-Title: "Example Condition - Hypertension (KPS)"
-Description: "Example instance of a patient with hypertension for the Kenya Patient Summary"
-Usage: #example
-
-* id = "example-hypertension-condition"
-* subject = Reference(ExamplePatientKPS)
-* encounter = Reference(ExampleEncounterKPS)
-* code.coding[0]
-  * system = "http://snomed.info/sct"
-  * code = #38341003
-  * display = "Hypertensive disorder, systemic arterial (disorder)"
-* clinicalStatus.coding[0]
-  * system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
-  * code = #active
-  * display = "Active"
-* verificationStatus.coding[0]
-  * system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
-  * code = #confirmed
-  * display = "Confirmed"
-* severity.coding[0]
-  * system = KPSBClientCodes
-  * code = #moderate
-  * display = "Moderate"
-* onsetDateTime = "2019-06-10"
-* category.coding[0]
-  * system = "http://hl7.org/fhir/condition-category"
-  * code = #problem-list-item
-  * display = "Problem List Item"
-* note[0].text = "Condition identified during routine screening at county facility."
-

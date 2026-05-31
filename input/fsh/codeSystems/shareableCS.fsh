@@ -2314,17 +2314,7 @@ Description: "Codes for the verification status of a condition. Codes align with
 * #refuted "Refuted"
 * #entered-in-error "Entered in Error"
 
-
  
-CodeSystem: ConditionCodesCS
-Id: condition-codes-cs
-Title: "Condition Codes Code System"
-Description: "Local codes for conditions/diagnoses (MOH-Kenya: CONDITION-CODES)"
-* ^status = #active
-* ^content = #not-present
-* ^experimental = false
-* ^caseSensitive = true
-
 
 CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
@@ -2513,6 +2503,35 @@ Description: "Codes for administrative gender. Codes align with FHIR administrat
 * #female "Female"
 * #other "Other"
 * #unknown "Unknown"
+
+CodeSystem: ConditionCodeCS
+Id: condition-codes-cs
+Title: "Condition Code System"
+Description: "Codes for Conditions Codes."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true 
+
+* #109006 "Anxiety disorder of childhood OR adolescence"
+* #122003 "Choroidal hemorrhage"
+* #127009 "Spontaneous abortion with laceration of cervix"
+* #129007 "Homoiothermia"
+* #134006 "Decreased hair growth"
+* #140004 "Chronic pharyngitis"
+* #144008 "Normal peripheral vision"
+* #150003 "Abnormal bladder continence"
+* #151004 "Gonococcal meningitis"
+* #162004 "Severe manic bipolar I disorder without psychotic features"
+* #165002 "Accident-prone"
+* #168000 "Typhlolithiasis"
+* #171008 "Injury of ascending right colon without open wound into abdominal cavity"
+* #175004 "Supraorbital neuralgia"
+* #177007 "Poisoning by sawfly larvae"
+* #179005 "Apraxia of dressing"
+* #181007 "Hemorrhagic bronchopneumonia"
+* #183005 "Autoimmune pancytopenia"
+* #184004 "Withdrawal arrhythmia"
 
 
 CodeSystem: GenderCS

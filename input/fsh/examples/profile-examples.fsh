@@ -1,30 +1,87 @@
-// -----------------------------------------------------------------------------
-// Valid examples for profile-level 
-// -----------------------------------------------------------------------------
+
+
+Instance: ExampleAllergyIntoleranceKPS
+InstanceOf: ke-kps-allergy-intolerance
+Title: "Example AllergyIntolerance for Kenya Patient Summary- VALID"
+Description: "An example AllergyIntolerance instance for a patient allergic to penicillin."
+Usage: #example
+
+* id = "example-allergy-patient-001"
+* patient = Reference(ExamplePatientKPS)
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* type = KPSBClientCodes#allergy "Allergy"
+* criticality = #high
+* onsetDateTime = "2021-05-01"
+
+* reaction[0]
+  * substance.coding[0]
+    * system = "http://snomed.info/sct"
+    * code = #91936005
+    * display = "Allergy to penicillin"
+  * description = "Develops severe Anaphylaxis after penicillin"
+  * manifestation[0].coding[0]
+    * system = "http://loinc.org"
+    * code = #LA15702-6
+    * display = "Anaphylaxis" 
+  * severity = KPSBClientCodes#severe "Severe"
+  * note[0].text = "Carry epinephrine auto-injector at all times."
+
+Instance: ExampleKpsCondition
+InstanceOf: ke-kps-condition
+Title: "Example Condition - Severe Manic Bipolar I Disorder Without Psychotic Features (KPS)"
+Description: "Example instance of a patient diagnosed with severe manic bipolar I disorder without psychotic features for the Kenya Patient Summary"
+Usage: #example
+
+* id = "example-bipolar-condition"
+* subject = Reference(ExamplePatientKPS)
+* encounter = Reference(ExampleEncounterKPS)
+
+* code.coding[0]
+  * system = $condition-codes-cs
+  * code = #162004
+  * display = "Severe manic bipolar I disorder without psychotic features"
+
+* clinicalStatus.coding[0]
+  * system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+  * code = #active
+  * display = "Active"
+
+* verificationStatus.coding[0]
+  * system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+  * code = #confirmed
+  * display = "Confirmed"
+
+* severity.coding[0]
+  * system = $condition-severity-cs
+  * code = #SEVERE
+  * display = "Severe"
+
+* onsetDateTime = "2019-06-10"
+
+* category.coding[0]
+  * system = "http://terminology.hl7.org/CodeSystem/condition-category"
+  * code = #problem-list-item
+  * display = "Problem List Item"
+
+* note[0].text = "Patient has a confirmed diagnosis of severe manic bipolar I disorder without psychotic features and is receiving ongoing mental health care."
+
 
 Instance: LocationKPS
 InstanceOf: ke-kps-location
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * name = "Nairobi Referral Clinic"
 * description = "Referral clinic used for  examples"
 
 Instance: OrganizationKPS
 InstanceOf: ke-kps-organization
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * identifier.system = "http://localhost:8085/fhir/NamingSystem/organization-identifier"
 * identifier.value = "ORG-VAL-001"
 * name = "Kenyatta National Hospital"
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 
 Instance: PractitionerKPS
 InstanceOf: ke-kps-practitioner
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
 * identifier[0].value = "PRAC-VAL-001"
 * name[0].family = "Njoroge"
@@ -33,8 +90,6 @@ InstanceOf: ke-kps-practitioner
 Instance: PractitionerRoleKPS
 InstanceOf: ke-kps-practitioner-role
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * identifier.system = "http://localhost:8085/fhir/NamingSystem/practitioner-role-identifier"
 * identifier.value = "PROLE-VAL-001"
 * practitioner = Reference(PractitionerKPS)
@@ -44,8 +99,6 @@ Usage: #example
 Instance: PatientKPS
 InstanceOf: ke-kps-patient
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
 * identifier[NationalIDNo].value = "12345678"
 * gender = #female
@@ -71,15 +124,11 @@ Usage: #example
 Instance: SubstanceKPS
 InstanceOf: ke-kps-substance
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * code = $ATC#J07CA02
 
 Instance: MedicationKPS
 InstanceOf: ke-kps-medication
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #active
 * code = $ATC#J07CA02
 * batch.lotNumber = "LOT-VAL-001"
@@ -88,8 +137,6 @@ Usage: #example
 Instance: EncounterKPS
 InstanceOf: ke-kps-encounter
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #finished
 * class.system = $V3ACT
 * class.code = #AMB
@@ -102,8 +149,6 @@ Usage: #example
 Instance: ObservationKPS
 InstanceOf: ke-kps-observation
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #final
 * category[0] = $OBSCAT#laboratory "Laboratory"
 * code.text = "Hemoglobin result"
@@ -113,9 +158,7 @@ Usage: #example
 
 Instance: ConditionKPS
 InstanceOf: ke-kps-condition
-Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
+Usage: #example 
 * clinicalStatus = $CONDITIONSTATUS#active "Active"
 * verificationStatus = $CONDITIONVERIFY#confirmed "Confirmed"
 * category[0] = $CONDITIONCAT#problem-list-item "Problem List Item"
@@ -125,9 +168,7 @@ Usage: #example
 
 Instance: AllergyIntoleranceKPS
 InstanceOf: ke-kps-allergy-intolerance
-Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
+Usage: #example 
 * patient = Reference(PatientKPS)
 * clinicalStatus = $ALLERGYSTATUS#active "Active"
 * verificationStatus = $ALLERGYVERIFY#confirmed "Confirmed"
@@ -137,9 +178,7 @@ Usage: #example
 
 Instance: SpecimenKPS
 InstanceOf: ke-kps-specimen
-Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
+Usage: #example 
 * status = #available
 * type = $V20487#BLD "Whole blood"
 * subject = Reference(PatientKPS)
@@ -148,8 +187,6 @@ Usage: #example
 Instance: DiagnosticReportKPS
 InstanceOf: ke-kps-diagnostic-report
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #final
 * category[0] = $DXSVC#LAB "Laboratory"
 * code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
@@ -163,8 +200,6 @@ Usage: #example
 Instance: ImagingStudyKPS
 InstanceOf: ke-kps-imaging-study
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #available
 * subject = Reference(PatientKPS)
 * description = "Chest radiograph"
@@ -175,8 +210,6 @@ Usage: #example
 Instance: ImmunizationKPS
 InstanceOf: ke-kps-immunization
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #completed
 * vaccineCode = $ATC#J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
 * occurrenceDateTime = "2025-10-01"
@@ -188,8 +221,6 @@ Usage: #example
 Instance: MedicationRequestKPS
 InstanceOf: ke-kps-medication-request
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #active
 * intent = #order
 * subject = Reference(PatientKPS)
@@ -200,8 +231,6 @@ Usage: #example
 Instance: MedicationStatementKPS
 InstanceOf: ke-kps-medication-statement
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #active
 * medicationReference = Reference(MedicationKPS)
 * subject = Reference(PatientKPS)
@@ -210,8 +239,6 @@ Usage: #example
 Instance: ProcedureKPS
 InstanceOf: ke-kps-procedure
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #completed
 * code = $LNC#718-7
 * subject = Reference(PatientKPS)
@@ -221,8 +248,6 @@ Usage: #example
 Instance: ServiceRequestKPS
 InstanceOf: ke-kps-service-request
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * status = #active
 * intent = #order
 * subject = Reference(PatientKPS)
@@ -241,8 +266,6 @@ Usage: #example
 Instance: PatientKPSInvalid
 InstanceOf: Patient
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsPatientProfile
 * name[0].family = "Invalid"
 * name[0].given[0] = "Patient"
@@ -252,8 +275,6 @@ Usage: #example
 Instance: AllergyIntoleranceKPSInvalid
 InstanceOf: AllergyIntolerance
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsAllergyProfile
 * patient = Reference(PatientKPS)
 * reaction[0].manifestation[0] = $LNC#LA15701-8 "Urticaria (hives)"
@@ -261,8 +282,6 @@ Usage: #example
 Instance: ConditionKPSInvalid
 InstanceOf: Condition
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsConditionProfile
 * code = $ICD10#I10 "Essential (primary) hypertension"
 * subject = Reference(PatientKPS)
@@ -270,8 +289,6 @@ Usage: #example
 Instance: DiagnosticReportKPSInvalid
 InstanceOf: DiagnosticReport
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsDiagnosticReportProfile
 * status = #final
 * code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
@@ -280,8 +297,6 @@ Usage: #example
 Instance: EncounterKPSInvalid
 InstanceOf: Encounter
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsEncounterProfile
 * status = #finished
 * class.system = $V3ACT
@@ -290,8 +305,6 @@ Usage: #example
 Instance: ImagingStudyKPSInvalid
 InstanceOf: ImagingStudy
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsImagingStudyProfile
 * status = #available
 * subject = Reference(PatientKPS)
@@ -299,8 +312,6 @@ Usage: #example
 Instance: ImmunizationKPSInvalid
 InstanceOf: Immunization
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsImmunizationProfile
 * status = #completed
 * vaccineCode = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
@@ -310,16 +321,12 @@ Usage: #example
 Instance: LocationKPSInvalid
 InstanceOf: Location
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsLocationProfile
 * description = "Location missing the required name"
 
 Instance: MedicationKPSInvalid
 InstanceOf: Medication
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsMedicationProfile
 * status = #active
 * batch.lotNumber = "LOT-INVALID-001"
@@ -327,8 +334,6 @@ Usage: #example
 Instance: MedicationRequestKPSInvalid
 InstanceOf: MedicationRequest
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsMedicationRequestProfile
 * status = #active
 * intent = #order
@@ -339,8 +344,6 @@ Usage: #example
 Instance: MedicationStatementKPSInvalid
 InstanceOf: MedicationStatement
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsMedicationStatementProfile
 * status = #active
 * medicationReference = Reference(MedicationKPS)
@@ -349,8 +352,6 @@ Usage: #example
 Instance: ObservationKPSInvalid
 InstanceOf: Observation
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsObservationProfile
 * status = #final
 * category[0] = $OBSCAT#laboratory "Laboratory"
@@ -360,16 +361,12 @@ Usage: #example
 Instance: OrganizationKPSInvalid
 InstanceOf: Organization
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsOrganizationProfile
 * name = "Missing identifier organization"
 
 Instance: PractitionerKPSInvalid
 InstanceOf: Practitioner
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsPractitionerProfile
 * identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
 * identifier[0].value = "PRAC-INVALID-001"
@@ -377,8 +374,6 @@ Usage: #example
 Instance: PractitionerRoleKPSInvalid
 InstanceOf: PractitionerRole
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsPractitionerRoleProfile
 * practitioner = Reference(PractitionerKPS)
 * organization = Reference(OrganizationKPS)
@@ -386,8 +381,6 @@ Usage: #example
 Instance: ProcedureKPSInvalid
 InstanceOf: Procedure
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsProcedureProfile
 * status = #completed
 * code = $LNC#718-7
@@ -396,8 +389,6 @@ Usage: #example
 Instance: ServiceRequestKPSInvalid
 InstanceOf: ServiceRequest
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsServiceRequestProfile
 * status = #active
 * intent = #order
@@ -407,8 +398,6 @@ Usage: #example
 Instance: SpecimenKPSInvalid
 InstanceOf: Specimen
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsSpecimenProfile
 * status = #available
 * subject = Reference(PatientKPS)
@@ -416,8 +405,6 @@ Usage: #example
 Instance: SubstanceKPSInvalid
 InstanceOf: Substance
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsSubstanceProfile
 * code = $LNC#718-7 "Hemoglobin [Mass/volume] in Blood"
 * status = #active
