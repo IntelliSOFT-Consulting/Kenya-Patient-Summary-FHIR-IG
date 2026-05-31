@@ -35,6 +35,8 @@ Description: "This profile defines constraints on the ImagingStudy resource for 
   * bodySite 0..1 MS
     * ^short = "Body site imaged (KPS.C.DE.20)"
     * ^definition = "The anatomical part of the body that was the focus of the imaging study."
+  * modality 1..1 MS
+  * modality from AcquisitionModalityVS (required)
   // ---------------------------------------------------------------
   // KPS.C.DE.21 – Images
   // Maps to: ImagingStudy.series.instance (DICOM SOP instance)

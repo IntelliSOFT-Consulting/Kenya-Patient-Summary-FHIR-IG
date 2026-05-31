@@ -1,4 +1,11 @@
 
+ValueSet: AcquisitionModalityVS
+Id: kps-acquisition-modality-vs
+Title: "KPS - AcquisitionModality "
+Description: "Custom ValueSet for Acquisition Modality" 
+* ^experimental = false
+* include codes from system $kps-acquisition-modality-cs
+
 
 ValueSet: KpsGenderVS
 Id: kps-gender-vs
@@ -8,6 +15,8 @@ Description: "Custom ValueSet for Administrative Gender"
 // * ^url = "http://localhost:8085/fhir/ValueSet/kps-gender-vs"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/administrative-gender
+
+
 
  
 ValueSet: AdministrativeGenderVS
@@ -49,11 +58,10 @@ ValueSet: KPSMedicationVS
 Id: kps-medication-vs
 Title: "Medication ValueSet"
 Description: "List of permitted medications in national formulary."
- 
-// * ^url = "http://localhost:8085/fhir/ValueSet/medication-vs"
+  
 * ^experimental = false
-* include codes from system http://www.whocc.no/atc
-* $ATC#J07CA02
+* include codes from system $kps-medication-atc-cs //http://www.whocc.no/atc
+ 
 
 ValueSet: KPSMedicationFormVS
 Id: kps-medication-form-vs
@@ -79,20 +87,17 @@ ValueSet: KPSMedicationRequestCategoryVS
 Id: kps-medication-request-category-vs
 Title: "Medication Request Category"
 Description: "Local medication request categories."
- 
-// * ^url = "http://localhost:8085/fhir/ValueSet/kps-medication-request-category-vs"
+  
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/medicationrequest-category
 
 ValueSet: KPSGenericProductsVS
 Id: kps-generic-products-vs
 Title: "Generic Products"
-Description: "List of generic drugs."
- 
-// * ^url = "http://localhost:8085/fhir/ValueSet/generic-products"
+Description: "List of generic drugs." 
 * ^experimental = false
-* include codes from system http://www.whocc.no/atc
-* $ATC#J07CA02
+* include codes from system $kps-medication-atc-cs //http://www.whocc.no/atc
+ 
 
 ValueSet: KPSUnitOfMeasureVS
 Id: kps-unit-of-measure-vs
@@ -133,7 +138,7 @@ Title: "Allergy Severity"
 Description: "Value Sets for Allergy Severity"
 // * ^url = "http://localhost:8085/fhir/ValueSet/kps-allergy-severity-vs"
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/reaction-event-severity
+* include codes from system $reaction-event-severity-cs
 
 
 ValueSet: KPSVitalSignsCodesVS
@@ -592,9 +597,8 @@ ValueSet: ObservationCategoryVS
 Id: observation-category-vs
 Title: "Category ValueSet"
 Description: "ValueSet binding for Observation.category in Observation."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/observation-category-vs"
-* include codes from system http://terminology.hl7.org/CodeSystem/observation-category
+* ^experimental = false 
+* include codes from system $observation-category-cs
 
 ValueSet: ObservationCodeVS
 Id: observation-code-vs
@@ -637,10 +641,10 @@ ValueSet: AllergyIntoleranceCodeVS
 Id: allergy-intolerance-code-vs
 Title: "KPS Allergy Intolerance Substance Codes"
 Description: "Substances that may cause allergic reactions or intolerances. Uses WHO ATC drug codes (for drug allergies) and ICD-10 for clinically significant allergen classifications."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/allergyintolerance-code"
-* include codes from system http://www.whocc.no/atc
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* ^experimental = false 
+
+* include codes from system $kps-substances-cs
+
 
 ValueSet: AllergyIntoleranceReactionSubstanceVS
 Id: allergy-intolerance-reaction-substance-vs
@@ -653,16 +657,10 @@ ValueSet: AllergyIntoleranceReactionManifestationVS
 Id: allergy-intolerance-reaction-manifestation-vs
 Title: "KPS Allergy Reaction Manifestation Codes"
 Description: "Clinical manifestations of allergic reactions coded using ICD-10 and $LOINC. Covers urticaria, anaphylaxis, angioedema, bronchospasm, and other reaction findings."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/allergyintolerance-reaction-manifestation"
-* $LOINC#LA15702-6 "Anaphylaxis"
-* $LOINC#LA15701-8 "Urticaria (hives)"
-* $LOINC#LA15700-0 "Angioedema"
-* $LOINC#LA6752-5 "Mild"
-* $LOINC#LA6751-7 "Moderate"
-* $LOINC#LA6750-9 "Severe"
-* include codes from system http://hl7.org/fhir/sid/icd-10
-* include codes from system http://snomed.info/sct
+* ^experimental = false 
+* include codes from system $manifestation-cs
+// * include codes from system http://hl7.org/fhir/sid/icd-10
+// * include codes from system http://snomed.info/sct
 
 ValueSet: AllergyIntoleranceReactionSeverityVS
 Id: allergy-intolerance-reaction-severity-vs
@@ -960,25 +958,22 @@ ValueSet: ImmunizationStatusVS
 Id: immunization-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Immunization.status in Immunization."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/immunization-status-vs"
-* include codes from system http://hl7.org/fhir/event-status
+* ^experimental = false 
+* include codes from system $kps-event-status-cs
 
 ValueSet: ImmunizationVaccineCodeVS
 Id: immunization-vaccine-code-vs
 Title: "KPS Vaccine Codes"
 Description: "Vaccine codes for the Kenya Patient Summary using WHO ATC J07 vaccine classification. Covers bacterial, viral, and combination vaccines used in Kenya's national immunization programme."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/immunization-vaccinecode"
-* include codes from system http://www.whocc.no/atc where concept is-a #J07
+* ^experimental = false 
+* include codes from system $kps-vaccine-atc-cs //http://www.whocc.no/atc where concept is-a #J07
 
 ValueSet: ImmunizationTargetDiseaseVS
 Id: immunization-target-disease-vs
 Title: "KPS Vaccine Target Diseases"
 Description: "Target diseases against which vaccines are administered in the Kenya national immunization programme, coded using ICD-10."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/immunization-targetdisease"
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* ^experimental = false 
+* include codes from system $kps-target-diseases-cs
 
 
 ValueSet: DiagnosticReportStatusVS
@@ -1022,10 +1017,9 @@ ValueSet: ProcedureCodeVS
 Id: procedure-code-vs
 Title: "KPS Procedure Codes"
 Description: "Clinical procedure codes for the Kenya Patient Summary using $LOINC and ICD-10. Covers surgical, diagnostic, and therapeutic procedures."
-* ^experimental = false
-// * ^url = "http://localhost:8085/fhir/ValueSet/procedure-code"
-* include codes from system http://$LOINC.org
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* ^experimental = false 
+
+* include codes from system $kps-procedures-cs
 
 ValueSet: ProcedureReasonCodeVS
 Id: procedure-reason-code-vs

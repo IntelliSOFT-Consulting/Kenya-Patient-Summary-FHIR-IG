@@ -7102,7 +7102,7 @@ CodeSystem: ManifestationCS
 Id: manifestation-cs
 Title: "Manifestation or Symptom CodeSystem"
 Description: "Clinical manifestations and symptoms used in allergy reactions, conditions, and observations. Source: MOH-KENYA OCL MANIFESTATION-OR-SYMPTOM."
-// ////////* ^url = "http://localhost:8085/fhir/CodeSystem/manifestation-cs"
+
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7164,7 +7164,7 @@ CodeSystem: ConditionCategoryCS
 Id: condition-category-cs
 Title: "Condition Category CodeSystem"
 Description: "Category codes for Condition resources. Based on FHIR standard condition-category codes (OCL collection was empty)."
-//////* ^url = "http://localhost:8085/fhir/CodeSystem/condition-category-cs"
+ 
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -8825,9 +8825,10 @@ CodeSystem: VitalSignsLOINCCS
 Id: vital-signs-loinc-cs
 Title: "Vital Signs LOINC Codes"
 Description: "LOINC codes commonly used for vital signs observations."
- 
 * ^status = #active
-* ^content = #fragment 
+* ^content = #complete
+* ^caseSensitive = true
+
 * #8867-4 "Heart rate"
 * #9279-1 "Respiratory rate"
 * #8310-5 "Body temperature"
@@ -8841,3 +8842,267 @@ Description: "LOINC codes commonly used for vital signs observations."
 * #39156-5 "Body mass index"
 * #9843-4 "Head circumference"
 * #85353-1 "Vital signs panel"
+
+
+CodeSystem: AcquisitionModalityCS
+Id: kps-acquisition-modality-cs
+Title: "AcquisitionModality Codesystem"
+Description: "Codesystem for AcquisitionModality"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+
+* #BMD "Bone Mineral Densitometry"
+* #SM "Slide Microscopy"
+* #EOG "Electrooculography"
+* #OP "Ophthalmic Photography"
+* #GM "General Microscopy"
+* #ECG "Electrocardiography"
+* #XA "X-Ray Angiography"
+* #XC "External-camera Photography"
+* #DMS "Dermoscopy"
+* #IVUS "Intravascular Ultrasound"
+* #CR "Computed Radiography"
+* #CT "Computed Tomography"
+* #PA "Photoacoustic"
+* #OSS "Optical Surface Scanner"
+* #TG "Thermography"
+* #LEN "Lensometry"
+* #OPTENF "Ophthalmic Tomography En Face"
+* #HD "Hemodynamic"
+* #OCT "Optical Coherence Tomography"
+* #BDUS "Ultrasound Bone Densitometry"
+* #DG "Diaphanography"
+* #PT "Positron emission tomography"
+* #LS "Laser surface scan"
+* #EPS "Cardiac Electrophysiology"
+* #PX "Panoramic X-Ray"
+* #OPM "Ophthalmic Mapping"
+* #OPTBSV "Ophthalmic Tomography B-scan Volume Analysis"
+* #OPV "Ophthalmic Visual Field"
+* #DX "Digital Radiography"
+* #OPT "Ophthalmic Tomography"
+* #MG "Mammography"
+* #US "Ultrasound"
+* #IVOCT "Intravascular Optical Coherence Tomography"
+* #EMG "Electromyography"
+* #MR "Magnetic Resonance"
+* #IO "Intra-oral Radiography"
+* #EEG "Electroencephalography"
+* #RTIMAGE "RT Image"
+* #VA "Visual Acuity"
+* #RESP "Respiratory"
+* #ES "Endoscopy"
+* #AR "Autorefraction"
+* #POS "Position Sensor"
+* #RG "Radiographic imaging"
+* #RF "Radiofluoroscopy"
+* #KER "Keratometry"
+* #OAM "Ophthalmic Axial Measurements"
+* #NM "Nuclear Medicine"
+* #BI "Biomagnetic Imaging"
+* #SRF "Subjective Refraction"
+* #CFM "Confocal Microscopy"
+
+
+CodeSystem: VaccineATCCS
+Id: kps-vaccine-atc-cs
+Title: "Vaccine ATC CodeSystem"
+Description: "Custom CodeSystem containing ATC vaccine codes under J07." 
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #J07 "VACCINES"
+* #J07A "BACTERIAL VACCINES"
+* #J07AC "Anthrax vaccines"
+* #J07AC01 "anthrax antigen"
+* #J07AD "Brucellosis vaccines"
+* #J07AD01 "brucella antigen"
+* #J07AE "Cholera vaccines"
+* #J07AE01 "cholera, inactivated, whole cell"
+* #J07AE02 "cholera, live attenuated"
+* #J07AE51 "cholera, combinations with typhoid vaccine, inactivated, whole cell"
+* #J07AF "Diphtheria vaccines"
+* #J07AF01 "diphtheria toxoid"
+* #J07AG "Haemophilus influenzae B vaccines"
+* #J07AG01 "haemophilus influenzae B, purified antigen conjugated"
+* #J07AG51 "haemophilus influenzae B, combinations with toxoids"
+* #J07AG52 "haemophilus influenzae B, combinations with pertussis and toxoids"
+* #J07AG53 "haemophilus influenzae B, combinations with meningococcus C, conjugated"
+* #J07AG54 "haemophilus influenza B, combinations with meningococcus C,Y, conjugated"
+* #J07AH "Meningococcal vaccines"
+* #J07AH01 "meningococcus A, purified polysaccharides antigen"
+* #J07AH02 "other meningococcal monovalent purified polysaccharides antigen"
+* #J07AH03 "meningococcus A,C, bivalent purified polysaccharides antigen"
+* #J07AH04 "meningococcus A,C,Y,W-135, tetravalent purified polysaccharides antigen"
+* #J07AH05 "other meningococcal polyvalent purified polysaccharides antigen"
+* #J07AH06 "meningococcus B, outer membrane vesicle vaccine"
+* #J07AH07 "meningococcus C, purified polysaccharides antigen conjugated"
+* #J07AH08 "meningococcus A,C,Y,W-135, tetravalent purified polysaccharides antigen conjugated"
+* #J07AH09 "meningococcus B, multicomponent vaccine"
+* #J07AH10 "meningococcus A, purified polysaccharides antigen conjugated"
+* #J07AH11 "meningococcus A,B,C,Y,W-135, pentavalent purified polysaccharides antigen conjugated and factor H binding protein"
+* #J07AJ "Pertussis vaccines"
+* #J07AJ01 "pertussis, inactivated, whole cell"
+* #J07AJ02 "pertussis, purified antigen"
+* #J07AJ51 "pertussis, inactivated, whole cell, combinations with toxoids"
+* #J07AJ52 "pertussis, purified antigen, combinations with toxoids"
+* #J07AK "Plague vaccines"
+* #J07AK01 "plague, inactivated, whole cell"
+* #J07AL "Pneumococcal vaccines"
+* #J07AL01 "pneumococcus, purified polysaccharides antigen"
+* #J07AL02 "pneumococcus, purified polysaccharides antigen conjugated"
+* #J07AL52 "pneumococcus purified polysaccharides antigen and haemophilus influenzae, conjugated"
+* #J07AM "Tetanus vaccines"
+* #J07AM01 "tetanus toxoid"
+* #J07AM51 "tetanus toxoid, combinations with diphtheria toxoid"
+* #J07AM52 "tetanus toxoid, combinations with tetanus immunoglobulin"
+* #J07AN "Tuberculosis vaccines"
+* #J07AN01 "tuberculosis, live attenuated"
+* #J07AP "Typhoid vaccines"
+* #J07AP01 "typhoid, oral, live attenuated"
+* #J07AP02 "typhoid, inactivated, whole cell"
+* #J07AP03 "typhoid, purified polysaccharide antigen"
+* #J07AP10 "typhoid, combinations with paratyphi types"
+* #J07AR "Typhus (exanthematicus) vaccines"
+* #J07AR01 "typhus exanthematicus, inactivated, whole cell"
+* #J07AX "Other bacterial vaccines"
+* #J07AX01 "leptospira vaccines"
+* #J07B "VIRAL VACCINES"
+* #J07BA "Encephalitis vaccines"
+* #J07BA01 "encephalitis, tick borne, inactivated, whole virus"
+* #J07BA02 "encephalitis, Japanese, inactivated, whole virus"
+* #J07BA03 "encephalitis, Japanese, live attenuated"
+* #J07BB "Influenza vaccines"
+* #J07BB01 "influenza, inactivated, whole virus"
+* #J07BB02 "influenza, inactivated, split virus or surface antigen"
+* #J07BB03 "influenza, live attenuated"
+* #J07BB04 "influenza, virus like particles"
+* #J07BB05 "influenza, RNA-based vaccine"
+* #J07BC "Hepatitis vaccines"
+* #J07BC01 "hepatitis B, purified antigen"
+* #J07BC02 "hepatitis A, inactivated, whole virus"
+* #J07BC20 "combinations"
+* #J07BD "Measles vaccines"
+* #J07BD01 "measles, live attenuated"
+* #J07BD51 "measles, combinations with mumps, live attenuated"
+* #J07BD52 "measles, combinations with mumps and rubella, live attenuated"
+* #J07BD53 "measles, combinations with rubella, live attenuated"
+* #J07BD54 "measles, combinations with mumps, rubella and varicella, live attenuated"
+* #J07BE "Mumps vaccines"
+* #J07BE01 "mumps, live attenuated"
+* #J07BF "Poliomyelitis vaccines"
+* #J07BF01 "poliomyelitis oral, monovalent, live attenuated"
+* #J07BF02 "poliomyelitis oral, trivalent, live attenuated"
+* #J07BF03 "poliomyelitis, trivalent, inactivated, whole virus"
+* #J07BF04 "poliomyelitis oral, bivalent, live attenuated"
+* #J07BG "Rabies vaccines"
+* #J07BG01 "rabies, inactivated, whole virus"
+* #J07BH "Rota virus diarrhea vaccines"
+* #J07BH01 "rota virus, live attenuated"
+* #J07BH02 "rota virus, pentavalent, live, reassorted"
+* #J07BJ "Rubella vaccines"
+* #J07BJ01 "rubella, live attenuated"
+* #J07BJ51 "rubella, combinations with mumps, live attenuated"
+* #J07BK "Varicella zoster vaccines"
+* #J07BK01 "varicella, live attenuated"
+* #J07BK02 "zoster, live attenuated"
+* #J07BK03 "zoster, purified antigen"
+* #J07BL "Yellow fever vaccines"
+* #J07BL01 "yellow fever, live attenuated"
+* #J07BM "Papillomavirus vaccines"
+* #J07BM01 "papillomavirus (human types 6, 11, 16, 18)"
+* #J07BM02 "papillomavirus (human types 16, 18)"
+* #J07BM03 "papillomavirus (human types 6, 11, 16, 18, 31, 33, 45, 52, 58)"
+* #J07BN "Covid-19 vaccines"
+* #J07BN01 "covid-19, RNA-based vaccine"
+* #J07BN02 "covid-19, viral vector, non-replicating"
+* #J07BN03 "covid-19, inactivated virus"
+* #J07BN04 "covid-19, protein subunit"
+* #J07BN05 "covid-19, virus-like particles"
+* #J07BX "Other viral vaccines"
+* #J07BX01 "smallpox and monkeypox vaccines"
+* #J07BX02 "ebola vaccines"
+* #J07BX04 "dengue virus vaccines"
+* #J07BX05 "respiratory syncytial virus vaccines"
+* #J07BX06 "enterovirus 71 vaccines"
+* #J07C "BACTERIAL AND VIRAL VACCINES, COMBINED"
+* #J07CA "Bacterial and viral vaccines, combined"
+* #J07CA01 "diphtheria-poliomyelitis-tetanus"
+* #J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
+* #J07CA03 "diphtheria-rubella-tetanus"
+* #J07CA04 "haemophilus influenzae B and poliomyelitis"
+* #J07CA05 "diphtheria-hepatitis B-pertussis-tetanus"
+* #J07CA06 "diphtheria-haemophilus influenzae B-pertussis-poliomyelitis-tetanus"
+* #J07CA07 "diphtheria-hepatitis B-tetanus"
+* #J07CA08 "haemophilus influenzae B and hepatitis B"
+* #J07CA09 "diphtheria-haemophilus influenzae B-pertussis-poliomyelitis-tetanus-hepatitis B"
+* #J07CA10 "typhoid-hepatitis A"
+* #J07CA11 "diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B"
+* #J07CA12 "diphtheria-pertussis-poliomyelitis-tetanus-hepatitis B"
+* #J07CA13 "diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B-meningococcus A + C"
+* #J07X "OTHER VACCINES"
+* #J07XA "Parasitic vaccines"
+* #J07XA01 "malaria vaccines"
+
+
+CodeSystem: EventStatusCS
+Id: kps-event-status-cs
+Title: "Event Status"
+Description: "Defines the lifecycle status of an event." 
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #preparation "Preparation" "The core event has not started yet, but some staging activities have begun (e.g. surgical suite preparation). Preparation stages may be tracked for billing purposes."
+* #in-progress "In Progress" "The event is currently occurring."
+* #not-done "Not Done" "The event was terminated prior to any activity beyond preparation. The main activity has not yet begun."
+* #on-hold "On Hold" "The event has been temporarily stopped but is expected to resume in the future."
+* #stopped "Stopped" "The event was terminated prior to the full completion of the intended activity but after at least some of the main activity beyond preparation has occurred."
+* #completed "Completed" "The event has now concluded."
+* #entered-in-error "Entered in Error" "This electronic record should never have existed, though it is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be stopped rather than entered-in-error."
+* #unknown "Unknown" "The authoring or source system does not know which of the status values currently applies for this event."
+
+
+CodeSystem: ObservationCategoryCS
+Id: observation-category-cs
+Title: "Observation Category Codes"
+Description: "Observation Category codes." 
+* ^version = "2.0.0"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #social-history "Social History" "Social History Observations define the patient's occupational, personal, social, familial, and environmental history and health risk factors that may impact the patient's health."
+* #vital-signs "Vital Signs" "Clinical observations measure the body's basic functions such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area."
+* #imaging "Imaging" "Observations generated by imaging including plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, and nuclear medicine."
+* #laboratory "Laboratory" "The results of observations generated by laboratories."
+* #procedure "Procedure" "Observations generated by other procedures excluding laboratory and imaging."
+* #survey "Survey" "Observations from survey instruments, questionnaires, forms, and assessment tools."
+* #exam "Exam" "Observations generated by physical exam findings."
+* #therapy "Therapy" "Observations generated by non-interventional treatment protocols."
+* #activity "Activity" "Observations that measure or record bodily activity that enhances or maintains physical fitness and overall health and wellness."
+* #symptom "Symptom" "Observations which record a manifestation of a disease that is apparent to and has been communicated by the patient."
+
+
+
+
+CodeSystem: ReactionEventSeverityCS
+Id: reaction-event-severity-cs
+Title: "Reaction Event Severity"
+Description: "Clinical assessment of the severity of a reaction event." 
+* ^version = "4.0.1"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #mild "Mild" "Causes mild physiological effects."
+* #moderate "Moderate" "Causes moderate physiological effects."
+* #severe "Severe" "Causes severe physiological effects."

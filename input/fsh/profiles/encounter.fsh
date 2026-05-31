@@ -32,24 +32,4 @@ Captures details about interactions between a patient and healthcare provider.
 * location 0..* MS
   * ^short = "Location where the encounter took place"
 
-
-Instance: ExampleEncounterKPS
-InstanceOf: ke-kps-encounter
-Title: "Example Encounter - KPS"
-Description: "A sample encounter record for a KPS patient"
-Usage: #example
-
-* status = #finished
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* class.code = #AMB
-* class.display = "ambulatory"
-* type[0].coding[0].system = "http://snomed.info/sct"
-* type[0].coding[0].code = #185349003
-* type[0].coding[0].display = "Encounter for check up (procedure)"
-* subject = Reference(ExamplePatientKPS)
-* period.start = "2024-12-01T10:00:00+03:00"
-* period.end = "2024-12-01T11:00:00+03:00"
-* reasonCode[0].coding[0].system = "http://snomed.info/sct"
-* reasonCode[0].coding[0].code = #162673000
-* reasonCode[0].coding[0].display = "General examination of patient (procedure)"
-* location[0].location = Reference(Location/NairobiClinic)
+ 

@@ -16,15 +16,15 @@ Usage: #example
 
 * reaction[0]
   * substance.coding[0]
-    * system = "http://snomed.info/sct"
-    * code = #91936005
-    * display = "Allergy to penicillin"
-  * description = "Develops severe Anaphylaxis after penicillin"
+    * system = $kps-substances-cs
+    * code = #1018001
+    * display = "Nornicotine"
+  * description = "Develops severe Jaundice after penicillin"
   * manifestation[0].coding[0]
-    * system = "http://loinc.org"
-    * code = #LA15702-6
-    * display = "Anaphylaxis" 
-  * severity = KPSBClientCodes#severe "Severe"
+    * system = $manifestation-cs
+    * code = #JAUNDICE
+    * display = "Jaundice" 
+  * severity = $reaction-event-severity-cs#severe "Severe"
   * note[0].text = "Carry epinephrine auto-injector at all times."
 
 Instance: ExampleKpsCondition
@@ -35,7 +35,7 @@ Usage: #example
 
 * id = "example-bipolar-condition"
 * subject = Reference(ExamplePatientKPS)
-* encounter = Reference(ExampleEncounterKPS)
+* encounter = Reference(EncounterKPS)
 
 * code.coding[0]
   * system = $condition-codes-cs
@@ -76,13 +76,13 @@ Usage: #example
 Instance: OrganizationKPS
 InstanceOf: ke-kps-organization
 Usage: #example
-* identifier.system = "http://localhost:8085/fhir/NamingSystem/organization-identifier"
+* identifier.system =  $organization-identifier
 * identifier.value = "ORG-VAL-001"
 * name = "Kenyatta National Hospital"
 
 Instance: PractitionerKPS
 InstanceOf: ke-kps-practitioner
-* identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
+* identifier[0].system = $practitioner-identifier
 * identifier[0].value = "PRAC-VAL-001"
 * name[0].family = "Njoroge"
 * name[0].given[0] = "Anne"
@@ -90,7 +90,7 @@ InstanceOf: ke-kps-practitioner
 Instance: PractitionerRoleKPS
 InstanceOf: ke-kps-practitioner-role
 Usage: #example
-* identifier.system = "http://localhost:8085/fhir/NamingSystem/practitioner-role-identifier"
+* identifier.system = $practitioner-role-identifier
 * identifier.value = "PROLE-VAL-001"
 * practitioner = Reference(PractitionerKPS)
 * organization = Reference(OrganizationKPS)
@@ -99,7 +99,7 @@ Usage: #example
 Instance: PatientKPS
 InstanceOf: ke-kps-patient
 Usage: #example
-* identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
+* identifier[NationalIDNo].system = $nationalID-no
 * identifier[NationalIDNo].value = "12345678"
 * gender = #female
 * name[0].family = "Mohamed"
@@ -124,13 +124,19 @@ Usage: #example
 Instance: SubstanceKPS
 InstanceOf: ke-kps-substance
 Usage: #example
-* code = $ATC#J07CA02
+* code = $kps-medication-atc-cs#A01AB03
+
+Instance: SubstanceKPSInvalid
+InstanceOf: Substance
+Usage: #example 
+* code = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
+* status = #active
 
 Instance: MedicationKPS
 InstanceOf: ke-kps-medication
 Usage: #example
 * status = #active
-* code = $ATC#J07CA02
+* code = $kps-medication-atc-cs#A01AB03
 * batch.lotNumber = "LOT-VAL-001"
 * batch.expirationDate = "2027-12-31"
 
@@ -146,27 +152,199 @@ Usage: #example
 * period.end = "2026-05-20T08:30:00+03:00"
 * location[0].location = Reference(LocationKPS)
 
+Instance: EncounterKPSInvalid
+InstanceOf: ke-kps-encounter
+Usage: #example 
+* status = #finished
+* class.system = $V3ACT
+* class.code = #AMB
+* subject = Reference(PatientKPS)
+
 Instance: ObservationKPS
 InstanceOf: ke-kps-observation
 Usage: #example
 * status = #final
-* category[0] = $OBSCAT#laboratory "Laboratory"
+* category[0] = $observation-category-cs#laboratory "Laboratory"
 * code.text = "Hemoglobin result"
 * subject = Reference(PatientKPS)
+* performer = Reference(PractitionerKPS)
 * effectiveDateTime = "2026-05-20T08:15:00+03:00"
 * valueString = "13.2 g/dL"
+
+
+Instance: ObservationSmokingStatus
+InstanceOf: KpsObservation
+Title: "Smoking Status"
+Description: "Social history observation indicating smoking"
+Usage: #example
+
+* status = #final
+* category[0].coding[0]
+  * system = $observation-category-cs
+  * code = #social-history
+  * display = "Social History"
+* code.text = "Tobacco use"
+* subject = Reference(ExamplePatientKPS)
+* effectiveDateTime = "2023-05-10"
+* valueString = "Occasional cigarette smoker"
+* performer = Reference(PractitionerKPS)
+
+
+Instance: ObservationReferenceDateRange
+InstanceOf: KpsObservation
+Title: "Substance Use Reference Period"
+Description: "Reference date range for substance use"
+Usage: #example
+
+* status = #final
+* category[0].coding[0]
+  * system = $observation-category-cs
+  * code = #social-history
+  * display = "Social History"
+* code.text = "Alcohol consumption period"
+* subject = Reference(ExamplePatientKPS)
+* effectivePeriod.start = "1974-01-01"
+* effectivePeriod.end = "2004-12-31"
+* valueString = "Heavy alcohol consumption during this period"
+* performer = Reference(PractitionerKPS)
+
+Instance: ObservationPregnancyStatus
+InstanceOf: KpsObservation
+Title: "Pregnancy Status"
+Description: "Current pregnancy status"
+Usage: #example
+
+* status = #final
+* category[0].coding[0]
+  * system = $observation-category-cs
+  * code = #social-history
+  * display = "Social History"
+* code.text = "Pregnancy Status"
+* subject = Reference(ExamplePatientKPS)
+* effectiveDateTime = "2024-11-01"
+* performer = Reference(PractitionerKPS)
+* valueCodeableConcept.coding[0]
+  * system = KPSBClientCodes
+  * code = #KPS.B.DE.23
+  * display = "Pregnant"
+
+Instance: ObservationEDD
+InstanceOf: KpsObservation
+Title: "Expected Date of Delivery"
+Description: "Estimated date of delivery"
+Usage: #example
+
+* status = #final
+* category[0].coding[0]
+  * system = $observation-category-cs
+  * code = #social-history
+  * display = "Social History"
+* code.text = "Expected date of delivery"
+* subject = Reference(ExamplePatientKPS)
+* effectiveDateTime = "2024-11-01"
+* performer = Reference(PractitionerKPS)
+* valueDateTime = "2025-07-10"
+
+
+
+Instance: ObservationPreviousPregnancies
+InstanceOf: KpsObservation
+Title: "Previous Pregnancies Status"
+Description: "Whether the woman had previous pregnancies"
+Usage: #example
+
+* status = #final
+* code.text = "Previous pregnancies"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS) 
+* effectiveDateTime = "2023-05-10"
+* valueCodeableConcept.coding[0]
+  * system = KPSBClientCodes
+  * code = #KPS.B.DE.29
+  * display = "Yes"
+
+Instance: ObservationPreviousPregnancyOutcome
+InstanceOf: KpsObservation
+Title: "Previous Pregnancy Outcome"
+Description: "Outcome of previous pregnancy"
+Usage: #example
+
+* status = #final
+* code.text = "Pregnancy Outcome"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS)
+* effectiveDateTime = "2023-05-10"
+* valueCodeableConcept.coding[0]
+  * system = KPSBClientCodes
+  * code = #preterm
+  * display = "Pre-term"
+
+Instance: ObservationOutcomeDate
+InstanceOf: KpsObservation
+Title: "Pregnancy Outcome Date"
+Description: "Date of pregnancy outcome"
+Usage: #example
+
+* status = #final
+* code.text = "Outcome date"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS)
+* effectiveDateTime = "2023-05-10"
+* valueDateTime = "2022-06-15" 
+
+
+Instance: ObservationNumberOfChildren
+InstanceOf: KpsObservation
+Title: "Number of Children"
+Description: "Number of fetuses in the current pregnancy"
+Usage: #example
+
+* status = #final
+* code.text = "Number of fetuses"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS)
+* effectiveDateTime = "2023-05-10"
+* valueQuantity.value = 2
+* valueQuantity.unit = "children" 
+
+
+Instance: ObservationTravelDestination
+InstanceOf: KpsObservation
+Title: "Travel Destination"
+Description: "Where the patient traveled"
+Usage: #example
+
+* status = #final
+* code.text = "Recent travel destination"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS)
+* effectiveDateTime = "2023-05-10"
+* valueString = "South Sudan" 
+
+
+Instance: ObservationTravelPeriod
+InstanceOf: KpsObservation
+Title: "Travel Period"
+Description: "Date of entry and departure"
+Usage: #example
+
+* status = #final
+* code.text = "Travel period"
+* subject = Reference(ExamplePatientKPS)
+* performer = Reference(PractitionerKPS)
+* valuePeriod.start = "2024-02-01"
+* valuePeriod.end = "2024-03-15"
+
+Instance: ObservationKPSInvalid
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = $KpsObservationProfile
+* status = #final
+* category[0] = $observation-category-cs#laboratory "Laboratory"
+* code.text = "Hemoglobin result"
+* subject = Reference(PatientKPS)
  
-
-Instance: AllergyIntoleranceKPS
-InstanceOf: ke-kps-allergy-intolerance
-Usage: #example 
-* patient = Reference(PatientKPS)
-* clinicalStatus = $ALLERGYSTATUS#active "Active"
-* verificationStatus = $ALLERGYVERIFY#confirmed "Confirmed"
-* type = $ALLERGYTYPE#allergy "Allergy"
-* reaction[0].manifestation[0] = $ICD10#T78.2
-* note[0].text = "Rash after penicillin exposure"
-
+ 
 Instance: SpecimenKPS
 InstanceOf: ke-kps-specimen
 Usage: #example 
@@ -196,16 +374,28 @@ Usage: #example
 * description = "Chest radiograph"
 * started = "2026-05-20T10:00:00+03:00"
 * series[0].uid = "2.16.840.1.113883.3.72.5.9.1001"
-* series[0].modality = $DICOM#CR "Computed Radiography"
+* series[0].modality = $kps-acquisition-modality-cs#CR "Computed Radiography"
 
 Instance: ImmunizationKPS
 InstanceOf: ke-kps-immunization
 Usage: #example
 * status = #completed
-* vaccineCode = $ATC#J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
+* vaccineCode = $kps-vaccine-atc-cs#J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
 * occurrenceDateTime = "2025-10-01"
 * patient = Reference(PatientKPS)
-* protocolApplied[0].targetDisease[0] = $ICD10#A37 "Whooping cough"
+* protocolApplied[0].targetDisease[0] = $kps-target-diseases-cs#A37 "Whooping cough"
+* protocolApplied[0].series = "Kenya childhood immunization schedule"
+* protocolApplied[0].doseNumberPositiveInt = 3
+
+Instance: ImmunizationKPSInvalid
+InstanceOf: Immunization
+Usage: #example
+* meta.profile[0] = $KpsImmunizationProfile
+* status = #completed
+* vaccineCode = $kps-vaccine-atc-cs#J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
+* occurrenceDateTime = "2025-10-01"
+* patient = Reference(PatientKPS)
+* protocolApplied[0].targetDisease[0] = $kps-target-diseases-cs#A37 "Whooping cough Invalidated"
 * protocolApplied[0].series = "Kenya childhood immunization schedule"
 * protocolApplied[0].doseNumberPositiveInt = 3
 
@@ -231,10 +421,10 @@ Instance: ProcedureKPS
 InstanceOf: ke-kps-procedure
 Usage: #example
 * status = #completed
-* code = $LOINC#718-7
+* code = $kps-procedures-cs#4365001
 * subject = Reference(PatientKPS)
 * performedDateTime = "2026-05-18T10:00:00+03:00"
-* reasonCode[0] = $ICD10#Z34.9 "Supervision of normal pregnancy, unspecified"
+* reasonCode[0] = $condition-codes-cs#171008 "Injury of ascending right colon without open wound into abdominal cavity"
 
 Instance: ServiceRequestKPS
 InstanceOf: ke-kps-service-request
@@ -285,13 +475,7 @@ Usage: #example
 * effectiveDateTime = "2026-05-20T08:20:00+03:00"
 * code = $ksp-investigation-cs#718-7 "Hemoglobin Measurement"
 
-Instance: EncounterKPSInvalid
-InstanceOf: Encounter
-Usage: #example
-* meta.profile[0] = $KpsEncounterProfile
-* status = #finished
-* class.system = $V3ACT
-* class.code = #AMB
+
 
 Instance: ImagingStudyKPSInvalid
 InstanceOf: ImagingStudy
@@ -300,14 +484,7 @@ Usage: #example
 * status = #available
 * subject = Reference(PatientKPS)
 
-Instance: ImmunizationKPSInvalid
-InstanceOf: Immunization
-Usage: #example
-* meta.profile[0] = $KpsImmunizationProfile
-* status = #completed
-* vaccineCode = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
-* occurrenceDateTime = "2025-10-01"
-* patient = Reference(PatientKPS)
+
 
 Instance: LocationKPSInvalid
 InstanceOf: Location
@@ -340,14 +517,7 @@ Usage: #example
 * medicationReference = Reference(MedicationKPS)
 * subject = Reference(PatientKPS)
 
-Instance: ObservationKPSInvalid
-InstanceOf: Observation
-Usage: #example
-* meta.profile[0] = $KpsObservationProfile
-* status = #final
-* category[0] = $OBSCAT#laboratory "Laboratory"
-* code.text = "Hemoglobin result"
-* subject = Reference(PatientKPS)
+
 
 Instance: OrganizationKPSInvalid
 InstanceOf: Organization
@@ -359,7 +529,7 @@ Instance: PractitionerKPSInvalid
 InstanceOf: Practitioner
 Usage: #example
 * meta.profile[0] = $KpsPractitionerProfile
-* identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
+* identifier[0].system = $practitioner-identifier
 * identifier[0].value = "PRAC-INVALID-001"
 
 Instance: PractitionerRoleKPSInvalid
@@ -393,9 +563,4 @@ Usage: #example
 * status = #available
 * subject = Reference(PatientKPS)
 
-Instance: SubstanceKPSInvalid
-InstanceOf: Substance
-Usage: #example
-* meta.profile[0] = $KpsSubstanceProfile
-* code = $LOINC#718-7 "Hemoglobin [Mass/volume] in Blood"
-* status = #active
+
