@@ -15,7 +15,7 @@ InstanceOf: ke-kps-organization
 Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
-* identifier.system = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/organization-identifier"
+* identifier.system = "http://localhost:8085/fhir/NamingSystem/organization-identifier"
 * identifier.value = "ORG-VAL-001"
 * name = "Kenyatta National Hospital"
 * text.status = #generated
@@ -25,7 +25,7 @@ Instance: PractitionerKPS
 InstanceOf: ke-kps-practitioner
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-identifier"
+* identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
 * identifier[0].value = "PRAC-VAL-001"
 * name[0].family = "Njoroge"
 * name[0].given[0] = "Anne"
@@ -35,7 +35,7 @@ InstanceOf: ke-kps-practitioner-role
 Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
-* identifier.system = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-role-identifier"
+* identifier.system = "http://localhost:8085/fhir/NamingSystem/practitioner-role-identifier"
 * identifier.value = "PROLE-VAL-001"
 * practitioner = Reference(PractitionerKPS)
 * organization = Reference(OrganizationKPS)
@@ -371,7 +371,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test</div>"
 * meta.profile[0] = $KpsPractitionerProfile
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-identifier"
+* identifier[0].system = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
 * identifier[0].value = "PRAC-INVALID-001"
 
 Instance: PractitionerRoleKPSInvalid
