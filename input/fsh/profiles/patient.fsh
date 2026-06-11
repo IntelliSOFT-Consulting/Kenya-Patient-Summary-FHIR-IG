@@ -78,8 +78,6 @@ Title: "Example Patient"
 Description: "An example of a Patient resource conforming to the KPS Patient profile."
 Usage: #example
 
-* meta.profile = "http://example.org/fhir/StructureDefinition/ke-kps-patient"
-
 // --- Identifiers ---
 * identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
 * identifier[NationalIDNo].value = "28765432"
@@ -119,7 +117,7 @@ Usage: #example
 // --- Contact (Next of Kin) ---
 * contact.relationship.coding[0].system = $SCT
 * contact.relationship.coding[0].code = #184142008
-* contact.relationship.coding[0].display = "Next of kin"
+* contact.relationship.coding[0].display = "Patient's next of kin"
 
 * contact.name.family = "Abdullahi"
 * contact.name.given = "Hussein"
