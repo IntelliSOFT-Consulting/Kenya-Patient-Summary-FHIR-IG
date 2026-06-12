@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.kenyaPSIG
-canonical: http://localhost:8085/fhir
+canonical: https://nshr-uat.sha.go.ke/fhir
 name: Kenya-Patient-Summary-FHIR-IG
 title: Kenya Patient Summary FHIR Implementation Guide
 description: >
@@ -30,7 +30,7 @@ publisher:
 dependencies:
    hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-    version: 1.1.0  
+    version: 2.0.0  
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
