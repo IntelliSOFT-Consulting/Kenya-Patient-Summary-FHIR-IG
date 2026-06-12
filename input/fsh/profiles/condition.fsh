@@ -4,6 +4,10 @@ Id: ke-kps-condition
 Title: "Condition Profile - KPS"
 Description: "This profile defines constraints on the Condition resource for use within the Kenya Patient Summary. It captures information about a patient's current or past medical conditions, diagnoses, or problems, supporting clinical assessment, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^fixedCanonical = $KpsConditionProfileV
 
 * code 1..1 MS
 * code from ConditionCodeVS (required)
@@ -47,6 +51,4 @@ Description: "This profile defines constraints on the Condition resource for use
 
 * encounter 0..1 MS
   * ^short = "Associated encounter when diagnosis was made"
-
-
 

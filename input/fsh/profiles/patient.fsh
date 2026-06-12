@@ -5,6 +5,10 @@ Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
 Id: ke-kps-patient
 Title: "Patient Profile - KPS"
 Description: "This profile defines the constraints and extensions on the IPS Patient resource for use in the Kenya Patient Summary, supporting national HIE and continuity of care."
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^fixedCanonical = $KpsPatientProfileV
 * obeys PatientIdentification-1
 * identifier 1..* MS
 
@@ -77,6 +81,7 @@ InstanceOf: ke-kps-patient
 Title: "Example Patient"
 Description: "An example of a Patient resource conforming to the KPS Patient profile."
 Usage: #example
+* meta.profile[0] = $KpsPatientProfileV
 
 // --- Identifiers ---
 * identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"

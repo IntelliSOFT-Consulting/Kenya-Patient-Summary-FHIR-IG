@@ -39,6 +39,11 @@ Id: ke-kps-service-request
 Title: "Service Request Profile - KPS (Referral)"
 Description: "This profile defines constraints on the ServiceRequest resource for use within the Kenya Patient Summary to represent clinical referrals (KPS.G). It captures the source facility, destination facility, referral reason, clinical summary, and communication preferences required for safe patient transfer."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^fixedCanonical = $KpsServiceRequestProfileV
+
 // Extensions applied to this profile
 * extension contains
     ReferralDirectionExtension named referralDirection 0..1 MS and

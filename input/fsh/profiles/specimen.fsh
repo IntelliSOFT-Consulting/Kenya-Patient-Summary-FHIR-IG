@@ -4,6 +4,10 @@ Id: ke-kps-specimen
 Title: "Specimen Profile - KPS"
 Description: "This profile defines constraints on the Specimen resource for use within the Kenya Patient Summary. It captures information about biological samples collected from a patient, supporting diagnostic procedures, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^fixedCanonical = $KpsSpecimenProfileV
 
 
 * status 1..1 MS
