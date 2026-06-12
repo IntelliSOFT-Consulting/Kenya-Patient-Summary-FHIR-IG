@@ -3,6 +3,7 @@ Id: kps-investigations-vs
 Title: "KPS Investigations"
 Description: "ValueSet of investigation tests based on  used in KPS."
 * ^status = #active
+* ^experimental = false
 * include codes from system KPSInvestigationCS
 
 

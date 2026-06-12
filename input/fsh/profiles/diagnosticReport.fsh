@@ -10,6 +10,11 @@ Id: ke-kps-diagnostic-report
 Title: "Diagnostic Report Profile - KPS"
 Description: "This profile defines constraints on the DiagnosticReport resource for use within the Kenya Patient Summary. It captures the results of diagnostic investigations (laboratory, radiology, and other diagnostic services), supporting continuity of care and data exchange within the national Health Information Exchange (HIE)."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsDiagnosticReportProfileV
+
 // ---------------------------------------------------------------
 // KPS.C.DE.1 – Diagnostics Category (required)
 // Maps to: DiagnosticReport.category

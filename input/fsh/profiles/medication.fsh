@@ -1,9 +1,13 @@
 Profile: KpsMedication
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips
+Parent: Medication
 Id: ke-kps-medication
 Title: "Medication Profile - KPS"
 Description: "This profile defines constraints on the Medication resource for use within the Kenya Patient Summary. It captures information about medicinal products prescribed, dispensed, or administered to a patient, supporting medication reconciliation, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsMedicationProfileV
 
 * status 1..1 MS
 * code 1..1 MS
@@ -40,6 +44,11 @@ Parent: Substance
 Id: ke-kps-substance
 Title: "Substance - KPS"
 Description: "This profile defines the constraints on the Substance resource for use in the Kenya Patient Summary (KPS), representing active pharmaceutical substances."
+
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsSubstanceProfileV
 
 * code 1..1 MS
 * code from KPSGenericProductsVS (required) // WHO ATC active substances

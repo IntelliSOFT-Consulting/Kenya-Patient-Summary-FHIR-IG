@@ -1,9 +1,13 @@
 Profile: KpsAllergyIntolerance
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
+Parent: AllergyIntolerance
 Id: ke-kps-allergy-intolerance
 Title: "AllergyIntolerance Profile - KPS"
 Description: "This profile defines constraints on the AllergyIntolerance resource for use within the Kenya Patient Summary. It captures information about a patient's known allergies and intolerances to substances such as medications, foods, or environmental agents, supporting safer clinical decision-making, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsAllergyProfileV
 
 * code 0..1 MS
 * code from AllergyIntoleranceCodeVS (required)

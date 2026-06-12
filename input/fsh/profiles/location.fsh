@@ -5,6 +5,11 @@ Title: "Location Profile - KPS"
 Description: "Defines constraints on the Location resource for use within the Kenya Patient Summary (KPS).
 Captures physical sites where patient care is delivered."
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsLocationProfileV
+
 * name 1..1 MS
   * ^short = "Name of the location (e.g. facility or clinic name)"
 
@@ -25,6 +30,7 @@ InstanceOf: ke-kps-location
 Title: "Nairobi Clinic"
 Description: "Example of a clinic in Nairobi used as a location in encounters"
 Usage: #example
+* meta.profile[0] = $KpsLocationProfileV
 
 * name = "Nairobi West Clinic"
 * type[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"

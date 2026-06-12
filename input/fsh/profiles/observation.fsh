@@ -9,6 +9,11 @@ It captures structured social history, pregnancy, lifestyle, and travel-related 
 clinical decision-making, public health surveillance, and care continuity.
 """
 
+* id 1..1 MS
+* meta 1..1 MS
+* meta.profile 1..*
+* meta.profile ^patternCanonical = $KpsObservationProfileV
+
 * status 1..1 MS
   * ^short = "The status of the observation (e.g., final, amended)"
 
@@ -35,7 +40,5 @@ clinical decision-making, public health surveillance, and care continuity.
   * ^short = "Additional narrative or contextual information"
 * performer 0..1 MS
 * performer only Reference (KpsPractitioner)
-
-
 
 
