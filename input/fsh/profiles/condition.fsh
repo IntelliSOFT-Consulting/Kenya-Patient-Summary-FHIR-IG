@@ -1,5 +1,5 @@
 Profile: KpsCondition
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
+Parent: Condition
 Id: ke-kps-condition
 Title: "Condition Profile - KPS"
 Description: "This profile defines constraints on the Condition resource for use within the Kenya Patient Summary. It captures information about a patient's current or past medical conditions, diagnoses, or problems, supporting clinical assessment, continuity of care, and data exchange within the national Health Information Exchange (HIE)."
@@ -7,12 +7,12 @@ Description: "This profile defines constraints on the Condition resource for use
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsConditionProfileV
+* meta.profile ^patternCanonical = $KpsConditionProfileV
 
 * code 1..1 MS
 * code from ConditionCodeVS (required)
   * ^short = "Diagnosis or problem affecting the patient"
-  * ^definition = "The disease, disorder, or problem coded using ICD-10 or ICD-11, the standard classification systems adopted by Kenya's health system."
+  * ^definition = "The disease, disorder, or problem coded using ICD-10, the standard diagnostic classification system currently bound for the Kenya Patient Summary."
 
 * clinicalStatus 1..1 MS
 * clinicalStatus from ConditionClinicalStatusVS (required)
@@ -51,4 +51,3 @@ Description: "This profile defines constraints on the Condition resource for use
 
 * encounter 0..1 MS
   * ^short = "Associated encounter when diagnosis was made"
-

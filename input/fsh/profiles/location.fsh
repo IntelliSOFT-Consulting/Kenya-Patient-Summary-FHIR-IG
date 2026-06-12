@@ -8,7 +8,7 @@ Captures physical sites where patient care is delivered."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsLocationProfileV
+* meta.profile ^patternCanonical = $KpsLocationProfileV
 
 * name 1..1 MS
   * ^short = "Name of the location (e.g. facility or clinic name)"

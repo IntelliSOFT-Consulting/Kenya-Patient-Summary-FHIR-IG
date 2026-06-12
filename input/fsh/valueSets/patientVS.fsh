@@ -9,13 +9,13 @@ Description: "A preferred set of UCUM units for representing medication strength
 * ^experimental = false
 * $UCUM#mg "milligram"
 * $UCUM#g "gram"
-* $UCUM#mcg "microgram"
+* $UCUM#ug "microgram"
 * $UCUM#mL "millilitre"
 * $UCUM#L "litre"
 * $UCUM#mmol "millimole"
 * $UCUM#mol "mole"
 * $UCUM#U "unit"
-* $UCUM#IU "international unit"
+* $UCUM#[iU] "international unit"
 
 
 ValueSet: PatientTitleVS

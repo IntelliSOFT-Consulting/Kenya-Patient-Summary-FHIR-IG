@@ -42,7 +42,7 @@ Description: "This profile defines constraints on the ServiceRequest resource fo
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsServiceRequestProfileV
+* meta.profile ^patternCanonical = $KpsServiceRequestProfileV
 
 // Extensions applied to this profile
 * extension contains

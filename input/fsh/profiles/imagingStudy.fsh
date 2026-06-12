@@ -13,7 +13,7 @@ Description: "This profile defines constraints on the ImagingStudy resource for 
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsImagingStudyProfileV
+* meta.profile ^patternCanonical = $KpsImagingStudyProfileV
 
 // ---------------------------------------------------------------
 // KPS.C.DE.18 – Imaging Study Type (conditional)

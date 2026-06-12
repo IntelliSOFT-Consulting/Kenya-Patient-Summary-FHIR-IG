@@ -10,7 +10,7 @@ Captures details about interactions between a patient and healthcare provider.
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsEncounterProfileV
+* meta.profile ^patternCanonical = $KpsEncounterProfileV
 
 * status 1..1 MS
   * ^short = "The status of the encounter (e.g., finished, in-progress)"

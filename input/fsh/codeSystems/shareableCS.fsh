@@ -2504,36 +2504,6 @@ Description: "Codes for administrative gender. Codes align with FHIR administrat
 * #other "Other"
 * #unknown "Unknown"
 
-CodeSystem: ConditionCodeCS
-Id: condition-codes-cs
-Title: "Condition Code System"
-Description: "Codes for Conditions Codes."
-* ^status = #active
-* ^content = #complete
-* ^experimental = false
-* ^caseSensitive = true 
-
-* #109006 "Anxiety disorder of childhood OR adolescence"
-* #122003 "Choroidal hemorrhage"
-* #127009 "Spontaneous abortion with laceration of cervix"
-* #129007 "Homoiothermia"
-* #134006 "Decreased hair growth"
-* #140004 "Chronic pharyngitis"
-* #144008 "Normal peripheral vision"
-* #150003 "Abnormal bladder continence"
-* #151004 "Gonococcal meningitis"
-* #162004 "Severe manic bipolar I disorder without psychotic features"
-* #165002 "Accident-prone"
-* #168000 "Typhlolithiasis"
-* #171008 "Injury of ascending right colon without open wound into abdominal cavity"
-* #175004 "Supraorbital neuralgia"
-* #177007 "Poisoning by sawfly larvae"
-* #179005 "Apraxia of dressing"
-* #181007 "Hemorrhagic bronchopneumonia"
-* #183005 "Autoimmune pancytopenia"
-* #184004 "Withdrawal arrhythmia"
-
-
 CodeSystem: GenderCS
 Id: gender-cs
 Title: "Gender Code System"
@@ -2757,6 +2727,8 @@ Id: case-priority
 Title: "Case Priority"
 Description: "Defines priority levels for cases."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2773,6 +2745,8 @@ Id: ambulance-case-status
 Title: "Ambulance Case Status"
 Description: "Defines the lifecycle statuses of an ambulance case."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2795,6 +2769,8 @@ Id: ambulance-case-rejection-reason
 Title: "Ambulance Case Rejection Reason"
 Description: "Defines reasons for rejecting an ambulance case."
 // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2815,6 +2791,8 @@ Id: pulse-state-classification
 Title: "Pulse State Classification"
 Description: "Clinical classification of pulse rate states."
 // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2833,6 +2811,8 @@ Id: breathing-state-classification
 Title: "Breathing State Classification"
 Description: "Clinical classification of breathing rate states."
 // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2849,6 +2829,8 @@ Id: condition-statuses
 Title: "Condition Statuses"
 Description: "Clinical severity statuses for a patient condition."
 // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2862,6 +2844,8 @@ Id: allergy-reporter
 Title: "Allergy Reporter"
 Description: "Identifies the source reporting an allergy."
 // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2875,6 +2859,8 @@ Id: coding-system-source
 Title: "Coding System Source"
 Description: "Identifies the terminology source from which a clinical code originates."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2888,6 +2874,8 @@ CodeSystem: MedicationAdministrationRouteCS
 Id: medication-administration-route
 Title: "Medication Administration Route"
 Description: "Specifies the route by which a medication is administered." 
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2902,6 +2890,8 @@ Id: dose-units
 Title: "Dose Units"
 Description: "Units used to specify medication doses."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2915,6 +2905,8 @@ Id: questionnaire-category
 Title: "Questionnaire Category"
 Description: "Categories used to classify questionnaires or assessments."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2930,6 +2922,8 @@ Id: entry-types
 Title: "Entry Types"
 Description: "Defines the type of clinical entry recorded in the health record."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2947,6 +2941,8 @@ Id: assessment-types
 Title: "Assessment Types"
 Description: "Specifies types of clinical assessments for patient evaluation."
 // // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -7181,6 +7177,8 @@ CodeSystem: KPSServiceTypeCS
 Id: kps-service-type-cs
 Title: "KPS Service Type"
 Description: "Locally defined health service types used for scheduling, classification, or registration."
+* ^experimental = false
+* ^caseSensitive = true
 * #lab "Laboratory"
 * #radiology "Radiology"
 * #pharmacy "Pharmacy"
@@ -7194,6 +7192,8 @@ CodeSystem: KPSServiceAccessPointCS
 Id: kps-service-access-point-cs
 Title: "Service Access Point"
 Description: "Locally defined codes for health service access points"
+* ^experimental = false
+* ^caseSensitive = true
 * #IP "IP"
 * #OP "OP"
 * #OP_and_IP "OP and IP"
@@ -7203,6 +7203,8 @@ CodeSystem: KPSFundChoicesCS
 Id: kps-fund-choices-cs
 Title: "Fund Choices"
 Description: "Locally defined codes representing patient funding mechanisms"
+* ^experimental = false
+* ^caseSensitive = true
 * #SHIF_Only "SHIF Only"
 * #PHC_Only "PCH Only"
 * #ECCIF_Only "ECCIF Only"
@@ -7215,6 +7217,8 @@ CodeSystem: KPSSchemesCS
 Id: kps-schemes-cs
 Title: "Schemes"
 Description: "Locally defined codes for scheme classifications"
+* ^experimental = false
+* ^caseSensitive = true
 * #PMF "Public Servant Medical Fund"
 * #UHC "Universal Health Coverage"
 * #ALL "All Schemes"
@@ -7224,6 +7228,8 @@ CodeSystem: PaymentMechanismCS
 Id: payment-mechanism-cs
 Title: "Payment Mechanism"
 Description: "Locally defined payment mechanisms for healthcare services"
+* ^experimental = false
+* ^caseSensitive = true
 * #FEE_FOR_SERVICE "Fee for Service"
 * #FIXED_FEE_FOR_SERVICE "Fixed fee for service"
 * #CAPITATION "Capitation"
@@ -7234,6 +7240,8 @@ CodeSystem: UsageFrequencyCS
 Id: usage-frequency-cs
 Title: "Usage Frequency"
 Description: "Locally defined frequencies for service or product usage"
+* ^experimental = false
+* ^caseSensitive = true
 * #WEEKLY "Weekly"
 * #MONTHLY "Monthly"
 * #QUARTERLY "Quarterly"
@@ -7244,6 +7252,8 @@ CodeSystem: AnnualQuantityTypeCS
 Id: annual-quantity-type-cs
 Title: "Annual Quantity Type"
 Description: "Units of measurement for annual service quantities"
+* ^experimental = false
+* ^caseSensitive = true
 * #DAYS "Days"
 * #INTERVENTION "Intervention"
 * #KES "KES"
@@ -7253,6 +7263,8 @@ CodeSystem: AuthTypeCS
 Id: auth-type-cs
 Title: "Authorization Type"
 Description: "Types of authentication or authorization used for healthcare access"
+* ^experimental = false
+* ^caseSensitive = true
 * #FINGERPRINT "Fingerprint"
 * #OTP "OTP"
 * #GUARDIAN "GUARDIAN"
@@ -7264,6 +7276,8 @@ CodeSystem: AuthorizationFailureReasonCS
 Id: authorization-failure-reason-cs
 Title: "Authorization Failure Reason"
 Description: "Locally defined reasons for failed authorization attempts"
+* ^experimental = false
+* ^caseSensitive = true
 * #EMERGENCY "Emergency"
 * #NO_SHA_DEVICE "No SHA device"
 * #SHA_DEVICE_NOT_WORKING "SHA device not working"
@@ -7280,6 +7294,8 @@ CodeSystem: AuthorizationStatusCS
 Id: authorization-status-cs
 Title: "Authorization Status"
 Description: "Locally defined status values for authorization workflows"
+* ^experimental = false
+* ^caseSensitive = true
 * #AUTHORIZED "Authorized"
 * #EXPIRED "Expired"
 * #PENDING "Pending"
@@ -7295,6 +7311,8 @@ CodeSystem: ClaimsDepartmentsCS
 Id: claims-departments-cs
 Title: "Claims Departments"
 Description: "Locally defined healthcare service departments for claims"
+* ^experimental = false
+* ^caseSensitive = true
 * #OUTPATIENT "Outpatient"
 * #INPATIENT "Inpatient"
 * #DENTAL "Dental"
@@ -7321,6 +7339,8 @@ CodeSystem: CopayTypeCS
 Id: copay-type-cs
 Title: "Copay Types"
 Description: "Locally defined types of copay sources"
+* ^experimental = false
+* ^caseSensitive = true
 * #NHIF "Nhif"
 * #SELF_PAY "Self pay"
 * #NHIF_PACKAGES "Nhif packages"
@@ -7329,6 +7349,8 @@ CodeSystem: RemittanceChoiceCS
 Id: remittance-choice-cs
 Title: "Remittance Choice"
 Description: "Locally defined remittance payment channels"
+* ^experimental = false
+* ^caseSensitive = true
 * #CHEQUE "Cheque"
 * #RTGS "Real time gross settlement"
 * #EFT "Electronic fund transfers"
@@ -7338,6 +7360,8 @@ CodeSystem: RemittanceStatusCS
 Id: remittance-status-cs
 Title: "Remittance Status"
 Description: "Locally defined remittance processing statuses"
+* ^experimental = false
+* ^caseSensitive = true
 * #INTERIM "Interim"
 * #FINAL "Final"
 
@@ -7346,6 +7370,8 @@ CodeSystem: AdjustmentTypeCS
 Id: adjustment-type-cs
 Title: "Adjustment Type"
 Description: "Locally defined financial adjustment types"
+* ^experimental = false
+* ^caseSensitive = true
 * #SHORTFALL "Shortfall"
 * #DISCOUNT "Discount"
 
@@ -7354,6 +7380,8 @@ CodeSystem: DiagnosisKindCS
 Id: diagnosis-kind-cs
 Title: "Diagnosis Kind"
 Description: "Levels or types of ICD diagnosis classifications"
+* ^experimental = false
+* ^caseSensitive = true
 * #CHAPTER "Chapter"
 * #BLOCK "Block"
 * #CATEGORY "Category"
@@ -7363,6 +7391,8 @@ CodeSystem: FlagTypeCS
 Id: flag-type-cs
 Title: "Flag Types"
 Description: "Local flag types for marking entities with special statuses"
+* ^experimental = false
+* ^caseSensitive = true
 * #SHA "Sha"
 * #PAYER "Payer"
 * #PROVIDER "Provider"
@@ -7374,6 +7404,8 @@ CodeSystem: NonEdiClaimStatusCS
 Id: non-edi-claim-status-cs
 Title: "Non-EDI Claim Status"
 Description: "Status codes for non-EDI claim workflows"
+* ^experimental = false
+* ^caseSensitive = true
 * #PAID "Paid"
 * #REJECTED "Rejected"
 * #SUBMITTED_PAYER "Submitted payer"
@@ -7383,6 +7415,8 @@ CodeSystem: BulkRemittanceStatusCS
 Id: bulk-remittance-status-cs
 Title: "Bulk Remittance Status"
 Description: "Statuses used to track bulk remittance processing"
+* ^experimental = false
+* ^caseSensitive = true
 * #PENDING "Pending"
 * #FAILED "Failed"
 * #PROCESSED "Processed"
@@ -7448,6 +7482,7 @@ Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical consultation data elements under the Kenya Patient Summary (KPS.B)."
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7559,6 +7594,7 @@ Id: kpsb-clinical-status-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical status"
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7574,6 +7610,9 @@ Description: "CodeSystem representing clinical status"
 CodeSystem: KPSConditionStatusCS
 Title: "KPS Clinical Condition Status CodeSystem"
 Id: kpsb-clinical-status 
+Description: "Defines the clinical status values used to represent whether a condition is currently active, inactive, or resolved within the Kenya Patient Summary."
+* ^experimental = false
+* ^caseSensitive = true
 * ^status = #active
 * #active "Active"
 * #inactive "Inactive"
@@ -7582,6 +7621,9 @@ Id: kpsb-clinical-status
 CodeSystem: KPSConditionVerificationCS
 Title: "KPS Condition Verification CodeSystem"
 Id: kpsb-verification-status 
+Description: "Defines the verification status values used to indicate the level of diagnostic certainty for a condition within the Kenya Patient Summary."
+* ^experimental = false
+* ^caseSensitive = true
 * ^status = #active
 * #confirmed "Confirmed"
 * #unconfirmed "Unconfirmed"
@@ -7593,6 +7635,7 @@ Id: kpsc-diagnostics-codes
 Title: "KPS.C Diagnostics Data Elements"
 Description: "CodeSystem representing diagnostic data elements under the Kenya Patient Summary (KPS.C)."
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsc-diagnostics-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7640,6 +7683,7 @@ Id: kpsd-treatment-codes
 Title: "KPS.D Treatment Data Elements"
 Description: "CodeSystem representing treatment and medication-related data elements under the Kenya Patient Summary (KPS.D)."
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7689,6 +7733,7 @@ Id: kpse-immunization-codes
 Title: "KPS.E Immunization Data Elements"
 Description: "CodeSystem representing immunization-related data elements under the Kenya Patient Summary (KPS.E)."
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7728,6 +7773,7 @@ Id: kpsg-referral-codes
 Title: "KPS.G Referral Data Elements"
 Description: "CodeSystem representing referral-related data elements under the Kenya Patient Summary (KPS.G)."
 ////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7814,6 +7860,8 @@ CodeSystem: InvestigationsCS
 Id: investigations-cs
 Title: "Investigation Codes"
 Description: "Defines Investigation Codes for Procedures." 
+* ^experimental = false
+* ^caseSensitive = true
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -8825,6 +8873,7 @@ CodeSystem: VitalSignsLOINCCS
 Id: vital-signs-loinc-cs
 Title: "Vital Signs LOINC Codes"
 Description: "LOINC codes commonly used for vital signs observations."
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -8848,6 +8897,7 @@ CodeSystem: AcquisitionModalityCS
 Id: kps-acquisition-modality-cs
 Title: "AcquisitionModality Codesystem"
 Description: "Codesystem for AcquisitionModality"
+* ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

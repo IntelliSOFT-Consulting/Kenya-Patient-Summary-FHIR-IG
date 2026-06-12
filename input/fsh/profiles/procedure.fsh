@@ -1,5 +1,5 @@
 Profile: KpsProcedure
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
+Parent: Procedure
 Id: ke-kps-procedure
 Title: "Procedure Profile - KPS"
 Description: "This profile defines constraints on the Procedure resource for use within the Kenya Patient Summary. It identifies healthcare facilities or organizations involved in the provision or management of patient care, supporting national HIE and continuity of care."
@@ -7,7 +7,7 @@ Description: "This profile defines constraints on the Procedure resource for use
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsProcedureProfileV
+* meta.profile ^patternCanonical = $KpsProcedureProfileV
 
 * status 1..1 MS
 * code 1..1 MS

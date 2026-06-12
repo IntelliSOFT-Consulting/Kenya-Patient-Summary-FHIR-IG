@@ -12,7 +12,7 @@ clinical decision-making, public health surveillance, and care continuity.
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsObservationProfileV
+* meta.profile ^patternCanonical = $KpsObservationProfileV
 
 * status 1..1 MS
   * ^short = "The status of the observation (e.g., final, amended)"

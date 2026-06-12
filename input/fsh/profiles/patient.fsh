@@ -1,14 +1,14 @@
 Alias: $SCT = http://snomed.info/sct
 
 Profile: KpsPatient
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+Parent: Patient
 Id: ke-kps-patient
 Title: "Patient Profile - KPS"
 Description: "This profile defines the constraints and extensions on the IPS Patient resource for use in the Kenya Patient Summary, supporting national HIE and continuity of care."
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsPatientProfileV
+* meta.profile ^patternCanonical = $KpsPatientProfileV
 * obeys PatientIdentification-1
 * identifier 1..* MS
 

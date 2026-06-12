@@ -7,7 +7,7 @@ Description: "This profile defines constraints on the AllergyIntolerance resourc
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsAllergyProfileV
+* meta.profile ^patternCanonical = $KpsAllergyProfileV
 
 * code 0..1 MS
 * code from AllergyIntoleranceCodeVS (required)

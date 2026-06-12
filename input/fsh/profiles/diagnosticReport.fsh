@@ -13,7 +13,7 @@ Description: "This profile defines constraints on the DiagnosticReport resource 
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..*
-* meta.profile ^fixedCanonical = $KpsDiagnosticReportProfileV
+* meta.profile ^patternCanonical = $KpsDiagnosticReportProfileV
 
 // ---------------------------------------------------------------
 // KPS.C.DE.1 – Diagnostics Category (required)
