@@ -10,11 +10,11 @@ Description: "A preferred set of UCUM units for representing medication strength
 * $UCUM#mg "milligram"
 * $UCUM#g "gram"
 * $UCUM#ug "microgram"
-* $UCUM#mL "millilitre"
-* $UCUM#L "litre"
+* $UCUM#mL "milliliter"
+* $UCUM#L "liter"
 * $UCUM#mmol "millimole"
 * $UCUM#mol "mole"
-* $UCUM#U "unit"
+* $UCUM#U "Unit"
 * $UCUM#[iU] "international unit"
 
 

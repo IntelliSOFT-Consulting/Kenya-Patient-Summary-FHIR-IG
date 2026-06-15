@@ -2,6 +2,7 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $KPSG = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes
+Alias: $KPSDataElements = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kps-data-elements
 Alias: $DICOM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $V2_0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $ATC = http://www.whocc.no/atc

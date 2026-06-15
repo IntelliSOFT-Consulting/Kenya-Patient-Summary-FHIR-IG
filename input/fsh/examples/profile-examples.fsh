@@ -71,6 +71,7 @@ Usage: #example
 
 Instance: LocationKPS
 InstanceOf: ke-kps-location
+Description: "Example clinic location used in encounter and referral examples."
 Usage: #example
 * meta.profile[0] = $KpsLocationProfileV
 * name = "Nairobi Referral Clinic"
@@ -78,6 +79,7 @@ Usage: #example
 
 Instance: OrganizationKPS
 InstanceOf: ke-kps-organization
+Description: "Example healthcare organization used as the performing facility in Kenya Patient Summary examples."
 Usage: #example
 * meta.profile[0] = $KpsOrganizationProfileV
 * identifier.system =  $organization-identifier
@@ -86,6 +88,7 @@ Usage: #example
 
 Instance: PractitionerKPS
 InstanceOf: ke-kps-practitioner
+Description: "Example practitioner used across Kenya Patient Summary examples."
 * meta.profile[0] = $KpsPractitionerProfileV
 * identifier[0].system = $practitioner-identifier
 * identifier[0].value = "PRAC-VAL-001"
@@ -94,6 +97,7 @@ InstanceOf: ke-kps-practitioner
 
 Instance: PractitionerRoleKPS
 InstanceOf: ke-kps-practitioner-role
+Description: "Example practitioner role linking the sample practitioner to the sample organization."
 Usage: #example
 * meta.profile[0] = $KpsPractitionerRoleProfileV
 * identifier.system = $practitioner-role-identifier
@@ -104,6 +108,7 @@ Usage: #example
 
 Instance: PatientKPS
 InstanceOf: ke-kps-patient
+Description: "Example patient used across Kenya Patient Summary examples."
 Usage: #example
 * meta.profile[0] = $KpsPatientProfileV
 * identifier[NationalIDNo].system = $nationalID-no
@@ -130,12 +135,14 @@ Usage: #example
 
 Instance: SubstanceKPS
 InstanceOf: ke-kps-substance
+Description: "Example substance referenced by the medication example."
 Usage: #example
 * meta.profile[0] = $KpsSubstanceProfileV
 * code = $kps-medication-atc-cs#A01AB03
 
 Instance: MedicationKPS
 InstanceOf: ke-kps-medication
+Description: "Example medication used in prescribing and administration examples."
 Usage: #example
 * meta.profile[0] = $KpsMedicationProfileV
 * status = #active
@@ -145,6 +152,7 @@ Usage: #example
 
 Instance: EncounterKPS
 InstanceOf: ke-kps-encounter
+Description: "Example outpatient encounter for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsEncounterProfileV
 * status = #finished
@@ -158,6 +166,7 @@ Usage: #example
 
 Instance: ObservationKPS
 InstanceOf: ke-kps-observation
+Description: "Example laboratory observation referenced by the diagnostic report example."
 Usage: #example
 * meta.profile[0] = $KpsObservationProfileV
 * status = #final
@@ -344,6 +353,7 @@ Usage: #example
 
 Instance: SpecimenKPS
 InstanceOf: ke-kps-specimen
+Description: "Example blood specimen collected from the sample patient."
 Usage: #example 
 * meta.profile[0] = $KpsSpecimenProfileV
 * status = #available
@@ -353,6 +363,7 @@ Usage: #example
 
 Instance: DiagnosticReportKPS
 InstanceOf: ke-kps-diagnostic-report
+Description: "Example laboratory diagnostic report referencing the sample specimen and observation."
 Usage: #example
 * meta.profile[0] = $KpsDiagnosticReportProfileV
 * status = #final
@@ -367,6 +378,7 @@ Usage: #example
 
 Instance: ImagingStudyKPS
 InstanceOf: ke-kps-imaging-study
+Description: "Example imaging study for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsImagingStudyProfileV
 * status = #available
@@ -378,6 +390,7 @@ Usage: #example
 
 Instance: ImmunizationKPS
 InstanceOf: ke-kps-immunization
+Description: "Example immunization event for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsImmunizationProfileV
 * status = #completed
@@ -390,6 +403,7 @@ Usage: #example
 
 Instance: MedicationRequestKPS
 InstanceOf: ke-kps-medication-request
+Description: "Example medication request for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsMedicationRequestProfileV
 * status = #active
@@ -401,6 +415,7 @@ Usage: #example
 
 Instance: MedicationStatementKPS
 InstanceOf: ke-kps-medication-statement
+Description: "Example medication statement for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsMedicationStatementProfileV
 * status = #active
@@ -410,6 +425,7 @@ Usage: #example
 
 Instance: ProcedureKPS
 InstanceOf: ke-kps-procedure
+Description: "Example procedure performed for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsProcedureProfileV
 * status = #completed
@@ -420,6 +436,7 @@ Usage: #example
 
 Instance: ServiceRequestKPS
 InstanceOf: ke-kps-service-request
+Description: "Example referral service request for the sample patient."
 Usage: #example
 * meta.profile[0] = $KpsServiceRequestProfileV
 * status = #active

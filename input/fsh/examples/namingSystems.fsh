@@ -1,5 +1,6 @@
 Instance: PractitionerIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for practitioner identifiers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "PractitionerIdentifierNamingSystem"
 * status = #active
@@ -9,11 +10,12 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for practitioner identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://localhost:8085/fhir/NamingSystem/practitioner-identifier"
+* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-identifier"
 * uniqueId[0].preferred = true
 
 Instance: PractitionerRoleIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for practitioner role identifiers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "PractitionerRoleIdentifierNamingSystem"
 * status = #active
@@ -23,11 +25,12 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for practitioner role identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://localhost:8085/fhir/NamingSystem/practitioner-role-identifier"
+* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-role-identifier"
 * uniqueId[0].preferred = true
 
 Instance: OrganizationIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for organization identifiers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "OrganizationIdentifierNamingSystem"
 * status = #active
@@ -37,11 +40,12 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for organization identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://localhost:8085/fhir/NamingSystem/organization-identifier"
+* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/organization-identifier"
 * uniqueId[0].preferred = true
 
 Instance: NationalIdIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for Kenyan national identification numbers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "NationalIdIdentifierNamingSystem"
 * status = #active
@@ -56,6 +60,7 @@ Usage: #definition
 
 Instance: UpiIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for the Kenyan unique patient identifier used in the Kenya Patient Summary."
 Usage: #definition
 * name = "UpiIdentifierNamingSystem"
 * status = #active
@@ -70,6 +75,7 @@ Usage: #definition
 
 Instance: PassportIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for passport identifiers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "PassportIdentifierNamingSystem"
 * status = #active
@@ -84,6 +90,7 @@ Usage: #definition
 
 Instance: BirthCertificateIdentifierNamingSystem
 InstanceOf: NamingSystem
+Description: "NamingSystem definition for birth certificate identifiers used in the Kenya Patient Summary."
 Usage: #definition
 * name = "BirthCertificateIdentifierNamingSystem"
 * status = #active

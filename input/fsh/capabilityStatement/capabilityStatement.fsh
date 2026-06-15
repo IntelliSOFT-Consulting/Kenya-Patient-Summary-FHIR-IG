@@ -1,5 +1,6 @@
 Instance: KPSFHIRIGCapabilityStatement
 InstanceOf: CapabilityStatement
+Description: "Capability statement describing supported Kenya Patient Summary FHIR interactions, profiles, and system behaviors."
 Usage: #definition
 * id = "KPSFHIRIGCapabilityStatement"
 * name = "KenyaPatientSummaryFHIRIGCapabilityStatement"
