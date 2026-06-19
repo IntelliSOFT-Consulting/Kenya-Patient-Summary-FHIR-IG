@@ -7765,7 +7765,7 @@ Description: "CodeSystem representing immunization-related data elements under t
 * #KPS.E.DE.10 "Health Professional Identification" "Name or ID of professional administering the vaccine"
 
 // Follow-up
-* #KPS.D.DE.12 "Next Vaccination Date" "Planned date for the next dose or repeat vaccination"
+* #KPS.E.DE.12 "Next Vaccination Date" "Planned date for the next dose or repeat vaccination"
 
 
 CodeSystem: KPSGReferralCodesCS
