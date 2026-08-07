@@ -3,10 +3,10 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.kenyaPSIG
-canonical: https://nshr-uat.sha.go.ke/fhir
-name: Kenya-Patient-Summary-FHIR-IG
-title: Kenya Patient Summary FHIR Implementation Guide
+id: ke.fhir.patient-summary
+canonical: https://fhir.dha.go.ke/ig/patient-summary
+name: KenyaPatientSummary
+title: Kenya Patient Summary Implementation Guide
 description: >
   This Implementation Guide defines the structure, constraints, and terminologies for a Kenya
   Patient Summary (KPS) based on HL7 FHIR R4. It enables secure, portable, and standardized
@@ -19,7 +19,7 @@ copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
-  name: Digital Health Agency of Kenya
+  name: Digital Health Agency (DHA), Kenya
   url: https://www.dha.go.ke
   email: interoperability@dha.go.ke
 
