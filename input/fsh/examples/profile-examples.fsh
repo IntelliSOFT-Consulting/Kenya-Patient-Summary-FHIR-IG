@@ -447,3 +447,36 @@ Usage: #example
 * occurrenceDateTime = "2026-05-20T10:30:00+03:00"
 * reasonCode[0] = $KPSGReferral#emergency-referral "Emergency Referral"
 * note[0].text = "Refer urgently for specialist review"
+
+Instance: CompositionKPS
+InstanceOf: ke-kps-composition
+Title: "Example Composition"
+Description: "Example Kenya Patient Summary document bundling the sample patient's problems, allergies, medications, immunizations, results, and procedures."
+Usage: #example
+* meta.profile[0] = $KpsCompositionProfileV
+
+* status = #final
+* subject = Reference(PatientKPS)
+* encounter = Reference(EncounterKPS)
+* date = "2026-05-20T09:15:00+03:00"
+* author[0] = Reference(PractitionerKPS)
+* title = "Patient Summary for Amina Mohamed"
+* custodian = Reference(OrganizationKPS)
+
+* section[problems].title = "Problems"
+* section[problems].entry[0] = Reference(ExampleKpsCondition)
+
+* section[allergies].title = "Allergies and Intolerances"
+* section[allergies].entry[0] = Reference(ExampleAllergyIntoleranceKPS)
+
+* section[medications].title = "Medications"
+* section[medications].entry[0] = Reference(MedicationStatementKPS)
+
+* section[immunizations].title = "Immunizations"
+* section[immunizations].entry[0] = Reference(ImmunizationKPS)
+
+* section[results].title = "Results"
+* section[results].entry[0] = Reference(ObservationKPS)
+
+* section[procedures].title = "Procedures"
+* section[procedures].entry[0] = Reference(ProcedureKPS)
