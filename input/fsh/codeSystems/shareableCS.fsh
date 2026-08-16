@@ -2993,7 +2993,7 @@ CodeSystem: RouteOfAdministrationCS
 Id: route-of-administration-cs
 Title: "Route of Administration CodeSystem"
 Description: "Route of administration codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/route-of-administration-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/route-of-administration-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -3046,7 +3046,7 @@ CodeSystem: UnitOfMeasureCS
 Id: unit-of-measure-cs
 Title: "Unit of Measure CodeSystem"
 Description: "Unit of measure codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -3550,7 +3550,7 @@ CodeSystem: FormulationCS
 Id: formulation-cs
 Title: "Formulation CodeSystem"
 Description: "Pharmaceutical formulation/dosage form codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/formulation-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/formulation-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -4153,7 +4153,7 @@ CodeSystem: ActiveComponentsCS
 Id: active-components-cs
 Title: "Active Components CodeSystem"
 Description: "Active pharmaceutical ingredient codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/active-components-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/active-components-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6796,7 +6796,7 @@ CodeSystem: MedicationRequestStatusReasonCS
 Id: medication-request-status-reason-cs
 Title: "MedicationRequest Status Reason CodeSystem"
 Description: "Reasons for a MedicationRequest status change (e.g. cancelled, on-hold). Source: MOH-KENYA OCL MEDICATIONREQUEST-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-request-status-reason-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/medication-request-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6823,7 +6823,7 @@ CodeSystem: MedicationDispenseStatusReasonCS
 Id: medication-dispense-status-reason-cs
 Title: "MedicationDispense Status Reason CodeSystem"
 Description: "Reasons for a MedicationDispense status (e.g. out-of-stock, patient refused). Source: MOH-KENYA OCL MEDICATIONDISPENSE-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-dispense-status-reason-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/medication-dispense-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6844,7 +6844,7 @@ CodeSystem: MedicationAdminStatusReasonCS
 Id: medication-admin-status-reason-cs
 Title: "MedicationAdministration Status Reason CodeSystem"
 Description: "Reasons for a MedicationAdministration status (e.g. patient refused, not available). Source: MOH-KENYA OCL MEDICATION-ADMIN-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-admin-status-reason-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/medication-admin-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6865,7 +6865,7 @@ CodeSystem: ReasonMedicationStatusCS
 Id: reason-medication-status-cs
 Title: "Reason Medication Status CodeSystem"
 Description: "Reasons for a MedicationStatement status (e.g. stopped, completed). Source: MOH-KENYA OCL REASON-MEDICATION-STATUS-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/reason-medication-status-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/reason-medication-status-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6891,7 +6891,7 @@ CodeSystem: ConditionStageCS
 Id: condition-stage-cs
 Title: "Condition Stage CodeSystem"
 Description: "Staging codes for oncology and other staged conditions. Source: MOH-KENYA OCL CONDITION-STAGE."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-stage-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/condition-stage-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6913,7 +6913,7 @@ CodeSystem: MedAdminRouteCS
 Id: med-admin-route-cs
 Title: "Medication Administration Route CodeSystem"
 Description: "Route of administration codes used in MedicationAdministration. Source: MOH-KENYA OCL MEDICATION-ADMINISTRATION-ROUTE."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/med-admin-route-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/med-admin-route-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6930,7 +6930,7 @@ CodeSystem: ObservationMethodsCS
 Id: observation-methods-cs
 Title: "Observation Methods CodeSystem"
 Description: "Methods used to perform clinical observations. Source: MOH-KENYA OCL OBSERVATION-METHODS."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/observation-methods-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/observation-methods-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6962,7 +6962,7 @@ CodeSystem: AdditionalInstructionCS
 Id: additional-instruction-cs
 Title: "Additional Instruction Codes CodeSystem"
 Description: "Supplementary instructions for dispensed or administered medication. Source: MOH-KENYA OCL ADDITIONAL-INSTRUCTION-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/additional-instruction-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/additional-instruction-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7001,7 +7001,7 @@ CodeSystem: ApproachSiteCS
 Id: approach-site-cs
 Title: "Approach Site Codes CodeSystem"
 Description: "Body site codes for site of medication administration. Source: MOH-KENYA OCL APPROACH-SITE-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/approach-site-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/approach-site-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7035,7 +7035,7 @@ CodeSystem: CarePlanCategoryCS
 Id: care-plan-category-cs
 Title: "Care Plan Category CodeSystem"
 Description: "Category codes for care plan types. Source: MOH-KENYA OCL CARE-PLAN-CATEGORY."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/care-plan-category-cs"
+////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/care-plan-category-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7064,7 +7064,7 @@ CodeSystem: ProcedureCodeCS
 Id: procedure-code-cs
 Title: "Procedure Code CodeSystem"
 Description: "Clinical procedure codes used in care plan activities and service requests. Source: MOH-KENYA OCL PROCEDURE-CODE."
-// ////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/procedure-code-cs"
+// ////////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/procedure-code-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7139,7 +7139,7 @@ CodeSystem: ConditionClinicalStatusCS
 Id: condition-clinical-status-cs
 Title: "Condition Clinical Status CodeSystem"
 Description: "Clinical status codes for Condition resources. Source: MOH-KENYA OCL CONDITION-CLINICAL-STATUS (supplemented with standard FHIR codes)."
-//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-clinical-status-cs"
+//////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/condition-clinical-status-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7440,7 +7440,7 @@ CodeSystem: KPSAClientRegistrationCodesCS
 Id: kpsa-client-registration-codes
 Title: "KPS.A Client Registration Data Elements"
 Description: "CodeSystem representing data elements used in KPS.A Client Registration."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsa-client-registration-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsa-client-registration-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7481,7 +7481,7 @@ CodeSystem: KPSBClinicalConsultationCodesCS
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical consultation data elements under the Kenya Patient Summary (KPS.B)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
@@ -7593,7 +7593,7 @@ CodeSystem: KPSClinicalStatusCodesCS
 Id: kpsb-clinical-status-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical status"
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
@@ -7634,7 +7634,7 @@ CodeSystem: KPSCDiagnosticsCodesCS
 Id: kpsc-diagnostics-codes
 Title: "KPS.C Diagnostics Data Elements"
 Description: "CodeSystem representing diagnostic data elements under the Kenya Patient Summary (KPS.C)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsc-diagnostics-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsc-diagnostics-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
@@ -7682,7 +7682,7 @@ CodeSystem: KPSDTreatmentCodesCS
 Id: kpsd-treatment-codes
 Title: "KPS.D Treatment Data Elements"
 Description: "CodeSystem representing treatment and medication-related data elements under the Kenya Patient Summary (KPS.D)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
@@ -7732,7 +7732,7 @@ CodeSystem: KPSEImmunizationCodesCS
 Id: kpse-immunization-codes
 Title: "KPS.E Immunization Data Elements"
 Description: "CodeSystem representing immunization-related data elements under the Kenya Patient Summary (KPS.E)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
@@ -7772,7 +7772,7 @@ CodeSystem: KPSGReferralCodesCS
 Id: kpsg-referral-codes
 Title: "KPS.G Referral Data Elements"
 Description: "CodeSystem representing referral-related data elements under the Kenya Patient Summary (KPS.G)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
+////* ^url = "https://fhir.dha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
