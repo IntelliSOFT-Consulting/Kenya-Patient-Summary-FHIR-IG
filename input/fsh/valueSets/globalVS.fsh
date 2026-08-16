@@ -70,7 +70,7 @@ Id: kps-ucum-units-vs
 Title: "UCUM Units"
 Description: "UCUM units for medication quantities."
  
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-ucum-units-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/kps-ucum-units-vs"
 * ^experimental = false
 * include codes from system http://unitsofmeasure.org
 
@@ -104,7 +104,7 @@ ValueSet: KPSAllergyStatusVS
 Id: kps-allergy-status-vs
 Title: "Allergy Clinical Status" 
 Description: "Value Sets for Allergy Clinical Status"
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/kps-allergy-status-vs"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 
@@ -112,7 +112,7 @@ ValueSet: KPSAllergyCertaintyVS
 Id: kps-allergy-certainty-vs
 Title: "Allergy Certainty"
 Description: "Value Sets for Allergy Certainty"
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-certainty-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/kps-allergy-certainty-vs"
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
@@ -120,7 +120,7 @@ ValueSet: KPSAllergyTypeVS
 Id: kps-allergy-type-vs
 Title: "Allergy Type"
 Description: "Value Sets for Allergy Type"
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-type-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/kps-allergy-type-vs"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/allergy-intolerance-type
 
@@ -128,7 +128,7 @@ ValueSet: KPSAllergySeverityVS
 Id: kps-allergy-severity-vs
 Title: "Allergy Severity" 
 Description: "Value Sets for Allergy Severity"
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/kps-allergy-severity-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/kps-allergy-severity-vs"
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/reaction-event-severity
 
@@ -581,7 +581,7 @@ Id: observation-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Observation.status in Observation."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/observation-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/observation-status-vs"
 * include codes from system http://hl7.org/fhir/observation-status
 
 ValueSet: ObservationCategoryVS
@@ -608,7 +608,7 @@ Id: allergy-intolerance-verification-status-vs
 Title: "VerificationStatus ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.verificationStatus in AllergyIntolerance."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-verification-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/allergy-intolerance-verification-status-vs"
 * include codes from system http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 ValueSet: AllergyIntoleranceTypeVS
@@ -616,7 +616,7 @@ Id: allergy-intolerance-type-vs
 Title: "Type ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.type in AllergyIntolerance."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-type-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/allergy-intolerance-type-vs"
 * include codes from system http://hl7.org/fhir/allergy-intolerance-type
 
 ValueSet: AllergyIntoleranceCriticalityVS
@@ -654,7 +654,7 @@ Id: allergy-intolerance-reaction-severity-vs
 Title: "Severity ValueSet"
 Description: "ValueSet binding for AllergyIntolerance.reaction.severity in AllergyIntolerance."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/allergy-intolerance-reaction-severity-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/allergy-intolerance-reaction-severity-vs"
 * include codes from system http://hl7.org/fhir/reaction-event-severity
 
 
@@ -669,7 +669,7 @@ Id: medication-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Medication.status in Medication."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/medication-status-vs"
 * include codes from system http://hl7.org/fhir/CodeSystem/medication-status
 
 ValueSet: MedicationFormVS
@@ -708,7 +708,7 @@ Id: medication-request-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for MedicationRequest.status in MedicationRequest."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/medication-request-status-vs"
 * include codes from system http://hl7.org/fhir/CodeSystem/medicationrequest-status
 
 ValueSet: MedicationRequestIntentVS
@@ -716,7 +716,7 @@ Id: medication-request-intent-vs
 Title: "Intent ValueSet"
 Description: "ValueSet binding for MedicationRequest.intent in MedicationRequest."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-intent-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/medication-request-intent-vs"
 * include codes from system http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 
 ValueSet: MedicationRequestCategoryVS
@@ -724,7 +724,7 @@ Id: medication-request-category-vs
 Title: "Category ValueSet"
 Description: "ValueSet binding for MedicationRequest.category in MedicationRequest."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-request-category-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/medication-request-category-vs"
 * include codes from system http://terminology.hl7.org/CodeSystem/medicationrequest-category
 
 ValueSet: MedicationRequestPriorityVS
@@ -878,7 +878,7 @@ Id: medication-statement-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for MedicationStatement.status in MedicationStatement."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/medication-statement-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/medication-statement-status-vs"
 * include codes from system http://hl7.org/fhir/CodeSystem/medication-statement-status
 
 ValueSet: MedicationStatementStatusReasonVS
@@ -961,7 +961,7 @@ Id: procedure-status-vs
 Title: "Status ValueSet"
 Description: "ValueSet binding for Procedure.status in Procedure."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/procedure-status-vs"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/procedure-status-vs"
 * include codes from system http://hl7.org/fhir/event-status
 
 ValueSet: ProcedureCodeVS
@@ -1282,7 +1282,7 @@ Id: specimen-type-vs
 Title: "KPS Specimen Types"
 Description: "Types of biological specimens collected for diagnostic analysis in the Kenya Patient Summary, coded using HL7 v2 Table 0487 and $LOINC."
 * ^experimental = false
-// * ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/specimen-type"
+// * ^url = "https://fhir.dha.go.ke/fhir/ValueSet/specimen-type"
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0487
 * include codes from system $LOINC
 

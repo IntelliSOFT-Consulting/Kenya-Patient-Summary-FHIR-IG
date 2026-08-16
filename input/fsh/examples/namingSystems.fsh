@@ -10,7 +10,7 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for practitioner identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-identifier"
+* uniqueId[0].value = "https://fhir.dha.go.ke/fhir/NamingSystem/practitioner-identifier"
 * uniqueId[0].preferred = true
 
 Instance: PractitionerRoleIdentifierNamingSystem
@@ -25,7 +25,7 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for practitioner role identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/practitioner-role-identifier"
+* uniqueId[0].value = "https://fhir.dha.go.ke/fhir/NamingSystem/practitioner-role-identifier"
 * uniqueId[0].preferred = true
 
 Instance: OrganizationIdentifierNamingSystem
@@ -40,7 +40,7 @@ Usage: #definition
 * responsible = "Digital Health Agency of Kenya"
 * description = "Identifier namespace definition for organization identifiers used in the Kenya Patient Summary."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://nshr-uat.sha.go.ke/fhir/NamingSystem/organization-identifier"
+* uniqueId[0].value = "https://fhir.dha.go.ke/fhir/NamingSystem/organization-identifier"
 * uniqueId[0].preferred = true
 
 Instance: NationalIdIdentifierNamingSystem
