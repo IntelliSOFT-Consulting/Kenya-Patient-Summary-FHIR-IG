@@ -5,7 +5,6 @@ InstanceOf: ke-kps-allergy-intolerance
 Title: "Example AllergyIntolerance for Kenya Patient Summary- VALID"
 Description: "An example AllergyIntolerance instance for a patient allergic to penicillin."
 Usage: #example
-* meta.profile[0] = $KpsAllergyProfileV
 
 * id = "example-allergy-patient-001"
 * patient = Reference(ExamplePatientKPS)
@@ -33,7 +32,6 @@ InstanceOf: ke-kps-condition
 Title: "Example Condition - Bipolar Affective Disorder, Current Episode Manic Without Psychotic Symptoms (KPS)"
 Description: "Example instance of a patient diagnosed with bipolar affective disorder, current episode manic without psychotic symptoms, for the Kenya Patient Summary."
 Usage: #example
-* meta.profile[0] = $KpsConditionProfileV
 
 * id = "example-bipolar-condition"
 * subject = Reference(ExamplePatientKPS)
@@ -73,7 +71,6 @@ Instance: LocationKPS
 InstanceOf: ke-kps-location
 Description: "Example clinic location used in encounter and referral examples."
 Usage: #example
-* meta.profile[0] = $KpsLocationProfileV
 * name = "Nairobi Referral Clinic"
 * description = "Referral clinic used for  examples"
 
@@ -81,7 +78,6 @@ Instance: OrganizationKPS
 InstanceOf: ke-kps-organization
 Description: "Example healthcare organization used as the performing facility in Kenya Patient Summary examples."
 Usage: #example
-* meta.profile[0] = $KpsOrganizationProfileV
 * identifier.system =  $organization-identifier
 * identifier.value = "ORG-VAL-001"
 * name = "Kenyatta National Hospital"
@@ -89,7 +85,6 @@ Usage: #example
 Instance: PractitionerKPS
 InstanceOf: ke-kps-practitioner
 Description: "Example practitioner used across Kenya Patient Summary examples."
-* meta.profile[0] = $KpsPractitionerProfileV
 * identifier[0].system = $practitioner-identifier
 * identifier[0].value = "PRAC-VAL-001"
 * name[0].family = "Njoroge"
@@ -99,7 +94,6 @@ Instance: PractitionerRoleKPS
 InstanceOf: ke-kps-practitioner-role
 Description: "Example practitioner role linking the sample practitioner to the sample organization."
 Usage: #example
-* meta.profile[0] = $KpsPractitionerRoleProfileV
 * identifier.system = $practitioner-role-identifier
 * identifier.value = "PROLE-VAL-001"
 * practitioner = Reference(PractitionerKPS)
@@ -110,7 +104,6 @@ Instance: PatientKPS
 InstanceOf: ke-kps-patient
 Description: "Example patient used across Kenya Patient Summary examples."
 Usage: #example
-* meta.profile[0] = $KpsPatientProfileV
 * identifier[NationalIDNo].system = $nationalID-no
 * identifier[NationalIDNo].value = "12345678"
 * gender = #female
@@ -137,14 +130,12 @@ Instance: SubstanceKPS
 InstanceOf: ke-kps-substance
 Description: "Example substance referenced by the medication example."
 Usage: #example
-* meta.profile[0] = $KpsSubstanceProfileV
 * code = $kps-medication-atc-cs#A01AB03
 
 Instance: MedicationKPS
 InstanceOf: ke-kps-medication
 Description: "Example medication used in prescribing and administration examples."
 Usage: #example
-* meta.profile[0] = $KpsMedicationProfileV
 * status = #active
 * code = $kps-medication-atc-cs#A01AB03
 * batch.lotNumber = "LOT-VAL-001"
@@ -154,7 +145,6 @@ Instance: EncounterKPS
 InstanceOf: ke-kps-encounter
 Description: "Example outpatient encounter for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsEncounterProfileV
 * status = #finished
 * class.system = $V3ACT
 * class.code = #AMB
@@ -168,7 +158,6 @@ Instance: ObservationKPS
 InstanceOf: ke-kps-observation
 Description: "Example laboratory observation referenced by the diagnostic report example."
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 * status = #final
 * category[0] = $observation-category-cs#laboratory "Laboratory"
 * code.text = "Hemoglobin result"
@@ -183,7 +172,6 @@ InstanceOf: KpsObservation
 Title: "Smoking Status"
 Description: "Social history observation indicating smoking"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * category[0].coding[0]
@@ -202,7 +190,6 @@ InstanceOf: KpsObservation
 Title: "Substance Use Reference Period"
 Description: "Reference date range for substance use"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * category[0].coding[0]
@@ -221,7 +208,6 @@ InstanceOf: KpsObservation
 Title: "Pregnancy Status"
 Description: "Current pregnancy status"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * category[0].coding[0]
@@ -242,7 +228,6 @@ InstanceOf: KpsObservation
 Title: "Expected Date of Delivery"
 Description: "Estimated date of delivery"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * category[0].coding[0]
@@ -262,7 +247,6 @@ InstanceOf: KpsObservation
 Title: "Previous Pregnancies Status"
 Description: "Whether the woman had previous pregnancies"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Previous pregnancies"
@@ -279,7 +263,6 @@ InstanceOf: KpsObservation
 Title: "Previous Pregnancy Outcome"
 Description: "Outcome of previous pregnancy"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Pregnancy Outcome"
@@ -296,7 +279,6 @@ InstanceOf: KpsObservation
 Title: "Pregnancy Outcome Date"
 Description: "Date of pregnancy outcome"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Outcome date"
@@ -311,7 +293,6 @@ InstanceOf: KpsObservation
 Title: "Number of Children"
 Description: "Number of fetuses in the current pregnancy"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Number of fetuses"
@@ -327,7 +308,6 @@ InstanceOf: KpsObservation
 Title: "Travel Destination"
 Description: "Where the patient traveled"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Recent travel destination"
@@ -342,7 +322,6 @@ InstanceOf: KpsObservation
 Title: "Travel Period"
 Description: "Date of entry and departure"
 Usage: #example
-* meta.profile[0] = $KpsObservationProfileV
 
 * status = #final
 * code.text = "Travel period"
@@ -355,7 +334,6 @@ Instance: SpecimenKPS
 InstanceOf: ke-kps-specimen
 Description: "Example blood specimen collected from the sample patient."
 Usage: #example 
-* meta.profile[0] = $KpsSpecimenProfileV
 * status = #available
 * type = $V20487#BLD "Whole blood"
 * subject = Reference(PatientKPS)
@@ -365,7 +343,6 @@ Instance: DiagnosticReportKPS
 InstanceOf: ke-kps-diagnostic-report
 Description: "Example laboratory diagnostic report referencing the sample specimen and observation."
 Usage: #example
-* meta.profile[0] = $KpsDiagnosticReportProfileV
 * status = #final
 * category[0] = $DXSVC#LAB "Laboratory"
 * code = $ksp-investigation-cs#718-7 "Hemoglobin Measurement"
@@ -380,7 +357,6 @@ Instance: ImagingStudyKPS
 InstanceOf: ke-kps-imaging-study
 Description: "Example imaging study for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsImagingStudyProfileV
 * status = #available
 * subject = Reference(PatientKPS)
 * description = "Chest radiograph"
@@ -392,7 +368,6 @@ Instance: ImmunizationKPS
 InstanceOf: ke-kps-immunization
 Description: "Example immunization event for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsImmunizationProfileV
 * status = #completed
 * vaccineCode = $kps-vaccine-atc-cs#J07CA02 "diphtheria-pertussis-poliomyelitis-tetanus"
 * occurrenceDateTime = "2025-10-01"
@@ -405,7 +380,6 @@ Instance: MedicationRequestKPS
 InstanceOf: ke-kps-medication-request
 Description: "Example medication request for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsMedicationRequestProfileV
 * status = #active
 * intent = #order
 * subject = Reference(PatientKPS)
@@ -417,7 +391,6 @@ Instance: MedicationStatementKPS
 InstanceOf: ke-kps-medication-statement
 Description: "Example medication statement for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsMedicationStatementProfileV
 * status = #active
 * medicationReference = Reference(MedicationKPS)
 * subject = Reference(PatientKPS)
@@ -427,7 +400,6 @@ Instance: ProcedureKPS
 InstanceOf: ke-kps-procedure
 Description: "Example procedure performed for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsProcedureProfileV
 * status = #completed
 * code = $kps-procedures-cs#4365001
 * subject = Reference(PatientKPS)
@@ -438,7 +410,6 @@ Instance: ServiceRequestKPS
 InstanceOf: ke-kps-service-request
 Description: "Example referral service request for the sample patient."
 Usage: #example
-* meta.profile[0] = $KpsServiceRequestProfileV
 * status = #active
 * intent = #order
 * subject = Reference(PatientKPS)
@@ -453,7 +424,6 @@ InstanceOf: ke-kps-composition
 Title: "Example Composition"
 Description: "Example Kenya Patient Summary document bundling the sample patient's problems, allergies, medications, immunizations, results, and procedures."
 Usage: #example
-* meta.profile[0] = $KpsCompositionProfileV
 
 * status = #final
 * subject = Reference(PatientKPS)
