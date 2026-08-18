@@ -10,7 +10,7 @@ Description: "This profile defines constraints on the Condition resource for use
 * meta.profile ^patternCanonical = $KpsConditionProfileV
 
 * code 1..1 MS
-* code from ConditionCodeVS (required)
+* code from ConditionCodeVS (extensible)
   * ^short = "Diagnosis or problem affecting the patient"
   * ^definition = "The disease, disorder, or problem coded using ICD-10, the standard diagnostic classification system currently bound for the Kenya Patient Summary."
 
