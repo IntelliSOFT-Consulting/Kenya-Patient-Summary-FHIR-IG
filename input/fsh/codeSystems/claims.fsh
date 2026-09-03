@@ -4,7 +4,7 @@ Title:        "KNHTS.CLMS CodeSystem for claim status"
 Description:  "CodeSystem for KNHTS Claim status"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS"
 * #STS01 "NEW" "Active"
 * #STS02 "NOTIFIED" "Identification done and payor notified"
@@ -28,7 +28,7 @@ Title:        "KNHTS.CLMSRSP CodeSystem for claim response status"
 Description:  "CodeSystem for KNHTS Claim status"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_RSP"
 * #STS01 "NEW" "New Claims response"
 * #STS02 "NOTIFIED" "Identification done and payor notified"
@@ -52,7 +52,7 @@ Title:        "KNHTS.CLMSTPS CodeSystem for claim types"
 Description:  "CodeSystem for KNHTS Claim types"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_TYPS"
 
 * #CLMTPS01 "OUTPATIENT" "Claim for outpatient services."
@@ -66,7 +66,7 @@ Title:        "KNHTS.CLMSTPS CodeSystem for claim Sub-types"
 Description:  "CodeSystem for KNHTS Claim Sub-types"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_SBTYPS"
 
 * #CLMSBTPS01 "PHC_OUTPATIENT" "Outpatient Health Services (Primary Healthcare Fund)"
@@ -105,7 +105,7 @@ Title:        "KNHTS.CLMSZONE CodeSystem for claim Zones"
 Description:  "CodeSystem for KNHTS Claim Zones"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_ZONES"
 
 * #CLMSZONE01 "Zone 1" "Mandera, Samburu, Nairobi"
@@ -124,7 +124,7 @@ Title:        "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type
 Description:  "CodeSystem for KNHTS Claim Accomodation Types"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_ACCOMODATIONTYPES"
 
 * #CLMSACCTYPES01 "FEMALE_MEDICAL" "Female Medical"
@@ -148,7 +148,7 @@ Title:        "KNHTS.CLMSDISP CodeSystem for claim disposition"
 Description:  "CodeSystem for KNHTS Claim Disposition"
 
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^name = "KNHTS_CLMS_DISPOSITION"
 
 * #CLMSDISP01 "Improved" "Improved"
