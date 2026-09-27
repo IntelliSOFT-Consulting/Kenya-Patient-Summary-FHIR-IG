@@ -1008,3 +1008,9 @@ Description: "Custom CodeSystem containing medication codes from the WHO ATC cla
 * #B02BD30 "thrombin"
 * #B02BX "Other systemic hemostatics"
 * #B02BX01 "etamsylate"
+
+* #N "NERVOUS SYSTEM"
+* #N02 "ANALGESICS"
+* #N02B "OTHER ANALGESICS AND ANTIPYRETICS"
+* #N02BE "Anilides"
+* #N02BE01 "paracetamol"
