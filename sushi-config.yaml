@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: ke.fhir.patient-summary
-canonical: https://fhir.dha.go.ke/patient-summary
+canonical: https://fhir.dha.go.ke/kps
 name: KenyaPatientSummary
 title: Kenya Patient Summary Implementation Guide
 description: >
